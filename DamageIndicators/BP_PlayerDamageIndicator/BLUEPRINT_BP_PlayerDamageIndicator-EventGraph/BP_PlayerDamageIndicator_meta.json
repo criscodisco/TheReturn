@@ -1,0 +1,564 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Event Graph",
+	"assetName": "BP_PlayerDamageIndicator",
+	"capturedAt": "2026-09-18T20:03:09",
+	"totalNodes": 21,
+	"graphWidth": 4976,
+	"graphHeight": 1152,
+	"graphOriginX": -568,
+	"graphOriginY": -440,
+	"nodeTypes":
+	{
+		"Event BeginPlay": 1,
+		"Get DamageWidgetComponent": 1,
+		"Get Widget": 1,
+		"Set Damage": 1,
+		"Get Damage": 1,
+		"Get Actor Location": 1,
+		"Set StartLocation": 1,
+		"Get StartLocation": 2,
+		"vector + vector": 1,
+		"vector * vector": 2,
+		"Set EndLocation": 1,
+		"DamageTimeline": 1,
+		"Lerp": 1,
+		"Set Actor Location": 1,
+		"Get EndLocation": 1,
+		"Destroy Actor": 1,
+		"Get Player Character": 1,
+		"Get Vectors": 1,
+		"Truncate": 1
+	},
+	"nodes": [
+		{
+			"title": "Event BeginPlay",
+			"guid": "B8C2C2994704CBB0CB3D388740E30988",
+			"nx": 0.059500000000000004,
+			"ny": 0.45140000000000002,
+			"nw": 0.031800000000000002,
+			"nh": 0.056400000000000006
+		},
+		{
+			"title": "Get DamageWidgetComponent",
+			"guid": "3CD04DC14DE3DF0B81DB1CB8DD85BDE7",
+			"nx": 0.0659,
+			"ny": 0.5625,
+			"nw": 0.041600000000000005,
+			"nh": 0.033000000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get Widget",
+			"guid": "4A66FCD64C93E296D297C38482970C3D",
+			"nx": 0.1206,
+			"ny": 0.53470000000000006,
+			"nw": 0.043799999999999999,
+			"nh": 0.066000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Set Damage",
+			"guid": "E54A684A4927FCD335448FA977957DD9",
+			"nx": 0.18490000000000001,
+			"ny": 0.4375,
+			"nw": 0.046800000000000001,
+			"nh": 0.1198,
+			"pins": [
+				{
+					"id": "DD5FF02B4547F471150315957A0977B4",
+					"n": "Damage",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Get Damage",
+			"guid": "25D73F404D813AE73FD345B5153F9894",
+			"nx": 0.13020000000000001,
+			"ny": 0.71530000000000005,
+			"nw": 0.026500000000000003,
+			"nh": 0.033000000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get Actor Location",
+			"guid": "7936BA4346FC5A8B868640A6B2AAEDD0",
+			"nx": 0.21060000000000001,
+			"ny": 0.61809999999999998,
+			"nw": 0.049100000000000005,
+			"nh": 0.070300000000000001,
+			"pure": true
+		},
+		{
+			"title": "Set StartLocation",
+			"guid": "000A5C47485A2FCC0EAF8C95FC4ED117",
+			"nx": 0.26530000000000004,
+			"ny": 0.46530000000000005,
+			"nw": 0.037400000000000003,
+			"nh": 0.066799999999999998,
+			"pins": [
+				{
+					"id": "415197B3445BA0C4ADDA1BB2567D06C8",
+					"n": "StartLocation",
+					"t": "struct",
+					"dv": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"title": "Get StartLocation",
+			"guid": "2AD5E33248F9BC95CFE00D8FC02B2E50",
+			"nx": 0.5,
+			"ny": 0.54859999999999998,
+			"nw": 0.026700000000000002,
+			"nh": 0.033000000000000002,
+			"pure": true
+		},
+		{
+			"title": "vector + vector",
+			"guid": "DF54F48746B34C96E974B990C4AA3D95",
+			"nx": 0.53539999999999999,
+			"ny": 0.59030000000000005,
+			"nw": 0.0281,
+			"nh": 0.083299999999999999,
+			"pure": true
+		},
+		{
+			"title": "vector * vector",
+			"guid": "A5FE961740DFEABC0D761CAA592642FF",
+			"nx": 0.47110000000000002,
+			"ny": 0.60420000000000007,
+			"nw": 0.032399999999999998,
+			"nh": 0.061600000000000002,
+			"pure": true,
+			"pins": [
+				{
+					"id": "D0D52B764DC089ED4DFD339A746146FE",
+					"n": "B",
+					"t": "real",
+					"dv": "30.000000"
+				}
+			]
+		},
+		{
+			"title": "vector * vector",
+			"guid": "8A41F09A4E1D05376082AEABB4089561",
+			"nx": 0.46460000000000001,
+			"ny": 0.6875,
+			"nw": 0.032399999999999998,
+			"nh": 0.061600000000000002,
+			"pure": true,
+			"pins": [
+				{
+					"id": "807BD1E04B32A0218B080E9409EE4853",
+					"n": "B",
+					"t": "real",
+					"dv": "20.000000"
+				}
+			]
+		},
+		{
+			"title": "Set EndLocation",
+			"guid": "E97149764EA505AFC85CB4A1A0A8F3DC",
+			"nx": 0.59320000000000006,
+			"ny": 0.46530000000000005,
+			"nw": 0.036400000000000002,
+			"nh": 0.066799999999999998,
+			"pins": [
+				{
+					"id": "908483B640C23DE146747E87CA737CC0",
+					"n": "EndLocation",
+					"t": "struct",
+					"dv": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"title": "DamageTimeline",
+			"guid": "38D366A042BFB090937D0D886E27F7C7",
+			"nx": 0.66080000000000005,
+			"ny": 0.45140000000000002,
+			"nw": 0.051800000000000006,
+			"nh": 0.22310000000000002,
+			"pins": [
+				{
+					"id": "FC37A9594DB0A8C210B2BC8CDBCA833C",
+					"n": "NewTime",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		},
+		{
+			"title": "Lerp",
+			"guid": "A827B18743AFBBDCBFE4F5A0010AE02C",
+			"nx": 0.77970000000000006,
+			"ny": 0.63190000000000002,
+			"nw": 0.040800000000000003,
+			"nh": 0.1042,
+			"pure": true,
+			"pins": [
+				{
+					"id": "31A10BDD463745B0F2F5E3984E56831F",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"id": "75DB79754AAADF5C6C5513A45396C52B",
+					"n": "A",
+					"t": "struct",
+					"dv": "0, 0, 0"
+				},
+				{
+					"id": "FA9F5A5E43A6C1273D90E298199531B3",
+					"n": "B",
+					"t": "struct",
+					"dv": "0, 0, 0"
+				},
+				{
+					"id": "F616139148EA97E1FEC1CD8AAB3578F8",
+					"n": "Alpha",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		},
+		{
+			"title": "Set Actor Location",
+			"guid": "646CA0B04257AE3EACD5D7B838B41499",
+			"nx": 0.84730000000000005,
+			"ny": 0.4375,
+			"nw": 0.0533,
+			"nh": 0.1832,
+			"pins": [
+				{
+					"id": "0ACFF2D943E85F44CA577CB5D1D2E904",
+					"n": "NewLocation",
+					"t": "struct",
+					"dv": "0, 0, 0"
+				},
+				{
+					"id": "B37FF9C04CD05F7D56080DB8D975F1F5",
+					"n": "bSweep",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "41FA2C19466EB206B13A1EB677C4CC70",
+					"n": "bTeleport",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Get StartLocation",
+			"guid": "ECC26D714F949D23D2493B9B6CC3BCE2",
+			"nx": 0.74760000000000004,
+			"ny": 0.54859999999999998,
+			"nw": 0.026700000000000002,
+			"nh": 0.033000000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get EndLocation",
+			"guid": "A25778F74B7FC9E680B285A0ECE9335A",
+			"nx": 0.74760000000000004,
+			"ny": 0.60420000000000007,
+			"nw": 0.026500000000000003,
+			"nh": 0.033000000000000002,
+			"pure": true
+		},
+		{
+			"title": "Destroy Actor",
+			"guid": "65A702E04C1FF7CD58436BBE45392684",
+			"nx": 0.74760000000000004,
+			"ny": 0.28470000000000001,
+			"nw": 0.0344,
+			"nh": 0.098100000000000007
+		},
+		{
+			"title": "Get Player Character",
+			"guid": "BA753AAF482ED79490102496A1E0DCFF",
+			"nx": 0.30060000000000003,
+			"ny": 0.61809999999999998,
+			"nw": 0.051200000000000002,
+			"nh": 0.056400000000000006,
+			"pure": true,
+			"pins": [
+				{
+					"id": "EDB2BF114C3ADFEF964101A7A0F854B5",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "F03F3EF34012A8A38310B7857A5E2CF1",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Get Vectors",
+			"guid": "792AD45644A5A4BBCF496CA34C6C9EB9",
+			"nx": 0.35850000000000004,
+			"ny": 0.4375,
+			"nw": 0.040800000000000003,
+			"nh": 0.1198
+		},
+		{
+			"title": "Truncate",
+			"guid": "34B3CE944FB65086F0A80DA347CD7A5F",
+			"nx": 0.15590000000000001,
+			"ny": 0.64580000000000004,
+			"nw": 0.036000000000000004,
+			"nh": 0.0521,
+			"pure": true,
+			"pins": [
+				{
+					"id": "C177F5024EF64FDB06EEA2B890239AA3",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"id": "EBF00DA74D54D3BE12B5D1AE21441226",
+					"n": "A",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		}
+	],
+	"connections": [
+		{
+			"fg": "B8C2C2994704CBB0CB3D388740E30988",
+			"fpid": "F7BE77084AB4BCA39682C58FEC009ABE",
+			"fp": "then",
+			"tg": "E54A684A4927FCD335448FA977957DD9",
+			"tpid": "BD25CF774C6EAB298DB026818DFC5869",
+			"tp": "execute"
+		},
+		{
+			"fg": "3CD04DC14DE3DF0B81DB1CB8DD85BDE7",
+			"fpid": "25E4B1BA4261C0F509642B9E286CA174",
+			"fp": "DamageWidgetComponent",
+			"tg": "4A66FCD64C93E296D297C38482970C3D",
+			"tpid": "BBAD674A4C18FF6CE0787D85B64BCF78",
+			"tp": "self"
+		},
+		{
+			"fg": "4A66FCD64C93E296D297C38482970C3D",
+			"fpid": "28DDFCAF46191521E2004EB52AE5D389",
+			"fp": "ReturnValue",
+			"tg": "E54A684A4927FCD335448FA977957DD9",
+			"tpid": "D7197C56404CC4A1A4DCE39799DFE803",
+			"tp": "self"
+		},
+		{
+			"fg": "E54A684A4927FCD335448FA977957DD9",
+			"fpid": "4D880DE8458EC43AD021F38C27A91B81",
+			"fp": "then",
+			"tg": "000A5C47485A2FCC0EAF8C95FC4ED117",
+			"tpid": "A91DA9C64499F11E6C761EA75BC58782",
+			"tp": "execute"
+		},
+		{
+			"fg": "25D73F404D813AE73FD345B5153F9894",
+			"fpid": "CA4972C044399EE47B7E3D8AADA54B07",
+			"fp": "Damage",
+			"tg": "34B3CE944FB65086F0A80DA347CD7A5F",
+			"tpid": "EBF00DA74D54D3BE12B5D1AE21441226",
+			"tp": "A"
+		},
+		{
+			"fg": "7936BA4346FC5A8B868640A6B2AAEDD0",
+			"fpid": "86699CFC436CC471F51BF28706B19464",
+			"fp": "ReturnValue",
+			"tg": "000A5C47485A2FCC0EAF8C95FC4ED117",
+			"tpid": "415197B3445BA0C4ADDA1BB2567D06C8",
+			"tp": "StartLocation"
+		},
+		{
+			"fg": "000A5C47485A2FCC0EAF8C95FC4ED117",
+			"fpid": "079501264AE80A70FCD9EBA055B90C99",
+			"fp": "then",
+			"tg": "792AD45644A5A4BBCF496CA34C6C9EB9",
+			"tpid": "72627BD644ED739B7520EFA4E618E0EE",
+			"tp": "execute"
+		},
+		{
+			"fg": "2AD5E33248F9BC95CFE00D8FC02B2E50",
+			"fpid": "9B1E1EA74C7599A6B66D5BB3826E1D6F",
+			"fp": "StartLocation",
+			"tg": "DF54F48746B34C96E974B990C4AA3D95",
+			"tpid": "680441E740BA1703F8D298AE1B2BD9A6",
+			"tp": "A"
+		},
+		{
+			"fg": "DF54F48746B34C96E974B990C4AA3D95",
+			"fpid": "F8A30BE74B1349C840D4279BFEA97051",
+			"fp": "ReturnValue",
+			"tg": "E97149764EA505AFC85CB4A1A0A8F3DC",
+			"tpid": "908483B640C23DE146747E87CA737CC0",
+			"tp": "EndLocation"
+		},
+		{
+			"fg": "A5FE961740DFEABC0D761CAA592642FF",
+			"fpid": "6ABD0FE544D5BF040439BB8F7810CD48",
+			"fp": "ReturnValue",
+			"tg": "DF54F48746B34C96E974B990C4AA3D95",
+			"tpid": "9BEF774241868FFC83ED3E8FCD444031",
+			"tp": "B"
+		},
+		{
+			"fg": "8A41F09A4E1D05376082AEABB4089561",
+			"fpid": "84CF2C09449C074B32F92AAE36DD417F",
+			"fp": "ReturnValue",
+			"tg": "DF54F48746B34C96E974B990C4AA3D95",
+			"tpid": "2EA24052468D742138D8A6A68248F737",
+			"tp": "C"
+		},
+		{
+			"fg": "E97149764EA505AFC85CB4A1A0A8F3DC",
+			"fpid": "64AD0B284FB6A07569B3BBB298E3C8DB",
+			"fp": "then",
+			"tg": "38D366A042BFB090937D0D886E27F7C7",
+			"tpid": "BA49403B4A44956B7BE587A8C48DC8C1",
+			"tp": "Play"
+		},
+		{
+			"fg": "38D366A042BFB090937D0D886E27F7C7",
+			"fpid": "0D1B654A4A54D9477355D3ACC8713137",
+			"fp": "Update",
+			"tg": "646CA0B04257AE3EACD5D7B838B41499",
+			"tpid": "AC9523C2412AFEC5047FAD964F9AD75E",
+			"tp": "execute"
+		},
+		{
+			"fg": "38D366A042BFB090937D0D886E27F7C7",
+			"fpid": "B8E984A74231EE79AD0BA5995DDA62BC",
+			"fp": "Finished",
+			"tg": "65A702E04C1FF7CD58436BBE45392684",
+			"tpid": "9249919D4E16DE7F1866EBBA55F917DC",
+			"tp": "execute"
+		},
+		{
+			"fg": "38D366A042BFB090937D0D886E27F7C7",
+			"fpid": "FC1E42F24790686AB478A2894CCF8A5D",
+			"fp": "NewTrack_0",
+			"tg": "A827B18743AFBBDCBFE4F5A0010AE02C",
+			"tpid": "F616139148EA97E1FEC1CD8AAB3578F8",
+			"tp": "Alpha"
+		},
+		{
+			"fg": "A827B18743AFBBDCBFE4F5A0010AE02C",
+			"fpid": "E8B144B347A6F04FCB5F18B376AA4710",
+			"fp": "ReturnValue",
+			"tg": "646CA0B04257AE3EACD5D7B838B41499",
+			"tpid": "0ACFF2D943E85F44CA577CB5D1D2E904",
+			"tp": "NewLocation"
+		},
+		{
+			"fg": "ECC26D714F949D23D2493B9B6CC3BCE2",
+			"fpid": "EA6261DE406F73878FF7AF8A14B62314",
+			"fp": "StartLocation",
+			"tg": "A827B18743AFBBDCBFE4F5A0010AE02C",
+			"tpid": "75DB79754AAADF5C6C5513A45396C52B",
+			"tp": "A"
+		},
+		{
+			"fg": "A25778F74B7FC9E680B285A0ECE9335A",
+			"fpid": "7E0ADC5C4A136ED0F0E2E7A4B1ADB1FB",
+			"fp": "EndLocation",
+			"tg": "A827B18743AFBBDCBFE4F5A0010AE02C",
+			"tpid": "FA9F5A5E43A6C1273D90E298199531B3",
+			"tp": "B"
+		},
+		{
+			"fg": "BA753AAF482ED79490102496A1E0DCFF",
+			"fpid": "5ED181754694851C40578AB5877E3D11",
+			"fp": "ReturnValue",
+			"tg": "792AD45644A5A4BBCF496CA34C6C9EB9",
+			"tpid": "0067CF704533CAB4BB3FD1A6A7E6C2EB",
+			"tp": "self"
+		},
+		{
+			"fg": "792AD45644A5A4BBCF496CA34C6C9EB9",
+			"fpid": "F280725047C8788CD108D2A2A7B8490E",
+			"fp": "then",
+			"tg": "E97149764EA505AFC85CB4A1A0A8F3DC",
+			"tpid": "7437D1934E3C3D71C1AEEBBBFCD64FA2",
+			"tp": "execute"
+		},
+		{
+			"fg": "792AD45644A5A4BBCF496CA34C6C9EB9",
+			"fpid": "E33CD9384DCA87A9D4A5DEA509D38401",
+			"fp": "UpVector",
+			"tg": "A5FE961740DFEABC0D761CAA592642FF",
+			"tpid": "E366540C419A83FAC5380C856B58AA2A",
+			"tp": "A"
+		},
+		{
+			"fg": "792AD45644A5A4BBCF496CA34C6C9EB9",
+			"fpid": "3C0D56D04E8383FEE2A88F88EDC6237E",
+			"fp": "RightVector",
+			"tg": "8A41F09A4E1D05376082AEABB4089561",
+			"tpid": "2080AE3044409D317B6F7E99DD0E74DE",
+			"tp": "A"
+		},
+		{
+			"fg": "34B3CE944FB65086F0A80DA347CD7A5F",
+			"fpid": "3B48F203486EEF18D98E908408C31A1B",
+			"fp": "ReturnValue",
+			"tg": "E54A684A4927FCD335448FA977957DD9",
+			"tpid": "DD5FF02B4547F471150315957A0977B4",
+			"tp": "Damage"
+		}
+	],
+	"variables": [
+		{
+			"name": "Damage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "StartLocation",
+			"type": "Vector",
+			"exposed": true
+		},
+		{
+			"name": "EndLocation",
+			"type": "Vector",
+			"exposed": true
+		}
+	],
+	"components": [
+		{
+			"name": "DefaultSceneRoot",
+			"class": "SceneComponent",
+			"parent": "None"
+		},
+		{
+			"name": "DamageWidgetComponent",
+			"class": "WidgetComponent",
+			"parent": "None"
+		}
+	],
+	"comments": [
+		{
+			"title": "Begin Play",
+			"x": 264,
+			"y": 264,
+			"w": 4448,
+			"h": 624
+		}
+	],
+	"warnings": [],
+	"stickyNotes": []
+}
