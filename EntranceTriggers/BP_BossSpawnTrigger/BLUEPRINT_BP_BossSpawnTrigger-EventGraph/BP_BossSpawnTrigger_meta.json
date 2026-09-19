@@ -1,0 +1,507 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Event Graph",
+	"assetName": "BP_BossSpawnTrigger",
+	"capturedAt": "2026-09-18T19:41:19",
+	"totalNodes": 18,
+	"graphWidth": 4609,
+	"graphHeight": 1645,
+	"graphOriginX": -408,
+	"graphOriginY": -840,
+	"nodeTypes":
+	{
+		"On Component Begin Overlap": 1,
+		"Cast To BP_TurtleCharacter": 1,
+		"Event BeginPlay": 1,
+		"Get Actor Of Class": 1,
+		"Set BP_Orc": 1,
+		"Get BP_Orc": 4,
+		"Get HealthBarWidget": 1,
+		"Set Visibility": 1,
+		"Set BossControllerActivated?": 1,
+		"Play Sound 2D": 1,
+		"Reroute Node": 1,
+		"Play Montage": 1,
+		"Get Mesh": 1,
+		"Get AIController": 1,
+		"Run Behavior Tree": 1
+	},
+	"nodes": [
+		{
+			"title": "On Component Begin Overlap",
+			"guid": "E97FADD4473BEF61E5828F87118EA86E",
+			"nx": 0.071199999999999999,
+			"ny": 0.6663,
+			"nw": 0.068600000000000008,
+			"nh": 0.1489
+		},
+		{
+			"title": "Cast To BP_TurtleCharacter",
+			"guid": "4938DEE4402797227C92899C460888B9",
+			"nx": 0.16140000000000002,
+			"ny": 0.6663,
+			"nw": 0.056000000000000001,
+			"nh": 0.075400000000000009
+		},
+		{
+			"title": "Event BeginPlay",
+			"guid": "0C00F70044A3BFB75B15A9942B2A7E95",
+			"nx": 0.078100000000000003,
+			"ny": 0.19940000000000002,
+			"nw": 0.034300000000000004,
+			"nh": 0.0395
+		},
+		{
+			"title": "Get Actor Of Class",
+			"guid": "0848A38142B4417F192FC99ABE84BFA8",
+			"nx": 0.1371,
+			"ny": 0.19940000000000002,
+			"nw": 0.059200000000000003,
+			"nh": 0.070500000000000007,
+			"pins": [
+				{
+					"id": "DD214A1A46C901DF7BE0239510442D25",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "5F4E8D0541BC904A52FDFF8AED5A4118",
+					"n": "ActorClass",
+					"t": "class",
+					"do": "/Game/Enemies/Orc_Hummer/Blueprints/BP_Orc.BP_Orc_C"
+				}
+			]
+		},
+		{
+			"title": "Set BP_Orc",
+			"guid": "C50418E7465239E306FE888E82D585AA",
+			"nx": 0.217,
+			"ny": 0.20910000000000001,
+			"nw": 0.030600000000000002,
+			"nh": 0.046800000000000001
+		},
+		{
+			"title": "Get BP_Orc",
+			"guid": "25BF94DC4E623D4267ED4590E5647CC6",
+			"nx": 0.3246,
+			"ny": 0.57869999999999999,
+			"nw": 0.0286,
+			"nh": 0.023100000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get HealthBarWidget",
+			"guid": "9D5723EA4ACAAA2C8205AEBE750D370C",
+			"nx": 0.36280000000000001,
+			"ny": 0.57869999999999999,
+			"nw": 0.052299999999999999,
+			"nh": 0.023100000000000002,
+			"pure": true
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "771888E2436A04176FA463A237416BDC",
+			"nx": 0.40790000000000004,
+			"ny": 0.65650000000000008,
+			"nw": 0.062899999999999998,
+			"nh": 0.1009,
+			"pins": [
+				{
+					"id": "EC647F2B4A73B5C6661A55BC0D6EF9BC",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Visible"
+				}
+			]
+		},
+		{
+			"title": "Get BP_Orc",
+			"guid": "D54D7CFA40537EC0352EBF98BE8CE5A9",
+			"nx": 0.48080000000000001,
+			"ny": 0.58840000000000003,
+			"nw": 0.0286,
+			"nh": 0.023100000000000002,
+			"pure": true
+		},
+		{
+			"title": "Set BossControllerActivated?",
+			"guid": "CCB648A64D4DD888EFBD2F8E5522025B",
+			"nx": 0.52250000000000008,
+			"ny": 0.67600000000000005,
+			"nw": 0.053600000000000002,
+			"nh": 0.075999999999999998,
+			"pins": [
+				{
+					"id": "DC85BEAE430CFBB172A1C9A0DE783452",
+					"n": "BossControllerActivated?",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Play Sound 2D",
+			"guid": "339C5AC2458AFE645DF9688157FB0A88",
+			"nx": 0.61970000000000003,
+			"ny": 0.6663,
+			"nw": 0.0521,
+			"nh": 0.1003,
+			"pins": [
+				{
+					"id": "6F1AD40048C335B1C9EAD9983BE70CFB",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "17D227FE4B56BC5DFBF79C8D69D08360",
+					"n": "Sound",
+					"t": "object",
+					"do": "/Game/Free_Sounds_Pack/cue/Creature_1-21_Cue.Creature_1-21_Cue"
+				},
+				{
+					"id": "6C2F34CB43305EFD6DDA78AC707D28BB",
+					"n": "VolumeMultiplier",
+					"t": "real",
+					"dv": "1.000000"
+				},
+				{
+					"id": "385599C4420697724BB835BF8E9FDAA2",
+					"n": "PitchMultiplier",
+					"t": "real",
+					"dv": "1.000000"
+				},
+				{
+					"id": "82D465044DC461F21F86C3945E130AA8",
+					"n": "StartTime",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "3D092E5447DB90E291BC24BACEC36F9B",
+					"n": "ConcurrencySettings",
+					"t": "object",
+					"dv": "None"
+				},
+				{
+					"id": "C148CE6049ABF9CB9737419B23E40F46",
+					"n": "OwningActor",
+					"t": "object",
+					"dv": "None"
+				},
+				{
+					"id": "06702013466244D811A02C8D7DB48C36",
+					"n": "bIsUISound",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "2E904C57479CC18DFFA7E1A5DC298905",
+			"nx": 0.58840000000000003,
+			"ny": 0.59820000000000007,
+			"nw": 0.0091000000000000004,
+			"nh": 0.0146,
+			"pure": true
+		},
+		{
+			"title": "Play Montage",
+			"guid": "49FA036147637C660FB578B7167A2FDB",
+			"nx": 0.74120000000000008,
+			"ny": 0.6663,
+			"nw": 0.071599999999999997,
+			"nh": 0.1532,
+			"pins": [
+				{
+					"id": "F08246EF483C44CB1340C6B256BB35BC",
+					"n": "MontageToPlay",
+					"t": "object",
+					"do": "/Game/Enemies/Orc_Hummer/Animations/Anim_Orc_Hummer_Shout_Montage.Anim_Orc_Hummer_Shout_Montage"
+				},
+				{
+					"id": "150428984B5C1C327C9785BB9CF80E29",
+					"n": "PlayRate",
+					"t": "real",
+					"dv": "1.000000"
+				},
+				{
+					"id": "08F32D48414F727998C0D9A1DBAA3943",
+					"n": "StartingPosition",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "F030BC57472FC85B8BFD08ABD9CDD0EE",
+					"n": "StartingSection",
+					"t": "name",
+					"dv": "None"
+				}
+			]
+		},
+		{
+			"title": "Get BP_Orc",
+			"guid": "150D70C140B12F2EC7D90188405D70BD",
+			"nx": 0.65780000000000005,
+			"ny": 0.53980000000000006,
+			"nw": 0.0286,
+			"nh": 0.023100000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get Mesh",
+			"guid": "705832B44DC925AF753B9FB183DCB04D",
+			"nx": 0.69600000000000006,
+			"ny": 0.55930000000000002,
+			"nw": 0.037499999999999999,
+			"nh": 0.023100000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get BP_Orc",
+			"guid": "992977124A15F788E46573B809215FF0",
+			"nx": 0.77929999999999999,
+			"ny": 0.58840000000000003,
+			"nw": 0.0286,
+			"nh": 0.023100000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get AIController",
+			"guid": "6B285BCD418EAC9B50628392E09FA611",
+			"nx": 0.81410000000000005,
+			"ny": 0.57869999999999999,
+			"nw": 0.055100000000000003,
+			"nh": 0.036500000000000005,
+			"pure": true,
+			"pins": [
+				{
+					"id": "1FD831DD4252CAE0502A679349151362",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/AIModule.Default__AIBlueprintHelperLibrary"
+				}
+			]
+		},
+		{
+			"title": "Run Behavior Tree",
+			"guid": "7A18136942005185D701FBA3C067D617",
+			"nx": 0.87650000000000006,
+			"ny": 0.67600000000000005,
+			"nw": 0.066200000000000009,
+			"nh": 0.098500000000000004,
+			"pins": [
+				{
+					"id": "C9F93AC3484C8A836AA12F8823F9C014",
+					"n": "BTAsset",
+					"t": "object",
+					"do": "/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_Main.BT_Orc_Main"
+				}
+			]
+		}
+	],
+	"connections": [
+		{
+			"fg": "E97FADD4473BEF61E5828F87118EA86E",
+			"fpid": "32FC51EE450B515B3CF313B89DD9FF8F",
+			"fp": "then",
+			"tg": "4938DEE4402797227C92899C460888B9",
+			"tpid": "3AC4B1754FFDD093BFDFD2992189EDF8",
+			"tp": "execute"
+		},
+		{
+			"fg": "E97FADD4473BEF61E5828F87118EA86E",
+			"fpid": "6B8E51BB4B6D15D7EB7FB688BFC8A712",
+			"fp": "OtherActor",
+			"tg": "4938DEE4402797227C92899C460888B9",
+			"tpid": "DF8DA806438DCB371F300A9C39715BF1",
+			"tp": "Object"
+		},
+		{
+			"fg": "4938DEE4402797227C92899C460888B9",
+			"fpid": "AC9CCE3F403BF9FE053C7588FBECB359",
+			"fp": "then",
+			"tg": "771888E2436A04176FA463A237416BDC",
+			"tpid": "41B6345244B443A3741C87BF59496346",
+			"tp": "execute"
+		},
+		{
+			"fg": "0C00F70044A3BFB75B15A9942B2A7E95",
+			"fpid": "96E7AB854A1F90AEC8F09888D14EE28C",
+			"fp": "then",
+			"tg": "0848A38142B4417F192FC99ABE84BFA8",
+			"tpid": "53F95D4443FAEEAF63EDBF80E7A87846",
+			"tp": "execute"
+		},
+		{
+			"fg": "0848A38142B4417F192FC99ABE84BFA8",
+			"fpid": "B489CFBC4D574512CC4EE1982AA0F5F7",
+			"fp": "then",
+			"tg": "C50418E7465239E306FE888E82D585AA",
+			"tpid": "4782493C4D8A4C14BE6073B52B231B21",
+			"tp": "execute"
+		},
+		{
+			"fg": "0848A38142B4417F192FC99ABE84BFA8",
+			"fpid": "C738428843D1F1CF50D17CB838CF3CF1",
+			"fp": "ReturnValue",
+			"tg": "C50418E7465239E306FE888E82D585AA",
+			"tpid": "B4DCEE894E06690F88C3D5989B6EC566",
+			"tp": "BP_Orc"
+		},
+		{
+			"fg": "25BF94DC4E623D4267ED4590E5647CC6",
+			"fpid": "7CB59B644A510A10DC668E88A959BCC6",
+			"fp": "BP_Orc",
+			"tg": "9D5723EA4ACAAA2C8205AEBE750D370C",
+			"tpid": "F51A07A14B9C1B991123F7AED0287751",
+			"tp": "self"
+		},
+		{
+			"fg": "9D5723EA4ACAAA2C8205AEBE750D370C",
+			"fpid": "FCDEFCBC46F232D49C8E67B71EB27F1A",
+			"fp": "HealthBarWidget",
+			"tg": "771888E2436A04176FA463A237416BDC",
+			"tpid": "14A9DD834B6A8E625ABA6E94DBF31A10",
+			"tp": "self"
+		},
+		{
+			"fg": "771888E2436A04176FA463A237416BDC",
+			"fpid": "86B323D743932174815394B559EA73AB",
+			"fp": "then",
+			"tg": "CCB648A64D4DD888EFBD2F8E5522025B",
+			"tpid": "26AE767B49C1331A39EC1B89FD854F61",
+			"tp": "execute"
+		},
+		{
+			"fg": "D54D7CFA40537EC0352EBF98BE8CE5A9",
+			"fpid": "4C4E4B4844383630A713179F0ACFBAD5",
+			"fp": "BP_Orc",
+			"tg": "CCB648A64D4DD888EFBD2F8E5522025B",
+			"tpid": "32B556EE44E9F02AE3F5FD9DF29DE9D9",
+			"tp": "self"
+		},
+		{
+			"fg": "D54D7CFA40537EC0352EBF98BE8CE5A9",
+			"fpid": "4C4E4B4844383630A713179F0ACFBAD5",
+			"fp": "BP_Orc",
+			"tg": "2E904C57479CC18DFFA7E1A5DC298905",
+			"tpid": "99E016EB48518BA0FA02018CD1396370",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "CCB648A64D4DD888EFBD2F8E5522025B",
+			"fpid": "487A147E4279018D4276B38C263B7CAE",
+			"fp": "then",
+			"tg": "339C5AC2458AFE645DF9688157FB0A88",
+			"tpid": "F252D3F040BD0E2B2870638265DFF164",
+			"tp": "execute"
+		},
+		{
+			"fg": "339C5AC2458AFE645DF9688157FB0A88",
+			"fpid": "468BC6ED40AD5F76992270BE09D0B85C",
+			"fp": "then",
+			"tg": "49FA036147637C660FB578B7167A2FDB",
+			"tpid": "5B14E7FC46DAC85E02DC0AA7455C9E3B",
+			"tp": "execute"
+		},
+		{
+			"fg": "2E904C57479CC18DFFA7E1A5DC298905",
+			"fpid": "7979C15A4911D25746BF0991C3D6C60F",
+			"fp": "OutputPin",
+			"tg": "339C5AC2458AFE645DF9688157FB0A88",
+			"tpid": "C148CE6049ABF9CB9737419B23E40F46",
+			"tp": "OwningActor"
+		},
+		{
+			"fg": "49FA036147637C660FB578B7167A2FDB",
+			"fpid": "3D7DF20147153A02967F068DD5CE2CC6",
+			"fp": "OnCompleted",
+			"tg": "7A18136942005185D701FBA3C067D617",
+			"tpid": "6913329945871C338CC89AA1A804607E",
+			"tp": "execute"
+		},
+		{
+			"fg": "49FA036147637C660FB578B7167A2FDB",
+			"fpid": "A8616C6E477E477C88B175A48DE6AA0F",
+			"fp": "OnBlendOut",
+			"tg": "7A18136942005185D701FBA3C067D617",
+			"tpid": "6913329945871C338CC89AA1A804607E",
+			"tp": "execute"
+		},
+		{
+			"fg": "49FA036147637C660FB578B7167A2FDB",
+			"fpid": "76DEC01E43EF6A70252B63B6EEE64A93",
+			"fp": "OnInterrupted",
+			"tg": "7A18136942005185D701FBA3C067D617",
+			"tpid": "6913329945871C338CC89AA1A804607E",
+			"tp": "execute"
+		},
+		{
+			"fg": "150D70C140B12F2EC7D90188405D70BD",
+			"fpid": "ECAC08624124BF9BB6BFB7A067EB028E",
+			"fp": "BP_Orc",
+			"tg": "705832B44DC925AF753B9FB183DCB04D",
+			"tpid": "305E4E4249670D2E9CCE6883D2BD15DB",
+			"tp": "self"
+		},
+		{
+			"fg": "705832B44DC925AF753B9FB183DCB04D",
+			"fpid": "65F284594DFE5B69B94624A374E8DA43",
+			"fp": "Mesh",
+			"tg": "49FA036147637C660FB578B7167A2FDB",
+			"tpid": "22E0BDF9443C44B691BF03B815A617F8",
+			"tp": "InSkeletalMeshComponent"
+		},
+		{
+			"fg": "992977124A15F788E46573B809215FF0",
+			"fpid": "BFA5D9A04430AECC6B9AAABB118C18C0",
+			"fp": "BP_Orc",
+			"tg": "6B285BCD418EAC9B50628392E09FA611",
+			"tpid": "A30FE42B412225B5EAE2168E43D6D997",
+			"tp": "ControlledActor"
+		},
+		{
+			"fg": "6B285BCD418EAC9B50628392E09FA611",
+			"fpid": "A84B4BC1406F5B183C4F5B9CE0E07B74",
+			"fp": "ReturnValue",
+			"tg": "7A18136942005185D701FBA3C067D617",
+			"tpid": "F5F2C1E5416ED8E997AAA2AC531C8D27",
+			"tp": "self"
+		}
+	],
+	"variables": [
+		{
+			"name": "BP_Orc",
+			"type": "BP Orc",
+			"exposed": true
+		}
+	],
+	"components": [
+		{
+			"name": "BoxCollision",
+			"class": "BoxComponent",
+			"parent": "None"
+		}
+	],
+	"comments": [
+		{
+			"title": "Begin Play",
+			"x": 296,
+			"y": 264,
+			"w": 880,
+			"h": 216
+		},
+		{
+			"title": "Overlap Trigger To Spawn Boss",
+			"x": 264,
+			"y": 824,
+			"w": 4009,
+			"h": 557
+		}
+	],
+	"warnings": [],
+	"stickyNotes": []
+}
