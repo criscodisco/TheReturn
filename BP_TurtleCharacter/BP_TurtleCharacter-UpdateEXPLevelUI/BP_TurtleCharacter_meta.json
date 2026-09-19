@@ -1,0 +1,882 @@
+{
+	"schemaVersion": 5,
+	"graphName": "UpdateEXPLevelUI",
+	"assetName": "BP_TurtleCharacter",
+	"capturedAt": "2026-09-18T01:48:52",
+	"totalNodes": 22,
+	"graphWidth": 3590,
+	"graphHeight": 1640,
+	"graphOriginX": -264,
+	"graphOriginY": -744,
+	"nodeTypes":
+	{
+		"Update EXPLevel UI": 1,
+		"SetText": 3,
+		"To Text": 3,
+		"Round": 3,
+		"Get LevelAndXPWidget": 3,
+		"Get EXPTextValue": 1,
+		"Get PlayerStats": 2,
+		"Break Struct_PlayerStats": 2,
+		"Break Struct_EXP": 2,
+		"Get LevelTextValue": 1,
+		"Get EXPTextValueTotal": 1
+	},
+	"nodes": [
+		{
+			"title": "Update EXPLevel UI",
+			"guid": "D6D9C4A5408A383B9EAC2A86E8973D1A",
+			"nx": 0.078,
+			"ny": 0.44390000000000002,
+			"nw": 0.050100000000000006,
+			"nh": 0.0378
+		},
+		{
+			"title": "SetText",
+			"guid": "7007183347C06C03F9A746AEDB26E5D0",
+			"nx": 0.42560000000000003,
+			"ny": 0.43410000000000004,
+			"nw": 0.041800000000000004,
+			"nh": 0.084100000000000008
+		},
+		{
+			"title": "To Text",
+			"guid": "10CEDF6043644D596DFD5BBD9C2F8CEF",
+			"nx": 0.3543,
+			"ny": 0.54149999999999998,
+			"nw": 0.08270000000000001,
+			"nh": 0.14940000000000001,
+			"pure": true,
+			"pins": [
+				{
+					"id": "78EDF85940851CB862A4C1B8FE95B68E",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetTextLibrary"
+				},
+				{
+					"id": "64FA7BCB442FF1466E8BBCB7DBEFCB3C",
+					"n": "Value",
+					"t": "int",
+					"dv": "0"
+				},
+				{
+					"id": "3265BA1F4072450CA48C3CA6D41AA482",
+					"n": "bAlwaysSign",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "25D320A943A3A61CA83D268B6511603F",
+					"n": "bUseGrouping",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "AFF83A5D49F8EACF147F76930208CFCB",
+					"n": "MinimumIntegralDigits",
+					"t": "int",
+					"dv": "1"
+				},
+				{
+					"id": "B168266647C543369A2A2E8E87DD4EBD",
+					"n": "MaximumIntegralDigits",
+					"t": "int",
+					"dv": "324"
+				}
+			]
+		},
+		{
+			"title": "Round",
+			"guid": "11DAD4864E8167C585F6BEA2E0D32661",
+			"nx": 0.28750000000000003,
+			"ny": 0.60980000000000001,
+			"nw": 0.0499,
+			"nh": 0.036600000000000001,
+			"pure": true,
+			"pins": [
+				{
+					"id": "8FB1AEE4471F50C150F104B2219C8D22",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"id": "C7DD5BAC4C7D8E13AD914E84E6497243",
+					"n": "A",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		},
+		{
+			"title": "Get LevelAndXPWidget",
+			"guid": "676AEBEB4B3CBA87443DFF93766F7C81",
+			"nx": 0.25180000000000002,
+			"ny": 0.49270000000000003,
+			"nw": 0.045700000000000005,
+			"nh": 0.023200000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get EXPTextValue",
+			"guid": "0D81F09C400AC1C7FC0756AB3134AB62",
+			"nx": 0.30970000000000003,
+			"ny": 0.49270000000000003,
+			"nw": 0.062400000000000004,
+			"nh": 0.023200000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "D868EB534A7F35D319A810BADF78B5D3",
+			"nx": 0.07350000000000001,
+			"ny": 0.60980000000000001,
+			"nw": 0.036799999999999999,
+			"nh": 0.023200000000000002,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_PlayerStats",
+			"guid": "126D755D4C3EA4486A6194B66632D818",
+			"nx": 0.11360000000000001,
+			"ny": 0.66830000000000001,
+			"nw": 0.069400000000000003,
+			"nh": 0.073200000000000001,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_EXP",
+			"guid": "AC5E23C149BDD56860E3C495125106A7",
+			"nx": 0.27860000000000001,
+			"ny": 0.76590000000000003,
+			"nw": 0.064899999999999999,
+			"nh": 0.073200000000000001,
+			"pure": true
+		},
+		{
+			"title": "Get LevelAndXPWidget",
+			"guid": "D86A0E4A40BEDAD15CD68BA298C96CBC",
+			"nx": 0.42560000000000003,
+			"ny": 0.32680000000000003,
+			"nw": 0.045700000000000005,
+			"nh": 0.023200000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get LevelTextValue",
+			"guid": "04C00F4841D02DD79508A98F900EE194",
+			"nx": 0.48360000000000003,
+			"ny": 0.32680000000000003,
+			"nw": 0.064600000000000005,
+			"nh": 0.023200000000000002,
+			"pure": true
+		},
+		{
+			"title": "SetText",
+			"guid": "580E71D14D38FA286DD0DB9F47791DE0",
+			"nx": 0.54600000000000004,
+			"ny": 0.43410000000000004,
+			"nw": 0.041800000000000004,
+			"nh": 0.084100000000000008
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "ABE0482842038562D3A79F8CFE19D660",
+			"nx": 0.53260000000000007,
+			"ny": 0.17070000000000002,
+			"nw": 0.036799999999999999,
+			"nh": 0.023200000000000002,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_PlayerStats",
+			"guid": "BAAD2F234B15F9146732C5B8311EACC5",
+			"nx": 0.59940000000000004,
+			"ny": 0.161,
+			"nw": 0.069400000000000003,
+			"nh": 0.073200000000000001,
+			"pure": true
+		},
+		{
+			"title": "Get LevelAndXPWidget",
+			"guid": "29FDA3E54AC6F88DFCC74998AC3672E6",
+			"nx": 0.58160000000000001,
+			"ny": 0.57069999999999999,
+			"nw": 0.045700000000000005,
+			"nh": 0.023200000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get EXPTextValueTotal",
+			"guid": "37D6DF3444D39B5BCDE2A6AA34523BDB",
+			"nx": 0.64400000000000002,
+			"ny": 0.57069999999999999,
+			"nw": 0.071000000000000008,
+			"nh": 0.023200000000000002,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_EXP",
+			"guid": "C6FE29B44E265344A5EFACA1CF8D4B3C",
+			"nx": 0.67970000000000008,
+			"ny": 0.2878,
+			"nw": 0.064899999999999999,
+			"nh": 0.073200000000000001,
+			"pure": true
+		},
+		{
+			"title": "SetText",
+			"guid": "6FEF64B04AF4074302523FB404F9A29D",
+			"nx": 0.88470000000000004,
+			"ny": 0.43410000000000004,
+			"nw": 0.041800000000000004,
+			"nh": 0.084100000000000008
+		},
+		{
+			"title": "Round",
+			"guid": "5C665A264F96F66A76FC12AA875FDB1B",
+			"nx": 0.47020000000000001,
+			"ny": 0.7268,
+			"nw": 0.0499,
+			"nh": 0.036600000000000001,
+			"pure": true,
+			"pins": [
+				{
+					"id": "2E24B8A5483118A12B22CBA3DF79B28B",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"id": "A4FABE5B41113E7F98E0BEB116F26CAD",
+					"n": "A",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		},
+		{
+			"title": "To Text",
+			"guid": "30EC9AA845C733E9E0896B8D8F450201",
+			"nx": 0.50580000000000003,
+			"ny": 0.58050000000000002,
+			"nw": 0.056300000000000003,
+			"nh": 0.0482,
+			"pure": true,
+			"pins": [
+				{
+					"id": "5EDB27B4414B54B040A0A9B76D8DA7C3",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetTextLibrary"
+				},
+				{
+					"id": "5D5D92D344B36B52698F73AEF1A2DD46",
+					"n": "Value",
+					"t": "int",
+					"dv": "0"
+				},
+				{
+					"id": "A4B092B84FA024267FB2199875497158",
+					"n": "bAlwaysSign",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "BA6B94964A07020DD9444EA032DBDBA7",
+					"n": "bUseGrouping",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "D0DE4A5D463AAD51E99448BA77B4E4ED",
+					"n": "MinimumIntegralDigits",
+					"t": "int",
+					"dv": "1"
+				},
+				{
+					"id": "E5B6757F4114BC817E5BD98EE4B06F37",
+					"n": "MaximumIntegralDigits",
+					"t": "int",
+					"dv": "324"
+				}
+			]
+		},
+		{
+			"title": "Round",
+			"guid": "D9E39EE84DEA02F1684F0382E8161692",
+			"nx": 0.75540000000000007,
+			"ny": 0.33660000000000001,
+			"nw": 0.0499,
+			"nh": 0.036600000000000001,
+			"pure": true,
+			"pins": [
+				{
+					"id": "C8AA3B214E607ECDA0A037B139E01109",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"id": "6E15589B453D26B0961957A71DA0CAAF",
+					"n": "A",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		},
+		{
+			"title": "To Text",
+			"guid": "4A229F7B425D82D9531465867C20D3DD",
+			"nx": 0.81780000000000008,
+			"ny": 0.38540000000000002,
+			"nw": 0.056300000000000003,
+			"nh": 0.0482,
+			"pure": true,
+			"pins": [
+				{
+					"id": "6F86058049D48B6DD9385B886AFA8685",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetTextLibrary"
+				},
+				{
+					"id": "6E3C91F74D6114B1A3D181B78061667A",
+					"n": "Value",
+					"t": "int",
+					"dv": "0"
+				},
+				{
+					"id": "11B2751A4E9F39C836C28DAC62ABBF18",
+					"n": "bAlwaysSign",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "F6C717C944032CCD05A11A81EE502D2B",
+					"n": "bUseGrouping",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "C1D90A7D48B1519362BF85AC5A52A262",
+					"n": "MinimumIntegralDigits",
+					"t": "int",
+					"dv": "1"
+				},
+				{
+					"id": "C9A77F184CEB8D4D97640480DBE08455",
+					"n": "MaximumIntegralDigits",
+					"t": "int",
+					"dv": "324"
+				}
+			]
+		}
+	],
+	"connections": [
+		{
+			"fg": "D6D9C4A5408A383B9EAC2A86E8973D1A",
+			"fpid": "493411B844B2E836E910C1AD7A5E37B5",
+			"fp": "then",
+			"tg": "7007183347C06C03F9A746AEDB26E5D0",
+			"tpid": "0BD8CAD24380D22BF4CB989024D1A514",
+			"tp": "execute"
+		},
+		{
+			"fg": "7007183347C06C03F9A746AEDB26E5D0",
+			"fpid": "FA6B60014483304778550DA62CB50695",
+			"fp": "then",
+			"tg": "580E71D14D38FA286DD0DB9F47791DE0",
+			"tpid": "02161A384577D2960B0C96927E4673FE",
+			"tp": "execute"
+		},
+		{
+			"fg": "10CEDF6043644D596DFD5BBD9C2F8CEF",
+			"fpid": "8E8C49034A5E0228A449B0840CC1B877",
+			"fp": "ReturnValue",
+			"tg": "7007183347C06C03F9A746AEDB26E5D0",
+			"tpid": "D00CEFD9423098EA05660396E5A69284",
+			"tp": "InText"
+		},
+		{
+			"fg": "11DAD4864E8167C585F6BEA2E0D32661",
+			"fpid": "FF3CB8E1490BEC70F4AA3E91614B289A",
+			"fp": "ReturnValue",
+			"tg": "10CEDF6043644D596DFD5BBD9C2F8CEF",
+			"tpid": "64FA7BCB442FF1466E8BBCB7DBEFCB3C",
+			"tp": "Value"
+		},
+		{
+			"fg": "676AEBEB4B3CBA87443DFF93766F7C81",
+			"fpid": "D408DFDB4E4E417BF275B49F3A5D2D4B",
+			"fp": "LevelAndXPWidget",
+			"tg": "0D81F09C400AC1C7FC0756AB3134AB62",
+			"tpid": "D0B194024E7DBEB6E818A5B5587F5C33",
+			"tp": "self"
+		},
+		{
+			"fg": "0D81F09C400AC1C7FC0756AB3134AB62",
+			"fpid": "65976A524FAB70426CC81185D61D0AA7",
+			"fp": "EXPTextValue",
+			"tg": "7007183347C06C03F9A746AEDB26E5D0",
+			"tpid": "109795A54BCB7A3AB50A3DB326557EFD",
+			"tp": "self"
+		},
+		{
+			"fg": "D868EB534A7F35D319A810BADF78B5D3",
+			"fpid": "5F02EF8B4EF1FE3055A68F9A9342FFE0",
+			"fp": "PlayerStats",
+			"tg": "126D755D4C3EA4486A6194B66632D818",
+			"tpid": "F92017EE4AC86D205824258B14A9D685",
+			"tp": "Struct_PlayerStats"
+		},
+		{
+			"fg": "126D755D4C3EA4486A6194B66632D818",
+			"fpid": "5C20E7D043B728700C3CC5ABB324F473",
+			"fp": "EXP_8_BCDFB7B04E297F8849456B8A8E090232",
+			"tg": "AC5E23C149BDD56860E3C495125106A7",
+			"tpid": "4391BF554E6D22B61DE6A2BA82181486",
+			"tp": "Struct_EXP"
+		},
+		{
+			"fg": "AC5E23C149BDD56860E3C495125106A7",
+			"fpid": "22C248014ACE5C0D92AA61B14694FA81",
+			"fp": "XP_7_DF8E67754F3A3A170BEE9D8FD96F23C3",
+			"tg": "11DAD4864E8167C585F6BEA2E0D32661",
+			"tpid": "C7DD5BAC4C7D8E13AD914E84E6497243",
+			"tp": "A"
+		},
+		{
+			"fg": "AC5E23C149BDD56860E3C495125106A7",
+			"fpid": "53227F7645063A90DC72BFB5D325DFC4",
+			"fp": "Level_10_B60B938345E52014F31507843556BEE9",
+			"tg": "5C665A264F96F66A76FC12AA875FDB1B",
+			"tpid": "A4FABE5B41113E7F98E0BEB116F26CAD",
+			"tp": "A"
+		},
+		{
+			"fg": "D86A0E4A40BEDAD15CD68BA298C96CBC",
+			"fpid": "D408DFDB4E4E417BF275B49F3A5D2D4B",
+			"fp": "LevelAndXPWidget",
+			"tg": "04C00F4841D02DD79508A98F900EE194",
+			"tpid": "87E366B440620992D8041D85B5B6744E",
+			"tp": "self"
+		},
+		{
+			"fg": "04C00F4841D02DD79508A98F900EE194",
+			"fpid": "2E227124457B754D7367A98C68E2EB80",
+			"fp": "LevelTextValue",
+			"tg": "580E71D14D38FA286DD0DB9F47791DE0",
+			"tpid": "03CA3D7A40D523F71B34A58A64C3E3B3",
+			"tp": "self"
+		},
+		{
+			"fg": "580E71D14D38FA286DD0DB9F47791DE0",
+			"fpid": "6B5F8FFD490FC7D7286B7586346A4C3B",
+			"fp": "then",
+			"tg": "6FEF64B04AF4074302523FB404F9A29D",
+			"tpid": "F9C6B60048015B7798C920A932DF1071",
+			"tp": "execute"
+		},
+		{
+			"fg": "ABE0482842038562D3A79F8CFE19D660",
+			"fpid": "6ED9B40448D9906B03D05DB5F90C5595",
+			"fp": "PlayerStats",
+			"tg": "BAAD2F234B15F9146732C5B8311EACC5",
+			"tpid": "D1A355274EDF109D77153DA6F3876981",
+			"tp": "Struct_PlayerStats"
+		},
+		{
+			"fg": "BAAD2F234B15F9146732C5B8311EACC5",
+			"fpid": "127040324B2526C604EDC28F616A4BC4",
+			"fp": "EXP_8_BCDFB7B04E297F8849456B8A8E090232",
+			"tg": "C6FE29B44E265344A5EFACA1CF8D4B3C",
+			"tpid": "066787394F8C16A5B5645FA03C523CC9",
+			"tp": "Struct_EXP"
+		},
+		{
+			"fg": "29FDA3E54AC6F88DFCC74998AC3672E6",
+			"fpid": "E3D588EA43B53C79C5FAFBB4506633D8",
+			"fp": "LevelAndXPWidget",
+			"tg": "37D6DF3444D39B5BCDE2A6AA34523BDB",
+			"tpid": "675922834648ED22ABFEAD8FA2ACB8EC",
+			"tp": "self"
+		},
+		{
+			"fg": "37D6DF3444D39B5BCDE2A6AA34523BDB",
+			"fpid": "1367D2F34C37888E3B57BDAFFA48499F",
+			"fp": "EXPTextValueTotal",
+			"tg": "6FEF64B04AF4074302523FB404F9A29D",
+			"tpid": "29BAF74846081BF4A5BCC6A41F8F8E8F",
+			"tp": "self"
+		},
+		{
+			"fg": "C6FE29B44E265344A5EFACA1CF8D4B3C",
+			"fpid": "2AEAAC0A44E2312DEC6ECE9A02E672C1",
+			"fp": "XPToLevelUp_8_4B8039C249EB8FB31886F6BE4A55C2D6",
+			"tg": "D9E39EE84DEA02F1684F0382E8161692",
+			"tpid": "6E15589B453D26B0961957A71DA0CAAF",
+			"tp": "A"
+		},
+		{
+			"fg": "5C665A264F96F66A76FC12AA875FDB1B",
+			"fpid": "C1FC06554AD1822EED4D79A7DA66A3F0",
+			"fp": "ReturnValue",
+			"tg": "30EC9AA845C733E9E0896B8D8F450201",
+			"tpid": "5D5D92D344B36B52698F73AEF1A2DD46",
+			"tp": "Value"
+		},
+		{
+			"fg": "30EC9AA845C733E9E0896B8D8F450201",
+			"fpid": "BA38D5FE40988DD57A478698B9372574",
+			"fp": "ReturnValue",
+			"tg": "580E71D14D38FA286DD0DB9F47791DE0",
+			"tpid": "2ED19AAB449205BB86ACC7861386FF2A",
+			"tp": "InText"
+		},
+		{
+			"fg": "D9E39EE84DEA02F1684F0382E8161692",
+			"fpid": "AB29A7C544B8A663A16135BEC999D14C",
+			"fp": "ReturnValue",
+			"tg": "4A229F7B425D82D9531465867C20D3DD",
+			"tpid": "6E3C91F74D6114B1A3D181B78061667A",
+			"tp": "Value"
+		},
+		{
+			"fg": "4A229F7B425D82D9531465867C20D3DD",
+			"fpid": "8C02E6C6409B6655F73BBBA069386F35",
+			"fp": "ReturnValue",
+			"tg": "6FEF64B04AF4074302523FB404F9A29D",
+			"tpid": "0FE50D1D42D3AAA73DA9799453EBC4EE",
+			"tp": "InText"
+		}
+	],
+	"variables": [
+		{
+			"name": "As Third Person Anim BP",
+			"type": "Third Person Anim BP",
+			"exposed": true
+		},
+		{
+			"name": "CastMagicAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "BP_Projectile",
+			"type": "BP Projectile 7",
+			"exposed": true
+		},
+		{
+			"name": "Hit Actor",
+			"type": "Actor",
+			"exposed": true
+		},
+		{
+			"name": "targetNumber",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "HitResults",
+			"type": "Hit Result [Array]",
+			"exposed": true
+		},
+		{
+			"name": "AttackMontages",
+			"type": "Anim Montage [Array]",
+			"exposed": true
+		},
+		{
+			"name": "RightHandTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "LeftHandTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "LeftFootTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "RightFootTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "BattleMenu",
+			"type": "WB Battle Menu",
+			"exposed": true
+		},
+		{
+			"name": "MenuDisplayHelpText",
+			"type": "WB Menu Display Help Text",
+			"exposed": true
+		},
+		{
+			"name": "CrosshairWidget",
+			"type": "WB Crosshair",
+			"exposed": true
+		},
+		{
+			"name": "HitPointsOnEnemyWidget",
+			"type": "WB Hit Points on Enemy",
+			"exposed": true
+		},
+		{
+			"name": "CastMagicTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "FireProjectileTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "IsBattleMenuOpen",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "Health",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "maxHealth",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "IsDead?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "HitPointsOnPlayerWidget",
+			"type": "WB Hit Points on Player",
+			"exposed": true
+		},
+		{
+			"name": "PlayerHealthWidget",
+			"type": "WB Player Health Bar",
+			"exposed": true
+		},
+		{
+			"name": "MP",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "MaxMP",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "TsunamiMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "HealMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "PlayerStats",
+			"type": "Struct Player Stats",
+			"exposed": true
+		},
+		{
+			"name": "PauseMenuWidget",
+			"type": "WB Pause Menu",
+			"exposed": true
+		},
+		{
+			"name": "LevelAndXPWidget",
+			"type": "WB Level and XP",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "SFXImpact",
+			"type": "BP Impact 3",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackPlayRate",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "TimeDilationMultiplier",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "HealMagicAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "HealMagicPotency",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "VictoryXP_MP_Widget",
+			"type": "WB Victory XP MP Add",
+			"exposed": true
+		},
+		{
+			"name": "NotEnoughManaWidget",
+			"type": "WB Not Enough Mana Display",
+			"exposed": true
+		},
+		{
+			"name": "EnoughMana?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "FoxDialogueIntroWidget",
+			"type": "WB Fox Dialogue Intro",
+			"exposed": true
+		},
+		{
+			"name": "FoxWalking?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "IsIntroductionOver?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "FoxDialogueIndex",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "As Game Instance The Return",
+			"type": "Game Instance the Return",
+			"exposed": true
+		},
+		{
+			"name": "IsGameOverSpeech?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "ControlsConfigWidget",
+			"type": "WB Controls Config",
+			"exposed": true
+		},
+		{
+			"name": "BaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackBaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedHealth",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "TsunamiAttackBaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedTsunamiDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "IsPauseMenuOpen?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "ControllerConfigWidgetOpen?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "DoneIntroFoxBossHallway?",
+			"type": "Boolean",
+			"exposed": true
+		}
+	],
+	"components": [
+		{
+			"name": "StaffMesh",
+			"class": "StaticMeshComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "ProjectileSpawnLocation",
+			"class": "ArrowComponent",
+			"parent": "CollisionCylinder"
+		},
+		{
+			"name": "RightHandPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "LeftHandPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "LeftFootPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "RightFootPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "PointSpawnLocation",
+			"class": "ArrowComponent",
+			"parent": "CollisionCylinder"
+		}
+	],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}

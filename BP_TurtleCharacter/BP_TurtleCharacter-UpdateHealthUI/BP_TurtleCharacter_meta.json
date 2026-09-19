@@ -1,0 +1,643 @@
+{
+	"schemaVersion": 5,
+	"graphName": "UpdateHealthUI",
+	"assetName": "BP_TurtleCharacter",
+	"capturedAt": "2026-09-18T01:46:51",
+	"totalNodes": 13,
+	"graphWidth": 2374,
+	"graphHeight": 1013,
+	"graphOriginX": -616,
+	"graphOriginY": -344,
+	"nodeTypes":
+	{
+		"Update Health UI": 1,
+		"Get PlayerHealthWidget": 2,
+		"Get HealthSlider": 1,
+		"Set Value": 1,
+		"Get PlayerHealthMaxAmountText": 1,
+		"SetText": 1,
+		"To Text": 1,
+		"Round": 1,
+		"Get PlayerStats": 1,
+		"Break Struct_PlayerStats": 1,
+		"float / float": 1,
+		"Reroute Node": 1
+	},
+	"nodes": [
+		{
+			"title": "Update Health UI",
+			"guid": "EEC2E35A49E67422622F1FAD22E7F733",
+			"nx": 0.25950000000000001,
+			"ny": 0.33960000000000001,
+			"nw": 0.069100000000000009,
+			"nh": 0.061200000000000004
+		},
+		{
+			"title": "Get PlayerHealthWidget",
+			"guid": "683AFCC7426617C73C2BD393E8D235DB",
+			"nx": 0.23930000000000001,
+			"ny": 0.2606,
+			"nw": 0.070800000000000002,
+			"nh": 0.037499999999999999,
+			"pure": true
+		},
+		{
+			"title": "Get HealthSlider",
+			"guid": "54C84FD647BBFBC6BFCD0A9423EE3A9E",
+			"nx": 0.34040000000000004,
+			"ny": 0.2606,
+			"nw": 0.089300000000000004,
+			"nh": 0.037499999999999999,
+			"pure": true
+		},
+		{
+			"title": "Set Value",
+			"guid": "9D7C34B04CAF2D80B8FC949BC73B5238",
+			"nx": 0.4617,
+			"ny": 0.32380000000000003,
+			"nw": 0.077100000000000002,
+			"nh": 0.13620000000000002,
+			"pins": [
+				{
+					"id": "630D2B33457800D61E0785A9915D1B38",
+					"n": "InValue",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		},
+		{
+			"title": "Get PlayerHealthMaxAmountText",
+			"guid": "5F06B1BA469DCB2CCC1BEE94187E18A9",
+			"nx": 0.66390000000000005,
+			"ny": 0.29220000000000002,
+			"nw": 0.1323,
+			"nh": 0.037499999999999999,
+			"pure": true
+		},
+		{
+			"title": "SetText",
+			"guid": "C49F20D0429EB4CCB9E355AA328721D5",
+			"nx": 0.8256,
+			"ny": 0.32380000000000003,
+			"nw": 0.063200000000000006,
+			"nh": 0.13620000000000002
+		},
+		{
+			"title": "To Text",
+			"guid": "859F71194D8E4B1F208B0B87E99E3F5E",
+			"nx": 0.71779999999999999,
+			"ny": 0.4975,
+			"nw": 0.12510000000000002,
+			"nh": 0.2419,
+			"pure": true,
+			"pins": [
+				{
+					"id": "78EDF85940851CB862A4C1B8FE95B68E",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetTextLibrary"
+				},
+				{
+					"id": "64FA7BCB442FF1466E8BBCB7DBEFCB3C",
+					"n": "Value",
+					"t": "int",
+					"dv": "0"
+				},
+				{
+					"id": "3265BA1F4072450CA48C3CA6D41AA482",
+					"n": "bAlwaysSign",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "25D320A943A3A61CA83D268B6511603F",
+					"n": "bUseGrouping",
+					"t": "bool",
+					"dv": "true"
+				},
+				{
+					"id": "AFF83A5D49F8EACF147F76930208CFCB",
+					"n": "MinimumIntegralDigits",
+					"t": "int",
+					"dv": "1"
+				},
+				{
+					"id": "B168266647C543369A2A2E8E87DD4EBD",
+					"n": "MaximumIntegralDigits",
+					"t": "int",
+					"dv": "324"
+				}
+			]
+		},
+		{
+			"title": "Round",
+			"guid": "D7E230284AF766476627A5BE990D6C5B",
+			"nx": 0.61670000000000003,
+			"ny": 0.60809999999999997,
+			"nw": 0.075400000000000009,
+			"nh": 0.059200000000000003,
+			"pure": true,
+			"pins": [
+				{
+					"id": "8FB1AEE4471F50C150F104B2219C8D22",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"id": "C7DD5BAC4C7D8E13AD914E84E6497243",
+					"n": "A",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		},
+		{
+			"title": "Get PlayerHealthWidget",
+			"guid": "B26BA5DD4567C9F10DB4B9AA8449BBB9",
+			"nx": 0.58300000000000007,
+			"ny": 0.29220000000000002,
+			"nw": 0.070800000000000002,
+			"nh": 0.037499999999999999,
+			"pure": true
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "94A314F04A312E35E2299EAD7E716CA8",
+			"nx": 0.11120000000000001,
+			"ny": 0.59230000000000005,
+			"nw": 0.055600000000000004,
+			"nh": 0.037499999999999999,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_PlayerStats",
+			"guid": "BD7EC13C4A463CC5482372B0CBC6EE84",
+			"nx": 0.18530000000000002,
+			"ny": 0.48170000000000002,
+			"nw": 0.1188,
+			"nh": 0.20730000000000001,
+			"pure": true
+		},
+		{
+			"title": "float / float",
+			"guid": "CC09759D4FADC6CD44FFDCA0D83A9000",
+			"nx": 0.3538,
+			"ny": 0.52910000000000001,
+			"nw": 0.059000000000000004,
+			"nh": 0.065200000000000008,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "55F421AA456A90B63E0F13A152EB0D7B",
+			"nx": 0.34710000000000002,
+			"ny": 0.65550000000000008,
+			"nw": 0.0177,
+			"nh": 0.023700000000000002,
+			"pure": true
+		}
+	],
+	"connections": [
+		{
+			"fg": "EEC2E35A49E67422622F1FAD22E7F733",
+			"fpid": "94B12AAC40364D5C7F08A2AA52843A81",
+			"fp": "then",
+			"tg": "9D7C34B04CAF2D80B8FC949BC73B5238",
+			"tpid": "1A46BEE041EF4F6942E929BBC09B4C04",
+			"tp": "execute"
+		},
+		{
+			"fg": "683AFCC7426617C73C2BD393E8D235DB",
+			"fpid": "00E02BC140F31F16DBFA838A3C5DAE02",
+			"fp": "PlayerHealthWidget",
+			"tg": "54C84FD647BBFBC6BFCD0A9423EE3A9E",
+			"tpid": "CB53FAC04D91F56FDF38C09B2B8507F7",
+			"tp": "self"
+		},
+		{
+			"fg": "54C84FD647BBFBC6BFCD0A9423EE3A9E",
+			"fpid": "EE492415434AF6DEE496AE9FA054C049",
+			"fp": "HealthSlider",
+			"tg": "9D7C34B04CAF2D80B8FC949BC73B5238",
+			"tpid": "FB2A410748171F425194C9AC226B6C10",
+			"tp": "self"
+		},
+		{
+			"fg": "9D7C34B04CAF2D80B8FC949BC73B5238",
+			"fpid": "5771242F4308FDC42622849029DC49B9",
+			"fp": "then",
+			"tg": "C49F20D0429EB4CCB9E355AA328721D5",
+			"tpid": "0BD8CAD24380D22BF4CB989024D1A514",
+			"tp": "execute"
+		},
+		{
+			"fg": "5F06B1BA469DCB2CCC1BEE94187E18A9",
+			"fpid": "06A4A9E546E4AA8A9A544099FB7B51F8",
+			"fp": "PlayerHealthMaxAmountText",
+			"tg": "C49F20D0429EB4CCB9E355AA328721D5",
+			"tpid": "109795A54BCB7A3AB50A3DB326557EFD",
+			"tp": "self"
+		},
+		{
+			"fg": "859F71194D8E4B1F208B0B87E99E3F5E",
+			"fpid": "8E8C49034A5E0228A449B0840CC1B877",
+			"fp": "ReturnValue",
+			"tg": "C49F20D0429EB4CCB9E355AA328721D5",
+			"tpid": "D00CEFD9423098EA05660396E5A69284",
+			"tp": "InText"
+		},
+		{
+			"fg": "D7E230284AF766476627A5BE990D6C5B",
+			"fpid": "FF3CB8E1490BEC70F4AA3E91614B289A",
+			"fp": "ReturnValue",
+			"tg": "859F71194D8E4B1F208B0B87E99E3F5E",
+			"tpid": "64FA7BCB442FF1466E8BBCB7DBEFCB3C",
+			"tp": "Value"
+		},
+		{
+			"fg": "B26BA5DD4567C9F10DB4B9AA8449BBB9",
+			"fpid": "025B3CF1440A286F7A741499551A5519",
+			"fp": "PlayerHealthWidget",
+			"tg": "5F06B1BA469DCB2CCC1BEE94187E18A9",
+			"tpid": "9195ABBA40EA04C5418BC083FFC3C32A",
+			"tp": "self"
+		},
+		{
+			"fg": "94A314F04A312E35E2299EAD7E716CA8",
+			"fpid": "F38D64084361BAD0603775BA6D0CB10A",
+			"fp": "PlayerStats",
+			"tg": "BD7EC13C4A463CC5482372B0CBC6EE84",
+			"tpid": "F631D5834F8A238112ECABB3FF69167C",
+			"tp": "Struct_PlayerStats"
+		},
+		{
+			"fg": "BD7EC13C4A463CC5482372B0CBC6EE84",
+			"fpid": "425ABE5241D1CC8ED48270B239374A02",
+			"fp": "HP-MP_5_99A476164D0232A67B850F9A9274CDAF_HP_5_003ED98D4D70D8F2478B45BD80638A62",
+			"tg": "CC09759D4FADC6CD44FFDCA0D83A9000",
+			"tpid": "B1A265014A9FA6A18044E49A7998079B",
+			"tp": "A"
+		},
+		{
+			"fg": "BD7EC13C4A463CC5482372B0CBC6EE84",
+			"fpid": "791492DC4B8677AB50BB07BFB2B1849D",
+			"fp": "HP-MP_5_99A476164D0232A67B850F9A9274CDAF_MaxHP_7_8077BB8A4FA7A4984685D0B7B8E7DD58",
+			"tg": "CC09759D4FADC6CD44FFDCA0D83A9000",
+			"tpid": "59A7CF26463FDA2A0A7762A1792E8B01",
+			"tp": "B"
+		},
+		{
+			"fg": "BD7EC13C4A463CC5482372B0CBC6EE84",
+			"fpid": "791492DC4B8677AB50BB07BFB2B1849D",
+			"fp": "HP-MP_5_99A476164D0232A67B850F9A9274CDAF_MaxHP_7_8077BB8A4FA7A4984685D0B7B8E7DD58",
+			"tg": "55F421AA456A90B63E0F13A152EB0D7B",
+			"tpid": "DBB1A3EA45CB7D99801E4BB2F789D76B",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "CC09759D4FADC6CD44FFDCA0D83A9000",
+			"fpid": "44A6031F40C6B050485DD686BB3ADA76",
+			"fp": "ReturnValue",
+			"tg": "9D7C34B04CAF2D80B8FC949BC73B5238",
+			"tpid": "630D2B33457800D61E0785A9915D1B38",
+			"tp": "InValue"
+		},
+		{
+			"fg": "55F421AA456A90B63E0F13A152EB0D7B",
+			"fpid": "625BF3BB4480E5A31E1437BB3B454201",
+			"fp": "OutputPin",
+			"tg": "D7E230284AF766476627A5BE990D6C5B",
+			"tpid": "C7DD5BAC4C7D8E13AD914E84E6497243",
+			"tp": "A"
+		}
+	],
+	"variables": [
+		{
+			"name": "As Third Person Anim BP",
+			"type": "Third Person Anim BP",
+			"exposed": true
+		},
+		{
+			"name": "CastMagicAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "BP_Projectile",
+			"type": "BP Projectile 7",
+			"exposed": true
+		},
+		{
+			"name": "Hit Actor",
+			"type": "Actor",
+			"exposed": true
+		},
+		{
+			"name": "targetNumber",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "HitResults",
+			"type": "Hit Result [Array]",
+			"exposed": true
+		},
+		{
+			"name": "AttackMontages",
+			"type": "Anim Montage [Array]",
+			"exposed": true
+		},
+		{
+			"name": "RightHandTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "LeftHandTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "LeftFootTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "RightFootTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "BattleMenu",
+			"type": "WB Battle Menu",
+			"exposed": true
+		},
+		{
+			"name": "MenuDisplayHelpText",
+			"type": "WB Menu Display Help Text",
+			"exposed": true
+		},
+		{
+			"name": "CrosshairWidget",
+			"type": "WB Crosshair",
+			"exposed": true
+		},
+		{
+			"name": "HitPointsOnEnemyWidget",
+			"type": "WB Hit Points on Enemy",
+			"exposed": true
+		},
+		{
+			"name": "CastMagicTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "FireProjectileTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "IsBattleMenuOpen",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "Health",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "maxHealth",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "IsDead?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "HitPointsOnPlayerWidget",
+			"type": "WB Hit Points on Player",
+			"exposed": true
+		},
+		{
+			"name": "PlayerHealthWidget",
+			"type": "WB Player Health Bar",
+			"exposed": true
+		},
+		{
+			"name": "MP",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "MaxMP",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "TsunamiMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "HealMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "PlayerStats",
+			"type": "Struct Player Stats",
+			"exposed": true
+		},
+		{
+			"name": "PauseMenuWidget",
+			"type": "WB Pause Menu",
+			"exposed": true
+		},
+		{
+			"name": "LevelAndXPWidget",
+			"type": "WB Level and XP",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "SFXImpact",
+			"type": "BP Impact 3",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackPlayRate",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "TimeDilationMultiplier",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "HealMagicAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "HealMagicPotency",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "VictoryXP_MP_Widget",
+			"type": "WB Victory XP MP Add",
+			"exposed": true
+		},
+		{
+			"name": "NotEnoughManaWidget",
+			"type": "WB Not Enough Mana Display",
+			"exposed": true
+		},
+		{
+			"name": "EnoughMana?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "FoxDialogueIntroWidget",
+			"type": "WB Fox Dialogue Intro",
+			"exposed": true
+		},
+		{
+			"name": "FoxWalking?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "IsIntroductionOver?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "FoxDialogueIndex",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "As Game Instance The Return",
+			"type": "Game Instance the Return",
+			"exposed": true
+		},
+		{
+			"name": "IsGameOverSpeech?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "ControlsConfigWidget",
+			"type": "WB Controls Config",
+			"exposed": true
+		},
+		{
+			"name": "BaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackBaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedHealth",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "TsunamiAttackBaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedTsunamiDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "IsPauseMenuOpen?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "ControllerConfigWidgetOpen?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "DoneIntroFoxBossHallway?",
+			"type": "Boolean",
+			"exposed": true
+		}
+	],
+	"components": [
+		{
+			"name": "StaffMesh",
+			"class": "StaticMeshComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "ProjectileSpawnLocation",
+			"class": "ArrowComponent",
+			"parent": "CollisionCylinder"
+		},
+		{
+			"name": "RightHandPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "LeftHandPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "LeftFootPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "RightFootPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "PointSpawnLocation",
+			"class": "ArrowComponent",
+			"parent": "CollisionCylinder"
+		}
+	],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}

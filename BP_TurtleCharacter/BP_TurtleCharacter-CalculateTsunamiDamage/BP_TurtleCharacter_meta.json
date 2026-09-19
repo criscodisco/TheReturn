@@ -1,0 +1,502 @@
+{
+	"schemaVersion": 5,
+	"graphName": "CalculateTsunamiDamage",
+	"assetName": "BP_TurtleCharacter",
+	"capturedAt": "2026-09-18T01:50:08",
+	"totalNodes": 8,
+	"graphWidth": 1950,
+	"graphHeight": 824,
+	"graphOriginX": -392,
+	"graphOriginY": -264,
+	"nodeTypes":
+	{
+		"Calculate Tsunami Damage": 1,
+		"Get PlayerStats": 1,
+		"Break Struct_PlayerStats": 1,
+		"Break Struct_Attributes": 1,
+		"float * float": 1,
+		"Return Node": 1,
+		"Get TsunamiAttackBaseDamage": 1,
+		"Set AppliedTsunamiDamage": 1
+	},
+	"nodes": [
+		{
+			"title": "Calculate Tsunami Damage",
+			"guid": "94951AE44846FA70357C2BB054FC33E6",
+			"nx": 0.37330000000000002,
+			"ny": 0.32040000000000002,
+			"nw": 0.11380000000000001,
+			"nh": 0.075200000000000003
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "BCF420B1413CFC4DE9CF1B9F72E33589",
+			"nx": 0.13540000000000002,
+			"ny": 0.57279999999999998,
+			"nw": 0.06770000000000001,
+			"nh": 0.046100000000000002,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_PlayerStats",
+			"guid": "E22872E34A6B11875E128A90F6D38A20",
+			"nx": 0.24210000000000001,
+			"ny": 0.53400000000000003,
+			"nw": 0.12770000000000001,
+			"nh": 0.14560000000000001,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_Attributes",
+			"guid": "61900E484100CCE321DA738D6AF53FCD",
+			"nx": 0.38970000000000005,
+			"ny": 0.53400000000000003,
+			"nw": 0.13639999999999999,
+			"nh": 0.14560000000000001,
+			"pure": true
+		},
+		{
+			"title": "float * float",
+			"guid": "054305B841BB7CF89CF982BB18B993A6",
+			"nx": 0.53739999999999999,
+			"ny": 0.43690000000000001,
+			"nw": 0.071800000000000003,
+			"nh": 0.080100000000000005,
+			"pure": true
+		},
+		{
+			"title": "Return Node",
+			"guid": "FEF0C49A4DF291E16B4523B59AD77A1F",
+			"nx": 0.79180000000000006,
+			"ny": 0.32040000000000002,
+			"nw": 0.072800000000000004,
+			"nh": 0.11170000000000001,
+			"pins": [
+				{
+					"id": "84D9498642F8FF1EA8F7B0AA1DD61DC0",
+					"n": "AppliedDamage",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		},
+		{
+			"title": "Get TsunamiAttackBaseDamage",
+			"guid": "B26200A942CB087BA3D2BFA1E763EDC1",
+			"nx": 0.38970000000000005,
+			"ny": 0.43690000000000001,
+			"nw": 0.11230000000000001,
+			"nh": 0.046100000000000002,
+			"pure": true
+		},
+		{
+			"title": "Set AppliedTsunamiDamage",
+			"guid": "6DB0E6AB4D88A3260D531F861CD1FA9A",
+			"nx": 0.61130000000000007,
+			"ny": 0.33979999999999999,
+			"nw": 0.12720000000000001,
+			"nh": 0.093400000000000011,
+			"pins": [
+				{
+					"id": "5456ED6F433450E72781C8A554962560",
+					"n": "AppliedTsunamiDamage",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		}
+	],
+	"connections": [
+		{
+			"fg": "94951AE44846FA70357C2BB054FC33E6",
+			"fpid": "E6F434DB4C8690F3F3193EA279F5E113",
+			"fp": "then",
+			"tg": "6DB0E6AB4D88A3260D531F861CD1FA9A",
+			"tpid": "6256C46745F74D97EA4189897B5849B8",
+			"tp": "execute"
+		},
+		{
+			"fg": "BCF420B1413CFC4DE9CF1B9F72E33589",
+			"fpid": "C325E8BA4A88A96B489020B3FA616907",
+			"fp": "PlayerStats",
+			"tg": "E22872E34A6B11875E128A90F6D38A20",
+			"tpid": "876275E146D3A1DBD060B397D3913D00",
+			"tp": "Struct_PlayerStats"
+		},
+		{
+			"fg": "E22872E34A6B11875E128A90F6D38A20",
+			"fpid": "4D6F8577451F11F78C92038D725A4BAC",
+			"fp": "Attributes_2_128DC47943ECA1913102BB8DDFAA08B5",
+			"tg": "61900E484100CCE321DA738D6AF53FCD",
+			"tpid": "822EDCFB4FF5422C257A36B7F1680297",
+			"tp": "Struct_Attributes"
+		},
+		{
+			"fg": "61900E484100CCE321DA738D6AF53FCD",
+			"fpid": "69CF0D1D46822222CAC84F807EB5C09A",
+			"fp": "MagicStrength_7_CB61E7454431B225A83E85AF29547E60",
+			"tg": "054305B841BB7CF89CF982BB18B993A6",
+			"tpid": "1F10264E4686E246AA822598B9655288",
+			"tp": "B"
+		},
+		{
+			"fg": "054305B841BB7CF89CF982BB18B993A6",
+			"fpid": "727F283F44AA65305AF7EA94A149E090",
+			"fp": "ReturnValue",
+			"tg": "6DB0E6AB4D88A3260D531F861CD1FA9A",
+			"tpid": "5456ED6F433450E72781C8A554962560",
+			"tp": "AppliedTsunamiDamage"
+		},
+		{
+			"fg": "B26200A942CB087BA3D2BFA1E763EDC1",
+			"fpid": "0F09488C481E9B5BC0145384C93C8F7D",
+			"fp": "TsunamiAttackBaseDamage",
+			"tg": "054305B841BB7CF89CF982BB18B993A6",
+			"tpid": "C638AEFB40D0AE3BD1F54A90F21822D3",
+			"tp": "A"
+		},
+		{
+			"fg": "6DB0E6AB4D88A3260D531F861CD1FA9A",
+			"fpid": "9AA93827407DE85D0AB00F8A98F36868",
+			"fp": "then",
+			"tg": "FEF0C49A4DF291E16B4523B59AD77A1F",
+			"tpid": "FDA7DF5B4F562D44DF22EEA6C44B237A",
+			"tp": "execute"
+		},
+		{
+			"fg": "6DB0E6AB4D88A3260D531F861CD1FA9A",
+			"fpid": "B96EC1AA4D7A8DF2613EFD989168E26C",
+			"fp": "Output_Get",
+			"tg": "FEF0C49A4DF291E16B4523B59AD77A1F",
+			"tpid": "84D9498642F8FF1EA8F7B0AA1DD61DC0",
+			"tp": "AppliedDamage"
+		}
+	],
+	"variables": [
+		{
+			"name": "As Third Person Anim BP",
+			"type": "Third Person Anim BP",
+			"exposed": true
+		},
+		{
+			"name": "CastMagicAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "BP_Projectile",
+			"type": "BP Projectile 7",
+			"exposed": true
+		},
+		{
+			"name": "Hit Actor",
+			"type": "Actor",
+			"exposed": true
+		},
+		{
+			"name": "targetNumber",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "HitResults",
+			"type": "Hit Result [Array]",
+			"exposed": true
+		},
+		{
+			"name": "AttackMontages",
+			"type": "Anim Montage [Array]",
+			"exposed": true
+		},
+		{
+			"name": "RightHandTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "LeftHandTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "LeftFootTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "RightFootTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "BattleMenu",
+			"type": "WB Battle Menu",
+			"exposed": true
+		},
+		{
+			"name": "MenuDisplayHelpText",
+			"type": "WB Menu Display Help Text",
+			"exposed": true
+		},
+		{
+			"name": "CrosshairWidget",
+			"type": "WB Crosshair",
+			"exposed": true
+		},
+		{
+			"name": "HitPointsOnEnemyWidget",
+			"type": "WB Hit Points on Enemy",
+			"exposed": true
+		},
+		{
+			"name": "CastMagicTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "FireProjectileTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "IsBattleMenuOpen",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "Health",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "maxHealth",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "IsDead?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "HitPointsOnPlayerWidget",
+			"type": "WB Hit Points on Player",
+			"exposed": true
+		},
+		{
+			"name": "PlayerHealthWidget",
+			"type": "WB Player Health Bar",
+			"exposed": true
+		},
+		{
+			"name": "MP",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "MaxMP",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "TsunamiMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "HealMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "PlayerStats",
+			"type": "Struct Player Stats",
+			"exposed": true
+		},
+		{
+			"name": "PauseMenuWidget",
+			"type": "WB Pause Menu",
+			"exposed": true
+		},
+		{
+			"name": "LevelAndXPWidget",
+			"type": "WB Level and XP",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "SFXImpact",
+			"type": "BP Impact 3",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackPlayRate",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "TimeDilationMultiplier",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "HealMagicAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "HealMagicPotency",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "VictoryXP_MP_Widget",
+			"type": "WB Victory XP MP Add",
+			"exposed": true
+		},
+		{
+			"name": "NotEnoughManaWidget",
+			"type": "WB Not Enough Mana Display",
+			"exposed": true
+		},
+		{
+			"name": "EnoughMana?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "FoxDialogueIntroWidget",
+			"type": "WB Fox Dialogue Intro",
+			"exposed": true
+		},
+		{
+			"name": "FoxWalking?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "IsIntroductionOver?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "FoxDialogueIndex",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "As Game Instance The Return",
+			"type": "Game Instance the Return",
+			"exposed": true
+		},
+		{
+			"name": "IsGameOverSpeech?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "ControlsConfigWidget",
+			"type": "WB Controls Config",
+			"exposed": true
+		},
+		{
+			"name": "BaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackBaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedHealth",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "TsunamiAttackBaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedTsunamiDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "IsPauseMenuOpen?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "ControllerConfigWidgetOpen?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "DoneIntroFoxBossHallway?",
+			"type": "Boolean",
+			"exposed": true
+		}
+	],
+	"components": [
+		{
+			"name": "StaffMesh",
+			"class": "StaticMeshComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "ProjectileSpawnLocation",
+			"class": "ArrowComponent",
+			"parent": "CollisionCylinder"
+		},
+		{
+			"name": "RightHandPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "LeftHandPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "LeftFootPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "RightFootPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "PointSpawnLocation",
+			"class": "ArrowComponent",
+			"parent": "CollisionCylinder"
+		}
+	],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}

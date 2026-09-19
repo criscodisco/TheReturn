@@ -1,0 +1,692 @@
+{
+	"schemaVersion": 5,
+	"graphName": "UpdateMPUI",
+	"assetName": "BP_TurtleCharacter",
+	"capturedAt": "2026-09-18T01:47:04",
+	"totalNodes": 15,
+	"graphWidth": 2566,
+	"graphHeight": 1013,
+	"graphOriginX": -984,
+	"graphOriginY": -392,
+	"nodeTypes":
+	{
+		"Update MPUI": 1,
+		"Get PlayerHealthWidget": 2,
+		"Get MPSlider": 1,
+		"Set Value": 1,
+		"Get MPMaxAmountText": 1,
+		"SetText": 1,
+		"To Text": 1,
+		"Get PlayerStats": 1,
+		"Break Struct_PlayerStats": 1,
+		"Break Struct_HP-MP": 1,
+		"float / float": 1,
+		"To Float": 2,
+		"Reroute Node": 1
+	},
+	"nodes": [
+		{
+			"title": "Update MPUI",
+			"guid": "48B2868B4B1168B00B897E9F17ACBEB3",
+			"nx": 0.38350000000000001,
+			"ny": 0.38700000000000001,
+			"nw": 0.055300000000000002,
+			"nh": 0.061200000000000004
+		},
+		{
+			"title": "Get PlayerHealthWidget",
+			"guid": "EC4C98E348AA5C8408F319B050C446CA",
+			"nx": 0.39590000000000003,
+			"ny": 0.27640000000000003,
+			"nw": 0.065500000000000003,
+			"nh": 0.037499999999999999,
+			"pure": true
+		},
+		{
+			"title": "Get MPSlider",
+			"guid": "EDD96F674640EEBB17681A8DDA6BAB00",
+			"nx": 0.47700000000000004,
+			"ny": 0.27640000000000003,
+			"nw": 0.074800000000000005,
+			"nh": 0.037499999999999999,
+			"pure": true
+		},
+		{
+			"title": "Set Value",
+			"guid": "3DCD00EA4A34A1F3756E018E925C69ED",
+			"nx": 0.57050000000000001,
+			"ny": 0.37120000000000003,
+			"nw": 0.071300000000000002,
+			"nh": 0.13620000000000002,
+			"pins": [
+				{
+					"id": "35FFCB20403D4791ED92B184543EA135",
+					"n": "InValue",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		},
+		{
+			"title": "Get PlayerHealthWidget",
+			"guid": "8588C3B6463C74C16FD2B89D91512863",
+			"nx": 0.72640000000000005,
+			"ny": 0.2606,
+			"nw": 0.065500000000000003,
+			"nh": 0.037499999999999999,
+			"pure": true
+		},
+		{
+			"title": "Get MPMaxAmountText",
+			"guid": "3A03191C432BA755289F999A70CA60B1",
+			"nx": 0.72640000000000005,
+			"ny": 0.33960000000000001,
+			"nw": 0.10020000000000001,
+			"nh": 0.037499999999999999,
+			"pure": true
+		},
+		{
+			"title": "SetText",
+			"guid": "9B3DCBB442488CF7A4D93DB23435D2F2",
+			"nx": 0.8387,
+			"ny": 0.37120000000000003,
+			"nw": 0.058500000000000003,
+			"nh": 0.13620000000000002
+		},
+		{
+			"title": "To Text",
+			"guid": "80A536B4421414DA25A8FFB850DB9562",
+			"nx": 0.70150000000000001,
+			"ny": 0.4975,
+			"nw": 0.11570000000000001,
+			"nh": 0.2419,
+			"pure": true,
+			"pins": [
+				{
+					"id": "D2995E4442DE34812E7E57BE729A17F7",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetTextLibrary"
+				},
+				{
+					"id": "D515F3BA482D14E61FD263BF51239D3D",
+					"n": "Value",
+					"t": "int",
+					"dv": "0"
+				},
+				{
+					"id": "D877534C46ECE647BD5602925CD0C9C1",
+					"n": "bAlwaysSign",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "00C42D954C7D47FDC7DCD4A9EF88AE11",
+					"n": "bUseGrouping",
+					"t": "bool",
+					"dv": "true"
+				},
+				{
+					"id": "8059CEE74F0C783578609F9FBC1194EB",
+					"n": "MinimumIntegralDigits",
+					"t": "int",
+					"dv": "1"
+				},
+				{
+					"id": "C3FF6DF04F5B473779D3F6970D46D953",
+					"n": "MaximumIntegralDigits",
+					"t": "int",
+					"dv": "324"
+				}
+			]
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "A9CE3A7D4CECBA137832B596C31A7382",
+			"nx": 0.10290000000000001,
+			"ny": 0.60809999999999997,
+			"nw": 0.051400000000000001,
+			"nh": 0.037499999999999999,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_PlayerStats",
+			"guid": "505C660E4FB4220DE39DF5A6EA042D36",
+			"nx": 0.1777,
+			"ny": 0.54490000000000005,
+			"nw": 0.097000000000000003,
+			"nh": 0.11850000000000001,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_HP-MP",
+			"guid": "B561768C4135C512988253B3B425C429",
+			"nx": 0.29620000000000002,
+			"ny": 0.56069999999999998,
+			"nw": 0.083400000000000002,
+			"nh": 0.14810000000000001,
+			"pure": true
+		},
+		{
+			"title": "float / float",
+			"guid": "B6A3A3434783323B4CB29DAA19B36CF4",
+			"nx": 0.4708,
+			"ny": 0.62390000000000001,
+			"nw": 0.054600000000000003,
+			"nh": 0.065200000000000008,
+			"pure": true
+		},
+		{
+			"title": "To Float",
+			"guid": "DB33C41444CCE4851CCAD98F96444C74",
+			"nx": 0.41470000000000001,
+			"ny": 0.57650000000000001,
+			"nw": 0.0499,
+			"nh": 0.037499999999999999,
+			"pure": true,
+			"pins": [
+				{
+					"id": "36F626B04C2BC6342A13B0AC9089AB0E",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"id": "FC652CC4469F436BAFE28090DFBFEAE9",
+					"n": "InInt",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "To Float",
+			"guid": "1CB4071C4D5DA20C86D18596B4484806",
+			"nx": 0.40840000000000004,
+			"ny": 0.68710000000000004,
+			"nw": 0.0499,
+			"nh": 0.037499999999999999,
+			"pure": true,
+			"pins": [
+				{
+					"id": "48FEC50E4712488BE7A3C1AB90CFC005",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"id": "1CE6276F46B33514C4EFB3938B7C1426",
+					"n": "InInt",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "0770F11549AFDD778943D08BD7A5C275",
+			"nx": 0.39590000000000003,
+			"ny": 0.52910000000000001,
+			"nw": 0.016400000000000001,
+			"nh": 0.023700000000000002,
+			"pure": true
+		}
+	],
+	"connections": [
+		{
+			"fg": "48B2868B4B1168B00B897E9F17ACBEB3",
+			"fpid": "666F4FD34B75C433B9E972A28CB6934B",
+			"fp": "then",
+			"tg": "3DCD00EA4A34A1F3756E018E925C69ED",
+			"tpid": "782EBF7A40F48AAE9D5B0B83EEBC4F37",
+			"tp": "execute"
+		},
+		{
+			"fg": "EC4C98E348AA5C8408F319B050C446CA",
+			"fpid": "00E02BC140F31F16DBFA838A3C5DAE02",
+			"fp": "PlayerHealthWidget",
+			"tg": "EDD96F674640EEBB17681A8DDA6BAB00",
+			"tpid": "D2632F14432497601B8E078F219281ED",
+			"tp": "self"
+		},
+		{
+			"fg": "EDD96F674640EEBB17681A8DDA6BAB00",
+			"fpid": "6B3F62E945987B9AC22CA9BFBE47121A",
+			"fp": "MPSlider",
+			"tg": "3DCD00EA4A34A1F3756E018E925C69ED",
+			"tpid": "24D5B55940CC1C46AE6B4891989F1FC2",
+			"tp": "self"
+		},
+		{
+			"fg": "3DCD00EA4A34A1F3756E018E925C69ED",
+			"fpid": "DD0A6AD04BCB117440360D8AEB20AACB",
+			"fp": "then",
+			"tg": "9B3DCBB442488CF7A4D93DB23435D2F2",
+			"tpid": "83D987884140845D336B6DB9D7C8286A",
+			"tp": "execute"
+		},
+		{
+			"fg": "8588C3B6463C74C16FD2B89D91512863",
+			"fpid": "00E02BC140F31F16DBFA838A3C5DAE02",
+			"fp": "PlayerHealthWidget",
+			"tg": "3A03191C432BA755289F999A70CA60B1",
+			"tpid": "29031A4E4C77021B791A1997DB57BE83",
+			"tp": "self"
+		},
+		{
+			"fg": "3A03191C432BA755289F999A70CA60B1",
+			"fpid": "9E3A2EBB44A5C68F7A67E88480B98C97",
+			"fp": "MPMaxAmountText",
+			"tg": "9B3DCBB442488CF7A4D93DB23435D2F2",
+			"tpid": "65C8E9B24083217AAF61339863412093",
+			"tp": "self"
+		},
+		{
+			"fg": "80A536B4421414DA25A8FFB850DB9562",
+			"fpid": "C312BB0C4C3FF3C17C16DB90D99B7E59",
+			"fp": "ReturnValue",
+			"tg": "9B3DCBB442488CF7A4D93DB23435D2F2",
+			"tpid": "C5F0AAFD42A0A4C8F1DD47A604742A05",
+			"tp": "InText"
+		},
+		{
+			"fg": "A9CE3A7D4CECBA137832B596C31A7382",
+			"fpid": "DE51F7BB424FF8A80F748FB1BA38A7BB",
+			"fp": "PlayerStats",
+			"tg": "505C660E4FB4220DE39DF5A6EA042D36",
+			"tpid": "3E55F1F34B89E0723E5A0FA55979AC55",
+			"tp": "Struct_PlayerStats"
+		},
+		{
+			"fg": "505C660E4FB4220DE39DF5A6EA042D36",
+			"fpid": "657B01C64B579CAB9490D0846993347F",
+			"fp": "HP-MP_5_99A476164D0232A67B850F9A9274CDAF",
+			"tg": "B561768C4135C512988253B3B425C429",
+			"tpid": "6BC26B134C45D077EAE163887A69628D",
+			"tp": "Struct_HP-MP"
+		},
+		{
+			"fg": "B561768C4135C512988253B3B425C429",
+			"fpid": "53136AA045915A469F84A5BE253923C3",
+			"fp": "MP_12_016CF93F4D83D803CA52B88CCC37AF0F",
+			"tg": "DB33C41444CCE4851CCAD98F96444C74",
+			"tpid": "FC652CC4469F436BAFE28090DFBFEAE9",
+			"tp": "InInt"
+		},
+		{
+			"fg": "B561768C4135C512988253B3B425C429",
+			"fpid": "30B2316A424B13AC6B42B19E67150C48",
+			"fp": "MaxMP_13_C476D06F40566E3739A4EF9215BF4E74",
+			"tg": "1CB4071C4D5DA20C86D18596B4484806",
+			"tpid": "1CE6276F46B33514C4EFB3938B7C1426",
+			"tp": "InInt"
+		},
+		{
+			"fg": "B561768C4135C512988253B3B425C429",
+			"fpid": "30B2316A424B13AC6B42B19E67150C48",
+			"fp": "MaxMP_13_C476D06F40566E3739A4EF9215BF4E74",
+			"tg": "0770F11549AFDD778943D08BD7A5C275",
+			"tpid": "22A60C6747AF55E32AA844B6D3584EAA",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "B6A3A3434783323B4CB29DAA19B36CF4",
+			"fpid": "ABBE83614FFD4D3B50A7F99C8289FF87",
+			"fp": "ReturnValue",
+			"tg": "3DCD00EA4A34A1F3756E018E925C69ED",
+			"tpid": "35FFCB20403D4791ED92B184543EA135",
+			"tp": "InValue"
+		},
+		{
+			"fg": "DB33C41444CCE4851CCAD98F96444C74",
+			"fpid": "5388640442612EF37020B8AA2052B0EF",
+			"fp": "ReturnValue",
+			"tg": "B6A3A3434783323B4CB29DAA19B36CF4",
+			"tpid": "7027250844B70714E358A09CC024504A",
+			"tp": "A"
+		},
+		{
+			"fg": "1CB4071C4D5DA20C86D18596B4484806",
+			"fpid": "83B00DCF438DBE641C2922AE0D84D706",
+			"fp": "ReturnValue",
+			"tg": "B6A3A3434783323B4CB29DAA19B36CF4",
+			"tpid": "26E4FE3046D280863E9E5D943376D9ED",
+			"tp": "B"
+		},
+		{
+			"fg": "0770F11549AFDD778943D08BD7A5C275",
+			"fpid": "12DFC34844526CD33D3ACF9D36E3294A",
+			"fp": "OutputPin",
+			"tg": "80A536B4421414DA25A8FFB850DB9562",
+			"tpid": "D515F3BA482D14E61FD263BF51239D3D",
+			"tp": "Value"
+		}
+	],
+	"variables": [
+		{
+			"name": "As Third Person Anim BP",
+			"type": "Third Person Anim BP",
+			"exposed": true
+		},
+		{
+			"name": "CastMagicAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "BP_Projectile",
+			"type": "BP Projectile 7",
+			"exposed": true
+		},
+		{
+			"name": "Hit Actor",
+			"type": "Actor",
+			"exposed": true
+		},
+		{
+			"name": "targetNumber",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "HitResults",
+			"type": "Hit Result [Array]",
+			"exposed": true
+		},
+		{
+			"name": "AttackMontages",
+			"type": "Anim Montage [Array]",
+			"exposed": true
+		},
+		{
+			"name": "RightHandTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "LeftHandTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "LeftFootTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "RightFootTraceLoop",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "BattleMenu",
+			"type": "WB Battle Menu",
+			"exposed": true
+		},
+		{
+			"name": "MenuDisplayHelpText",
+			"type": "WB Menu Display Help Text",
+			"exposed": true
+		},
+		{
+			"name": "CrosshairWidget",
+			"type": "WB Crosshair",
+			"exposed": true
+		},
+		{
+			"name": "HitPointsOnEnemyWidget",
+			"type": "WB Hit Points on Enemy",
+			"exposed": true
+		},
+		{
+			"name": "CastMagicTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "FireProjectileTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "IsBattleMenuOpen",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "Health",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "maxHealth",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "IsDead?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "HitPointsOnPlayerWidget",
+			"type": "WB Hit Points on Player",
+			"exposed": true
+		},
+		{
+			"name": "PlayerHealthWidget",
+			"type": "WB Player Health Bar",
+			"exposed": true
+		},
+		{
+			"name": "MP",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "MaxMP",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "TsunamiMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "HealMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackMPCost",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "PlayerStats",
+			"type": "Struct Player Stats",
+			"exposed": true
+		},
+		{
+			"name": "PauseMenuWidget",
+			"type": "WB Pause Menu",
+			"exposed": true
+		},
+		{
+			"name": "LevelAndXPWidget",
+			"type": "WB Level and XP",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "SFXImpact",
+			"type": "BP Impact 3",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackPlayRate",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "TimeDilationMultiplier",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "HealMagicAnimation",
+			"type": "Anim Sequence",
+			"exposed": true
+		},
+		{
+			"name": "HealMagicPotency",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "VictoryXP_MP_Widget",
+			"type": "WB Victory XP MP Add",
+			"exposed": true
+		},
+		{
+			"name": "NotEnoughManaWidget",
+			"type": "WB Not Enough Mana Display",
+			"exposed": true
+		},
+		{
+			"name": "EnoughMana?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "FoxDialogueIntroWidget",
+			"type": "WB Fox Dialogue Intro",
+			"exposed": true
+		},
+		{
+			"name": "FoxWalking?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "IsIntroductionOver?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "FoxDialogueIndex",
+			"type": "Integer",
+			"exposed": true
+		},
+		{
+			"name": "As Game Instance The Return",
+			"type": "Game Instance the Return",
+			"exposed": true
+		},
+		{
+			"name": "IsGameOverSpeech?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "ControlsConfigWidget",
+			"type": "WB Controls Config",
+			"exposed": true
+		},
+		{
+			"name": "BaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "SpecialAttackBaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedHealth",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "TsunamiAttackBaseDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "AppliedTsunamiDamage",
+			"type": "Float",
+			"exposed": true
+		},
+		{
+			"name": "IsPauseMenuOpen?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "ControllerConfigWidgetOpen?",
+			"type": "Boolean",
+			"exposed": true
+		},
+		{
+			"name": "DoneIntroFoxBossHallway?",
+			"type": "Boolean",
+			"exposed": true
+		}
+	],
+	"components": [
+		{
+			"name": "StaffMesh",
+			"class": "StaticMeshComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "ProjectileSpawnLocation",
+			"class": "ArrowComponent",
+			"parent": "CollisionCylinder"
+		},
+		{
+			"name": "RightHandPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "LeftHandPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "LeftFootPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "RightFootPoint",
+			"class": "ArrowComponent",
+			"parent": "CharacterMesh0"
+		},
+		{
+			"name": "PointSpawnLocation",
+			"class": "ArrowComponent",
+			"parent": "CollisionCylinder"
+		}
+	],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}
