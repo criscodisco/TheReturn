@@ -1,0 +1,619 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Event Graph",
+	"assetName": "GameMode_TheReturn",
+	"capturedAt": "2026-09-18T20:20:11",
+	"totalNodes": 29,
+	"graphWidth": 6320,
+	"graphHeight": 1248,
+	"graphOriginX": -328,
+	"graphOriginY": -584,
+	"nodeTypes":
+	{
+		"Event BeginPlay": 1,
+		"Get Game Instance": 1,
+		"Cast To GameInstance_TheReturn": 1,
+		"Get Player Character": 1,
+		"Cast To BP_TurtleCharacter": 1,
+		"Set PlayerStats": 1,
+		"Branch": 1,
+		"Not Equal": 1,
+		"Set Actor Transform": 1,
+		"Set As Game Instance The Return": 1,
+		"Set As BP Turtle Character": 1,
+		"Get As BP Turtle Character": 4,
+		"Get As Game Instance The Return": 6,
+		"Get PlayerStats": 1,
+		"Get": 1,
+		"Get PlayerTransform": 1,
+		"Set PlayerTransform": 1,
+		"Get FoxDialogueIndex": 1,
+		"Set FoxDialogueIndex": 1,
+		"Get IsIntroOver?": 1,
+		"Set IsIntroductionOver?": 1
+	},
+	"nodes": [
+		{
+			"title": "Event BeginPlay",
+			"guid": "706915364623AEFAB9BF11A71C97BA80",
+			"nx": 0.051900000000000002,
+			"ny": 0.46790000000000004,
+			"nw": 0.025000000000000001,
+			"nh": 0.0521
+		},
+		{
+			"title": "Get Game Instance",
+			"guid": "9D7CA71C4EAC133FE0C7DE821B198414",
+			"nx": 0.069600000000000009,
+			"ny": 0.58330000000000004,
+			"nw": 0.028000000000000001,
+			"nh": 0.048100000000000004,
+			"pure": true,
+			"pins": [
+				{
+					"id": "477E6120410F0310D939EBB4FFA7F01F",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				}
+			]
+		},
+		{
+			"title": "Cast To GameInstance_TheReturn",
+			"guid": "9DFBDF01435FE6CDC3A84CB4F9F1DCC5",
+			"nx": 0.094899999999999998,
+			"ny": 0.46790000000000004,
+			"nw": 0.0465,
+			"nh": 0.099400000000000002
+		},
+		{
+			"title": "Get Player Character",
+			"guid": "9F635C8B4AF47E2F9527D290C6A4481A",
+			"nx": 0.17850000000000002,
+			"ny": 0.37820000000000004,
+			"nw": 0.040300000000000002,
+			"nh": 0.0521,
+			"pure": true,
+			"pins": [
+				{
+					"id": "5A7AB33047457ABFAE5C2693EE2572F4",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "0CDD1FF6452A2C8BBB4E5A8BCE544F10",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Cast To BP_TurtleCharacter",
+			"guid": "C2553628444CBED53F83B7BA09A7CDFB",
+			"nx": 0.2165,
+			"ny": 0.46790000000000004,
+			"nw": 0.040800000000000003,
+			"nh": 0.099400000000000002
+		},
+		{
+			"title": "Set PlayerStats",
+			"guid": "D8617C3341D78CA0E26954BB23336C43",
+			"nx": 0.34300000000000003,
+			"ny": 0.48080000000000001,
+			"nw": 0.026700000000000002,
+			"nh": 0.085699999999999998
+		},
+		{
+			"title": "Branch",
+			"guid": "6335165A48612DECC03997BE6CAC137E",
+			"nx": 0.7278,
+			"ny": 0.46790000000000004,
+			"nw": 0.028500000000000001,
+			"nh": 0.075300000000000006,
+			"pins": [
+				{
+					"id": "B82A2E3E4BE688A93B96FB9B201D9C2B",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Not Equal",
+			"guid": "F7D2FA114BB7C8D9CC4B17B7558DE828",
+			"nx": 0.70510000000000006,
+			"ny": 0.58330000000000004,
+			"nw": 0.0448,
+			"nh": 0.088099999999999998,
+			"pure": true
+		},
+		{
+			"title": "Set Actor Transform",
+			"guid": "A9A79DAF4F4A54CDF001B996204695A0",
+			"nx": 0.82150000000000001,
+			"ny": 0.4551,
+			"nw": 0.0424,
+			"nh": 0.1651,
+			"pins": [
+				{
+					"id": "11688E23467047F6235F679CD8774237",
+					"n": "bSweep",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "01650FD04D9410A33ACA888559B35647",
+					"n": "bTeleport",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Set As Game Instance The Return",
+			"guid": "2CD2786E467C9CDF738E4D85540A51AB",
+			"nx": 0.1532,
+			"ny": 0.48080000000000001,
+			"nw": 0.041100000000000005,
+			"nh": 0.061700000000000005
+		},
+		{
+			"title": "Set As BP Turtle Character",
+			"guid": "340771D346CA97FA8C4FC196CBC12196",
+			"nx": 0.26960000000000001,
+			"ny": 0.48080000000000001,
+			"nw": 0.035900000000000001,
+			"nh": 0.061700000000000005
+		},
+		{
+			"title": "Get As BP Turtle Character",
+			"guid": "36D282314317AAC18B9565B9C2B362D0",
+			"nx": 0.31270000000000003,
+			"ny": 0.59620000000000006,
+			"nw": 0.028300000000000002,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get As Game Instance The Return",
+			"guid": "FBBC32D140099059F3297CB221253F7E",
+			"nx": 0.2671,
+			"ny": 0.35260000000000002,
+			"nw": 0.033500000000000002,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "E4F400A34BA8A8A8DAAD409B3C6A4104",
+			"nx": 0.30249999999999999,
+			"ny": 0.40379999999999999,
+			"nw": 0.033100000000000004,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get As Game Instance The Return",
+			"guid": "823A5B224914DCD8AF661696259CA0A5",
+			"nx": 0.59870000000000001,
+			"ny": 0.68590000000000007,
+			"nw": 0.033500000000000002,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get",
+			"guid": "C4F8467A4D67669C615AA9824538834E",
+			"nx": 0.64680000000000004,
+			"ny": 0.68590000000000007,
+			"nw": 0.045600000000000002,
+			"nh": 0.0785,
+			"pure": true
+		},
+		{
+			"title": "Get As Game Instance The Return",
+			"guid": "6B8169A14895D862137B3B8FB4C64139",
+			"nx": 0.76840000000000008,
+			"ny": 0.67310000000000003,
+			"nw": 0.033500000000000002,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get PlayerTransform",
+			"guid": "1DBB69E1480B94C46D5E78B7390447B3",
+			"nx": 0.77590000000000003,
+			"ny": 0.60899999999999999,
+			"nw": 0.037499999999999999,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get As BP Turtle Character",
+			"guid": "210AA1F347C99A843672218DADCD4EC7",
+			"nx": 0.78610000000000002,
+			"ny": 0.54490000000000005,
+			"nw": 0.028300000000000002,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get As Game Instance The Return",
+			"guid": "B52AA325452C24DD0B733C800CFD135C",
+			"nx": 0.87220000000000009,
+			"ny": 0.62180000000000002,
+			"nw": 0.033500000000000002,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Set PlayerTransform",
+			"guid": "12677EEA4699AC25CB5D12A4DBBEA293",
+			"nx": 0.90250000000000008,
+			"ny": 0.48080000000000001,
+			"nw": 0.031200000000000002,
+			"nh": 0.085699999999999998
+		},
+		{
+			"title": "Get As Game Instance The Return",
+			"guid": "9529AC0546666A567EE3D18F614220A4",
+			"nx": 0.37090000000000001,
+			"ny": 0.31409999999999999,
+			"nw": 0.033500000000000002,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get FoxDialogueIndex",
+			"guid": "0B13517F451B0C079FDB1A9D2729B84E",
+			"nx": 0.3962,
+			"ny": 0.37820000000000004,
+			"nw": 0.039100000000000003,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get As BP Turtle Character",
+			"guid": "F81248844B3CC02F5F440A86AFBABE1D",
+			"nx": 0.40379999999999999,
+			"ny": 0.59620000000000006,
+			"nw": 0.028300000000000002,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Set FoxDialogueIndex",
+			"guid": "E9F9C4B14247623EDF24BDAA9BC41066",
+			"nx": 0.43420000000000003,
+			"ny": 0.48080000000000001,
+			"nw": 0.033500000000000002,
+			"nh": 0.085699999999999998,
+			"pins": [
+				{
+					"id": "378809C344724222FE37C6B637BEAD49",
+					"n": "FoxDialogueIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Get As BP Turtle Character",
+			"guid": "202741DA437F856D0572B887BE61BFA1",
+			"nx": 0.49490000000000001,
+			"ny": 0.58330000000000004,
+			"nw": 0.028300000000000002,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get As Game Instance The Return",
+			"guid": "DFA7C06F43215AD1E2ADEDA87D78AC15",
+			"nx": 0.47970000000000002,
+			"ny": 0.26280000000000003,
+			"nw": 0.033500000000000002,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Get IsIntroOver?",
+			"guid": "4A07C2E741267EACD9D99B878510069A",
+			"nx": 0.4924,
+			"ny": 0.35260000000000002,
+			"nw": 0.0339,
+			"nh": 0.0304,
+			"pure": true
+		},
+		{
+			"title": "Set IsIntroductionOver?",
+			"guid": "9CE4D7D34B8BFACDE7D7D78F0079A7D1",
+			"nx": 0.52280000000000004,
+			"ny": 0.48080000000000001,
+			"nw": 0.034800000000000005,
+			"nh": 0.085699999999999998,
+			"pins": [
+				{
+					"id": "BA7C74ED4E917F8E76404CB489A18A62",
+					"n": "IsIntroductionOver?",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		}
+	],
+	"connections": [
+		{
+			"fg": "706915364623AEFAB9BF11A71C97BA80",
+			"fpid": "B4906E86449BAE484D503EA9791D333E",
+			"fp": "then",
+			"tg": "9DFBDF01435FE6CDC3A84CB4F9F1DCC5",
+			"tpid": "999F8CB945C3CFC2015E9E805A2DA4F0",
+			"tp": "execute"
+		},
+		{
+			"fg": "9D7CA71C4EAC133FE0C7DE821B198414",
+			"fpid": "CEF5E8CC4D8E0547B08F0CA602C80125",
+			"fp": "ReturnValue",
+			"tg": "9DFBDF01435FE6CDC3A84CB4F9F1DCC5",
+			"tpid": "B1B2FF5B4689C0DBBEF350A1C4E12571",
+			"tp": "Object"
+		},
+		{
+			"fg": "9DFBDF01435FE6CDC3A84CB4F9F1DCC5",
+			"fpid": "0193F2CE491BF4E89E07B9B29AEE183F",
+			"fp": "then",
+			"tg": "2CD2786E467C9CDF738E4D85540A51AB",
+			"tpid": "00300AE24235941054E73B9355865845",
+			"tp": "execute"
+		},
+		{
+			"fg": "9DFBDF01435FE6CDC3A84CB4F9F1DCC5",
+			"fpid": "627F76BD47D3FFA460A309B23A563AED",
+			"fp": "AsGame Instance the Return",
+			"tg": "2CD2786E467C9CDF738E4D85540A51AB",
+			"tpid": "C8D5F61D4BD42FA2843DA69D75213EF4",
+			"tp": "As Game Instance The Return"
+		},
+		{
+			"fg": "9F635C8B4AF47E2F9527D290C6A4481A",
+			"fpid": "9DA29E7941894A3E1C44F3A8A42B802F",
+			"fp": "ReturnValue",
+			"tg": "C2553628444CBED53F83B7BA09A7CDFB",
+			"tpid": "F344BB614E19ADE54248F1865D13F172",
+			"tp": "Object"
+		},
+		{
+			"fg": "C2553628444CBED53F83B7BA09A7CDFB",
+			"fpid": "0F97A39A4227F82B68F162B1AE404701",
+			"fp": "then",
+			"tg": "340771D346CA97FA8C4FC196CBC12196",
+			"tpid": "D6ADDC1B42BE494A5D7236BB2C52486E",
+			"tp": "execute"
+		},
+		{
+			"fg": "C2553628444CBED53F83B7BA09A7CDFB",
+			"fpid": "4720DDB24B9E8FA79CF7DB86ACA010A5",
+			"fp": "AsBP Turtle Character",
+			"tg": "340771D346CA97FA8C4FC196CBC12196",
+			"tpid": "A9EE14CD4B96A209014BA2A49AC82E07",
+			"tp": "As BP Turtle Character"
+		},
+		{
+			"fg": "D8617C3341D78CA0E26954BB23336C43",
+			"fpid": "1E0A033142F409A9969BA28D7470AD20",
+			"fp": "then",
+			"tg": "E9F9C4B14247623EDF24BDAA9BC41066",
+			"tpid": "702DD4C4460552BDB897D6AAE4D15560",
+			"tp": "execute"
+		},
+		{
+			"fg": "6335165A48612DECC03997BE6CAC137E",
+			"fpid": "9E48533E42EF4E37285DB0A3D1E1A5A6",
+			"fp": "then",
+			"tg": "A9A79DAF4F4A54CDF001B996204695A0",
+			"tpid": "CE1F8CDA471525F51190E88B030F79E2",
+			"tp": "execute"
+		},
+		{
+			"fg": "F7D2FA114BB7C8D9CC4B17B7558DE828",
+			"fpid": "C662CB654988422FE50904B7F1E6DCF4",
+			"fp": "ReturnValue",
+			"tg": "6335165A48612DECC03997BE6CAC137E",
+			"tpid": "B82A2E3E4BE688A93B96FB9B201D9C2B",
+			"tp": "Condition"
+		},
+		{
+			"fg": "A9A79DAF4F4A54CDF001B996204695A0",
+			"fpid": "0175BFBE4D48426309EE0292C4C3806F",
+			"fp": "then",
+			"tg": "12677EEA4699AC25CB5D12A4DBBEA293",
+			"tpid": "96EF2E3246E676073CC8548861EC3325",
+			"tp": "execute"
+		},
+		{
+			"fg": "2CD2786E467C9CDF738E4D85540A51AB",
+			"fpid": "96CCAF4C44A2FF9F07C638A4281268F3",
+			"fp": "then",
+			"tg": "C2553628444CBED53F83B7BA09A7CDFB",
+			"tpid": "BAFE048246938EBDDBD384BB3411BCC7",
+			"tp": "execute"
+		},
+		{
+			"fg": "340771D346CA97FA8C4FC196CBC12196",
+			"fpid": "3C2A500448166D8940F2A08C334020CF",
+			"fp": "then",
+			"tg": "D8617C3341D78CA0E26954BB23336C43",
+			"tpid": "641A17024F0D2B5F994B96A6D05F0E5C",
+			"tp": "execute"
+		},
+		{
+			"fg": "36D282314317AAC18B9565B9C2B362D0",
+			"fpid": "CB7E95E14E1551A1FB4FEEB43FF6BB4E",
+			"fp": "As BP Turtle Character",
+			"tg": "D8617C3341D78CA0E26954BB23336C43",
+			"tpid": "371661694D3ECFEF661FC48189CC09F7",
+			"tp": "self"
+		},
+		{
+			"fg": "FBBC32D140099059F3297CB221253F7E",
+			"fpid": "BD598A5041F7AA1EE30FC7BE0AAD58D0",
+			"fp": "As Game Instance The Return",
+			"tg": "E4F400A34BA8A8A8DAAD409B3C6A4104",
+			"tpid": "D1ED241C4A892B012521EB9B231CC491",
+			"tp": "self"
+		},
+		{
+			"fg": "E4F400A34BA8A8A8DAAD409B3C6A4104",
+			"fpid": "328AAA2241C634A6DED300BF68B7748E",
+			"fp": "PlayerStats",
+			"tg": "D8617C3341D78CA0E26954BB23336C43",
+			"tpid": "D57F47F146E5793EF4A49D95DEB71454",
+			"tp": "PlayerStats"
+		},
+		{
+			"fg": "823A5B224914DCD8AF661696259CA0A5",
+			"fpid": "BD598A5041F7AA1EE30FC7BE0AAD58D0",
+			"fp": "As Game Instance The Return",
+			"tg": "C4F8467A4D67669C615AA9824538834E",
+			"tpid": "893199B342E018909DE05CBFD2A12473",
+			"tp": "self"
+		},
+		{
+			"fg": "C4F8467A4D67669C615AA9824538834E",
+			"fpid": "618D7C314768D3B6B496D9B05456FC37",
+			"fp": "PlayerTransform_Location",
+			"tg": "F7D2FA114BB7C8D9CC4B17B7558DE828",
+			"tpid": "BD9A0B4A497793A745762D8990577628",
+			"tp": "A"
+		},
+		{
+			"fg": "6B8169A14895D862137B3B8FB4C64139",
+			"fpid": "FC87B978440247B4FE32178A6D7F00A7",
+			"fp": "As Game Instance The Return",
+			"tg": "1DBB69E1480B94C46D5E78B7390447B3",
+			"tpid": "A3823FCE4E9AA9DC4861E0842F83A92A",
+			"tp": "self"
+		},
+		{
+			"fg": "1DBB69E1480B94C46D5E78B7390447B3",
+			"fpid": "57F58AEF4F6747D6B209248A4764D2FA",
+			"fp": "PlayerTransform",
+			"tg": "A9A79DAF4F4A54CDF001B996204695A0",
+			"tpid": "E73DF88A4F298B5C4A3A1BB743D24D7A",
+			"tp": "NewTransform"
+		},
+		{
+			"fg": "210AA1F347C99A843672218DADCD4EC7",
+			"fpid": "A26F77E14A7F820CCA61A7B0C579A2E9",
+			"fp": "As BP Turtle Character",
+			"tg": "A9A79DAF4F4A54CDF001B996204695A0",
+			"tpid": "97A45C4E409EA916D0C1B6AF4803324B",
+			"tp": "self"
+		},
+		{
+			"fg": "B52AA325452C24DD0B733C800CFD135C",
+			"fpid": "0C1FD1F24F040EAFBF00CAB41F696075",
+			"fp": "As Game Instance The Return",
+			"tg": "12677EEA4699AC25CB5D12A4DBBEA293",
+			"tpid": "E56897AD49F6C3905ECF9296F600EB6D",
+			"tp": "self"
+		},
+		{
+			"fg": "9529AC0546666A567EE3D18F614220A4",
+			"fpid": "5108B5504EF58EE1E97D31B61C38A8CD",
+			"fp": "As Game Instance The Return",
+			"tg": "0B13517F451B0C079FDB1A9D2729B84E",
+			"tpid": "B5E2E0044D25F1912FC15582BB741850",
+			"tp": "self"
+		},
+		{
+			"fg": "0B13517F451B0C079FDB1A9D2729B84E",
+			"fpid": "376C39A8428C445BA13885913D8862C5",
+			"fp": "FoxDialogueIndex",
+			"tg": "E9F9C4B14247623EDF24BDAA9BC41066",
+			"tpid": "378809C344724222FE37C6B637BEAD49",
+			"tp": "FoxDialogueIndex"
+		},
+		{
+			"fg": "F81248844B3CC02F5F440A86AFBABE1D",
+			"fpid": "4025D8FB41E9B10842415A87DA45ABC3",
+			"fp": "As BP Turtle Character",
+			"tg": "E9F9C4B14247623EDF24BDAA9BC41066",
+			"tpid": "FCF61CFC48258A1308DF81A37AABB886",
+			"tp": "self"
+		},
+		{
+			"fg": "E9F9C4B14247623EDF24BDAA9BC41066",
+			"fpid": "AD35948440F1B36E08F550AD2A9A7AEE",
+			"fp": "then",
+			"tg": "9CE4D7D34B8BFACDE7D7D78F0079A7D1",
+			"tpid": "9D0B326C4F3050DFCD3FCDB1CA49FF8D",
+			"tp": "execute"
+		},
+		{
+			"fg": "202741DA437F856D0572B887BE61BFA1",
+			"fpid": "4025D8FB41E9B10842415A87DA45ABC3",
+			"fp": "As BP Turtle Character",
+			"tg": "9CE4D7D34B8BFACDE7D7D78F0079A7D1",
+			"tpid": "61E0C1BE48E8C87A6D965598ABB70DE6",
+			"tp": "self"
+		},
+		{
+			"fg": "DFA7C06F43215AD1E2ADEDA87D78AC15",
+			"fpid": "4E26863E45798AA01B16A0A7E4092D02",
+			"fp": "As Game Instance The Return",
+			"tg": "4A07C2E741267EACD9D99B878510069A",
+			"tpid": "F1FDC48642135032B399679C80FC5AFB",
+			"tp": "self"
+		},
+		{
+			"fg": "4A07C2E741267EACD9D99B878510069A",
+			"fpid": "512E5CE34891A7F3F1CB77AE895EC38C",
+			"fp": "IsIntroOver?",
+			"tg": "9CE4D7D34B8BFACDE7D7D78F0079A7D1",
+			"tpid": "BA7C74ED4E917F8E76404CB489A18A62",
+			"tp": "IsIntroductionOver?"
+		},
+		{
+			"fg": "9CE4D7D34B8BFACDE7D7D78F0079A7D1",
+			"fpid": "D18CC4A24D6A64E8F19B67BE39A6EC32",
+			"fp": "then",
+			"tg": "6335165A48612DECC03997BE6CAC137E",
+			"tpid": "E8BA777C45F91AAC834175ABEC70FAA0",
+			"tp": "execute"
+		}
+	],
+	"variables": [
+		{
+			"name": "As Game Instance The Return",
+			"type": "Game Instance the Return",
+			"exposed": true
+		},
+		{
+			"name": "As BP Turtle Character",
+			"type": "BP Turtle Character",
+			"exposed": true
+		}
+	],
+	"components": [
+		{
+			"name": "DefaultSceneRoot",
+			"class": "SceneComponent",
+			"parent": "None"
+		}
+	],
+	"comments": [
+		{
+			"title": "Begin Play",
+			"x": 264,
+			"y": 264,
+			"w": 5792,
+			"h": 720
+		}
+	],
+	"warnings": [],
+	"stickyNotes": []
+}
