@@ -1,0 +1,715 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Event Graph",
+	"assetName": "WB_ControlsConfig",
+	"capturedAt": "2026-09-18T21:14:22",
+	"totalNodes": 29,
+	"graphWidth": 4693,
+	"graphHeight": 2470,
+	"graphOriginX": -840,
+	"graphOriginY": -216,
+	"nodeTypes":
+	{
+		"Event Construct": 1,
+		"Get Player Character": 1,
+		"Cast To BP_TurtleCharacter": 1,
+		"Set As BP Turtle Character": 1,
+		"On Clicked": 1,
+		"On Pressed": 1,
+		"Set Visibility": 2,
+		"FocusButton": 1,
+		"Get BackButton": 2,
+		"Has Keyboard Focus": 1,
+		"Branch": 1,
+		"Set Background Color": 2,
+		"Get FocusButtonTimer": 1,
+		"Clear and Invalidate Timer by Handle": 1,
+		"Set Keyboard Focus": 2,
+		"Get PauseMenuWidget": 1,
+		"Set Pause Menu Widget": 1,
+		"Get Pause Menu Widget": 1,
+		"Delay": 1,
+		"Get Player Controller": 1,
+		"Set Input Mode UI Only": 1,
+		"Set Input Mode Game And UI": 1,
+		"Get ControlsConfigButton": 1,
+		"Event Tick": 1,
+		"Focus Button": 1
+	},
+	"nodes": [
+		{
+			"title": "Event Construct",
+			"guid": "6DA5878A47A27892CE3E7ABC9A4DAFC9",
+			"nx": 0.056300000000000003,
+			"ny": 0.17170000000000002,
+			"nw": 0.0339,
+			"nh": 0.0263
+		},
+		{
+			"title": "Get Player Character",
+			"guid": "9D16C7A74D1BBC4673D7AD8B71FA3E7B",
+			"nx": 0.066500000000000004,
+			"ny": 0.10690000000000001,
+			"nw": 0.054300000000000001,
+			"nh": 0.0263,
+			"pure": true,
+			"pins": [
+				{
+					"id": "2B15157443496ED94DEEA3BC2C98C46F",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "3D3E6807484AC967FC4307BBB3BD2F67",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Cast To BP_TurtleCharacter",
+			"guid": "CC65E4294692C17479BCC79588E2FC71",
+			"nx": 0.13470000000000001,
+			"ny": 0.17170000000000002,
+			"nw": 0.055,
+			"nh": 0.050200000000000002
+		},
+		{
+			"title": "Set As BP Turtle Character",
+			"guid": "F4F4D7774DDA3F0D78C1ECBF97B00C38",
+			"nx": 0.20630000000000001,
+			"ny": 0.17810000000000001,
+			"nw": 0.048400000000000006,
+			"nh": 0.031200000000000002
+		},
+		{
+			"title": "On Clicked",
+			"guid": "60A3374C4011F38D36ECB38F4BF86DF2",
+			"nx": 0.17220000000000002,
+			"ny": 0.65750000000000008,
+			"nw": 0.0441,
+			"nh": 0.0263
+		},
+		{
+			"title": "On Pressed",
+			"guid": "D6E053E2466D52BC8190DAAF156CA769",
+			"nx": 0.17220000000000002,
+			"ny": 0.72870000000000001,
+			"nw": 0.045400000000000003,
+			"nh": 0.0263
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "09A51EA74A3B801D9A5E1F9B4094FDF3",
+			"nx": 0.28129999999999999,
+			"ny": 0.65100000000000002,
+			"nw": 0.061800000000000001,
+			"nh": 0.069199999999999998,
+			"pins": [
+				{
+					"id": "6154F39F4D1D3884E0E54E9645AF03E6",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Collapsed"
+				}
+			]
+		},
+		{
+			"title": "FocusButton",
+			"guid": "9527CDB345A182802817F8ADCD37026B",
+			"nx": 0.34950000000000003,
+			"ny": 0.3725,
+			"nw": 0.0298,
+			"nh": 0.031600000000000003
+		},
+		{
+			"title": "Get BackButton",
+			"guid": "B31AD60240CFA7D0FBF01081EAD8982E",
+			"nx": 0.44490000000000002,
+			"ny": 0.51500000000000001,
+			"nw": 0.0281,
+			"nh": 0.0154,
+			"pure": true
+		},
+		{
+			"title": "Has Keyboard Focus",
+			"guid": "699ED52247FEECC238849DBA4FE32852",
+			"nx": 0.47220000000000001,
+			"ny": 0.44370000000000004,
+			"nw": 0.043900000000000002,
+			"nh": 0.030800000000000001,
+			"pure": true
+		},
+		{
+			"title": "Branch",
+			"guid": "28AA5EED404F18FE6542F7B87B36044B",
+			"nx": 0.52329999999999999,
+			"ny": 0.37890000000000001,
+			"nw": 0.038400000000000004,
+			"nh": 0.038100000000000002,
+			"pins": [
+				{
+					"id": "F16BE7E84AB4D53DE7B2FD8DA2A4090E",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Set Background Color",
+			"guid": "16B9DD71454EB3291836B1AC845B6E3C",
+			"nx": 0.64270000000000005,
+			"ny": 0.35950000000000004,
+			"nw": 0.048400000000000006,
+			"nh": 0.057500000000000002,
+			"pins": [
+				{
+					"id": "BFF87D4D40EDB50B345956BE07A6E8A3",
+					"n": "InBackgroundColor",
+					"t": "struct",
+					"dv": "(R=0.121041,G=1.000000,B=0.920303,A=1.000000)"
+				}
+			]
+		},
+		{
+			"title": "Set Background Color",
+			"guid": "8F611C5F408110F58388049280B7877C",
+			"nx": 0.64270000000000005,
+			"ny": 0.4632,
+			"nw": 0.048400000000000006,
+			"nh": 0.057500000000000002,
+			"pins": [
+				{
+					"id": "BFF87D4D40EDB50B345956BE07A6E8A3",
+					"n": "InBackgroundColor",
+					"t": "struct",
+					"dv": "(R=0.492131,G=1.000000,B=0.347481,A=1.000000)"
+				}
+			]
+		},
+		{
+			"title": "Get FocusButtonTimer",
+			"guid": "121E36144EE7DDEA121964BED28B66C0",
+			"nx": 0.34260000000000002,
+			"ny": 0.73520000000000008,
+			"nw": 0.034500000000000003,
+			"nh": 0.0154,
+			"pure": true
+		},
+		{
+			"title": "Clear and Invalidate Timer by Handle",
+			"guid": "2FAF0BA84466C0F528474BA62E0308B2",
+			"nx": 0.37330000000000002,
+			"ny": 0.65750000000000008,
+			"nw": 0.058600000000000006,
+			"nh": 0.037200000000000004,
+			"pins": [
+				{
+					"id": "6F0B8C2B4BA9A13815F0DD9205EB054B",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				}
+			]
+		},
+		{
+			"title": "Set Keyboard Focus",
+			"guid": "A20568994312AEAB2A8FF99F20376067",
+			"nx": 0.9052,
+			"ny": 0.65100000000000002,
+			"nw": 0.038600000000000002,
+			"nh": 0.043700000000000003
+		},
+		{
+			"title": "Get PauseMenuWidget",
+			"guid": "CB9C177F439471A4FB2F7FBF7A80838A",
+			"nx": 0.254,
+			"ny": 0.217,
+			"nw": 0.053500000000000006,
+			"nh": 0.0154,
+			"pure": true
+		},
+		{
+			"title": "Set Pause Menu Widget",
+			"guid": "C2991D36418F19A5A887D8B0C2BFB7CA",
+			"nx": 0.3085,
+			"ny": 0.17810000000000001,
+			"nw": 0.045999999999999999,
+			"nh": 0.031200000000000002
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "EAF0ED074E447C4661A314980912CD16",
+			"nx": 0.47560000000000002,
+			"ny": 0.65100000000000002,
+			"nw": 0.061800000000000001,
+			"nh": 0.06720000000000001,
+			"pins": [
+				{
+					"id": "6154F39F4D1D3884E0E54E9645AF03E6",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Visible"
+				}
+			]
+		},
+		{
+			"title": "Get Pause Menu Widget",
+			"guid": "FF8B332D4B4B424D7826FEBEC2672DF5",
+			"nx": 0.43130000000000002,
+			"ny": 0.7611,
+			"nw": 0.034700000000000002,
+			"nh": 0.0154,
+			"pure": true
+		},
+		{
+			"title": "Delay",
+			"guid": "CD8D0252408DDF4D5F897394F4503ADA",
+			"nx": 0.80630000000000002,
+			"ny": 0.65750000000000008,
+			"nw": 0.049100000000000005,
+			"nh": 0.039300000000000002,
+			"pins": [
+				{
+					"id": "33617727425B0452315CC7A123F89DB1",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "C01A7C864F519FDC88253ABEB6BA050F",
+					"n": "Duration",
+					"t": "real",
+					"dv": "0.2"
+				},
+				{
+					"id": "FE981ED54428A8646A9C5EA5E41F3447",
+					"n": "LatentInfo",
+					"t": "struct",
+					"dv": "(Linkage=-1,UUID=-1,ExecutionFunction=\"\",CallbackTarget=None)"
+				}
+			]
+		},
+		{
+			"title": "Get Player Controller",
+			"guid": "0402751A4E906C5EE9653D955A7E088A",
+			"nx": 0.51650000000000007,
+			"ny": 0.57330000000000003,
+			"nw": 0.054300000000000001,
+			"nh": 0.0263,
+			"pure": true,
+			"pins": [
+				{
+					"id": "96D18DE64F6E247B0616769F8800B828",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "A8757C7147D2EA18E05F2E91DDF4F774",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Set Input Mode UI Only",
+			"guid": "428C32B94679604BC29BB9A7CCD0133A",
+			"nx": 0.63580000000000003,
+			"ny": 0.56680000000000008,
+			"nw": 0.061800000000000001,
+			"nh": 0.08660000000000001,
+			"pins": [
+				{
+					"id": "54FD843E436948D077257593045945B5",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"id": "39FD69314281774BA12566AAE4ED93DE",
+					"n": "InWidgetToFocus",
+					"t": "object",
+					"dv": "None"
+				},
+				{
+					"id": "9D57236D4BE6ADF5D39EBC9516A8E84F",
+					"n": "InMouseLockMode",
+					"t": "byte",
+					"dv": "DoNotLock"
+				},
+				{
+					"id": "A4106D0D48F4261E7BEAC9877943E8E7",
+					"n": "bFlushInput",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Set Input Mode Game And UI",
+			"guid": "4E693A974B143AE5D00C5EB1EA7DA62C",
+			"nx": 0.58130000000000004,
+			"ny": 0.65750000000000008,
+			"nw": 0.061800000000000001,
+			"nh": 0.1061,
+			"pins": [
+				{
+					"id": "467B6F7F4C9A2B0B1FFE68B7B23E4CF0",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"id": "C3D28BD64704B25EF9282BA5694BF12A",
+					"n": "InWidgetToFocus",
+					"t": "object",
+					"dv": "None"
+				},
+				{
+					"id": "DE1F6DB34226CD89C3203E815BD3F119",
+					"n": "InMouseLockMode",
+					"t": "byte",
+					"dv": "DoNotLock"
+				},
+				{
+					"id": "5750122A4084F58009E821BDF366CF5E",
+					"n": "bHideCursorDuringCapture",
+					"t": "bool",
+					"dv": "true"
+				},
+				{
+					"id": "87F071C344DBD87089CE43BEEDA31593",
+					"n": "bFlushInput",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Get BackButton",
+			"guid": "16BAB70A4529B142D47E97A5B8CD29CA",
+			"nx": 0.36310000000000003,
+			"ny": 0.23000000000000001,
+			"nw": 0.0281,
+			"nh": 0.0154,
+			"pure": true
+		},
+		{
+			"title": "Set Keyboard Focus",
+			"guid": "750D38EC4DD8EF9F26937C8627DC8B6D",
+			"nx": 0.40060000000000001,
+			"ny": 0.16520000000000001,
+			"nw": 0.038600000000000002,
+			"nh": 0.043700000000000003
+		},
+		{
+			"title": "Get ControlsConfigButton",
+			"guid": "7E11A84F4A679CA49DF28891250291B5",
+			"nx": 0.52670000000000006,
+			"ny": 0.87770000000000004,
+			"nw": 0.057300000000000004,
+			"nh": 0.0154,
+			"pure": true
+		},
+		{
+			"title": "Event Tick",
+			"guid": "6754A7BB459CBF7C57A35DB84899FA25",
+			"nx": 0.090300000000000005,
+			"ny": 0.35300000000000004,
+			"nw": 0.026600000000000002,
+			"nh": 0.050599999999999999
+		},
+		{
+			"title": "Focus Button",
+			"guid": "32AA311A4E3FBC87A9E81AAF6FE137B4",
+			"nx": 0.14830000000000002,
+			"ny": 0.34660000000000002,
+			"nw": 0.047100000000000003,
+			"nh": 0.045700000000000005
+		}
+	],
+	"connections": [
+		{
+			"fg": "6DA5878A47A27892CE3E7ABC9A4DAFC9",
+			"fpid": "0E879BA44BD2DA5EADB77EB50111C043",
+			"fp": "then",
+			"tg": "CC65E4294692C17479BCC79588E2FC71",
+			"tpid": "F4AF4D0A43FCEAA7343D49B22F84B862",
+			"tp": "execute"
+		},
+		{
+			"fg": "9D16C7A74D1BBC4673D7AD8B71FA3E7B",
+			"fpid": "86C53FA7487582DDB5A52F8649C1714B",
+			"fp": "ReturnValue",
+			"tg": "CC65E4294692C17479BCC79588E2FC71",
+			"tpid": "04014A4543E77C5198444DA710B36076",
+			"tp": "Object"
+		},
+		{
+			"fg": "CC65E4294692C17479BCC79588E2FC71",
+			"fpid": "8DA2C4704633CEAC718736B01788AD66",
+			"fp": "then",
+			"tg": "F4F4D7774DDA3F0D78C1ECBF97B00C38",
+			"tpid": "4342B43048C352D95DAEF6BD77DBFB82",
+			"tp": "execute"
+		},
+		{
+			"fg": "CC65E4294692C17479BCC79588E2FC71",
+			"fpid": "19A3637244488A1B745B1ABCFB448D96",
+			"fp": "AsBP Turtle Character",
+			"tg": "F4F4D7774DDA3F0D78C1ECBF97B00C38",
+			"tpid": "62A7A1D248CE7F6BB9EA16AB0761C6BB",
+			"tp": "As BP Turtle Character"
+		},
+		{
+			"fg": "F4F4D7774DDA3F0D78C1ECBF97B00C38",
+			"fpid": "FAFE35584B30C45C876E70AC481BA4FA",
+			"fp": "then",
+			"tg": "C2991D36418F19A5A887D8B0C2BFB7CA",
+			"tpid": "24A7E7DD4B02D871CA8C68A2795AF9DB",
+			"tp": "execute"
+		},
+		{
+			"fg": "F4F4D7774DDA3F0D78C1ECBF97B00C38",
+			"fpid": "78B6DA5F4F4CD10B89BBE8B650818C4A",
+			"fp": "Output_Get",
+			"tg": "CB9C177F439471A4FB2F7FBF7A80838A",
+			"tpid": "57E1419C4F4B5F5D660732A1FC748430",
+			"tp": "self"
+		},
+		{
+			"fg": "60A3374C4011F38D36ECB38F4BF86DF2",
+			"fpid": "87B1672F4697A85AF3666B8273351693",
+			"fp": "then",
+			"tg": "09A51EA74A3B801D9A5E1F9B4094FDF3",
+			"tpid": "CB39D8DC4E08157670A26B8CE01C0D28",
+			"tp": "execute"
+		},
+		{
+			"fg": "D6E053E2466D52BC8190DAAF156CA769",
+			"fpid": "79D35070445944778AD049840AF5CC7C",
+			"fp": "then",
+			"tg": "09A51EA74A3B801D9A5E1F9B4094FDF3",
+			"tpid": "CB39D8DC4E08157670A26B8CE01C0D28",
+			"tp": "execute"
+		},
+		{
+			"fg": "09A51EA74A3B801D9A5E1F9B4094FDF3",
+			"fpid": "936D944B4777E2C8A75D27BE940ADEEA",
+			"fp": "then",
+			"tg": "2FAF0BA84466C0F528474BA62E0308B2",
+			"tpid": "8C9204B0427E9CAF54C51BAA47DF5657",
+			"tp": "execute"
+		},
+		{
+			"fg": "9527CDB345A182802817F8ADCD37026B",
+			"fpid": "1A23F33744A2B2D44B16D2984DF0A759",
+			"fp": "then",
+			"tg": "28AA5EED404F18FE6542F7B87B36044B",
+			"tpid": "D90C680A4E70D055960ECC96858DF21E",
+			"tp": "execute"
+		},
+		{
+			"fg": "B31AD60240CFA7D0FBF01081EAD8982E",
+			"fpid": "0215ABDC433981756F7EE8AC73EDEBBA",
+			"fp": "BackButton",
+			"tg": "699ED52247FEECC238849DBA4FE32852",
+			"tpid": "42527D7D4EA16AD9D3F0B4865FC2BB5B",
+			"tp": "self"
+		},
+		{
+			"fg": "B31AD60240CFA7D0FBF01081EAD8982E",
+			"fpid": "0215ABDC433981756F7EE8AC73EDEBBA",
+			"fp": "BackButton",
+			"tg": "8F611C5F408110F58388049280B7877C",
+			"tpid": "522572524B190EBA21F6C080BBA554C9",
+			"tp": "self"
+		},
+		{
+			"fg": "B31AD60240CFA7D0FBF01081EAD8982E",
+			"fpid": "0215ABDC433981756F7EE8AC73EDEBBA",
+			"fp": "BackButton",
+			"tg": "16B9DD71454EB3291836B1AC845B6E3C",
+			"tpid": "522572524B190EBA21F6C080BBA554C9",
+			"tp": "self"
+		},
+		{
+			"fg": "699ED52247FEECC238849DBA4FE32852",
+			"fpid": "63627D2848CC6F94EEE41EA36EBB2C14",
+			"fp": "ReturnValue",
+			"tg": "28AA5EED404F18FE6542F7B87B36044B",
+			"tpid": "F16BE7E84AB4D53DE7B2FD8DA2A4090E",
+			"tp": "Condition"
+		},
+		{
+			"fg": "28AA5EED404F18FE6542F7B87B36044B",
+			"fpid": "096623A548C201CD32B09C9677CDADED",
+			"fp": "then",
+			"tg": "16B9DD71454EB3291836B1AC845B6E3C",
+			"tpid": "EC099C9E4FBF523481ED998890E0E552",
+			"tp": "execute"
+		},
+		{
+			"fg": "28AA5EED404F18FE6542F7B87B36044B",
+			"fpid": "D58721084741C8A91E5AF1AA6028AE61",
+			"fp": "else",
+			"tg": "8F611C5F408110F58388049280B7877C",
+			"tpid": "EC099C9E4FBF523481ED998890E0E552",
+			"tp": "execute"
+		},
+		{
+			"fg": "121E36144EE7DDEA121964BED28B66C0",
+			"fpid": "A4DC650149F998F4A009E293CC711435",
+			"fp": "FocusButtonTimer",
+			"tg": "2FAF0BA84466C0F528474BA62E0308B2",
+			"tpid": "C02E8F14417060ACB40027BE9F9CB4F5",
+			"tp": "Handle"
+		},
+		{
+			"fg": "2FAF0BA84466C0F528474BA62E0308B2",
+			"fpid": "340086AD48E5D5A9258C36ABF0D34B85",
+			"fp": "then",
+			"tg": "EAF0ED074E447C4661A314980912CD16",
+			"tpid": "CB39D8DC4E08157670A26B8CE01C0D28",
+			"tp": "execute"
+		},
+		{
+			"fg": "CB9C177F439471A4FB2F7FBF7A80838A",
+			"fpid": "8E6C0A874637C239E9C36F9EB4A4D37E",
+			"fp": "PauseMenuWidget",
+			"tg": "C2991D36418F19A5A887D8B0C2BFB7CA",
+			"tpid": "813422A04220359F82A75FA8D570C076",
+			"tp": "Pause Menu Widget"
+		},
+		{
+			"fg": "C2991D36418F19A5A887D8B0C2BFB7CA",
+			"fpid": "C54C04924DFF510F0CE15FB804AE0E3E",
+			"fp": "then",
+			"tg": "750D38EC4DD8EF9F26937C8627DC8B6D",
+			"tpid": "3AE6729043CD94C402CA77B2DC1CCCC6",
+			"tp": "execute"
+		},
+		{
+			"fg": "EAF0ED074E447C4661A314980912CD16",
+			"fpid": "936D944B4777E2C8A75D27BE940ADEEA",
+			"fp": "then",
+			"tg": "4E693A974B143AE5D00C5EB1EA7DA62C",
+			"tpid": "731842BB43E4AAF273CC8CA1210CF25D",
+			"tp": "execute"
+		},
+		{
+			"fg": "FF8B332D4B4B424D7826FEBEC2672DF5",
+			"fpid": "C27B4429436C53F2A44360B7179DC090",
+			"fp": "Pause Menu Widget",
+			"tg": "EAF0ED074E447C4661A314980912CD16",
+			"tpid": "BEEDED75480E42873D775AA2CE0D6742",
+			"tp": "self"
+		},
+		{
+			"fg": "FF8B332D4B4B424D7826FEBEC2672DF5",
+			"fpid": "C27B4429436C53F2A44360B7179DC090",
+			"fp": "Pause Menu Widget",
+			"tg": "428C32B94679604BC29BB9A7CCD0133A",
+			"tpid": "39FD69314281774BA12566AAE4ED93DE",
+			"tp": "InWidgetToFocus"
+		},
+		{
+			"fg": "FF8B332D4B4B424D7826FEBEC2672DF5",
+			"fpid": "C27B4429436C53F2A44360B7179DC090",
+			"fp": "Pause Menu Widget",
+			"tg": "7E11A84F4A679CA49DF28891250291B5",
+			"tpid": "2FBF0DF54F185A0705B5C2B756280D11",
+			"tp": "self"
+		},
+		{
+			"fg": "CD8D0252408DDF4D5F897394F4503ADA",
+			"fpid": "D9F3AD1945407ECF8A66AFBBEF551E64",
+			"fp": "then",
+			"tg": "A20568994312AEAB2A8FF99F20376067",
+			"tpid": "B9B7C3D7496EC2662369E5887CF06560",
+			"tp": "execute"
+		},
+		{
+			"fg": "0402751A4E906C5EE9653D955A7E088A",
+			"fpid": "C36423D2478761AD756BC5B514D014E4",
+			"fp": "ReturnValue",
+			"tg": "428C32B94679604BC29BB9A7CCD0133A",
+			"tpid": "131701BA4E0844B5A5F5F390A84D3C3F",
+			"tp": "PlayerController"
+		},
+		{
+			"fg": "0402751A4E906C5EE9653D955A7E088A",
+			"fpid": "C36423D2478761AD756BC5B514D014E4",
+			"fp": "ReturnValue",
+			"tg": "4E693A974B143AE5D00C5EB1EA7DA62C",
+			"tpid": "A6A6BB6D4210C6521246C8A72DF65A35",
+			"tp": "PlayerController"
+		},
+		{
+			"fg": "4E693A974B143AE5D00C5EB1EA7DA62C",
+			"fpid": "14B206EC4D67C2BE879B7894511906D3",
+			"fp": "then",
+			"tg": "CD8D0252408DDF4D5F897394F4503ADA",
+			"tpid": "41B7F5B04CD3D566D0DC1AA749909F09",
+			"tp": "execute"
+		},
+		{
+			"fg": "16BAB70A4529B142D47E97A5B8CD29CA",
+			"fpid": "EB2EBF9646E487F0028EA59D23C9B44E",
+			"fp": "BackButton",
+			"tg": "750D38EC4DD8EF9F26937C8627DC8B6D",
+			"tpid": "A76044F9494DE7F4EB01998C268B2FEE",
+			"tp": "self"
+		},
+		{
+			"fg": "7E11A84F4A679CA49DF28891250291B5",
+			"fpid": "B7AE53D44EB9F7F5AA73AF8EE3BA359F",
+			"fp": "ControlsConfigButton",
+			"tg": "4E693A974B143AE5D00C5EB1EA7DA62C",
+			"tpid": "C3D28BD64704B25EF9282BA5694BF12A",
+			"tp": "InWidgetToFocus"
+		},
+		{
+			"fg": "7E11A84F4A679CA49DF28891250291B5",
+			"fpid": "B7AE53D44EB9F7F5AA73AF8EE3BA359F",
+			"fp": "ControlsConfigButton",
+			"tg": "A20568994312AEAB2A8FF99F20376067",
+			"tpid": "CE1201524A1B00ED71F0B884B8EA13DC",
+			"tp": "self"
+		},
+		{
+			"fg": "6754A7BB459CBF7C57A35DB84899FA25",
+			"fpid": "CF75C7574FE262A2028753B97408084F",
+			"fp": "then",
+			"tg": "32AA311A4E3FBC87A9E81AAF6FE137B4",
+			"tpid": "C02882AD40C4FEE2B69F6DA7F56E984A",
+			"tp": "execute"
+		}
+	],
+	"variables": [
+		{
+			"name": "As BP Turtle Character",
+			"type": "BP Turtle Character",
+			"exposed": true
+		},
+		{
+			"name": "FocusButtonTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "Pause Menu Widget",
+			"type": "WB Pause Menu",
+			"exposed": true
+		}
+	],
+	"components": [],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}

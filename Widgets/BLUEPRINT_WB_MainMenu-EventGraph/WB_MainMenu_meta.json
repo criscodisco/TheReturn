@@ -1,0 +1,1494 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Event Graph",
+	"assetName": "WB_MainMenu",
+	"capturedAt": "2026-09-18T21:17:23",
+	"totalNodes": 62,
+	"graphWidth": 6353,
+	"graphHeight": 3320,
+	"graphOriginX": -280,
+	"graphOriginY": -760,
+	"nodeTypes":
+	{
+		"Event Construct": 1,
+		"On Clicked": 3,
+		"On Pressed": 3,
+		"Open Level": 2,
+		"Get Player Controller": 2,
+		"Set bShowMouseCursor": 2,
+		"Reroute Node": 12,
+		"Set Input Mode Game Only": 2,
+		"Quit Game": 1,
+		"Does Save Game Exist": 1,
+		"Branch": 2,
+		"Load Game from Slot": 1,
+		"Cast To Save_TheReturn": 1,
+		"Get Game Instance": 1,
+		"Cast To GameInstance_TheReturn": 1,
+		"Set PlayerStats": 1,
+		"Get PlayerStats": 1,
+		"Get CurrentMapName": 1,
+		"String To Name": 1,
+		"Set PlayerTransform": 1,
+		"Get PlayerTransform": 1,
+		"Get FoxDialogueIndex": 1,
+		"Set FoxDialogueIndex": 1,
+		"Set Timer by Event": 1,
+		"FocusButton": 1,
+		"Get NewGameButton": 1,
+		"Get LoadGameButton": 1,
+		"Get QuitGameButton": 1,
+		"Make Array": 1,
+		"For Each Loop": 1,
+		"Has Keyboard Focus": 1,
+		"Set Background Color": 2,
+		"Set MainMenuFocusTimer": 1,
+		"Get MainMenuFocusTimer": 3,
+		"Clear and Invalidate Timer by Handle": 3,
+		"Get IsIntroductionOver?": 1,
+		"Set IsIntroOver?": 1
+	},
+	"nodes": [
+		{
+			"title": "Event Construct",
+			"guid": "91FEB4B04D62A56B1E150FA7A2D163B1",
+			"nx": 0.041600000000000005,
+			"ny": 0.079500000000000001,
+			"nw": 0.025000000000000001,
+			"nh": 0.019599999999999999
+		},
+		{
+			"title": "On Clicked",
+			"guid": "35ACCE9B4BBF1E0291D87C880B7FBE5D",
+			"nx": 0.0441,
+			"ny": 0.43130000000000002,
+			"nw": 0.037499999999999999,
+			"nh": 0.019599999999999999
+		},
+		{
+			"title": "On Pressed",
+			"guid": "580A2F7C4B06F2374C272891612D8F3F",
+			"nx": 0.0441,
+			"ny": 0.47470000000000001,
+			"nw": 0.038400000000000004,
+			"nh": 0.019599999999999999
+		},
+		{
+			"title": "Open Level",
+			"guid": "090246864B38B689CD787091C77306E0",
+			"nx": 0.11960000000000001,
+			"ny": 0.43130000000000002,
+			"nw": 0.040899999999999999,
+			"nh": 0.061400000000000003,
+			"pins": [
+				{
+					"id": "49CEC49E456878FEE60FE484E637448D",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "DFAC07A542EA6B4AA7DA589CCE652E89",
+					"n": "Level",
+					"t": "softobject",
+					"dv": "/Game/Maps/IntroductionMap.IntroductionMap"
+				},
+				{
+					"id": "A7B80E5E42ACEA7FEA5F0EB93678B9EF",
+					"n": "bAbsolute",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Get Player Controller",
+			"guid": "21A263D445B1E3DC0C8262A56F1691BA",
+			"nx": 0.14230000000000001,
+			"ny": 0.38800000000000001,
+			"nw": 0.040100000000000004,
+			"nh": 0.019599999999999999,
+			"pure": true,
+			"pins": [
+				{
+					"id": "0F7D31404E460C52340DAFBAF43DE284",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "EEC947F74CDB5C8ED6925095FE286084",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Set bShowMouseCursor",
+			"guid": "AB7C603746FD0729604C42BC87256B16",
+			"nx": 0.17760000000000001,
+			"ny": 0.43610000000000004,
+			"nw": 0.0373,
+			"nh": 0.033399999999999999,
+			"pins": [
+				{
+					"id": "8BAC1DEC4882162DF9616E85F216CDD5",
+					"n": "bShowMouseCursor",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "16A5ADFF49A57A8A29348EA3C2001B10",
+			"nx": 0.20780000000000001,
+			"ny": 0.39760000000000001,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Set Input Mode Game Only",
+			"guid": "8F16FAC242A66202356C189ADE8DBB32",
+			"nx": 0.22790000000000002,
+			"ny": 0.43130000000000002,
+			"nw": 0.034500000000000003,
+			"nh": 0.037999999999999999,
+			"pins": [
+				{
+					"id": "DCAE48F74CA37198553C40A30F273A4C",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"id": "67EA315740732108F5995B9C73D1B2B1",
+					"n": "bFlushInput",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "On Clicked",
+			"guid": "E4DC3B3F412EE4F2BC84E991D521D8DC",
+			"nx": 0.0441,
+			"ny": 0.55180000000000007,
+			"nw": 0.037100000000000001,
+			"nh": 0.019599999999999999
+		},
+		{
+			"title": "On Pressed",
+			"guid": "A027A220497DD7983CA79791EFEC917B",
+			"nx": 0.0441,
+			"ny": 0.6048,
+			"nw": 0.038100000000000002,
+			"nh": 0.019599999999999999
+		},
+		{
+			"title": "Quit Game",
+			"guid": "D63D9B794750714567C7A2ABACB82399",
+			"nx": 0.17760000000000001,
+			"ny": 0.55180000000000007,
+			"nw": 0.045600000000000002,
+			"nh": 0.0596,
+			"pins": [
+				{
+					"id": "B3F6AE90431C7F392F58B3B82FB6C904",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "4284687A42C3C5CEF815A8BABA6FA7A6",
+					"n": "QuitPreference",
+					"t": "byte",
+					"dv": "Quit"
+				},
+				{
+					"id": "83D191ED4D7FE773509F9F95A8A1D164",
+					"n": "bIgnorePlatformRestrictions",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "On Clicked",
+			"guid": "F41015174A88C501D5D880A6300489F2",
+			"nx": 0.0441,
+			"ny": 0.71079999999999999,
+			"nw": 0.0378,
+			"nh": 0.019599999999999999
+		},
+		{
+			"title": "On Pressed",
+			"guid": "51DF2E804FCD682474699CA1110C7539",
+			"nx": 0.0441,
+			"ny": 0.77350000000000008,
+			"nw": 0.038700000000000005,
+			"nh": 0.019599999999999999
+		},
+		{
+			"title": "Does Save Game Exist",
+			"guid": "3BABAE6E49F55C26E5CCCCB32605D8CB",
+			"nx": 0.10200000000000001,
+			"ny": 0.71079999999999999,
+			"nw": 0.043500000000000004,
+			"nh": 0.044000000000000004,
+			"pins": [
+				{
+					"id": "CC4D17E849FA7AF981C5388AE367BF9E",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "D616F0FD4AA61154D5D080972C0B30F8",
+					"n": "SlotName",
+					"t": "string",
+					"dv": "TheReturn_Save"
+				},
+				{
+					"id": "F0439EA94773500D46D60FAC54E2713B",
+					"n": "UserIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Branch",
+			"guid": "51405B204A2C202C9B7F7A8DFAA7DE7A",
+			"nx": 0.15740000000000001,
+			"ny": 0.71079999999999999,
+			"nw": 0.028300000000000002,
+			"nh": 0.028300000000000002,
+			"pins": [
+				{
+					"id": "8938ADC443CB3EDF5C80C98A66E9D596",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Load Game from Slot",
+			"guid": "2D494D4C4056B374499BAAA24C850532",
+			"nx": 0.21030000000000001,
+			"ny": 0.71079999999999999,
+			"nw": 0.043500000000000004,
+			"nh": 0.044000000000000004,
+			"pins": [
+				{
+					"id": "93A120864FCDF89896D77B93EF45A6BE",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "C365884D4C78DBA9B41EBEAE306C2FED",
+					"n": "SlotName",
+					"t": "string",
+					"dv": "TheReturn_Save"
+				},
+				{
+					"id": "78AE566842976CAF0B93AE9F7D353E07",
+					"n": "UserIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Cast To Save_TheReturn",
+			"guid": "FB1326714640662CB12D8E887BE131D2",
+			"nx": 0.26569999999999999,
+			"ny": 0.71079999999999999,
+			"nw": 0.0378,
+			"nh": 0.0373
+		},
+		{
+			"title": "Get Game Instance",
+			"guid": "C7B0B0314B5B5A690FD438A20BE89B33",
+			"nx": 0.29339999999999999,
+			"ny": 0.67710000000000004,
+			"nw": 0.027900000000000001,
+			"nh": 0.018100000000000002,
+			"pure": true,
+			"pins": [
+				{
+					"id": "7FFAA2D1494DA65F7F707590E6E48F66",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				}
+			]
+		},
+		{
+			"title": "Cast To GameInstance_TheReturn",
+			"guid": "CA7BF4E84B705422E25067A6CBF6AA36",
+			"nx": 0.3337,
+			"ny": 0.71079999999999999,
+			"nw": 0.046300000000000001,
+			"nh": 0.0373
+		},
+		{
+			"title": "Set PlayerStats",
+			"guid": "A89AB0E34B1A1A7EEF9B35B94CA65777",
+			"nx": 0.42180000000000001,
+			"ny": 0.7157,
+			"nw": 0.026600000000000002,
+			"nh": 0.032199999999999999
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "2BD9274144B69670A5DD97B0A3A04401",
+			"nx": 0.3513,
+			"ny": 0.78310000000000002,
+			"nw": 0.032899999999999999,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "Open Level",
+			"guid": "39E9F9FB40AF69B5930A58B1E1FE9B91",
+			"nx": 0.92810000000000004,
+			"ny": 0.71079999999999999,
+			"nw": 0.0304,
+			"nh": 0.054200000000000005,
+			"pins": [
+				{
+					"id": "A5B3187243AD29213732B0956AF31319",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "C17618E44BFED0B07751F2A983AFE276",
+					"n": "LevelName",
+					"t": "name",
+					"dv": "None"
+				},
+				{
+					"id": "584EA9504FFBAA27BCC1DB9EAE1AEB37",
+					"n": "bAbsolute",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Get CurrentMapName",
+			"guid": "B74AA52440C849B021E7A8984A4F5D12",
+			"nx": 0.85750000000000004,
+			"ny": 0.78310000000000002,
+			"nw": 0.038600000000000002,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "String To Name",
+			"guid": "3F4EB23E498C707F29D3CF8C94A09E53",
+			"nx": 0.89280000000000004,
+			"ny": 0.76390000000000002,
+			"nw": 0.0201,
+			"nh": 0.0114,
+			"pure": true,
+			"pins": [
+				{
+					"id": "03CF3EB04DA332E064C0399897938C46",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetStringLibrary"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "8C6A5E774578D4BF1AC75BB1B29D156E",
+			"nx": 0.3463,
+			"ny": 0.76390000000000002,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Set PlayerTransform",
+			"guid": "7CCDF51A4D587B92EBEDBABD3F44F4B7",
+			"nx": 0.48480000000000001,
+			"ny": 0.7157,
+			"nw": 0.031,
+			"nh": 0.032199999999999999
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "6848B50949949ADDF2B89AB986BDE19A",
+			"nx": 0.4269,
+			"ny": 0.75900000000000001,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Get PlayerTransform",
+			"guid": "3847EA294775D320EE786F9B44F4D4F4",
+			"nx": 0.3538,
+			"ny": 0.82169999999999999,
+			"nw": 0.0373,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "Set bShowMouseCursor",
+			"guid": "BD250D514EA79D7D49BC19BD2DCA28E5",
+			"nx": 0.69130000000000003,
+			"ny": 0.7157,
+			"nw": 0.0373,
+			"nh": 0.033399999999999999,
+			"pins": [
+				{
+					"id": "E82678AF47DC53F5C3D791913463580E",
+					"n": "bShowMouseCursor",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Set Input Mode Game Only",
+			"guid": "3100DED741F672389825A9836000C89C",
+			"nx": 0.75180000000000002,
+			"ny": 0.71079999999999999,
+			"nw": 0.034500000000000003,
+			"nh": 0.037999999999999999,
+			"pins": [
+				{
+					"id": "44550A4A40071C00B58F3195F7D1B4D8",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"id": "F0062B764C665FFBEEC40EB61F466402",
+					"n": "bFlushInput",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Get Player Controller",
+			"guid": "E4B654F0462BB19D46F3969C1AB2AB46",
+			"nx": 0.64850000000000008,
+			"ny": 0.67230000000000001,
+			"nw": 0.040100000000000004,
+			"nh": 0.019599999999999999,
+			"pure": true,
+			"pins": [
+				{
+					"id": "064423E74BF5BDFC836B509272EE5A13",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "3EEB9CC045D6288D38AEB1921D246E91",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "5C8167D64F10FA14D3A2B18F8CF81A86",
+			"nx": 0.72150000000000003,
+			"ny": 0.68190000000000006,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Get FoxDialogueIndex",
+			"guid": "0B909A49495CE43B47DE0BA9E865584A",
+			"nx": 0.3538,
+			"ny": 0.85540000000000005,
+			"nw": 0.038900000000000004,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "Set FoxDialogueIndex",
+			"guid": "B7BE6A3744F43254A0C305808C14A7EE",
+			"nx": 0.56040000000000001,
+			"ny": 0.7157,
+			"nw": 0.033399999999999999,
+			"nh": 0.032199999999999999,
+			"pins": [
+				{
+					"id": "A555F312460A8CA298CB4D84CA85145A",
+					"n": "FoxDialogueIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "AFFB65DD43B9B0F8C1A443A21CE60313",
+			"nx": 0.53520000000000001,
+			"ny": 0.85540000000000005,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "5B50D87E46DC511D26AFF9B14EF542CC",
+			"nx": 0.4773,
+			"ny": 0.81200000000000006,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "CDC259E548F87D83F8F14E9B12476BD4",
+			"nx": 0.4798,
+			"ny": 0.81200000000000006,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Set Timer by Event",
+			"guid": "109FFBD1464AF0D367839CA0AE14E542",
+			"nx": 0.20780000000000001,
+			"ny": 0.079500000000000001,
+			"nw": 0.047500000000000001,
+			"nh": 0.064500000000000002,
+			"pins": [
+				{
+					"id": "CCBB05404FFBEEC17DE0489A3BDED2CA",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "3BA5FBBF47B70F708D5D41A481E1A93F",
+					"n": "Time",
+					"t": "real",
+					"dv": "0.100000"
+				},
+				{
+					"id": "DD6610D242B51C19F66892B37457955C",
+					"n": "bLooping",
+					"t": "bool",
+					"dv": "true"
+				},
+				{
+					"id": "F95B8A9D497D68AC56FC9FA21A6648E0",
+					"n": "bMaxOncePerFrame",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "B0300A1D46EAC8F7F540ECAB08BD2039",
+					"n": "InitialStartDelay",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "B56E937D42E21915CF6078BA322DD4AF",
+					"n": "InitialStartDelayVariance",
+					"t": "real",
+					"dv": "0.000000"
+				}
+			]
+		},
+		{
+			"title": "FocusButton",
+			"guid": "F39C37FF44B8389B6EAC8B9680862978",
+			"nx": 0.17760000000000001,
+			"ny": 0.1663,
+			"nw": 0.022000000000000002,
+			"nh": 0.0235
+		},
+		{
+			"title": "Get NewGameButton",
+			"guid": "416099774AAED3816F97F686D560F0D5",
+			"nx": 0.13470000000000001,
+			"ny": 0.21450000000000002,
+			"nw": 0.0241,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "Get LoadGameButton",
+			"guid": "1A2BFBC94CDF0BA3C5561AB985C1E289",
+			"nx": 0.13470000000000001,
+			"ny": 0.23860000000000001,
+			"nw": 0.024900000000000002,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "Get QuitGameButton",
+			"guid": "49E21CFD4E98199DB3EF00AF60BF155B",
+			"nx": 0.13470000000000001,
+			"ny": 0.26269999999999999,
+			"nw": 0.023900000000000001,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "Make Array",
+			"guid": "C3D43B3546CB31E4081E40B141D6DBD1",
+			"nx": 0.17000000000000001,
+			"ny": 0.20960000000000001,
+			"nw": 0.024200000000000003,
+			"nh": 0.0361,
+			"pure": true
+		},
+		{
+			"title": "For Each Loop",
+			"guid": "71C0968543CEE9976E353597903DDF4B",
+			"nx": 0.21530000000000002,
+			"ny": 0.1711,
+			"nw": 0.031600000000000003,
+			"nh": 0.046400000000000004
+		},
+		{
+			"title": "Has Keyboard Focus",
+			"guid": "BE32DB0C4F3DA357C50F35A904654BDB",
+			"nx": 0.26819999999999999,
+			"ny": 0.19520000000000001,
+			"nw": 0.032399999999999998,
+			"nh": 0.0229,
+			"pure": true
+		},
+		{
+			"title": "Branch",
+			"guid": "35C4F929414B11D3EAA0EE84C8ACD2DE",
+			"nx": 0.31359999999999999,
+			"ny": 0.1711,
+			"nw": 0.028300000000000002,
+			"nh": 0.028300000000000002,
+			"pins": [
+				{
+					"id": "8BB52B1F4588A81C18247DAF39B6FF8D",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Set Background Color",
+			"guid": "3914BABE421EF8D7FF83FA86B2EF559C",
+			"nx": 0.39410000000000001,
+			"ny": 0.1663,
+			"nw": 0.035700000000000003,
+			"nh": 0.042800000000000005,
+			"pins": [
+				{
+					"id": "C59B66464E22D9EB6755C3909AB3A004",
+					"n": "InBackgroundColor",
+					"t": "struct",
+					"dv": "(R=0.000000,G=0.044180,B=1.000000,A=1.000000)"
+				}
+			]
+		},
+		{
+			"title": "Set Background Color",
+			"guid": "46BC710943B13319E67025B5CC8051DD",
+			"nx": 0.39410000000000001,
+			"ny": 0.2482,
+			"nw": 0.035700000000000003,
+			"nh": 0.042800000000000005,
+			"pins": [
+				{
+					"id": "C59B66464E22D9EB6755C3909AB3A004",
+					"n": "InBackgroundColor",
+					"t": "struct",
+					"dv": "(R=0.000000,G=1.000000,B=0.640078,A=1.000000)"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "C841810B4AC3BC385C7963BA84486402",
+			"nx": 0.31359999999999999,
+			"ny": 0.15180000000000002,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "1BB70B9F4DAE2B2FA2312B9D11036D42",
+			"nx": 0.26319999999999999,
+			"ny": 0.27229999999999999,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Set MainMenuFocusTimer",
+			"guid": "ADD96BC24F107B98CDF9D88A46EC5AA7",
+			"nx": 0.2707,
+			"ny": 0.0843,
+			"nw": 0.036700000000000003,
+			"nh": 0.023200000000000002
+		},
+		{
+			"title": "Get MainMenuFocusTimer",
+			"guid": "295CBA85494A05DAF043878DEEACC4D9",
+			"nx": 0.23800000000000002,
+			"ny": 0.38800000000000001,
+			"nw": 0.029100000000000001,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "Clear and Invalidate Timer by Handle",
+			"guid": "9A8ACC85432A4F759BA71280446A7C1F",
+			"nx": 0.27829999999999999,
+			"ny": 0.43130000000000002,
+			"nw": 0.043300000000000005,
+			"nh": 0.027700000000000002,
+			"pins": [
+				{
+					"id": "9246398B41C4A24D90EECAA3EB1F8D8B",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				}
+			]
+		},
+		{
+			"title": "Get MainMenuFocusTimer",
+			"guid": "ACC1F68E4C123352A3AF219BDABA0C8F",
+			"nx": 0.089400000000000007,
+			"ny": 0.53249999999999997,
+			"nw": 0.029100000000000001,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "Clear and Invalidate Timer by Handle",
+			"guid": "98368EDD4B0175667293C1B838384303",
+			"nx": 0.12470000000000001,
+			"ny": 0.55180000000000007,
+			"nw": 0.043300000000000005,
+			"nh": 0.027700000000000002,
+			"pins": [
+				{
+					"id": "9246398B41C4A24D90EECAA3EB1F8D8B",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				}
+			]
+		},
+		{
+			"title": "Get MainMenuFocusTimer",
+			"guid": "A0D492214804EFAF8921598C6E62CD2F",
+			"nx": 0.79710000000000003,
+			"ny": 0.69159999999999999,
+			"nw": 0.029100000000000001,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "Clear and Invalidate Timer by Handle",
+			"guid": "7A71D0C748659DEA7AF041ADEE3543BF",
+			"nx": 0.83240000000000003,
+			"ny": 0.71079999999999999,
+			"nw": 0.043300000000000005,
+			"nh": 0.027700000000000002,
+			"pins": [
+				{
+					"id": "9246398B41C4A24D90EECAA3EB1F8D8B",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				}
+			]
+		},
+		{
+			"title": "Get IsIntroductionOver?",
+			"guid": "FAA74DFF43FE4AD8BF083EAEC4EA00E5",
+			"nx": 0.35639999999999999,
+			"ny": 0.9084000000000001,
+			"nw": 0.040100000000000004,
+			"nh": 0.0114,
+			"pure": true
+		},
+		{
+			"title": "Set IsIntroOver?",
+			"guid": "1A47DB574C0A4CD3BBA5488C26F2BE3E",
+			"nx": 0.62580000000000002,
+			"ny": 0.7157,
+			"nw": 0.028200000000000003,
+			"nh": 0.032199999999999999,
+			"pins": [
+				{
+					"id": "CD4A98B147BE1F039AA15DBE1D0F480A",
+					"n": "IsIntroOver?",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "3705ABBE462F3CE3FA15BFABA16707BC",
+			"nx": 0.56540000000000001,
+			"ny": 0.9133,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "5BD41446419F99CF30782BB92290B6F1",
+			"nx": 0.55280000000000007,
+			"ny": 0.63860000000000006,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "EDEDD467459FAF24A86FB4B608AE9FDE",
+			"nx": 0.3891,
+			"ny": 0.63860000000000006,
+			"nw": 0.0066,
+			"nh": 0.0072000000000000007,
+			"pure": true
+		}
+	],
+	"connections": [
+		{
+			"fg": "91FEB4B04D62A56B1E150FA7A2D163B1",
+			"fpid": "5EAF265143A6F4EB04DFE8973E5BEB47",
+			"fp": "then",
+			"tg": "109FFBD1464AF0D367839CA0AE14E542",
+			"tpid": "28E6B5654BE42C6DB7F825AA2550BAED",
+			"tp": "execute"
+		},
+		{
+			"fg": "35ACCE9B4BBF1E0291D87C880B7FBE5D",
+			"fpid": "D6F217AA44110A23807F309ADA9434D9",
+			"fp": "then",
+			"tg": "090246864B38B689CD787091C77306E0",
+			"tpid": "D484C69D49B4CC31121028B0CD29E51C",
+			"tp": "execute"
+		},
+		{
+			"fg": "580A2F7C4B06F2374C272891612D8F3F",
+			"fpid": "6B7D841A4F37BEF1A5A0BF90E27B17EE",
+			"fp": "then",
+			"tg": "090246864B38B689CD787091C77306E0",
+			"tpid": "D484C69D49B4CC31121028B0CD29E51C",
+			"tp": "execute"
+		},
+		{
+			"fg": "090246864B38B689CD787091C77306E0",
+			"fpid": "C5E73A40400AE9443643DE8E7D1C45BF",
+			"fp": "then",
+			"tg": "AB7C603746FD0729604C42BC87256B16",
+			"tpid": "50AED60449BE02B4437FD091E5A1380A",
+			"tp": "execute"
+		},
+		{
+			"fg": "21A263D445B1E3DC0C8262A56F1691BA",
+			"fpid": "ED6351774681B6A40E32978B5AF36E83",
+			"fp": "ReturnValue",
+			"tg": "AB7C603746FD0729604C42BC87256B16",
+			"tpid": "6A2C85BA47179A786E87A6B2E48E57CB",
+			"tp": "self"
+		},
+		{
+			"fg": "21A263D445B1E3DC0C8262A56F1691BA",
+			"fpid": "ED6351774681B6A40E32978B5AF36E83",
+			"fp": "ReturnValue",
+			"tg": "16A5ADFF49A57A8A29348EA3C2001B10",
+			"tpid": "50BE18E9488E016A61A4AFB7B4A2DADF",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "AB7C603746FD0729604C42BC87256B16",
+			"fpid": "9E145E50456C8F214758F89F9542A71F",
+			"fp": "then",
+			"tg": "8F16FAC242A66202356C189ADE8DBB32",
+			"tpid": "52CE03E64C8A1D2256649E8B74DD9306",
+			"tp": "execute"
+		},
+		{
+			"fg": "16A5ADFF49A57A8A29348EA3C2001B10",
+			"fpid": "174928674EE138DCE2EEB984A60443FA",
+			"fp": "OutputPin",
+			"tg": "8F16FAC242A66202356C189ADE8DBB32",
+			"tpid": "D0DB4F7143CD220F2D92AC8FC79ADB55",
+			"tp": "PlayerController"
+		},
+		{
+			"fg": "8F16FAC242A66202356C189ADE8DBB32",
+			"fpid": "BE417632410D2B8F8DDFC99276087023",
+			"fp": "then",
+			"tg": "9A8ACC85432A4F759BA71280446A7C1F",
+			"tpid": "7A0FED5E48DC7E8147622B9E9811FE50",
+			"tp": "execute"
+		},
+		{
+			"fg": "E4DC3B3F412EE4F2BC84E991D521D8DC",
+			"fpid": "0B3595BF4CA96B9A7FE8F0B8CCE8DBAD",
+			"fp": "then",
+			"tg": "98368EDD4B0175667293C1B838384303",
+			"tpid": "7A0FED5E48DC7E8147622B9E9811FE50",
+			"tp": "execute"
+		},
+		{
+			"fg": "A027A220497DD7983CA79791EFEC917B",
+			"fpid": "92B596E94AF185336D40EB81181483F5",
+			"fp": "then",
+			"tg": "98368EDD4B0175667293C1B838384303",
+			"tpid": "7A0FED5E48DC7E8147622B9E9811FE50",
+			"tp": "execute"
+		},
+		{
+			"fg": "F41015174A88C501D5D880A6300489F2",
+			"fpid": "532B07E14F7568D634840BB0C93DF9BC",
+			"fp": "then",
+			"tg": "3BABAE6E49F55C26E5CCCCB32605D8CB",
+			"tpid": "E496FEFC45D1F1EA9D83BA82D60591B8",
+			"tp": "execute"
+		},
+		{
+			"fg": "51DF2E804FCD682474699CA1110C7539",
+			"fpid": "116ED51745A0F37D44A24193DB5F1BCC",
+			"fp": "then",
+			"tg": "3BABAE6E49F55C26E5CCCCB32605D8CB",
+			"tpid": "E496FEFC45D1F1EA9D83BA82D60591B8",
+			"tp": "execute"
+		},
+		{
+			"fg": "3BABAE6E49F55C26E5CCCCB32605D8CB",
+			"fpid": "AF73C64C424A76858F6541B1DD7A339E",
+			"fp": "then",
+			"tg": "51405B204A2C202C9B7F7A8DFAA7DE7A",
+			"tpid": "BE81EC2A426718C9F937E9B47E0530A9",
+			"tp": "execute"
+		},
+		{
+			"fg": "3BABAE6E49F55C26E5CCCCB32605D8CB",
+			"fpid": "988FEEBD458AFE3BDF8999910B83BABE",
+			"fp": "ReturnValue",
+			"tg": "51405B204A2C202C9B7F7A8DFAA7DE7A",
+			"tpid": "8938ADC443CB3EDF5C80C98A66E9D596",
+			"tp": "Condition"
+		},
+		{
+			"fg": "51405B204A2C202C9B7F7A8DFAA7DE7A",
+			"fpid": "63C3175A401A9F58356F87B9B5382753",
+			"fp": "then",
+			"tg": "2D494D4C4056B374499BAAA24C850532",
+			"tpid": "32130D2B4A155E80C3F38B86A9855A6E",
+			"tp": "execute"
+		},
+		{
+			"fg": "2D494D4C4056B374499BAAA24C850532",
+			"fpid": "35C712CA425C90A9A5EB28AE751B587F",
+			"fp": "then",
+			"tg": "FB1326714640662CB12D8E887BE131D2",
+			"tpid": "BA6C37EC46697FF5524ED8AC7A99CDA2",
+			"tp": "execute"
+		},
+		{
+			"fg": "2D494D4C4056B374499BAAA24C850532",
+			"fpid": "CD4B172B44C57B31EE22649EB7DBBC32",
+			"fp": "ReturnValue",
+			"tg": "FB1326714640662CB12D8E887BE131D2",
+			"tpid": "14AF31F046EF869E29FDB5A0AF460886",
+			"tp": "Object"
+		},
+		{
+			"fg": "FB1326714640662CB12D8E887BE131D2",
+			"fpid": "2051C1464DA96BBFFC766F963259BF36",
+			"fp": "then",
+			"tg": "CA7BF4E84B705422E25067A6CBF6AA36",
+			"tpid": "DFD81A1B47917290D59C848B55C359FF",
+			"tp": "execute"
+		},
+		{
+			"fg": "FB1326714640662CB12D8E887BE131D2",
+			"fpid": "7EEEEC4E4CEF40EB1048F590EEDCC8FC",
+			"fp": "AsSave the Return",
+			"tg": "2BD9274144B69670A5DD97B0A3A04401",
+			"tpid": "09A597CC4F4091805047B59978D56000",
+			"tp": "self"
+		},
+		{
+			"fg": "FB1326714640662CB12D8E887BE131D2",
+			"fpid": "7EEEEC4E4CEF40EB1048F590EEDCC8FC",
+			"fp": "AsSave the Return",
+			"tg": "8C6A5E774578D4BF1AC75BB1B29D156E",
+			"tpid": "1C50FD49452674A7A0ACD08C0B5CEDDE",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "FB1326714640662CB12D8E887BE131D2",
+			"fpid": "7EEEEC4E4CEF40EB1048F590EEDCC8FC",
+			"fp": "AsSave the Return",
+			"tg": "3847EA294775D320EE786F9B44F4D4F4",
+			"tpid": "CB1A33A74816D61F309E7C921E0FB815",
+			"tp": "self"
+		},
+		{
+			"fg": "FB1326714640662CB12D8E887BE131D2",
+			"fpid": "7EEEEC4E4CEF40EB1048F590EEDCC8FC",
+			"fp": "AsSave the Return",
+			"tg": "0B909A49495CE43B47DE0BA9E865584A",
+			"tpid": "B292C33A4E764DFD2EB626AE8DF22396",
+			"tp": "self"
+		},
+		{
+			"fg": "FB1326714640662CB12D8E887BE131D2",
+			"fpid": "7EEEEC4E4CEF40EB1048F590EEDCC8FC",
+			"fp": "AsSave the Return",
+			"tg": "FAA74DFF43FE4AD8BF083EAEC4EA00E5",
+			"tpid": "7143AF9A4CF3FDB095E6D3B4D2785388",
+			"tp": "self"
+		},
+		{
+			"fg": "C7B0B0314B5B5A690FD438A20BE89B33",
+			"fpid": "DE3FCA73408F59EAA134A697E1D8AF60",
+			"fp": "ReturnValue",
+			"tg": "CA7BF4E84B705422E25067A6CBF6AA36",
+			"tpid": "249191064D2B2AEB954BAF8E4D4CCB39",
+			"tp": "Object"
+		},
+		{
+			"fg": "CA7BF4E84B705422E25067A6CBF6AA36",
+			"fpid": "1879C1C847428A96560046A52975FBBB",
+			"fp": "then",
+			"tg": "A89AB0E34B1A1A7EEF9B35B94CA65777",
+			"tpid": "760B93E54F021861A03C56A8CB88BAFC",
+			"tp": "execute"
+		},
+		{
+			"fg": "CA7BF4E84B705422E25067A6CBF6AA36",
+			"fpid": "7C29E55847BA18632BA3488D59EB92DC",
+			"fp": "AsGame Instance the Return",
+			"tg": "A89AB0E34B1A1A7EEF9B35B94CA65777",
+			"tpid": "CBA9B22B4B018DFF25282FBD7B47F49C",
+			"tp": "self"
+		},
+		{
+			"fg": "CA7BF4E84B705422E25067A6CBF6AA36",
+			"fpid": "7C29E55847BA18632BA3488D59EB92DC",
+			"fp": "AsGame Instance the Return",
+			"tg": "6848B50949949ADDF2B89AB986BDE19A",
+			"tpid": "4FA66CCC452C5451D213349BB3A88451",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "CA7BF4E84B705422E25067A6CBF6AA36",
+			"fpid": "7C29E55847BA18632BA3488D59EB92DC",
+			"fp": "AsGame Instance the Return",
+			"tg": "5B50D87E46DC511D26AFF9B14EF542CC",
+			"tpid": "950884154E9DAEE9348CCC9CE4096294",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "CA7BF4E84B705422E25067A6CBF6AA36",
+			"fpid": "7C29E55847BA18632BA3488D59EB92DC",
+			"fp": "AsGame Instance the Return",
+			"tg": "EDEDD467459FAF24A86FB4B608AE9FDE",
+			"tpid": "39B2E2B14FD9DBED4A1D45B1CC217042",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "A89AB0E34B1A1A7EEF9B35B94CA65777",
+			"fpid": "85C436EC42022AF7A4E01682BF77F7EE",
+			"fp": "then",
+			"tg": "7CCDF51A4D587B92EBEDBABD3F44F4B7",
+			"tpid": "AC8C0C0C4DB03CF731D734B7B3DA900A",
+			"tp": "execute"
+		},
+		{
+			"fg": "2BD9274144B69670A5DD97B0A3A04401",
+			"fpid": "F209B4C143B987BE61DE198D646FA7A1",
+			"fp": "PlayerStats",
+			"tg": "A89AB0E34B1A1A7EEF9B35B94CA65777",
+			"tpid": "FAD1C71741B784B7FBB1039A69C5E2DB",
+			"tp": "PlayerStats"
+		},
+		{
+			"fg": "B74AA52440C849B021E7A8984A4F5D12",
+			"fpid": "990820C7402C9324E8B5549BE64B49B1",
+			"fp": "CurrentMapName",
+			"tg": "3F4EB23E498C707F29D3CF8C94A09E53",
+			"tpid": "294074BF4A09E27693E21FBA7B459512",
+			"tp": "InString"
+		},
+		{
+			"fg": "3F4EB23E498C707F29D3CF8C94A09E53",
+			"fpid": "170151474C9F8424CB3BB3B4498A35E8",
+			"fp": "ReturnValue",
+			"tg": "39E9F9FB40AF69B5930A58B1E1FE9B91",
+			"tpid": "C17618E44BFED0B07751F2A983AFE276",
+			"tp": "LevelName"
+		},
+		{
+			"fg": "8C6A5E774578D4BF1AC75BB1B29D156E",
+			"fpid": "B6D0E8504C8DED8E5BDCF79D49894144",
+			"fp": "OutputPin",
+			"tg": "B74AA52440C849B021E7A8984A4F5D12",
+			"tpid": "234891C343FEB64C58280AB7B2E0B5AD",
+			"tp": "self"
+		},
+		{
+			"fg": "7CCDF51A4D587B92EBEDBABD3F44F4B7",
+			"fpid": "A8098C594D91EB8ED9958DBAC69DF779",
+			"fp": "then",
+			"tg": "B7BE6A3744F43254A0C305808C14A7EE",
+			"tpid": "5257C0F040431AF7471872A5FF208B2A",
+			"tp": "execute"
+		},
+		{
+			"fg": "6848B50949949ADDF2B89AB986BDE19A",
+			"fpid": "EE8998384ED8A16E037B558473E7DC5B",
+			"fp": "OutputPin",
+			"tg": "7CCDF51A4D587B92EBEDBABD3F44F4B7",
+			"tpid": "5A72A98C4C38F23FBD4036A3104C4EDC",
+			"tp": "self"
+		},
+		{
+			"fg": "3847EA294775D320EE786F9B44F4D4F4",
+			"fpid": "90010853477FB4CABC5C1A97A489E2BC",
+			"fp": "PlayerTransform",
+			"tg": "7CCDF51A4D587B92EBEDBABD3F44F4B7",
+			"tpid": "B4B5963649D2B79EED4A2D9BE2ADA1D7",
+			"tp": "PlayerTransform"
+		},
+		{
+			"fg": "BD250D514EA79D7D49BC19BD2DCA28E5",
+			"fpid": "5323389841BEC9D2FC9F91B114339A76",
+			"fp": "then",
+			"tg": "3100DED741F672389825A9836000C89C",
+			"tpid": "EAF85A3C4C87AC57D5C2038ED497324F",
+			"tp": "execute"
+		},
+		{
+			"fg": "3100DED741F672389825A9836000C89C",
+			"fpid": "CBB4702548345DA79F8D018FA70FD0C1",
+			"fp": "then",
+			"tg": "7A71D0C748659DEA7AF041ADEE3543BF",
+			"tpid": "7A0FED5E48DC7E8147622B9E9811FE50",
+			"tp": "execute"
+		},
+		{
+			"fg": "E4B654F0462BB19D46F3969C1AB2AB46",
+			"fpid": "027482F44B6AD564DC0407B0B94640AF",
+			"fp": "ReturnValue",
+			"tg": "BD250D514EA79D7D49BC19BD2DCA28E5",
+			"tpid": "B970E9AF409774E5C73928AE592080E4",
+			"tp": "self"
+		},
+		{
+			"fg": "E4B654F0462BB19D46F3969C1AB2AB46",
+			"fpid": "027482F44B6AD564DC0407B0B94640AF",
+			"fp": "ReturnValue",
+			"tg": "5C8167D64F10FA14D3A2B18F8CF81A86",
+			"tpid": "ACCBECEB4F6FDBB9747B6C818C3E40E8",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "5C8167D64F10FA14D3A2B18F8CF81A86",
+			"fpid": "AF553D184B7DCF072EA4289ECD04540B",
+			"fp": "OutputPin",
+			"tg": "3100DED741F672389825A9836000C89C",
+			"tpid": "1273518546720FB5841BB7B435D2C564",
+			"tp": "PlayerController"
+		},
+		{
+			"fg": "0B909A49495CE43B47DE0BA9E865584A",
+			"fpid": "3A4D118B4C1C32DFB06F40AAF20B1D24",
+			"fp": "FoxDialogueIndex",
+			"tg": "AFFB65DD43B9B0F8C1A443A21CE60313",
+			"tpid": "8DF33359464607E31CC536AE8C0C62F2",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "B7BE6A3744F43254A0C305808C14A7EE",
+			"fpid": "E7E11B1E44759C933E33CE9B64042C9F",
+			"fp": "then",
+			"tg": "1A47DB574C0A4CD3BBA5488C26F2BE3E",
+			"tpid": "0D7BC4B149F924B132E16E98AAD08BAC",
+			"tp": "execute"
+		},
+		{
+			"fg": "AFFB65DD43B9B0F8C1A443A21CE60313",
+			"fpid": "9D16D70746955090043107B77B119F82",
+			"fp": "OutputPin",
+			"tg": "B7BE6A3744F43254A0C305808C14A7EE",
+			"tpid": "A555F312460A8CA298CB4D84CA85145A",
+			"tp": "FoxDialogueIndex"
+		},
+		{
+			"fg": "5B50D87E46DC511D26AFF9B14EF542CC",
+			"fpid": "E7E40A04483C15BB8D7424975A6B7445",
+			"fp": "OutputPin",
+			"tg": "CDC259E548F87D83F8F14E9B12476BD4",
+			"tpid": "6607B35348E978A88A0AF2A81FA607D8",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "CDC259E548F87D83F8F14E9B12476BD4",
+			"fpid": "990C7E6940782BFF7695E38D766288BB",
+			"fp": "OutputPin",
+			"tg": "B7BE6A3744F43254A0C305808C14A7EE",
+			"tpid": "205496BF4AF8F19DE46332AFB0A2E3AD",
+			"tp": "self"
+		},
+		{
+			"fg": "109FFBD1464AF0D367839CA0AE14E542",
+			"fpid": "EFD0AB7C4D1AACC6E86F9AB109D91EE2",
+			"fp": "then",
+			"tg": "ADD96BC24F107B98CDF9D88A46EC5AA7",
+			"tpid": "B68739F74B345D740DF680BAD21E8B5F",
+			"tp": "execute"
+		},
+		{
+			"fg": "109FFBD1464AF0D367839CA0AE14E542",
+			"fpid": "2ECE038D49B7087BCEE2D28F48006F5D",
+			"fp": "ReturnValue",
+			"tg": "ADD96BC24F107B98CDF9D88A46EC5AA7",
+			"tpid": "E2CEAFDC4AD83AC216DC6F949BDCB11A",
+			"tp": "MainMenuFocusTimer"
+		},
+		{
+			"fg": "F39C37FF44B8389B6EAC8B9680862978",
+			"fpid": "A94E97234F06CAAEFBDA04B187B951CE",
+			"fp": "OutputDelegate",
+			"tg": "109FFBD1464AF0D367839CA0AE14E542",
+			"tpid": "CF507D2E4D6EBC08BAB5149ADCFDC6FC",
+			"tp": "Delegate"
+		},
+		{
+			"fg": "F39C37FF44B8389B6EAC8B9680862978",
+			"fpid": "53D88FB249B56D76F94251891223F8A0",
+			"fp": "then",
+			"tg": "71C0968543CEE9976E353597903DDF4B",
+			"tpid": "B402913349BC6A5DC348E1902DEADB6C",
+			"tp": "Exec"
+		},
+		{
+			"fg": "416099774AAED3816F97F686D560F0D5",
+			"fpid": "FED8CEE1486E5367CABC158B69FFA08C",
+			"fp": "NewGameButton",
+			"tg": "C3D43B3546CB31E4081E40B141D6DBD1",
+			"tpid": "EA9D56A24CF8653676D03CB893DF9E1D",
+			"tp": "[0]"
+		},
+		{
+			"fg": "1A2BFBC94CDF0BA3C5561AB985C1E289",
+			"fpid": "EA4355C04C36CA988B6807882BD14756",
+			"fp": "LoadGameButton",
+			"tg": "C3D43B3546CB31E4081E40B141D6DBD1",
+			"tpid": "4452B59040AAABA7C58F038705780EDA",
+			"tp": "[1]"
+		},
+		{
+			"fg": "49E21CFD4E98199DB3EF00AF60BF155B",
+			"fpid": "EA36EABE43102318C79C47B3CF75951E",
+			"fp": "QuitGameButton",
+			"tg": "C3D43B3546CB31E4081E40B141D6DBD1",
+			"tpid": "A11C73D3407A8CFDDBAB4084F574A237",
+			"tp": "[2]"
+		},
+		{
+			"fg": "C3D43B3546CB31E4081E40B141D6DBD1",
+			"fpid": "629CB8CD4D79962729EF8C9AD8FEED45",
+			"fp": "Array",
+			"tg": "71C0968543CEE9976E353597903DDF4B",
+			"tpid": "32C678FC4987D99B227B728D3B441518",
+			"tp": "Array"
+		},
+		{
+			"fg": "71C0968543CEE9976E353597903DDF4B",
+			"fpid": "1D5D204E4E8DD46C3F131892F3FFB809",
+			"fp": "LoopBody",
+			"tg": "35C4F929414B11D3EAA0EE84C8ACD2DE",
+			"tpid": "562F1FF746BBD23157E45C83EB2A1A18",
+			"tp": "execute"
+		},
+		{
+			"fg": "71C0968543CEE9976E353597903DDF4B",
+			"fpid": "F823DAEA40E026FFED9F22A5BBC4FCEB",
+			"fp": "Array Element",
+			"tg": "BE32DB0C4F3DA357C50F35A904654BDB",
+			"tpid": "3D9AD36740C69371EC36428ECD1B2A2E",
+			"tp": "self"
+		},
+		{
+			"fg": "71C0968543CEE9976E353597903DDF4B",
+			"fpid": "F823DAEA40E026FFED9F22A5BBC4FCEB",
+			"fp": "Array Element",
+			"tg": "C841810B4AC3BC385C7963BA84486402",
+			"tpid": "66ED82CC4038D68D1E72E08BC2A0B3CC",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "71C0968543CEE9976E353597903DDF4B",
+			"fpid": "F823DAEA40E026FFED9F22A5BBC4FCEB",
+			"fp": "Array Element",
+			"tg": "1BB70B9F4DAE2B2FA2312B9D11036D42",
+			"tpid": "7C190A5E49D80F91664AC78703876561",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "BE32DB0C4F3DA357C50F35A904654BDB",
+			"fpid": "199239AB48639E58829EFDB9193BE69C",
+			"fp": "ReturnValue",
+			"tg": "35C4F929414B11D3EAA0EE84C8ACD2DE",
+			"tpid": "8BB52B1F4588A81C18247DAF39B6FF8D",
+			"tp": "Condition"
+		},
+		{
+			"fg": "35C4F929414B11D3EAA0EE84C8ACD2DE",
+			"fpid": "6AEE68E04ABDEF0AAF2BDD915D7C2AF8",
+			"fp": "then",
+			"tg": "3914BABE421EF8D7FF83FA86B2EF559C",
+			"tpid": "45113E78476CD6588F969ABAF5101455",
+			"tp": "execute"
+		},
+		{
+			"fg": "35C4F929414B11D3EAA0EE84C8ACD2DE",
+			"fpid": "B9D5E6BF49E5F93AAC4F13AA72F8C76C",
+			"fp": "else",
+			"tg": "46BC710943B13319E67025B5CC8051DD",
+			"tpid": "45113E78476CD6588F969ABAF5101455",
+			"tp": "execute"
+		},
+		{
+			"fg": "C841810B4AC3BC385C7963BA84486402",
+			"fpid": "F9272491481833EE82990294841932D8",
+			"fp": "OutputPin",
+			"tg": "3914BABE421EF8D7FF83FA86B2EF559C",
+			"tpid": "B1799F19405054B20EB9B5A667C005D3",
+			"tp": "self"
+		},
+		{
+			"fg": "1BB70B9F4DAE2B2FA2312B9D11036D42",
+			"fpid": "FFF0D13A4FA1C7F980FE89B8E38607DD",
+			"fp": "OutputPin",
+			"tg": "46BC710943B13319E67025B5CC8051DD",
+			"tpid": "B1799F19405054B20EB9B5A667C005D3",
+			"tp": "self"
+		},
+		{
+			"fg": "295CBA85494A05DAF043878DEEACC4D9",
+			"fpid": "1EB5BC89482F2133BA595D851A77A303",
+			"fp": "MainMenuFocusTimer",
+			"tg": "9A8ACC85432A4F759BA71280446A7C1F",
+			"tpid": "00BEAC9E4793D9C8D4D20FAB0AAB1462",
+			"tp": "Handle"
+		},
+		{
+			"fg": "ACC1F68E4C123352A3AF219BDABA0C8F",
+			"fpid": "1EB5BC89482F2133BA595D851A77A303",
+			"fp": "MainMenuFocusTimer",
+			"tg": "98368EDD4B0175667293C1B838384303",
+			"tpid": "00BEAC9E4793D9C8D4D20FAB0AAB1462",
+			"tp": "Handle"
+		},
+		{
+			"fg": "98368EDD4B0175667293C1B838384303",
+			"fpid": "C867A3914AC562BDA724FBBD54996E81",
+			"fp": "then",
+			"tg": "D63D9B794750714567C7A2ABACB82399",
+			"tpid": "DB70F1EC40B6181B3B546DBF21B6160D",
+			"tp": "execute"
+		},
+		{
+			"fg": "A0D492214804EFAF8921598C6E62CD2F",
+			"fpid": "1EB5BC89482F2133BA595D851A77A303",
+			"fp": "MainMenuFocusTimer",
+			"tg": "7A71D0C748659DEA7AF041ADEE3543BF",
+			"tpid": "00BEAC9E4793D9C8D4D20FAB0AAB1462",
+			"tp": "Handle"
+		},
+		{
+			"fg": "7A71D0C748659DEA7AF041ADEE3543BF",
+			"fpid": "C867A3914AC562BDA724FBBD54996E81",
+			"fp": "then",
+			"tg": "39E9F9FB40AF69B5930A58B1E1FE9B91",
+			"tpid": "FE4941EE4B12BB05B0ED3AA93144CD6C",
+			"tp": "execute"
+		},
+		{
+			"fg": "FAA74DFF43FE4AD8BF083EAEC4EA00E5",
+			"fpid": "1C3C72F04F09D69DDC024E9BF082A5AF",
+			"fp": "IsIntroductionOver?",
+			"tg": "3705ABBE462F3CE3FA15BFABA16707BC",
+			"tpid": "6A0B004448C8BDF4A228BE8D5DCD5538",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "1A47DB574C0A4CD3BBA5488C26F2BE3E",
+			"fpid": "D64ADED649C0E18EA9871A986E361097",
+			"fp": "then",
+			"tg": "BD250D514EA79D7D49BC19BD2DCA28E5",
+			"tpid": "6615936049272BD1AC8FF691792104AD",
+			"tp": "execute"
+		},
+		{
+			"fg": "3705ABBE462F3CE3FA15BFABA16707BC",
+			"fpid": "E2EE7BD647EA9476AF62298CC14A2609",
+			"fp": "OutputPin",
+			"tg": "1A47DB574C0A4CD3BBA5488C26F2BE3E",
+			"tpid": "CD4A98B147BE1F039AA15DBE1D0F480A",
+			"tp": "IsIntroOver?"
+		},
+		{
+			"fg": "5BD41446419F99CF30782BB92290B6F1",
+			"fpid": "AFA45C4C459738FB3F77AF854B900E36",
+			"fp": "OutputPin",
+			"tg": "1A47DB574C0A4CD3BBA5488C26F2BE3E",
+			"tpid": "EC89556747EE20C53BAF61A53201C487",
+			"tp": "self"
+		},
+		{
+			"fg": "EDEDD467459FAF24A86FB4B608AE9FDE",
+			"fpid": "03C988E44BB271515709749601BD604B",
+			"fp": "OutputPin",
+			"tg": "5BD41446419F99CF30782BB92290B6F1",
+			"tpid": "4A352D3446A44B7C3B3F8AA25364422A",
+			"tp": "InputPin"
+		}
+	],
+	"variables": [
+		{
+			"name": "As BP Turtle Character",
+			"type": "BP Turtle Character",
+			"exposed": true
+		},
+		{
+			"name": "MainMenuFocusTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		}
+	],
+	"components": [],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}

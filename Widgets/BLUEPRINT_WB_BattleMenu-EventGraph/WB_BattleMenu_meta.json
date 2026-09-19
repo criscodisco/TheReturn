@@ -1,0 +1,2239 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Event Graph",
+	"assetName": "WB_BattleMenu",
+	"capturedAt": "2026-09-18T21:12:59",
+	"totalNodes": 94,
+	"graphWidth": 4733,
+	"graphHeight": 7327,
+	"graphOriginX": -1688,
+	"graphOriginY": -1048,
+	"nodeTypes":
+	{
+		"Event Construct": 1,
+		"Set Timer by Event": 4,
+		"FocusButton": 1,
+		"Get CastMagicButton": 1,
+		"Get HealButton": 1,
+		"Get SpecialAttackButton": 1,
+		"Make Array": 1,
+		"For Each Loop": 1,
+		"Has Keyboard Focus": 1,
+		"Branch": 5,
+		"Set Background Color": 2,
+		"Reroute Node": 17,
+		"On Pressed": 3,
+		"Cast Magic": 1,
+		"On Clicked": 3,
+		"Set IsBattleMenuOpen": 3,
+		"Special Attack AOE": 1,
+		"Heal Magic": 1,
+		"Stop Anim Montage": 3,
+		"Get Current Montage": 3,
+		"integer >= integer": 3,
+		"Break Struct_PlayerStats": 3,
+		"Break Struct_HP-MP": 3,
+		"Get PlayerStats": 3,
+		"Get TsunamiMPCost": 1,
+		"CheckForNoManaAnimPlaying": 1,
+		"Get Player Character": 1,
+		"Cast To BP_TurtleCharacter": 1,
+		"Set As BP Turtle Character": 1,
+		"Get As BP Turtle Character": 5,
+		"Get NotEnoughManaWidget": 4,
+		"Get NoManaFlashAnim": 4,
+		"Is Animation Playing": 1,
+		"Set Visibility": 4,
+		"Play Animation": 3,
+		"Get SpecialAttackMPCost": 1,
+		"Get HealMPCost": 1
+	},
+	"nodes": [
+		{
+			"title": "Event Construct",
+			"guid": "DD6CA36B44C7FC89C64BE1B981D8B7D2",
+			"nx": 0.1741,
+			"ny": 0.062200000000000005,
+			"nw": 0.033600000000000005,
+			"nh": 0.0088999999999999999
+		},
+		{
+			"title": "Set Timer by Event",
+			"guid": "7507C74C46642023284DFCA91279719D",
+			"nx": 0.39380000000000004,
+			"ny": 0.062200000000000005,
+			"nw": 0.063800000000000009,
+			"nh": 0.0292,
+			"pins": [
+				{
+					"id": "3053214B4F9600F26DC9EDBF9584EBDB",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "7740927F41F192E41836DD9119A5BC1A",
+					"n": "Time",
+					"t": "real",
+					"dv": "0.100000"
+				},
+				{
+					"id": "4349FD584876D86B905217BB2F178CB1",
+					"n": "bLooping",
+					"t": "bool",
+					"dv": "true"
+				},
+				{
+					"id": "A573355D4E9795238F27EEB47ADE224A",
+					"n": "bMaxOncePerFrame",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "8DCEAF08462D9647328768B13A89C0EA",
+					"n": "InitialStartDelay",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "DA015B7B45B7AF417AEF0C9D064BFFB2",
+					"n": "InitialStartDelayVariance",
+					"t": "real",
+					"dv": "0.000000"
+				}
+			]
+		},
+		{
+			"title": "FocusButton",
+			"guid": "CD5DFB6C49DA07AD5C0893B153A6178C",
+			"nx": 0.34990000000000004,
+			"ny": 0.10150000000000001,
+			"nw": 0.029600000000000001,
+			"nh": 0.0106
+		},
+		{
+			"title": "Get CastMagicButton",
+			"guid": "70380B0F4ED9540A6B5B2E991E144196",
+			"nx": 0.34310000000000002,
+			"ny": 0.13870000000000002,
+			"nw": 0.0332,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get HealButton",
+			"guid": "45D02D314E246001E0A911BA5797E2BB",
+			"nx": 0.34650000000000003,
+			"ny": 0.1452,
+			"nw": 0.027900000000000001,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get SpecialAttackButton",
+			"guid": "77797F1F4865199D52E18194B0F9CF5A",
+			"nx": 0.3397,
+			"ny": 0.12770000000000001,
+			"nw": 0.036600000000000001,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Make Array",
+			"guid": "A139F069441AD0705C07F282AC104B89",
+			"nx": 0.39050000000000001,
+			"ny": 0.12770000000000001,
+			"nw": 0.032500000000000001,
+			"nh": 0.016400000000000001,
+			"pure": true
+		},
+		{
+			"title": "For Each Loop",
+			"guid": "CBDAB97944451F1F34652D9A1F1BCD3F",
+			"nx": 0.42760000000000004,
+			"ny": 0.1037,
+			"nw": 0.042500000000000003,
+			"nh": 0.021000000000000001
+		},
+		{
+			"title": "Has Keyboard Focus",
+			"guid": "6433B3C9495190195AF5E89C507D948D",
+			"nx": 0.48850000000000005,
+			"ny": 0.12990000000000002,
+			"nw": 0.043500000000000004,
+			"nh": 0.010400000000000001,
+			"pure": true
+		},
+		{
+			"title": "Branch",
+			"guid": "90D720954D58F9635EFB1E8421A64DF6",
+			"nx": 0.54600000000000004,
+			"ny": 0.1037,
+			"nw": 0.037999999999999999,
+			"nh": 0.012800000000000001,
+			"pins": [
+				{
+					"id": "2D9DDFE44E488CF0736AE3B868F9A811",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Set Background Color",
+			"guid": "34719C434C3737198D3BAFA0A851D12C",
+			"nx": 0.72170000000000001,
+			"ny": 0.10150000000000001,
+			"nw": 0.048000000000000001,
+			"nh": 0.019400000000000001,
+			"pins": [
+				{
+					"id": "0572AA904C413A6091796197D19D66FA",
+					"n": "InBackgroundColor",
+					"t": "struct",
+					"dv": "(R=0.000000,G=0.380889,B=1.000000,A=1.000000)"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "17C7DD4E428BCA276C601DAC6EF4C011",
+			"nx": 0.54600000000000004,
+			"ny": 0.12340000000000001,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Set Background Color",
+			"guid": "8C06B4394F5482E18ACEFAB9F34CE638",
+			"nx": 0.6744,
+			"ny": 0.1343,
+			"nw": 0.048000000000000001,
+			"nh": 0.019400000000000001,
+			"pins": [
+				{
+					"id": "40F3D1D3488132395F03B79FF7B18607",
+					"n": "InBackgroundColor",
+					"t": "struct",
+					"dv": "(R=0.093750,G=1.000000,B=0.484046,A=1.000000)"
+				}
+			]
+		},
+		{
+			"title": "On Pressed",
+			"guid": "7CF63C2444343FDA7BD9209461BDF95F",
+			"nx": 0.20450000000000002,
+			"ny": 0.33300000000000002,
+			"nw": 0.052000000000000005,
+			"nh": 0.0088999999999999999
+		},
+		{
+			"title": "Cast Magic",
+			"guid": "690551F443C7827A416BCD8224AC189F",
+			"nx": 0.89750000000000008,
+			"ny": 0.33080000000000004,
+			"nw": 0.046700000000000005,
+			"nh": 0.014700000000000001
+		},
+		{
+			"title": "On Clicked",
+			"guid": "48431A8342323A1F405524A8833D628B",
+			"nx": 0.20450000000000002,
+			"ny": 0.35489999999999999,
+			"nw": 0.050700000000000002,
+			"nh": 0.0088999999999999999
+		},
+		{
+			"title": "Set IsBattleMenuOpen",
+			"guid": "28E19A0C4D9412099A6982A585AD669F",
+			"nx": 0.65410000000000001,
+			"ny": 0.30030000000000001,
+			"nw": 0.050100000000000006,
+			"nh": 0.015100000000000001,
+			"pins": [
+				{
+					"id": "ECB8DCF547A97C93ADB18C8376FB9C85",
+					"n": "IsBattleMenuOpen",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "BF63505F427BD34A08D8CBBB6533804D",
+			"nx": 0.66090000000000004,
+			"ny": 0.31770000000000004,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "On Clicked",
+			"guid": "34825AF94BA7FF59E9A09291A56186DA",
+			"nx": 0.2586,
+			"ny": 0.56669999999999998,
+			"nw": 0.054700000000000006,
+			"nh": 0.0088999999999999999
+		},
+		{
+			"title": "On Pressed",
+			"guid": "9965B7054576C7C29043B697AC00CE81",
+			"nx": 0.2586,
+			"ny": 0.58850000000000002,
+			"nw": 0.056000000000000001,
+			"nh": 0.0088999999999999999
+		},
+		{
+			"title": "Set IsBattleMenuOpen",
+			"guid": "24E0291A4837BB54CA4D82B72EE81F5B",
+			"nx": 0.57640000000000002,
+			"ny": 0.56230000000000002,
+			"nw": 0.050100000000000006,
+			"nh": 0.015100000000000001,
+			"pins": [
+				{
+					"id": "ECB8DCF547A97C93ADB18C8376FB9C85",
+					"n": "IsBattleMenuOpen",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "04EAAB844B0CAC1B820FA79E2186AB33",
+			"nx": 0.59670000000000001,
+			"ny": 0.58630000000000004,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Special Attack AOE",
+			"guid": "34A0FFC14647213CE8EE94B495224D10",
+			"nx": 0.80959999999999999,
+			"ny": 0.55790000000000006,
+			"nw": 0.046700000000000005,
+			"nh": 0.014700000000000001
+		},
+		{
+			"title": "On Clicked",
+			"guid": "E2F2A8974E449E7E6F382E80FDE9E157",
+			"nx": 0.2316,
+			"ny": 0.87240000000000006,
+			"nw": 0.043099999999999999,
+			"nh": 0.0088999999999999999
+		},
+		{
+			"title": "On Pressed",
+			"guid": "5424BC6744454C3150AD41A1C58AC241",
+			"nx": 0.2316,
+			"ny": 0.89200000000000002,
+			"nw": 0.044400000000000002,
+			"nh": 0.0088999999999999999
+		},
+		{
+			"title": "Set IsBattleMenuOpen",
+			"guid": "53C6FDF14BC32B119DD79387C04361A0",
+			"nx": 0.64060000000000006,
+			"ny": 0.87240000000000006,
+			"nw": 0.050100000000000006,
+			"nh": 0.015100000000000001,
+			"pins": [
+				{
+					"id": "F623EACB44E95DF893136486EC096D29",
+					"n": "IsBattleMenuOpen",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Heal Magic",
+			"guid": "41A1128542EE18E9893130BB5365B0E3",
+			"nx": 0.85360000000000003,
+			"ny": 0.86799999999999999,
+			"nw": 0.046700000000000005,
+			"nh": 0.014700000000000001
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "3F0F3B5F4B2D30B42755D38F1871949F",
+			"nx": 0.66770000000000007,
+			"ny": 0.89640000000000009,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "A19F634B4ECB7F332C476D8A868F65AA",
+			"nx": 0.70150000000000001,
+			"ny": 0.31770000000000004,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Stop Anim Montage",
+			"guid": "BF69105D48AE7561D26D14A44E9D3816",
+			"nx": 0.78939999999999999,
+			"ny": 0.33080000000000004,
+			"nw": 0.037600000000000001,
+			"nh": 0.018800000000000001,
+			"pins": [
+				{
+					"id": "386CCC764C5222DC29FA409892FFE2FE",
+					"n": "AnimMontage",
+					"t": "object",
+					"dv": "None"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "B05D14804C7EC99469C1C3A29DC4DCC0",
+			"nx": 0.84340000000000004,
+			"ny": 0.31770000000000004,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Get Current Montage",
+			"guid": "638B5AEA4C9FCC98CC8209AF3BC9D61F",
+			"nx": 0.72850000000000004,
+			"ny": 0.35489999999999999,
+			"nw": 0.043500000000000004,
+			"nh": 0.010400000000000001,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "7384568E421996A98E2DAAAC375ECF76",
+			"nx": 0.57640000000000002,
+			"ny": 0.54270000000000007,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Stop Anim Montage",
+			"guid": "B8F0FAF74CC87F728976B3ACEFE3D79F",
+			"nx": 0.70820000000000005,
+			"ny": 0.55790000000000006,
+			"nw": 0.037600000000000001,
+			"nh": 0.018800000000000001,
+			"pins": [
+				{
+					"id": "386CCC764C5222DC29FA409892FFE2FE",
+					"n": "AnimMontage",
+					"t": "object",
+					"dv": "None"
+				}
+			]
+		},
+		{
+			"title": "Get Current Montage",
+			"guid": "F883495E4FDEADBA6D9A60AE35FF71DA",
+			"nx": 0.64400000000000002,
+			"ny": 0.57320000000000004,
+			"nw": 0.043500000000000004,
+			"nh": 0.010400000000000001,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "439E9E8341A7B323A9070DAE55DB2100",
+			"nx": 0.77240000000000009,
+			"ny": 0.58630000000000004,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "2AE8866749A4939D02DBC2A4E4638ED0",
+			"nx": 0.6744,
+			"ny": 0.54270000000000007,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "321FD127400730E24AB2DE9D849298B8",
+			"nx": 0.73530000000000006,
+			"ny": 0.85489999999999999,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Stop Anim Montage",
+			"guid": "721C61054F30A349F84903845DB1FE51",
+			"nx": 0.78260000000000007,
+			"ny": 0.86799999999999999,
+			"nw": 0.037600000000000001,
+			"nh": 0.018800000000000001,
+			"pins": [
+				{
+					"id": "386CCC764C5222DC29FA409892FFE2FE",
+					"n": "AnimMontage",
+					"t": "object",
+					"dv": "None"
+				}
+			]
+		},
+		{
+			"title": "Get Current Montage",
+			"guid": "327EFE484BB7255AAD8BA68635A5D886",
+			"nx": 0.70479999999999998,
+			"ny": 0.87890000000000001,
+			"nw": 0.043500000000000004,
+			"nh": 0.010400000000000001,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "A9492A6A48E3D584E41E1A85F6CB25CC",
+			"nx": 0.63719999999999999,
+			"ny": 0.85489999999999999,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "B040638743FA70B499A53780E6CEDB61",
+			"nx": 0.82650000000000001,
+			"ny": 0.89640000000000009,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "integer >= integer",
+			"guid": "7957DCFF4469FBB993C472B8B67037F2",
+			"nx": 0.56620000000000004,
+			"ny": 0.309,
+			"nw": 0.031100000000000003,
+			"nh": 0.0090000000000000011,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_PlayerStats",
+			"guid": "FD99B0B34B68FF8DCBD8598CDAB14F16",
+			"nx": 0.40740000000000004,
+			"ny": 0.2828,
+			"nw": 0.052600000000000001,
+			"nh": 0.016400000000000001,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_HP-MP",
+			"guid": "A067172540297B09B72AA4BD8CC7378C",
+			"nx": 0.47160000000000002,
+			"ny": 0.28720000000000001,
+			"nw": 0.045200000000000004,
+			"nh": 0.020500000000000001,
+			"pure": true
+		},
+		{
+			"title": "Branch",
+			"guid": "60FC07E744DFF39624544BAA4F1C750E",
+			"nx": 0.58989999999999998,
+			"ny": 0.33300000000000002,
+			"nw": 0.037999999999999999,
+			"nh": 0.012800000000000001,
+			"pins": [
+				{
+					"id": "30E9E00B4A3AD08563470E982C0C4737",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "A0C0053F4FCBC8910A97ED8C6CAEF0F4",
+			"nx": 0.3634,
+			"ny": 0.31120000000000003,
+			"nw": 0.044200000000000003,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get TsunamiMPCost",
+			"guid": "F3D79CE0417F4B3DD64E1FA324EF9702",
+			"nx": 0.44450000000000001,
+			"ny": 0.3221,
+			"nw": 0.050100000000000006,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "CheckForNoManaAnimPlaying",
+			"guid": "EF5902BD403FCB458CDEF2A49227E48D",
+			"nx": 0.37020000000000003,
+			"ny": 0.2195,
+			"nw": 0.050500000000000003,
+			"nh": 0.0106
+		},
+		{
+			"title": "Get Player Character",
+			"guid": "CF188690468DC1F2726B5CB4BAA7C899",
+			"nx": 0.15380000000000002,
+			"ny": 0.036000000000000004,
+			"nw": 0.053900000000000003,
+			"nh": 0.0088999999999999999,
+			"pure": true,
+			"pins": [
+				{
+					"id": "4B6A7BB1406035FDF76FD086943C8A91",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "D12BADB549C820CC73BC18A0B415B701",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Cast To BP_TurtleCharacter",
+			"guid": "BEEC435B4427410611016AB2FC9FD36B",
+			"nx": 0.22820000000000001,
+			"ny": 0.062200000000000005,
+			"nw": 0.0545,
+			"nh": 0.016900000000000002
+		},
+		{
+			"title": "Set As BP Turtle Character",
+			"guid": "AE5E4C0544115508C98009AB90BE8F74",
+			"nx": 0.30930000000000002,
+			"ny": 0.064399999999999999,
+			"nw": 0.048000000000000001,
+			"nh": 0.010500000000000001
+		},
+		{
+			"title": "Get As BP Turtle Character",
+			"guid": "10E32BB647DD12452A21F4B655ED4B67",
+			"nx": 0.218,
+			"ny": 0.18890000000000001,
+			"nw": 0.0378,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get NotEnoughManaWidget",
+			"guid": "9D44A5C04C32F1B81AF922A3D13739EA",
+			"nx": 0.26880000000000004,
+			"ny": 0.18890000000000001,
+			"nw": 0.0596,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get NoManaFlashAnim",
+			"guid": "1DF33B7447A194F6B95409A332E2DCA3",
+			"nx": 0.3397,
+			"ny": 0.2064,
+			"nw": 0.054300000000000001,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Is Animation Playing",
+			"guid": "9ACE1609434AA4AFB68AA685E83907FF",
+			"nx": 0.39380000000000004,
+			"ny": 0.1845,
+			"nw": 0.050700000000000002,
+			"nh": 0.014500000000000001,
+			"pure": true
+		},
+		{
+			"title": "Branch",
+			"guid": "5868922341AF00511A2CEFB4FBDC1FEE",
+			"nx": 0.45470000000000005,
+			"ny": 0.22160000000000002,
+			"nw": 0.037999999999999999,
+			"nh": 0.012800000000000001,
+			"pins": [
+				{
+					"id": "2ACB389D4E64FE7F7F6E7AACA5C965AC",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "05A21D23484899806858AD9ED93B5FDA",
+			"nx": 0.53239999999999998,
+			"ny": 0.2238,
+			"nw": 0.0613,
+			"nh": 0.022700000000000001,
+			"pins": [
+				{
+					"id": "B4962ED1496B3F7EB722A283643A9641",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Collapsed"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "1C1552C840330D3AB826AC9EFB23E2A0",
+			"nx": 0.46480000000000005,
+			"ny": 0.2107,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Get As BP Turtle Character",
+			"guid": "B8B871454C43DDA36DF295854653F7D3",
+			"nx": 0.32619999999999999,
+			"ny": 0.36799999999999999,
+			"nw": 0.0378,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get NotEnoughManaWidget",
+			"guid": "4749AA7D41638451B45D29B616A72D1C",
+			"nx": 0.50880000000000003,
+			"ny": 0.4073,
+			"nw": 0.0596,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "9D649DB84161CC9CDC4ADC911237A4E3",
+			"nx": 0.63719999999999999,
+			"ny": 0.37890000000000001,
+			"nw": 0.0613,
+			"nh": 0.022700000000000001,
+			"pins": [
+				{
+					"id": "7B5C1E424A580F60941B6FA72840E479",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Visible"
+				}
+			]
+		},
+		{
+			"title": "Get NoManaFlashAnim",
+			"guid": "543B3A204494B552D8771993E43D6017",
+			"nx": 0.64740000000000009,
+			"ny": 0.41820000000000002,
+			"nw": 0.054300000000000001,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Play Animation",
+			"guid": "DA58F14D4336C8C9B557D39CA0332791",
+			"nx": 0.73860000000000003,
+			"ny": 0.37890000000000001,
+			"nw": 0.076700000000000004,
+			"nh": 0.045700000000000005,
+			"pins": [
+				{
+					"id": "7C4B9C624EF968723ED0DC9611DADF94",
+					"n": "StartAtTime",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "ED1FB9BE4BEBF7BE1815D39D021BE0BC",
+					"n": "NumLoopsToPlay",
+					"t": "int",
+					"dv": "1"
+				},
+				{
+					"id": "2F64F4344128FDDA64C8E290A49596B2",
+					"n": "PlayMode",
+					"t": "byte",
+					"dv": "Forward"
+				},
+				{
+					"id": "F8F4BD514133840A1BDB35AC6466E7B0",
+					"n": "PlaybackSpeed",
+					"t": "real",
+					"dv": "1.000000"
+				},
+				{
+					"id": "098EDFB44FBE5B97F526089B2E401984",
+					"n": "bRestoreState",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "294064AF4B620C5AC44855A90EEFBCA1",
+			"nx": 0.69130000000000003,
+			"ny": 0.4073,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Set Timer by Event",
+			"guid": "1A0BAD5C40EDA2874638819748CF5EB4",
+			"nx": 0.87390000000000001,
+			"ny": 0.38109999999999999,
+			"nw": 0.063800000000000009,
+			"nh": 0.0292,
+			"pins": [
+				{
+					"id": "CA763DD64E724485F4354880A3B967CC",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "B163D991473298CBD7E4CC87987BF31E",
+					"n": "Time",
+					"t": "real",
+					"dv": "0.200000"
+				},
+				{
+					"id": "6EC29F4847E52EC0CA8C47BB5EC69BE2",
+					"n": "bLooping",
+					"t": "bool",
+					"dv": "true"
+				},
+				{
+					"id": "879E081C4CFE576C72CD0BA714C5970C",
+					"n": "bMaxOncePerFrame",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "6E7FE8044E1538C6BE590181F71057A7",
+					"n": "InitialStartDelay",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "E6D269804002CB274658EA865CCF6749",
+					"n": "InitialStartDelayVariance",
+					"t": "real",
+					"dv": "0.000000"
+				}
+			]
+		},
+		{
+			"title": "integer >= integer",
+			"guid": "2F031BBE49C7096B5A0E8F841D40F61F",
+			"nx": 0.34310000000000002,
+			"ny": 0.54270000000000007,
+			"nw": 0.031100000000000003,
+			"nh": 0.0090000000000000011,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_PlayerStats",
+			"guid": "DF69EE574F3C718074218A8874AAED73",
+			"nx": 0.1842,
+			"ny": 0.51639999999999997,
+			"nw": 0.052600000000000001,
+			"nh": 0.016400000000000001,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_HP-MP",
+			"guid": "3352DC49488F96B606D89A8D2FB6F632",
+			"nx": 0.2485,
+			"ny": 0.52080000000000004,
+			"nw": 0.045200000000000004,
+			"nh": 0.020500000000000001,
+			"pure": true
+		},
+		{
+			"title": "Branch",
+			"guid": "BFE8CD1646B7C6B4711C2FAB78744479",
+			"nx": 0.36680000000000001,
+			"ny": 0.56669999999999998,
+			"nw": 0.037999999999999999,
+			"nh": 0.012800000000000001,
+			"pins": [
+				{
+					"id": "30E9E00B4A3AD08563470E982C0C4737",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "6C166D04446BF252F1E35DACE106CA5D",
+			"nx": 0.14030000000000001,
+			"ny": 0.54480000000000006,
+			"nw": 0.044200000000000003,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get As BP Turtle Character",
+			"guid": "651509D44253439B16BD988205F1451D",
+			"nx": 0.10310000000000001,
+			"ny": 0.60160000000000002,
+			"nw": 0.0378,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get NotEnoughManaWidget",
+			"guid": "7FFF2E964EEBE82C87E64DAFD35527D6",
+			"nx": 0.28570000000000001,
+			"ny": 0.64090000000000003,
+			"nw": 0.0596,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "D3E8E8CA4040AB1F80CEDEB294C861A1",
+			"nx": 0.41410000000000002,
+			"ny": 0.61250000000000004,
+			"nw": 0.0613,
+			"nh": 0.022700000000000001,
+			"pins": [
+				{
+					"id": "7B5C1E424A580F60941B6FA72840E479",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Visible"
+				}
+			]
+		},
+		{
+			"title": "Get NoManaFlashAnim",
+			"guid": "C7FF6D124C8A0157791B3B96B4D84F68",
+			"nx": 0.42430000000000001,
+			"ny": 0.65180000000000005,
+			"nw": 0.054300000000000001,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Play Animation",
+			"guid": "EE5C70924A4163447291F499F0DE9C95",
+			"nx": 0.51550000000000007,
+			"ny": 0.61250000000000004,
+			"nw": 0.076700000000000004,
+			"nh": 0.045700000000000005,
+			"pins": [
+				{
+					"id": "7C4B9C624EF968723ED0DC9611DADF94",
+					"n": "StartAtTime",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "ED1FB9BE4BEBF7BE1815D39D021BE0BC",
+					"n": "NumLoopsToPlay",
+					"t": "int",
+					"dv": "1"
+				},
+				{
+					"id": "2F64F4344128FDDA64C8E290A49596B2",
+					"n": "PlayMode",
+					"t": "byte",
+					"dv": "Forward"
+				},
+				{
+					"id": "F8F4BD514133840A1BDB35AC6466E7B0",
+					"n": "PlaybackSpeed",
+					"t": "real",
+					"dv": "1.000000"
+				},
+				{
+					"id": "098EDFB44FBE5B97F526089B2E401984",
+					"n": "bRestoreState",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "590A71EF4E6B75110EF24591DD2EA787",
+			"nx": 0.46820000000000001,
+			"ny": 0.64090000000000003,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Set Timer by Event",
+			"guid": "FDB7B0314CC7F91FB87E86B0A1201F77",
+			"nx": 0.65080000000000005,
+			"ny": 0.61470000000000002,
+			"nw": 0.063800000000000009,
+			"nh": 0.0292,
+			"pins": [
+				{
+					"id": "CA763DD64E724485F4354880A3B967CC",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "B163D991473298CBD7E4CC87987BF31E",
+					"n": "Time",
+					"t": "real",
+					"dv": "0.200000"
+				},
+				{
+					"id": "6EC29F4847E52EC0CA8C47BB5EC69BE2",
+					"n": "bLooping",
+					"t": "bool",
+					"dv": "true"
+				},
+				{
+					"id": "879E081C4CFE576C72CD0BA714C5970C",
+					"n": "bMaxOncePerFrame",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "6E7FE8044E1538C6BE590181F71057A7",
+					"n": "InitialStartDelay",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "E6D269804002CB274658EA865CCF6749",
+					"n": "InitialStartDelayVariance",
+					"t": "real",
+					"dv": "0.000000"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "7E27A44B4A8FEAC31D70979A8C04803C",
+			"nx": 0.52570000000000006,
+			"ny": 0.6038,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Get SpecialAttackMPCost",
+			"guid": "6CC7CA3C4769CA72C2A401AD07EF77E7",
+			"nx": 0.19440000000000002,
+			"ny": 0.5514,
+			"nw": 0.056400000000000006,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "integer >= integer",
+			"guid": "966F79C04E0CF7FAE56E358AD577C0B0",
+			"nx": 0.29580000000000001,
+			"ny": 0.84840000000000004,
+			"nw": 0.031100000000000003,
+			"nh": 0.0090000000000000011,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_PlayerStats",
+			"guid": "9F97824C463541EE27B94EABCCDCACF2",
+			"nx": 0.13689999999999999,
+			"ny": 0.82220000000000004,
+			"nw": 0.052600000000000001,
+			"nh": 0.016400000000000001,
+			"pure": true
+		},
+		{
+			"title": "Break Struct_HP-MP",
+			"guid": "C24994934E1E6BE96C805286892A2BA6",
+			"nx": 0.2011,
+			"ny": 0.82650000000000001,
+			"nw": 0.045200000000000004,
+			"nh": 0.020500000000000001,
+			"pure": true
+		},
+		{
+			"title": "Branch",
+			"guid": "FE0285D24306578ECE46648F51A96F59",
+			"nx": 0.32280000000000003,
+			"ny": 0.87240000000000006,
+			"nw": 0.037999999999999999,
+			"nh": 0.012800000000000001,
+			"pins": [
+				{
+					"id": "30E9E00B4A3AD08563470E982C0C4737",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "45CE55D346C991D7EBF79C8F442DEF65",
+			"nx": 0.092999999999999999,
+			"ny": 0.85060000000000002,
+			"nw": 0.044200000000000003,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get As BP Turtle Character",
+			"guid": "7A980C2F4094C81FD6E5A49AC6E24D10",
+			"nx": 0.055800000000000002,
+			"ny": 0.9073,
+			"nw": 0.0378,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get NotEnoughManaWidget",
+			"guid": "7BF04B8F47EC6A4E9B7844B98730E375",
+			"nx": 0.23830000000000001,
+			"ny": 0.9466,
+			"nw": 0.0596,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "371305F84410BDA8282F8C89E5230F17",
+			"nx": 0.36680000000000001,
+			"ny": 0.91820000000000002,
+			"nw": 0.0613,
+			"nh": 0.022700000000000001,
+			"pins": [
+				{
+					"id": "7B5C1E424A580F60941B6FA72840E479",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Visible"
+				}
+			]
+		},
+		{
+			"title": "Get NoManaFlashAnim",
+			"guid": "D4E9F41D47828CB454236AB48E980F23",
+			"nx": 0.37690000000000001,
+			"ny": 0.95760000000000001,
+			"nw": 0.054300000000000001,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Play Animation",
+			"guid": "E13654BF47544DD4392496B265941757",
+			"nx": 0.46820000000000001,
+			"ny": 0.91820000000000002,
+			"nw": 0.076700000000000004,
+			"nh": 0.045700000000000005,
+			"pins": [
+				{
+					"id": "7C4B9C624EF968723ED0DC9611DADF94",
+					"n": "StartAtTime",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "ED1FB9BE4BEBF7BE1815D39D021BE0BC",
+					"n": "NumLoopsToPlay",
+					"t": "int",
+					"dv": "1"
+				},
+				{
+					"id": "2F64F4344128FDDA64C8E290A49596B2",
+					"n": "PlayMode",
+					"t": "byte",
+					"dv": "Forward"
+				},
+				{
+					"id": "F8F4BD514133840A1BDB35AC6466E7B0",
+					"n": "PlaybackSpeed",
+					"t": "real",
+					"dv": "1.000000"
+				},
+				{
+					"id": "098EDFB44FBE5B97F526089B2E401984",
+					"n": "bRestoreState",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "54D4A2E54A98034FE4D39592F8BA69AA",
+			"nx": 0.4209,
+			"ny": 0.9466,
+			"nw": 0.0088999999999999999,
+			"nh": 0.0033,
+			"pure": true
+		},
+		{
+			"title": "Set Timer by Event",
+			"guid": "CEA2B0FD453698D32A65A9B94A1A0D0A",
+			"nx": 0.60340000000000005,
+			"ny": 0.9204,
+			"nw": 0.063800000000000009,
+			"nh": 0.0292,
+			"pins": [
+				{
+					"id": "CA763DD64E724485F4354880A3B967CC",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "B163D991473298CBD7E4CC87987BF31E",
+					"n": "Time",
+					"t": "real",
+					"dv": "0.200000"
+				},
+				{
+					"id": "6EC29F4847E52EC0CA8C47BB5EC69BE2",
+					"n": "bLooping",
+					"t": "bool",
+					"dv": "true"
+				},
+				{
+					"id": "879E081C4CFE576C72CD0BA714C5970C",
+					"n": "bMaxOncePerFrame",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "6E7FE8044E1538C6BE590181F71057A7",
+					"n": "InitialStartDelay",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "E6D269804002CB274658EA865CCF6749",
+					"n": "InitialStartDelayVariance",
+					"t": "real",
+					"dv": "0.000000"
+				}
+			]
+		},
+		{
+			"title": "Get HealMPCost",
+			"guid": "EB7AA3DE471A83880851D2A20891517C",
+			"nx": 0.15040000000000001,
+			"ny": 0.86370000000000002,
+			"nw": 0.045200000000000004,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get As BP Turtle Character",
+			"guid": "3CCB2BC2435598BF519877A4C1CD163F",
+			"nx": 0.55610000000000004,
+			"ny": 0.88330000000000009,
+			"nw": 0.0378,
+			"nh": 0.0052000000000000006,
+			"pure": true
+		}
+	],
+	"connections": [
+		{
+			"fg": "DD6CA36B44C7FC89C64BE1B981D8B7D2",
+			"fpid": "1483396B496A992D8B4D45B2A8931966",
+			"fp": "then",
+			"tg": "BEEC435B4427410611016AB2FC9FD36B",
+			"tpid": "DA74FBD0417C5CFB1657CC85E5EEDF61",
+			"tp": "execute"
+		},
+		{
+			"fg": "CD5DFB6C49DA07AD5C0893B153A6178C",
+			"fpid": "6301297541D52B75C56BD699F7AC6ED0",
+			"fp": "OutputDelegate",
+			"tg": "7507C74C46642023284DFCA91279719D",
+			"tpid": "1541F1704D955F5E6DE2E19C941CC9DA",
+			"tp": "Delegate"
+		},
+		{
+			"fg": "CD5DFB6C49DA07AD5C0893B153A6178C",
+			"fpid": "34D9E61E4EA6C39C33B7749A1E0A113B",
+			"fp": "then",
+			"tg": "CBDAB97944451F1F34652D9A1F1BCD3F",
+			"tpid": "2DBDA2E443419475D6BD508A34035466",
+			"tp": "Exec"
+		},
+		{
+			"fg": "70380B0F4ED9540A6B5B2E991E144196",
+			"fpid": "9330396241A0514CE49A198D5F0F9EE2",
+			"fp": "CastMagicButton",
+			"tg": "A139F069441AD0705C07F282AC104B89",
+			"tpid": "A7397AA44E199569C26F30A32F4C9A11",
+			"tp": "[1]"
+		},
+		{
+			"fg": "45D02D314E246001E0A911BA5797E2BB",
+			"fpid": "8C270F8A43147F5525EB8D9D46AA51A5",
+			"fp": "HealButton",
+			"tg": "A139F069441AD0705C07F282AC104B89",
+			"tpid": "040100C84EF313CB0835D4B94E9904CE",
+			"tp": "[2]"
+		},
+		{
+			"fg": "77797F1F4865199D52E18194B0F9CF5A",
+			"fpid": "BE8F268B4318C156158CBC9E030D6AC4",
+			"fp": "SpecialAttackButton",
+			"tg": "A139F069441AD0705C07F282AC104B89",
+			"tpid": "DA28755E4537A00F6E72ECA635EF6FC2",
+			"tp": "[0]"
+		},
+		{
+			"fg": "A139F069441AD0705C07F282AC104B89",
+			"fpid": "3D79CB1F486A472870F385B935D946A3",
+			"fp": "Array",
+			"tg": "CBDAB97944451F1F34652D9A1F1BCD3F",
+			"tpid": "778434924F2665BC4B65AB8EAC722C9B",
+			"tp": "Array"
+		},
+		{
+			"fg": "CBDAB97944451F1F34652D9A1F1BCD3F",
+			"fpid": "BF143DDA46FB38FD1D04C6AEC11B6AF6",
+			"fp": "LoopBody",
+			"tg": "90D720954D58F9635EFB1E8421A64DF6",
+			"tpid": "A44E4D9A4756A61E20A79AA8992B9418",
+			"tp": "execute"
+		},
+		{
+			"fg": "CBDAB97944451F1F34652D9A1F1BCD3F",
+			"fpid": "F029006F4435342A480C3092BEE80A2D",
+			"fp": "Array Element",
+			"tg": "6433B3C9495190195AF5E89C507D948D",
+			"tpid": "7833696E47043B622E0AA4945A5522CA",
+			"tp": "self"
+		},
+		{
+			"fg": "CBDAB97944451F1F34652D9A1F1BCD3F",
+			"fpid": "F029006F4435342A480C3092BEE80A2D",
+			"fp": "Array Element",
+			"tg": "17C7DD4E428BCA276C601DAC6EF4C011",
+			"tpid": "A7E810A74DCD58CF455612AA9671DB3E",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "6433B3C9495190195AF5E89C507D948D",
+			"fpid": "5C880ED5425D3F4671E47295D110799A",
+			"fp": "ReturnValue",
+			"tg": "90D720954D58F9635EFB1E8421A64DF6",
+			"tpid": "2D9DDFE44E488CF0736AE3B868F9A811",
+			"tp": "Condition"
+		},
+		{
+			"fg": "90D720954D58F9635EFB1E8421A64DF6",
+			"fpid": "3DAC7E454F97D37920240D8ECA699BCC",
+			"fp": "then",
+			"tg": "34719C434C3737198D3BAFA0A851D12C",
+			"tpid": "0F7529D84F1EFACDD9FD7AA878EB9E97",
+			"tp": "execute"
+		},
+		{
+			"fg": "90D720954D58F9635EFB1E8421A64DF6",
+			"fpid": "950971F94108F3ACE158BFB365459700",
+			"fp": "else",
+			"tg": "8C06B4394F5482E18ACEFAB9F34CE638",
+			"tpid": "3F8676F144BFF4C794C413BA48A1C4A5",
+			"tp": "execute"
+		},
+		{
+			"fg": "17C7DD4E428BCA276C601DAC6EF4C011",
+			"fpid": "8F8B0D3C42B1A7B4BB93D4A89443CF80",
+			"fp": "OutputPin",
+			"tg": "34719C434C3737198D3BAFA0A851D12C",
+			"tpid": "0A94D864467D5E1957BC878C91C281CD",
+			"tp": "self"
+		},
+		{
+			"fg": "17C7DD4E428BCA276C601DAC6EF4C011",
+			"fpid": "8F8B0D3C42B1A7B4BB93D4A89443CF80",
+			"fp": "OutputPin",
+			"tg": "8C06B4394F5482E18ACEFAB9F34CE638",
+			"tpid": "D7AD133B4E3466FA1420C8B0019B95CC",
+			"tp": "self"
+		},
+		{
+			"fg": "7CF63C2444343FDA7BD9209461BDF95F",
+			"fpid": "CB86F6F045FE2F3B40F4A4B827F37ADD",
+			"fp": "then",
+			"tg": "60FC07E744DFF39624544BAA4F1C750E",
+			"tpid": "1E61B40543EEE370D8499DB9199DBD70",
+			"tp": "execute"
+		},
+		{
+			"fg": "48431A8342323A1F405524A8833D628B",
+			"fpid": "EFEF157A4CBDB9C82678E18C4425F6F0",
+			"fp": "then",
+			"tg": "60FC07E744DFF39624544BAA4F1C750E",
+			"tpid": "1E61B40543EEE370D8499DB9199DBD70",
+			"tp": "execute"
+		},
+		{
+			"fg": "28E19A0C4D9412099A6982A585AD669F",
+			"fpid": "09741C7943DDA19BB98C2E94DF2E7478",
+			"fp": "then",
+			"tg": "BF69105D48AE7561D26D14A44E9D3816",
+			"tpid": "5C1BEDC9499D08776C0051BA6C94AC91",
+			"tp": "execute"
+		},
+		{
+			"fg": "BF63505F427BD34A08D8CBBB6533804D",
+			"fpid": "F1CDC79548D71342D88B2A9E2F892E57",
+			"fp": "OutputPin",
+			"tg": "A19F634B4ECB7F332C476D8A868F65AA",
+			"tpid": "DCF853AB425DFA9946BC55884E034D64",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "34825AF94BA7FF59E9A09291A56186DA",
+			"fpid": "8EBAECA143415937D3C896A5C06DC0EB",
+			"fp": "then",
+			"tg": "BFE8CD1646B7C6B4711C2FAB78744479",
+			"tpid": "1E61B40543EEE370D8499DB9199DBD70",
+			"tp": "execute"
+		},
+		{
+			"fg": "9965B7054576C7C29043B697AC00CE81",
+			"fpid": "05B2557D4135984E7409B7A91779BAE3",
+			"fp": "then",
+			"tg": "BFE8CD1646B7C6B4711C2FAB78744479",
+			"tpid": "1E61B40543EEE370D8499DB9199DBD70",
+			"tp": "execute"
+		},
+		{
+			"fg": "24E0291A4837BB54CA4D82B72EE81F5B",
+			"fpid": "09741C7943DDA19BB98C2E94DF2E7478",
+			"fp": "then",
+			"tg": "B8F0FAF74CC87F728976B3ACEFE3D79F",
+			"tpid": "5C1BEDC9499D08776C0051BA6C94AC91",
+			"tp": "execute"
+		},
+		{
+			"fg": "04EAAB844B0CAC1B820FA79E2186AB33",
+			"fpid": "F1CDC79548D71342D88B2A9E2F892E57",
+			"fp": "OutputPin",
+			"tg": "439E9E8341A7B323A9070DAE55DB2100",
+			"tpid": "04A8D00440FD5FAC7EFC0FB2E4D599AA",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "04EAAB844B0CAC1B820FA79E2186AB33",
+			"fpid": "F1CDC79548D71342D88B2A9E2F892E57",
+			"fp": "OutputPin",
+			"tg": "F883495E4FDEADBA6D9A60AE35FF71DA",
+			"tpid": "CC43CF7246FAB2C77D517BB06702330F",
+			"tp": "self"
+		},
+		{
+			"fg": "E2F2A8974E449E7E6F382E80FDE9E157",
+			"fpid": "E2718684493B78E5345BD1B884EE8E4F",
+			"fp": "then",
+			"tg": "FE0285D24306578ECE46648F51A96F59",
+			"tpid": "1E61B40543EEE370D8499DB9199DBD70",
+			"tp": "execute"
+		},
+		{
+			"fg": "5424BC6744454C3150AD41A1C58AC241",
+			"fpid": "733512054D72557535075E9811B81A11",
+			"fp": "then",
+			"tg": "FE0285D24306578ECE46648F51A96F59",
+			"tpid": "1E61B40543EEE370D8499DB9199DBD70",
+			"tp": "execute"
+		},
+		{
+			"fg": "53C6FDF14BC32B119DD79387C04361A0",
+			"fpid": "5B9D45DD4D3730C54A1E74A2393CF709",
+			"fp": "then",
+			"tg": "721C61054F30A349F84903845DB1FE51",
+			"tpid": "5C1BEDC9499D08776C0051BA6C94AC91",
+			"tp": "execute"
+		},
+		{
+			"fg": "3F0F3B5F4B2D30B42755D38F1871949F",
+			"fpid": "DD34635541CE29464F777EBB04FA6E23",
+			"fp": "OutputPin",
+			"tg": "327EFE484BB7255AAD8BA68635A5D886",
+			"tpid": "CC43CF7246FAB2C77D517BB06702330F",
+			"tp": "self"
+		},
+		{
+			"fg": "3F0F3B5F4B2D30B42755D38F1871949F",
+			"fpid": "DD34635541CE29464F777EBB04FA6E23",
+			"fp": "OutputPin",
+			"tg": "B040638743FA70B499A53780E6CEDB61",
+			"tpid": "3B576CB245223AD92EA24D987AFBA974",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "A19F634B4ECB7F332C476D8A868F65AA",
+			"fpid": "C55896E94BF21CE76CDD8AB8ED2B8595",
+			"fp": "OutputPin",
+			"tg": "B05D14804C7EC99469C1C3A29DC4DCC0",
+			"tpid": "DE313CFE44A4D282BB0950B7F8825ACD",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "A19F634B4ECB7F332C476D8A868F65AA",
+			"fpid": "C55896E94BF21CE76CDD8AB8ED2B8595",
+			"fp": "OutputPin",
+			"tg": "BF69105D48AE7561D26D14A44E9D3816",
+			"tpid": "AFE4A3274A686DBEDA48B1859D0F9FA0",
+			"tp": "self"
+		},
+		{
+			"fg": "BF69105D48AE7561D26D14A44E9D3816",
+			"fpid": "885580604C9A5198AE9200851DED9740",
+			"fp": "then",
+			"tg": "690551F443C7827A416BCD8224AC189F",
+			"tpid": "DA20EAB64D6F5E91E040EFADFC7F617B",
+			"tp": "execute"
+		},
+		{
+			"fg": "B05D14804C7EC99469C1C3A29DC4DCC0",
+			"fpid": "E64D2E634812DACEF31B73BD4DE062D4",
+			"fp": "OutputPin",
+			"tg": "690551F443C7827A416BCD8224AC189F",
+			"tpid": "64F1880047F5AF86498DA988A8320B3F",
+			"tp": "self"
+		},
+		{
+			"fg": "638B5AEA4C9FCC98CC8209AF3BC9D61F",
+			"fpid": "22163F0348BAF7885314039758B32C8E",
+			"fp": "ReturnValue",
+			"tg": "BF69105D48AE7561D26D14A44E9D3816",
+			"tpid": "386CCC764C5222DC29FA409892FFE2FE",
+			"tp": "AnimMontage"
+		},
+		{
+			"fg": "7384568E421996A98E2DAAAC375ECF76",
+			"fpid": "C55896E94BF21CE76CDD8AB8ED2B8595",
+			"fp": "OutputPin",
+			"tg": "2AE8866749A4939D02DBC2A4E4638ED0",
+			"tpid": "B01EAD34412C1410D9FD4BB96FAB97AE",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "B8F0FAF74CC87F728976B3ACEFE3D79F",
+			"fpid": "885580604C9A5198AE9200851DED9740",
+			"fp": "then",
+			"tg": "34A0FFC14647213CE8EE94B495224D10",
+			"tpid": "4DCDC15A4934D64589BDBAA443DFA38C",
+			"tp": "execute"
+		},
+		{
+			"fg": "F883495E4FDEADBA6D9A60AE35FF71DA",
+			"fpid": "22163F0348BAF7885314039758B32C8E",
+			"fp": "ReturnValue",
+			"tg": "B8F0FAF74CC87F728976B3ACEFE3D79F",
+			"tpid": "386CCC764C5222DC29FA409892FFE2FE",
+			"tp": "AnimMontage"
+		},
+		{
+			"fg": "439E9E8341A7B323A9070DAE55DB2100",
+			"fpid": "A1B3C46E4512FBF0A70475BC5D0DD25B",
+			"fp": "OutputPin",
+			"tg": "34A0FFC14647213CE8EE94B495224D10",
+			"tpid": "E4E69428495E937FA83910A21D479290",
+			"tp": "self"
+		},
+		{
+			"fg": "2AE8866749A4939D02DBC2A4E4638ED0",
+			"fpid": "FEB4E97A451E216AC1D579A9147BF4D0",
+			"fp": "OutputPin",
+			"tg": "B8F0FAF74CC87F728976B3ACEFE3D79F",
+			"tpid": "AFE4A3274A686DBEDA48B1859D0F9FA0",
+			"tp": "self"
+		},
+		{
+			"fg": "321FD127400730E24AB2DE9D849298B8",
+			"fpid": "C55896E94BF21CE76CDD8AB8ED2B8595",
+			"fp": "OutputPin",
+			"tg": "721C61054F30A349F84903845DB1FE51",
+			"tpid": "AFE4A3274A686DBEDA48B1859D0F9FA0",
+			"tp": "self"
+		},
+		{
+			"fg": "721C61054F30A349F84903845DB1FE51",
+			"fpid": "885580604C9A5198AE9200851DED9740",
+			"fp": "then",
+			"tg": "41A1128542EE18E9893130BB5365B0E3",
+			"tpid": "B9E0006E458A7DB4F93224BE33FC749B",
+			"tp": "execute"
+		},
+		{
+			"fg": "327EFE484BB7255AAD8BA68635A5D886",
+			"fpid": "22163F0348BAF7885314039758B32C8E",
+			"fp": "ReturnValue",
+			"tg": "721C61054F30A349F84903845DB1FE51",
+			"tpid": "386CCC764C5222DC29FA409892FFE2FE",
+			"tp": "AnimMontage"
+		},
+		{
+			"fg": "A9492A6A48E3D584E41E1A85F6CB25CC",
+			"fpid": "B921BD304CC3EFF58E25608BA99411F9",
+			"fp": "OutputPin",
+			"tg": "321FD127400730E24AB2DE9D849298B8",
+			"tpid": "DCF853AB425DFA9946BC55884E034D64",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "B040638743FA70B499A53780E6CEDB61",
+			"fpid": "7EB40E3542B1A446F8F3BF96BB9E7AE1",
+			"fp": "OutputPin",
+			"tg": "41A1128542EE18E9893130BB5365B0E3",
+			"tpid": "8C74D440412BDDB4CB739A884D264986",
+			"tp": "self"
+		},
+		{
+			"fg": "7957DCFF4469FBB993C472B8B67037F2",
+			"fpid": "394160564B521F26552F6A92586D8C40",
+			"fp": "ReturnValue",
+			"tg": "60FC07E744DFF39624544BAA4F1C750E",
+			"tpid": "30E9E00B4A3AD08563470E982C0C4737",
+			"tp": "Condition"
+		},
+		{
+			"fg": "FD99B0B34B68FF8DCBD8598CDAB14F16",
+			"fpid": "578A310D42E15BD5B67B85949876829D",
+			"fp": "HP-MP_5_99A476164D0232A67B850F9A9274CDAF",
+			"tg": "A067172540297B09B72AA4BD8CC7378C",
+			"tpid": "D00076A749AFA85544650A815057C91F",
+			"tp": "Struct_HP-MP"
+		},
+		{
+			"fg": "A067172540297B09B72AA4BD8CC7378C",
+			"fpid": "1A43F6054AEE204C1812FDBE6A181BFC",
+			"fp": "MP_12_016CF93F4D83D803CA52B88CCC37AF0F",
+			"tg": "7957DCFF4469FBB993C472B8B67037F2",
+			"tpid": "037CEB444A95A0C0D02019929A84212D",
+			"tp": "A"
+		},
+		{
+			"fg": "60FC07E744DFF39624544BAA4F1C750E",
+			"fpid": "6DE2AE9C452DC69DFD8385A23E2CEE59",
+			"fp": "then",
+			"tg": "28E19A0C4D9412099A6982A585AD669F",
+			"tpid": "87A01D964AB7084F14727A86586BF39E",
+			"tp": "execute"
+		},
+		{
+			"fg": "60FC07E744DFF39624544BAA4F1C750E",
+			"fpid": "7721DFF042DA32752FFA45A56B11B5B9",
+			"fp": "else",
+			"tg": "9D649DB84161CC9CDC4ADC911237A4E3",
+			"tpid": "59634D574351DC8D3A369F89C6C17369",
+			"tp": "execute"
+		},
+		{
+			"fg": "A0C0053F4FCBC8910A97ED8C6CAEF0F4",
+			"fpid": "71491EC344D592614CEFBA92536309A8",
+			"fp": "PlayerStats",
+			"tg": "FD99B0B34B68FF8DCBD8598CDAB14F16",
+			"tpid": "3E573F994C036126D19C08A3AA057E00",
+			"tp": "Struct_PlayerStats"
+		},
+		{
+			"fg": "F3D79CE0417F4B3DD64E1FA324EF9702",
+			"fpid": "7253B2614BF8EEDEE6A6F08A2FA8329D",
+			"fp": "TsunamiMPCost",
+			"tg": "7957DCFF4469FBB993C472B8B67037F2",
+			"tpid": "A0DF21EE48CA3F72CBEEAC83155607DE",
+			"tp": "B"
+		},
+		{
+			"fg": "EF5902BD403FCB458CDEF2A49227E48D",
+			"fpid": "A00854F144744CC66987B7B3E2E3C98B",
+			"fp": "OutputDelegate",
+			"tg": "1A0BAD5C40EDA2874638819748CF5EB4",
+			"tpid": "0A4C0A7841A94AB7F96E1FBE347DBC6F",
+			"tp": "Delegate"
+		},
+		{
+			"fg": "EF5902BD403FCB458CDEF2A49227E48D",
+			"fpid": "A00854F144744CC66987B7B3E2E3C98B",
+			"fp": "OutputDelegate",
+			"tg": "FDB7B0314CC7F91FB87E86B0A1201F77",
+			"tpid": "0A4C0A7841A94AB7F96E1FBE347DBC6F",
+			"tp": "Delegate"
+		},
+		{
+			"fg": "EF5902BD403FCB458CDEF2A49227E48D",
+			"fpid": "A00854F144744CC66987B7B3E2E3C98B",
+			"fp": "OutputDelegate",
+			"tg": "CEA2B0FD453698D32A65A9B94A1A0D0A",
+			"tpid": "0A4C0A7841A94AB7F96E1FBE347DBC6F",
+			"tp": "Delegate"
+		},
+		{
+			"fg": "EF5902BD403FCB458CDEF2A49227E48D",
+			"fpid": "429C48E8486D9BCDACAB3198A1890E37",
+			"fp": "then",
+			"tg": "5868922341AF00511A2CEFB4FBDC1FEE",
+			"tpid": "0DD61CBD44C7D5AD873AF48CAE6EFE1B",
+			"tp": "execute"
+		},
+		{
+			"fg": "CF188690468DC1F2726B5CB4BAA7C899",
+			"fpid": "946BF6E0410026EE72A91EB448DCB62F",
+			"fp": "ReturnValue",
+			"tg": "BEEC435B4427410611016AB2FC9FD36B",
+			"tpid": "3FC6EABA4026176C4AAE428C7C14ABD1",
+			"tp": "Object"
+		},
+		{
+			"fg": "BEEC435B4427410611016AB2FC9FD36B",
+			"fpid": "ED3645704FC866B1678B7A8376D49CC7",
+			"fp": "then",
+			"tg": "AE5E4C0544115508C98009AB90BE8F74",
+			"tpid": "DC8DCA6844084E5D95B98E92DEAA01F0",
+			"tp": "execute"
+		},
+		{
+			"fg": "BEEC435B4427410611016AB2FC9FD36B",
+			"fpid": "2E61A5EE4740DD0DED3666B48AC34B35",
+			"fp": "AsBP Turtle Character",
+			"tg": "AE5E4C0544115508C98009AB90BE8F74",
+			"tpid": "E12F5B4F4F75EE8ED1C070BAB053B80E",
+			"tp": "As BP Turtle Character"
+		},
+		{
+			"fg": "AE5E4C0544115508C98009AB90BE8F74",
+			"fpid": "453CE9F24CA7C3D2CFDF1AA64CC4776D",
+			"fp": "then",
+			"tg": "7507C74C46642023284DFCA91279719D",
+			"tpid": "6B9AC86A492D2369CFCA3D873CFB0443",
+			"tp": "execute"
+		},
+		{
+			"fg": "10E32BB647DD12452A21F4B655ED4B67",
+			"fpid": "348F71044164E43A8EDAA0BC8A7045D7",
+			"fp": "As BP Turtle Character",
+			"tg": "9D44A5C04C32F1B81AF922A3D13739EA",
+			"tpid": "20FFBEFA4E37BC9AF1B4F7AAE458F92F",
+			"tp": "self"
+		},
+		{
+			"fg": "9D44A5C04C32F1B81AF922A3D13739EA",
+			"fpid": "AC36275E43CF1FEDB09E8D84701B0BAD",
+			"fp": "NotEnoughManaWidget",
+			"tg": "1DF33B7447A194F6B95409A332E2DCA3",
+			"tpid": "53FA7BF4486C1DD1E9A86CB186B6F526",
+			"tp": "self"
+		},
+		{
+			"fg": "9D44A5C04C32F1B81AF922A3D13739EA",
+			"fpid": "AC36275E43CF1FEDB09E8D84701B0BAD",
+			"fp": "NotEnoughManaWidget",
+			"tg": "9ACE1609434AA4AFB68AA685E83907FF",
+			"tpid": "71ADB2B94203BDCC6BABD296BC90599B",
+			"tp": "self"
+		},
+		{
+			"fg": "9D44A5C04C32F1B81AF922A3D13739EA",
+			"fpid": "AC36275E43CF1FEDB09E8D84701B0BAD",
+			"fp": "NotEnoughManaWidget",
+			"tg": "1C1552C840330D3AB826AC9EFB23E2A0",
+			"tpid": "F528DDAC4AA42359677E92B8F2D20CC4",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "1DF33B7447A194F6B95409A332E2DCA3",
+			"fpid": "D5E0DEE3416A1DEB25762D89CC9F8B28",
+			"fp": "NoManaFlashAnim",
+			"tg": "9ACE1609434AA4AFB68AA685E83907FF",
+			"tpid": "502EF3364B92E73B49E72EAF68A4E62C",
+			"tp": "InAnimation"
+		},
+		{
+			"fg": "9ACE1609434AA4AFB68AA685E83907FF",
+			"fpid": "D6E892434DA08491B782E49AE3636C40",
+			"fp": "ReturnValue",
+			"tg": "5868922341AF00511A2CEFB4FBDC1FEE",
+			"tpid": "2ACB389D4E64FE7F7F6E7AACA5C965AC",
+			"tp": "Condition"
+		},
+		{
+			"fg": "5868922341AF00511A2CEFB4FBDC1FEE",
+			"fpid": "D0823B824749930A603E679078289114",
+			"fp": "else",
+			"tg": "05A21D23484899806858AD9ED93B5FDA",
+			"tpid": "BC4EE4724E08BCD86F8F48B2180B1237",
+			"tp": "execute"
+		},
+		{
+			"fg": "1C1552C840330D3AB826AC9EFB23E2A0",
+			"fpid": "125A788B46CF85CDF1A57188040314B9",
+			"fp": "OutputPin",
+			"tg": "05A21D23484899806858AD9ED93B5FDA",
+			"tpid": "EFB6CFA04E753859C195FFAF1859E060",
+			"tp": "self"
+		},
+		{
+			"fg": "B8B871454C43DDA36DF295854653F7D3",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "A0C0053F4FCBC8910A97ED8C6CAEF0F4",
+			"tpid": "A5B310DC464A9CACA0B53187AD404A27",
+			"tp": "self"
+		},
+		{
+			"fg": "B8B871454C43DDA36DF295854653F7D3",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "F3D79CE0417F4B3DD64E1FA324EF9702",
+			"tpid": "45E8C7A54077F30A2007299E83F42AD1",
+			"tp": "self"
+		},
+		{
+			"fg": "B8B871454C43DDA36DF295854653F7D3",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "BF63505F427BD34A08D8CBBB6533804D",
+			"tpid": "2AD1AAE348CE1A8C57E20D8C74D1D6EA",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "B8B871454C43DDA36DF295854653F7D3",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "28E19A0C4D9412099A6982A585AD669F",
+			"tpid": "7C7AA3184CBD857AF8045F8EE6B67260",
+			"tp": "self"
+		},
+		{
+			"fg": "B8B871454C43DDA36DF295854653F7D3",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "638B5AEA4C9FCC98CC8209AF3BC9D61F",
+			"tpid": "CC43CF7246FAB2C77D517BB06702330F",
+			"tp": "self"
+		},
+		{
+			"fg": "B8B871454C43DDA36DF295854653F7D3",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "4749AA7D41638451B45D29B616A72D1C",
+			"tpid": "97414E2E4DBF16F2885588881E1F411E",
+			"tp": "self"
+		},
+		{
+			"fg": "4749AA7D41638451B45D29B616A72D1C",
+			"fpid": "C620068B473EBD4E6281089E0DE98B37",
+			"fp": "NotEnoughManaWidget",
+			"tg": "9D649DB84161CC9CDC4ADC911237A4E3",
+			"tpid": "7ED85FCB4B78141CD04906998768567D",
+			"tp": "self"
+		},
+		{
+			"fg": "4749AA7D41638451B45D29B616A72D1C",
+			"fpid": "C620068B473EBD4E6281089E0DE98B37",
+			"fp": "NotEnoughManaWidget",
+			"tg": "543B3A204494B552D8771993E43D6017",
+			"tpid": "E8E2333B4BCCBBAE7E9BCF8C709FC6D7",
+			"tp": "self"
+		},
+		{
+			"fg": "4749AA7D41638451B45D29B616A72D1C",
+			"fpid": "C620068B473EBD4E6281089E0DE98B37",
+			"fp": "NotEnoughManaWidget",
+			"tg": "294064AF4B620C5AC44855A90EEFBCA1",
+			"tpid": "0C02984446563B2802E522986B7656AF",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "9D649DB84161CC9CDC4ADC911237A4E3",
+			"fpid": "C52203734DC8FB8B5E48EAB472DB492C",
+			"fp": "then",
+			"tg": "DA58F14D4336C8C9B557D39CA0332791",
+			"tpid": "600B6BD343E913D70937698358144924",
+			"tp": "execute"
+		},
+		{
+			"fg": "543B3A204494B552D8771993E43D6017",
+			"fpid": "F56A0A4D4998B214252CACB3026D01EF",
+			"fp": "NoManaFlashAnim",
+			"tg": "DA58F14D4336C8C9B557D39CA0332791",
+			"tpid": "8DAA60674D17ABEAEB1D2F8E5565D7E8",
+			"tp": "InAnimation"
+		},
+		{
+			"fg": "DA58F14D4336C8C9B557D39CA0332791",
+			"fpid": "2A043A3E44D25A6BE7B18C9FB624AB7D",
+			"fp": "then",
+			"tg": "1A0BAD5C40EDA2874638819748CF5EB4",
+			"tpid": "CD5FAF1B46A042136F75CFAF431A3CB5",
+			"tp": "execute"
+		},
+		{
+			"fg": "294064AF4B620C5AC44855A90EEFBCA1",
+			"fpid": "421689A9443DA9023BDB34BB0A82D63F",
+			"fp": "OutputPin",
+			"tg": "DA58F14D4336C8C9B557D39CA0332791",
+			"tpid": "6FFABC80469A2FCF2EC97B9995720BF3",
+			"tp": "self"
+		},
+		{
+			"fg": "2F031BBE49C7096B5A0E8F841D40F61F",
+			"fpid": "394160564B521F26552F6A92586D8C40",
+			"fp": "ReturnValue",
+			"tg": "BFE8CD1646B7C6B4711C2FAB78744479",
+			"tpid": "30E9E00B4A3AD08563470E982C0C4737",
+			"tp": "Condition"
+		},
+		{
+			"fg": "DF69EE574F3C718074218A8874AAED73",
+			"fpid": "578A310D42E15BD5B67B85949876829D",
+			"fp": "HP-MP_5_99A476164D0232A67B850F9A9274CDAF",
+			"tg": "3352DC49488F96B606D89A8D2FB6F632",
+			"tpid": "D00076A749AFA85544650A815057C91F",
+			"tp": "Struct_HP-MP"
+		},
+		{
+			"fg": "3352DC49488F96B606D89A8D2FB6F632",
+			"fpid": "1A43F6054AEE204C1812FDBE6A181BFC",
+			"fp": "MP_12_016CF93F4D83D803CA52B88CCC37AF0F",
+			"tg": "2F031BBE49C7096B5A0E8F841D40F61F",
+			"tpid": "037CEB444A95A0C0D02019929A84212D",
+			"tp": "A"
+		},
+		{
+			"fg": "BFE8CD1646B7C6B4711C2FAB78744479",
+			"fpid": "6DE2AE9C452DC69DFD8385A23E2CEE59",
+			"fp": "then",
+			"tg": "24E0291A4837BB54CA4D82B72EE81F5B",
+			"tpid": "87A01D964AB7084F14727A86586BF39E",
+			"tp": "execute"
+		},
+		{
+			"fg": "BFE8CD1646B7C6B4711C2FAB78744479",
+			"fpid": "7721DFF042DA32752FFA45A56B11B5B9",
+			"fp": "else",
+			"tg": "D3E8E8CA4040AB1F80CEDEB294C861A1",
+			"tpid": "59634D574351DC8D3A369F89C6C17369",
+			"tp": "execute"
+		},
+		{
+			"fg": "6C166D04446BF252F1E35DACE106CA5D",
+			"fpid": "71491EC344D592614CEFBA92536309A8",
+			"fp": "PlayerStats",
+			"tg": "DF69EE574F3C718074218A8874AAED73",
+			"tpid": "3E573F994C036126D19C08A3AA057E00",
+			"tp": "Struct_PlayerStats"
+		},
+		{
+			"fg": "651509D44253439B16BD988205F1451D",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "6C166D04446BF252F1E35DACE106CA5D",
+			"tpid": "A5B310DC464A9CACA0B53187AD404A27",
+			"tp": "self"
+		},
+		{
+			"fg": "651509D44253439B16BD988205F1451D",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "7FFF2E964EEBE82C87E64DAFD35527D6",
+			"tpid": "97414E2E4DBF16F2885588881E1F411E",
+			"tp": "self"
+		},
+		{
+			"fg": "651509D44253439B16BD988205F1451D",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "7E27A44B4A8FEAC31D70979A8C04803C",
+			"tpid": "40D6B6D549D791EE2E96B0B8224D6F7D",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "651509D44253439B16BD988205F1451D",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "6CC7CA3C4769CA72C2A401AD07EF77E7",
+			"tpid": "00041FC84D6320DDC4C7D597828641B2",
+			"tp": "self"
+		},
+		{
+			"fg": "7FFF2E964EEBE82C87E64DAFD35527D6",
+			"fpid": "C620068B473EBD4E6281089E0DE98B37",
+			"fp": "NotEnoughManaWidget",
+			"tg": "D3E8E8CA4040AB1F80CEDEB294C861A1",
+			"tpid": "7ED85FCB4B78141CD04906998768567D",
+			"tp": "self"
+		},
+		{
+			"fg": "7FFF2E964EEBE82C87E64DAFD35527D6",
+			"fpid": "C620068B473EBD4E6281089E0DE98B37",
+			"fp": "NotEnoughManaWidget",
+			"tg": "C7FF6D124C8A0157791B3B96B4D84F68",
+			"tpid": "E8E2333B4BCCBBAE7E9BCF8C709FC6D7",
+			"tp": "self"
+		},
+		{
+			"fg": "7FFF2E964EEBE82C87E64DAFD35527D6",
+			"fpid": "C620068B473EBD4E6281089E0DE98B37",
+			"fp": "NotEnoughManaWidget",
+			"tg": "590A71EF4E6B75110EF24591DD2EA787",
+			"tpid": "0C02984446563B2802E522986B7656AF",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "D3E8E8CA4040AB1F80CEDEB294C861A1",
+			"fpid": "C52203734DC8FB8B5E48EAB472DB492C",
+			"fp": "then",
+			"tg": "EE5C70924A4163447291F499F0DE9C95",
+			"tpid": "600B6BD343E913D70937698358144924",
+			"tp": "execute"
+		},
+		{
+			"fg": "C7FF6D124C8A0157791B3B96B4D84F68",
+			"fpid": "F56A0A4D4998B214252CACB3026D01EF",
+			"fp": "NoManaFlashAnim",
+			"tg": "EE5C70924A4163447291F499F0DE9C95",
+			"tpid": "8DAA60674D17ABEAEB1D2F8E5565D7E8",
+			"tp": "InAnimation"
+		},
+		{
+			"fg": "EE5C70924A4163447291F499F0DE9C95",
+			"fpid": "2A043A3E44D25A6BE7B18C9FB624AB7D",
+			"fp": "then",
+			"tg": "FDB7B0314CC7F91FB87E86B0A1201F77",
+			"tpid": "CD5FAF1B46A042136F75CFAF431A3CB5",
+			"tp": "execute"
+		},
+		{
+			"fg": "590A71EF4E6B75110EF24591DD2EA787",
+			"fpid": "421689A9443DA9023BDB34BB0A82D63F",
+			"fp": "OutputPin",
+			"tg": "EE5C70924A4163447291F499F0DE9C95",
+			"tpid": "6FFABC80469A2FCF2EC97B9995720BF3",
+			"tp": "self"
+		},
+		{
+			"fg": "7E27A44B4A8FEAC31D70979A8C04803C",
+			"fpid": "58B39C174A9BEBC719524CBF1BEC92F8",
+			"fp": "OutputPin",
+			"tg": "24E0291A4837BB54CA4D82B72EE81F5B",
+			"tpid": "7C7AA3184CBD857AF8045F8EE6B67260",
+			"tp": "self"
+		},
+		{
+			"fg": "7E27A44B4A8FEAC31D70979A8C04803C",
+			"fpid": "58B39C174A9BEBC719524CBF1BEC92F8",
+			"fp": "OutputPin",
+			"tg": "04EAAB844B0CAC1B820FA79E2186AB33",
+			"tpid": "2AD1AAE348CE1A8C57E20D8C74D1D6EA",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "7E27A44B4A8FEAC31D70979A8C04803C",
+			"fpid": "58B39C174A9BEBC719524CBF1BEC92F8",
+			"fp": "OutputPin",
+			"tg": "7384568E421996A98E2DAAAC375ECF76",
+			"tpid": "DCF853AB425DFA9946BC55884E034D64",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "6CC7CA3C4769CA72C2A401AD07EF77E7",
+			"fpid": "18A100D24CD47882121CEB87485107A0",
+			"fp": "SpecialAttackMPCost",
+			"tg": "2F031BBE49C7096B5A0E8F841D40F61F",
+			"tpid": "A0DF21EE48CA3F72CBEEAC83155607DE",
+			"tp": "B"
+		},
+		{
+			"fg": "966F79C04E0CF7FAE56E358AD577C0B0",
+			"fpid": "394160564B521F26552F6A92586D8C40",
+			"fp": "ReturnValue",
+			"tg": "FE0285D24306578ECE46648F51A96F59",
+			"tpid": "30E9E00B4A3AD08563470E982C0C4737",
+			"tp": "Condition"
+		},
+		{
+			"fg": "9F97824C463541EE27B94EABCCDCACF2",
+			"fpid": "578A310D42E15BD5B67B85949876829D",
+			"fp": "HP-MP_5_99A476164D0232A67B850F9A9274CDAF",
+			"tg": "C24994934E1E6BE96C805286892A2BA6",
+			"tpid": "D00076A749AFA85544650A815057C91F",
+			"tp": "Struct_HP-MP"
+		},
+		{
+			"fg": "C24994934E1E6BE96C805286892A2BA6",
+			"fpid": "1A43F6054AEE204C1812FDBE6A181BFC",
+			"fp": "MP_12_016CF93F4D83D803CA52B88CCC37AF0F",
+			"tg": "966F79C04E0CF7FAE56E358AD577C0B0",
+			"tpid": "037CEB444A95A0C0D02019929A84212D",
+			"tp": "A"
+		},
+		{
+			"fg": "FE0285D24306578ECE46648F51A96F59",
+			"fpid": "6DE2AE9C452DC69DFD8385A23E2CEE59",
+			"fp": "then",
+			"tg": "53C6FDF14BC32B119DD79387C04361A0",
+			"tpid": "FEAC5AA44182853406DFB99DBB19B716",
+			"tp": "execute"
+		},
+		{
+			"fg": "FE0285D24306578ECE46648F51A96F59",
+			"fpid": "7721DFF042DA32752FFA45A56B11B5B9",
+			"fp": "else",
+			"tg": "371305F84410BDA8282F8C89E5230F17",
+			"tpid": "59634D574351DC8D3A369F89C6C17369",
+			"tp": "execute"
+		},
+		{
+			"fg": "45CE55D346C991D7EBF79C8F442DEF65",
+			"fpid": "71491EC344D592614CEFBA92536309A8",
+			"fp": "PlayerStats",
+			"tg": "9F97824C463541EE27B94EABCCDCACF2",
+			"tpid": "3E573F994C036126D19C08A3AA057E00",
+			"tp": "Struct_PlayerStats"
+		},
+		{
+			"fg": "7A980C2F4094C81FD6E5A49AC6E24D10",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "45CE55D346C991D7EBF79C8F442DEF65",
+			"tpid": "A5B310DC464A9CACA0B53187AD404A27",
+			"tp": "self"
+		},
+		{
+			"fg": "7A980C2F4094C81FD6E5A49AC6E24D10",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "7BF04B8F47EC6A4E9B7844B98730E375",
+			"tpid": "97414E2E4DBF16F2885588881E1F411E",
+			"tp": "self"
+		},
+		{
+			"fg": "7A980C2F4094C81FD6E5A49AC6E24D10",
+			"fpid": "4F9F35E746E585462956E1B97500BAEC",
+			"fp": "As BP Turtle Character",
+			"tg": "EB7AA3DE471A83880851D2A20891517C",
+			"tpid": "524CF7B6473F6AC9C20D9AA720E69E4B",
+			"tp": "self"
+		},
+		{
+			"fg": "7BF04B8F47EC6A4E9B7844B98730E375",
+			"fpid": "C620068B473EBD4E6281089E0DE98B37",
+			"fp": "NotEnoughManaWidget",
+			"tg": "371305F84410BDA8282F8C89E5230F17",
+			"tpid": "7ED85FCB4B78141CD04906998768567D",
+			"tp": "self"
+		},
+		{
+			"fg": "7BF04B8F47EC6A4E9B7844B98730E375",
+			"fpid": "C620068B473EBD4E6281089E0DE98B37",
+			"fp": "NotEnoughManaWidget",
+			"tg": "D4E9F41D47828CB454236AB48E980F23",
+			"tpid": "E8E2333B4BCCBBAE7E9BCF8C709FC6D7",
+			"tp": "self"
+		},
+		{
+			"fg": "7BF04B8F47EC6A4E9B7844B98730E375",
+			"fpid": "C620068B473EBD4E6281089E0DE98B37",
+			"fp": "NotEnoughManaWidget",
+			"tg": "54D4A2E54A98034FE4D39592F8BA69AA",
+			"tpid": "0C02984446563B2802E522986B7656AF",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "371305F84410BDA8282F8C89E5230F17",
+			"fpid": "C52203734DC8FB8B5E48EAB472DB492C",
+			"fp": "then",
+			"tg": "E13654BF47544DD4392496B265941757",
+			"tpid": "600B6BD343E913D70937698358144924",
+			"tp": "execute"
+		},
+		{
+			"fg": "D4E9F41D47828CB454236AB48E980F23",
+			"fpid": "F56A0A4D4998B214252CACB3026D01EF",
+			"fp": "NoManaFlashAnim",
+			"tg": "E13654BF47544DD4392496B265941757",
+			"tpid": "8DAA60674D17ABEAEB1D2F8E5565D7E8",
+			"tp": "InAnimation"
+		},
+		{
+			"fg": "E13654BF47544DD4392496B265941757",
+			"fpid": "2A043A3E44D25A6BE7B18C9FB624AB7D",
+			"fp": "then",
+			"tg": "CEA2B0FD453698D32A65A9B94A1A0D0A",
+			"tpid": "CD5FAF1B46A042136F75CFAF431A3CB5",
+			"tp": "execute"
+		},
+		{
+			"fg": "54D4A2E54A98034FE4D39592F8BA69AA",
+			"fpid": "421689A9443DA9023BDB34BB0A82D63F",
+			"fp": "OutputPin",
+			"tg": "E13654BF47544DD4392496B265941757",
+			"tpid": "6FFABC80469A2FCF2EC97B9995720BF3",
+			"tp": "self"
+		},
+		{
+			"fg": "EB7AA3DE471A83880851D2A20891517C",
+			"fpid": "2385557944A86A93E515A5824AD7D75B",
+			"fp": "HealMPCost",
+			"tg": "966F79C04E0CF7FAE56E358AD577C0B0",
+			"tpid": "A0DF21EE48CA3F72CBEEAC83155607DE",
+			"tp": "B"
+		},
+		{
+			"fg": "3CCB2BC2435598BF519877A4C1CD163F",
+			"fpid": "ACCE8D26443A9736554EEA8B8ECD98AD",
+			"fp": "As BP Turtle Character",
+			"tg": "53C6FDF14BC32B119DD79387C04361A0",
+			"tpid": "F51F3A1643A696129E3BD58C7A5562AA",
+			"tp": "self"
+		},
+		{
+			"fg": "3CCB2BC2435598BF519877A4C1CD163F",
+			"fpid": "ACCE8D26443A9736554EEA8B8ECD98AD",
+			"fp": "As BP Turtle Character",
+			"tg": "A9492A6A48E3D584E41E1A85F6CB25CC",
+			"tpid": "BE12202640C3937C5D096BBBB0FA4BD4",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "3CCB2BC2435598BF519877A4C1CD163F",
+			"fpid": "ACCE8D26443A9736554EEA8B8ECD98AD",
+			"fp": "As BP Turtle Character",
+			"tg": "3F0F3B5F4B2D30B42755D38F1871949F",
+			"tpid": "247C6E084A8C27D78B79E294838D0E64",
+			"tp": "InputPin"
+		}
+	],
+	"variables": [
+		{
+			"name": "As BP Turtle Character",
+			"type": "BP Turtle Character",
+			"exposed": true
+		}
+	],
+	"components": [],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}

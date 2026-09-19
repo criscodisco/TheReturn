@@ -1,0 +1,2580 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Event Graph",
+	"assetName": "WB_PauseMenu",
+	"capturedAt": "2026-09-18T21:21:04",
+	"totalNodes": 107,
+	"graphWidth": 6883,
+	"graphHeight": 5814,
+	"graphOriginX": -984,
+	"graphOriginY": -1080,
+	"nodeTypes":
+	{
+		"Event Construct": 1,
+		"On Clicked": 5,
+		"On Pressed": 5,
+		"Get Player Controller": 4,
+		"Set bShowMouseCursor": 3,
+		"Set Visibility": 4,
+		"Set Input Mode Game Only": 3,
+		"Quit Game": 1,
+		"Does Save Game Exist": 1,
+		"Branch": 2,
+		"Load Game from Slot": 1,
+		"Cast To Save_TheReturn": 1,
+		"Get Game Instance": 1,
+		"Cast To GameInstance_TheReturn": 1,
+		"Set PlayerStats": 2,
+		"Get PlayerStats": 2,
+		"Open Level": 1,
+		"Get CurrentMapName": 1,
+		"String To Name": 1,
+		"Reroute Node": 14,
+		"Set PlayerTransform": 2,
+		"Get PlayerTransform": 1,
+		"Create Save Game Object": 1,
+		"Get BP_Player": 2,
+		"Set CurrentMapName": 1,
+		"Get Current Level Name": 1,
+		"Get Actor Transform": 1,
+		"Save Game to Slot": 1,
+		"Get FoxDialogueIndex": 2,
+		"Set FoxDialogueIndex": 2,
+		"Set Timer by Event": 1,
+		"FocusButton": 1,
+		"Get ContinueButton": 2,
+		"Get LoadButton": 1,
+		"Get QuitButton": 1,
+		"Get SaveButton": 1,
+		"Make Array": 1,
+		"For Each Loop": 1,
+		"Has Keyboard Focus": 1,
+		"Set PauseMenuFocusTimer": 1,
+		"Set Background Color": 2,
+		"Get PauseMenuFocusTimer": 4,
+		"Clear and Invalidate Timer by Handle": 4,
+		"Get IsIntroductionOver?": 1,
+		"Set IsIntroOver?": 1,
+		"Get ControlsConfigButton": 1,
+		"Get Player Character": 1,
+		"Set BP_Player": 1,
+		"Cast To BP_TurtleCharacter": 1,
+		"Get ControlsConfigWidget": 1,
+		"Get BackButton": 1,
+		"Set Keyboard Focus": 2,
+		"Delay": 1,
+		"Set Input Mode UI Only": 1,
+		"Set Game Paused": 3,
+		"Set Input Mode Game And UI": 1,
+		"Event Tick": 1,
+		"Focus Button": 1
+	},
+	"nodes": [
+		{
+			"title": "Event Construct",
+			"guid": "4F4E7E45415E27E6E8ADB2A02A49E582",
+			"nx": 0.1406,
+			"ny": 0.083900000000000002,
+			"nw": 0.023100000000000002,
+			"nh": 0.0112
+		},
+		{
+			"title": "On Clicked",
+			"guid": "18E0B95F46B6F54A37CFA486EFA4808E",
+			"nx": 0.13600000000000001,
+			"ny": 0.44170000000000004,
+			"nw": 0.033300000000000003,
+			"nh": 0.0112
+		},
+		{
+			"title": "On Pressed",
+			"guid": "6A798E1A4F190229014356832D653286",
+			"nx": 0.13600000000000001,
+			"ny": 0.46920000000000001,
+			"nw": 0.034099999999999998,
+			"nh": 0.0112
+		},
+		{
+			"title": "Get Player Controller",
+			"guid": "8A698315437E8FAE6825ACAB3A8D3793",
+			"nx": 0.29410000000000003,
+			"ny": 0.3977,
+			"nw": 0.037000000000000005,
+			"nh": 0.0112,
+			"pure": true,
+			"pins": [
+				{
+					"id": "16E96ED147BE90D246D432AC19436828",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "91C292D444630551D7675B83FF40CCB2",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Set bShowMouseCursor",
+			"guid": "E0F4358F4FC587BB88C4898AD3712B4B",
+			"nx": 0.33130000000000004,
+			"ny": 0.44440000000000002,
+			"nw": 0.0344,
+			"nh": 0.019100000000000002,
+			"pins": [
+				{
+					"id": "8413E3AF4FAF69263F9436921DE7658D",
+					"n": "bShowMouseCursor",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "C66F400B472937AA6391A081E1466B74",
+			"nx": 0.25919999999999999,
+			"ny": 0.43890000000000001,
+			"nw": 0.042100000000000005,
+			"nh": 0.029400000000000003,
+			"pins": [
+				{
+					"id": "63C5955E45243AD9FE1F779CB7B98827",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Collapsed"
+				}
+			]
+		},
+		{
+			"title": "Set Input Mode Game Only",
+			"guid": "3B58FF0548AF140CE161158C391109B8",
+			"nx": 0.38240000000000002,
+			"ny": 0.44170000000000004,
+			"nw": 0.031800000000000002,
+			"nh": 0.021700000000000001,
+			"pins": [
+				{
+					"id": "EE933BAA43677A5DD98BCBB76B27FA32",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"id": "1860AE2D415861F92BE97DB58BAFACFC",
+					"n": "bFlushInput",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "On Clicked",
+			"guid": "05A6EEF840911B6BE532D2AC18C31761",
+			"nx": 0.13600000000000001,
+			"ny": 0.51319999999999999,
+			"nw": 0.029300000000000003,
+			"nh": 0.0112
+		},
+		{
+			"title": "On Pressed",
+			"guid": "472CEF754F15982BE976DA8D3F548D0D",
+			"nx": 0.13600000000000001,
+			"ny": 0.5353,
+			"nw": 0.030200000000000001,
+			"nh": 0.0112
+		},
+		{
+			"title": "Quit Game",
+			"guid": "5DCB850B4561536E45E100B2871F8A88",
+			"nx": 0.24990000000000001,
+			"ny": 0.51319999999999999,
+			"nw": 0.042100000000000005,
+			"nh": 0.034099999999999998,
+			"pins": [
+				{
+					"id": "874B215543FBC97BA194CCB395822ED3",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "6979F7984BF979A5528CA6AC9B1B3E9E",
+					"n": "QuitPreference",
+					"t": "byte",
+					"dv": "Quit"
+				},
+				{
+					"id": "BBB27F2F41D3614360082F8BC28AE4A5",
+					"n": "bIgnorePlatformRestrictions",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "On Clicked",
+			"guid": "AFDFD7784C923D1A9FCDE9933E588EA6",
+			"nx": 0.038400000000000004,
+			"ny": 0.60130000000000006,
+			"nw": 0.029900000000000003,
+			"nh": 0.0112
+		},
+		{
+			"title": "On Pressed",
+			"guid": "0552CF1A44824A6C650620AD29A1D9DC",
+			"nx": 0.038400000000000004,
+			"ny": 0.62330000000000008,
+			"nw": 0.030800000000000001,
+			"nh": 0.0112
+		},
+		{
+			"title": "Does Save Game Exist",
+			"guid": "D029E1F44CE3C298609505A4A3356D06",
+			"nx": 0.17780000000000001,
+			"ny": 0.60130000000000006,
+			"nw": 0.0402,
+			"nh": 0.025100000000000001,
+			"pins": [
+				{
+					"id": "CC4D17E849FA7AF981C5388AE367BF9E",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "D616F0FD4AA61154D5D080972C0B30F8",
+					"n": "SlotName",
+					"t": "string",
+					"dv": "TheReturn_Save"
+				},
+				{
+					"id": "F0439EA94773500D46D60FAC54E2713B",
+					"n": "UserIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Branch",
+			"guid": "F99224FD4B0C35046B7AB6959873D842",
+			"nx": 0.22900000000000001,
+			"ny": 0.60130000000000006,
+			"nw": 0.026200000000000001,
+			"nh": 0.016199999999999999,
+			"pins": [
+				{
+					"id": "8938ADC443CB3EDF5C80C98A66E9D596",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Load Game from Slot",
+			"guid": "F9AAE028411BEB05098F69BA5892090D",
+			"nx": 0.27779999999999999,
+			"ny": 0.60130000000000006,
+			"nw": 0.0402,
+			"nh": 0.025100000000000001,
+			"pins": [
+				{
+					"id": "93A120864FCDF89896D77B93EF45A6BE",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "C365884D4C78DBA9B41EBEAE306C2FED",
+					"n": "SlotName",
+					"t": "string",
+					"dv": "TheReturn_Save"
+				},
+				{
+					"id": "78AE566842976CAF0B93AE9F7D353E07",
+					"n": "UserIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Cast To Save_TheReturn",
+			"guid": "3274AB79439B99A53318C39FB34B2B3F",
+			"nx": 0.32890000000000003,
+			"ny": 0.60130000000000006,
+			"nw": 0.0349,
+			"nh": 0.021299999999999999
+		},
+		{
+			"title": "Get Game Instance",
+			"guid": "8B0ADC79403820DFD55CAD828C058CD3",
+			"nx": 0.35450000000000004,
+			"ny": 0.58200000000000007,
+			"nw": 0.025700000000000001,
+			"nh": 0.0103,
+			"pure": true,
+			"pins": [
+				{
+					"id": "7FFAA2D1494DA65F7F707590E6E48F66",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				}
+			]
+		},
+		{
+			"title": "Cast To GameInstance_TheReturn",
+			"guid": "D75D842E40C4791F4D6156B16D20942C",
+			"nx": 0.39169999999999999,
+			"ny": 0.60130000000000006,
+			"nw": 0.042700000000000002,
+			"nh": 0.021299999999999999
+		},
+		{
+			"title": "Set PlayerStats",
+			"guid": "E4B3058D49A8F772D2F2AE820C3CC591",
+			"nx": 0.47070000000000001,
+			"ny": 0.60410000000000008,
+			"nw": 0.0246,
+			"nh": 0.0184
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "E6D044E04A3393CCB4B63397EF0CA2F7",
+			"nx": 0.4103,
+			"ny": 0.64529999999999998,
+			"nw": 0.0304,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Open Level",
+			"guid": "6476E7DF4E438256C4B9C8AACA72FEB9",
+			"nx": 0.87290000000000001,
+			"ny": 0.60130000000000006,
+			"nw": 0.028000000000000001,
+			"nh": 0.031,
+			"pins": [
+				{
+					"id": "A5B3187243AD29213732B0956AF31319",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "C17618E44BFED0B07751F2A983AFE276",
+					"n": "LevelName",
+					"t": "name",
+					"dv": "None"
+				},
+				{
+					"id": "584EA9504FFBAA27BCC1DB9EAE1AEB37",
+					"n": "bAbsolute",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Get CurrentMapName",
+			"guid": "84778CB943CE2537CF38D28A4C831FB4",
+			"nx": 0.81010000000000004,
+			"ny": 0.64529999999999998,
+			"nw": 0.0356,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "String To Name",
+			"guid": "8782E88F4D436636CACC338B4711B42A",
+			"nx": 0.8427,
+			"ny": 0.63429999999999997,
+			"nw": 0.018600000000000002,
+			"nh": 0.0065000000000000006,
+			"pure": true,
+			"pins": [
+				{
+					"id": "03CF3EB04DA332E064C0399897938C46",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetStringLibrary"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "28EA65554DCD789FD3375B93A895258A",
+			"nx": 0.40329999999999999,
+			"ny": 0.63160000000000005,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Set PlayerTransform",
+			"guid": "F9B974DF4A7D807E949D068C6306E7F8",
+			"nx": 0.56840000000000002,
+			"ny": 0.60410000000000008,
+			"nw": 0.0286,
+			"nh": 0.0184
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "9093E5BE4BB5F25F51F871B6EA64CE04",
+			"nx": 0.47770000000000001,
+			"ny": 0.62880000000000003,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Get PlayerTransform",
+			"guid": "592143BF4EA3BFC7D92DCE94B0C3B309",
+			"nx": 0.4103,
+			"ny": 0.66460000000000008,
+			"nw": 0.0344,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Set bShowMouseCursor",
+			"guid": "D056C3394BEF6FA221BC90A5FDCE9F3E",
+			"nx": 0.67060000000000008,
+			"ny": 0.60410000000000008,
+			"nw": 0.0344,
+			"nh": 0.019100000000000002,
+			"pins": [
+				{
+					"id": "E82678AF47DC53F5C3D791913463580E",
+					"n": "bShowMouseCursor",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Set Input Mode Game Only",
+			"guid": "3D44F2B84324B2F4D18F39924BDCEA2D",
+			"nx": 0.7218,
+			"ny": 0.60130000000000006,
+			"nw": 0.031800000000000002,
+			"nh": 0.021700000000000001,
+			"pins": [
+				{
+					"id": "44550A4A40071C00B58F3195F7D1B4D8",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"id": "F0062B764C665FFBEEC40EB61F466402",
+					"n": "bFlushInput",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Get Player Controller",
+			"guid": "C95A7C2D42A2C4344CB8579449689066",
+			"nx": 0.63340000000000007,
+			"ny": 0.57100000000000006,
+			"nw": 0.037000000000000005,
+			"nh": 0.0112,
+			"pure": true,
+			"pins": [
+				{
+					"id": "064423E74BF5BDFC836B509272EE5A13",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "3EEB9CC045D6288D38AEB1921D246E91",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "51352A40413E6E13B46591814FD2D475",
+			"nx": 0.70090000000000008,
+			"ny": 0.57650000000000001,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "On Clicked",
+			"guid": "92E3B3E04CB445936790AAA30AC09BF7",
+			"nx": 0.050000000000000003,
+			"ny": 0.70860000000000001,
+			"nw": 0.030100000000000002,
+			"nh": 0.0112
+		},
+		{
+			"title": "On Pressed",
+			"guid": "5DACEEF8402854CDE28844AD6A2F4E77",
+			"nx": 0.050000000000000003,
+			"ny": 0.73070000000000002,
+			"nw": 0.0309,
+			"nh": 0.0112
+		},
+		{
+			"title": "Create Save Game Object",
+			"guid": "9B8B9D8E4B7A04E1A64627A9BEC8138E",
+			"nx": 0.20570000000000002,
+			"ny": 0.70860000000000001,
+			"nw": 0.045499999999999999,
+			"nh": 0.02,
+			"pins": [
+				{
+					"id": "560CE3D84976863C724D7FB567AC7445",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "E0FF52404B09158382232D8D53763DC0",
+					"n": "SaveGameClass",
+					"t": "class",
+					"do": "/Game/Data/Save/Save_TheReturn.Save_TheReturn_C"
+				}
+			]
+		},
+		{
+			"title": "Set PlayerStats",
+			"guid": "CDA8CDE841464FE2B9E5E78EB8D75C7A",
+			"nx": 0.27550000000000002,
+			"ny": 0.71140000000000003,
+			"nw": 0.0246,
+			"nh": 0.0184
+		},
+		{
+			"title": "Get BP_Player",
+			"guid": "3EF0501542FA3E50F812F983AA208FA2",
+			"nx": 0.21970000000000001,
+			"ny": 0.74440000000000006,
+			"nw": 0.019200000000000002,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get PlayerStats",
+			"guid": "9A4077CA458DC99A379349BE2E37A8C5",
+			"nx": 0.24760000000000001,
+			"ny": 0.73340000000000005,
+			"nw": 0.0304,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Set CurrentMapName",
+			"guid": "846876BB47EE5AA73358C0BF950AF7E2",
+			"nx": 0.51019999999999999,
+			"ny": 0.71140000000000003,
+			"nw": 0.030500000000000003,
+			"nh": 0.0184
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "9F379B4441EB49929A6850AB69245478",
+			"nx": 0.28710000000000002,
+			"ny": 0.70040000000000002,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Get Current Level Name",
+			"guid": "61F716EC44307237199AE98EE552F3CB",
+			"nx": 0.45680000000000004,
+			"ny": 0.70860000000000001,
+			"nw": 0.044000000000000004,
+			"nh": 0.019800000000000002,
+			"pins": [
+				{
+					"id": "8562027D472EFAD632C87993C479738A",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "13D6799B431ADEB3813D3A99A23E9A96",
+					"n": "bRemovePrefixString",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "FEAC207D4DD09E8D09243F85B67DED09",
+			"nx": 0.49160000000000004,
+			"ny": 0.70040000000000002,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Set PlayerTransform",
+			"guid": "F55797A14F3C366908D2C1BEB0427EA6",
+			"nx": 0.56369999999999998,
+			"ny": 0.71140000000000003,
+			"nw": 0.0286,
+			"nh": 0.0184
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "30C0C0034CB8FCEFB25BE3898EE1AE9D",
+			"nx": 0.49630000000000002,
+			"ny": 0.7389,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Get Actor Transform",
+			"guid": "2A5A66D74FE8C0E978F7AEA3641834A9",
+			"nx": 0.53349999999999997,
+			"ny": 0.73620000000000008,
+			"nw": 0.029900000000000003,
+			"nh": 0.013100000000000001,
+			"pure": true
+		},
+		{
+			"title": "Save Game to Slot",
+			"guid": "1F67EAB24C610387F89B19961BD3BEA1",
+			"nx": 0.62409999999999999,
+			"ny": 0.70860000000000001,
+			"nw": 0.0402,
+			"nh": 0.030300000000000001,
+			"pins": [
+				{
+					"id": "D02BA2E04E0682ABF85FB2A91928C610",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "905101F44FFB0DBF0E81D3A25CB780AC",
+					"n": "SlotName",
+					"t": "string",
+					"dv": "TheReturn_Save"
+				},
+				{
+					"id": "7A5BDF6F4287D6E080778DB411048D83",
+					"n": "UserIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "345F60FA4E502300A60710816D5C7A78",
+			"nx": 0.58000000000000007,
+			"ny": 0.68659999999999999,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "EA5AEFE54DA08C458200D6988E37FF4B",
+			"nx": 0.26150000000000001,
+			"ny": 0.68390000000000006,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Get FoxDialogueIndex",
+			"guid": "C3E4DC574BAB9E20DB6C34978E0ADB4B",
+			"nx": 0.28010000000000002,
+			"ny": 0.76090000000000002,
+			"nw": 0.035900000000000001,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Set FoxDialogueIndex",
+			"guid": "3408432C40BB0907C4C9D7B7EFBE131D",
+			"nx": 0.35680000000000001,
+			"ny": 0.71140000000000003,
+			"nw": 0.030800000000000001,
+			"nh": 0.0184,
+			"pins": [
+				{
+					"id": "B8D2C3C8411EADD03C5D6E965831759A",
+					"n": "FoxDialogueIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Get FoxDialogueIndex",
+			"guid": "371088D64A9563EB61D288BD19F6A90E",
+			"nx": 0.4103,
+			"ny": 0.67559999999999998,
+			"nw": 0.035900000000000001,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Set FoxDialogueIndex",
+			"guid": "1139778741C0A3A82AE450899D2AD681",
+			"nx": 0.61020000000000008,
+			"ny": 0.60410000000000008,
+			"nw": 0.030800000000000001,
+			"nh": 0.0184,
+			"pins": [
+				{
+					"id": "8A5727CD4C544E2DA3CB6D88AFF72467",
+					"n": "FoxDialogueIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "1B011A2542010174537F7DBAF0E9A26F",
+			"nx": 0.59630000000000005,
+			"ny": 0.67559999999999998,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "6B6A868942C0B556B7A1C7B40AC5155B",
+			"nx": 0.54980000000000007,
+			"ny": 0.66460000000000008,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "4B445410449AFF75DF2E1883837E22F5",
+			"nx": 0.58000000000000007,
+			"ny": 0.62880000000000003,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Set Timer by Event",
+			"guid": "46D08CEE4B1E30D710C57B9F5631FDA6",
+			"nx": 0.16850000000000001,
+			"ny": 0.21880000000000002,
+			"nw": 0.043900000000000002,
+			"nh": 0.036799999999999999,
+			"pins": [
+				{
+					"id": "5F26BFD2457FEFBBE40678A75FFD9560",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "9DDC35244828496CBBE9E69016714F78",
+					"n": "Time",
+					"t": "real",
+					"dv": "0.100000"
+				},
+				{
+					"id": "A3A234504C6040989F494CB7C469E523",
+					"n": "bLooping",
+					"t": "bool",
+					"dv": "true"
+				},
+				{
+					"id": "801634654C153BF55EC5EA8DC67F19D9",
+					"n": "bMaxOncePerFrame",
+					"t": "bool",
+					"dv": "false"
+				},
+				{
+					"id": "7B5509284DB6B0863E31A9925A6A9F5E",
+					"n": "InitialStartDelay",
+					"t": "real",
+					"dv": "0.000000"
+				},
+				{
+					"id": "A3F3E78940D50140B1DC4F8D2FABCF00",
+					"n": "InitialStartDelayVariance",
+					"t": "real",
+					"dv": "0.000000"
+				}
+			]
+		},
+		{
+			"title": "FocusButton",
+			"guid": "DD68FC964DE7D1B1FEBB2EACC1EF00EE",
+			"nx": 0.14300000000000002,
+			"ny": 0.2656,
+			"nw": 0.020300000000000002,
+			"nh": 0.0134
+		},
+		{
+			"title": "Get ContinueButton",
+			"guid": "C3AABF204FED99A5EF884589A1048832",
+			"nx": 0.13600000000000001,
+			"ny": 0.2903,
+			"nw": 0.021100000000000001,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get LoadButton",
+			"guid": "D2F07A394F6C633B352BE5A9285E3E8F",
+			"nx": 0.13370000000000001,
+			"ny": 0.33160000000000001,
+			"nw": 0.019200000000000002,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get QuitButton",
+			"guid": "7E019EF94F5C96B1B0CD24AAF8851DBC",
+			"nx": 0.13370000000000001,
+			"ny": 0.34260000000000002,
+			"nw": 0.019200000000000002,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get SaveButton",
+			"guid": "AA6C4F36410AA9D7D0F47393D041754C",
+			"nx": 0.13370000000000001,
+			"ny": 0.3206,
+			"nw": 0.019200000000000002,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Make Array",
+			"guid": "85F467544DA3D73EE97CF1A1F3D08A1A",
+			"nx": 0.16390000000000002,
+			"ny": 0.28760000000000002,
+			"nw": 0.0224,
+			"nh": 0.031,
+			"pure": true
+		},
+		{
+			"title": "For Each Loop",
+			"guid": "280B98F54BE895A876BD9BA6A7B8FA18",
+			"nx": 0.19640000000000002,
+			"ny": 0.26830000000000004,
+			"nw": 0.0292,
+			"nh": 0.026500000000000003
+		},
+		{
+			"title": "Has Keyboard Focus",
+			"guid": "977D414147D100A02353D886FE5FD91F",
+			"nx": 0.24060000000000001,
+			"ny": 0.2903,
+			"nw": 0.029900000000000003,
+			"nh": 0.013100000000000001,
+			"pure": true
+		},
+		{
+			"title": "Branch",
+			"guid": "C799570D48F8E6150A26BD8B895C4738",
+			"nx": 0.27550000000000002,
+			"ny": 0.26830000000000004,
+			"nw": 0.026200000000000001,
+			"nh": 0.016199999999999999,
+			"pins": [
+				{
+					"id": "65FDCE7E4025866C3F40CFAED7D69A66",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Set PauseMenuFocusTimer",
+			"guid": "366E01AC4C7E8925544D2887F22D62FA",
+			"nx": 0.22660000000000002,
+			"ny": 0.2215,
+			"nw": 0.0349,
+			"nh": 0.0132
+		},
+		{
+			"title": "Set Background Color",
+			"guid": "AE82EA42410767C2B502FCB2DBA7031F",
+			"nx": 0.32430000000000003,
+			"ny": 0.2656,
+			"nw": 0.033000000000000002,
+			"nh": 0.024400000000000002,
+			"pins": [
+				{
+					"id": "8291873542B9FF8DC95315930D925B71",
+					"n": "InBackgroundColor",
+					"t": "struct",
+					"dv": "(R=0.000000,G=0.009347,B=1.000000,A=1.000000)"
+				}
+			]
+		},
+		{
+			"title": "Set Background Color",
+			"guid": "15B9C0E745FA3E6803E2258428BE187A",
+			"nx": 0.32890000000000003,
+			"ny": 0.31230000000000002,
+			"nw": 0.033000000000000002,
+			"nh": 0.024400000000000002,
+			"pins": [
+				{
+					"id": "8291873542B9FF8DC95315930D925B71",
+					"n": "InBackgroundColor",
+					"t": "struct",
+					"dv": "(R=0.000000,G=1.000000,B=0.518294,A=1.000000)"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "D8049EBB4E2C961FD55EA1B19B93187B",
+			"nx": 0.27779999999999999,
+			"ny": 0.25180000000000002,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "373C49C24AE329CD7F77E39531324223",
+			"nx": 0.2336,
+			"ny": 0.3261,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Get PauseMenuFocusTimer",
+			"guid": "02D515B04D69A12C8938F88886E3A174",
+			"nx": 0.41260000000000002,
+			"ny": 0.4224,
+			"nw": 0.027900000000000001,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Clear and Invalidate Timer by Handle",
+			"guid": "31FCD4F542BDEBFDF8B51D854845BBB7",
+			"nx": 0.4335,
+			"ny": 0.44170000000000004,
+			"nw": 0.040000000000000001,
+			"nh": 0.015800000000000002,
+			"pins": [
+				{
+					"id": "8F65C1E84C9F81307183F68744FC939A",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				}
+			]
+		},
+		{
+			"title": "Get PauseMenuFocusTimer",
+			"guid": "C5ED6158406C335A1F9EE0ABFF81A570",
+			"nx": 0.17320000000000002,
+			"ny": 0.49400000000000005,
+			"nw": 0.027900000000000001,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Clear and Invalidate Timer by Handle",
+			"guid": "123CC1E44D76FF7D5D72FAA7A61ED74A",
+			"nx": 0.19410000000000002,
+			"ny": 0.51319999999999999,
+			"nw": 0.040000000000000001,
+			"nh": 0.015800000000000002,
+			"pins": [
+				{
+					"id": "8F65C1E84C9F81307183F68744FC939A",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				}
+			]
+		},
+		{
+			"title": "Get PauseMenuFocusTimer",
+			"guid": "84FCF7E94493802ECFEDB2AB47221752",
+			"nx": 0.76130000000000009,
+			"ny": 0.58200000000000007,
+			"nw": 0.027900000000000001,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Clear and Invalidate Timer by Handle",
+			"guid": "5A26000E4D22C39A218DCC8631C78A1C",
+			"nx": 0.78220000000000001,
+			"ny": 0.60130000000000006,
+			"nw": 0.040000000000000001,
+			"nh": 0.015800000000000002,
+			"pins": [
+				{
+					"id": "8F65C1E84C9F81307183F68744FC939A",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				}
+			]
+		},
+		{
+			"title": "Get IsIntroductionOver?",
+			"guid": "20E019DF4681EE3B91B3F19D54814600",
+			"nx": 0.4103,
+			"ny": 0.65629999999999999,
+			"nw": 0.037000000000000005,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "5766E0094706A92356E67A9860482096",
+			"nx": 0.50090000000000001,
+			"ny": 0.65629999999999999,
+			"nw": 0.0061000000000000004,
+			"nh": 0.0041000000000000003,
+			"pure": true
+		},
+		{
+			"title": "Set IsIntroOver?",
+			"guid": "B398325E4DA2FFE888E93B853D5A64C0",
+			"nx": 0.51719999999999999,
+			"ny": 0.60410000000000008,
+			"nw": 0.026000000000000002,
+			"nh": 0.0184,
+			"pins": [
+				{
+					"id": "79008B074B74C036EF10D397A47D681C",
+					"n": "IsIntroOver?",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "On Clicked",
+			"guid": "D4FB46C046D32638C8CF6A87355B5337",
+			"nx": 0.14530000000000001,
+			"ny": 0.85720000000000007,
+			"nw": 0.038400000000000004,
+			"nh": 0.0112
+		},
+		{
+			"title": "On Pressed",
+			"guid": "743B21DC434430B111B7C998AA881454",
+			"nx": 0.14530000000000001,
+			"ny": 0.90129999999999999,
+			"nw": 0.039199999999999999,
+			"nh": 0.0112
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "9C661B514E050DB8EE05868C42C7DEDD",
+			"nx": 0.215,
+			"ny": 0.89850000000000008,
+			"nw": 0.042100000000000005,
+			"nh": 0.029400000000000003,
+			"pins": [
+				{
+					"id": "97017E0244444B5BDF6E6985B7B35B48",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Collapsed"
+				}
+			]
+		},
+		{
+			"title": "Get ControlsConfigButton",
+			"guid": "7CC0F688475AB920D61555973253C69D",
+			"nx": 0.13600000000000001,
+			"ny": 0.30130000000000001,
+			"nw": 0.0263,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "ED8D60C8499609EAA100A6B85B5DA21E",
+			"nx": 0.29170000000000001,
+			"ny": 0.89850000000000008,
+			"nw": 0.042100000000000005,
+			"nh": 0.0286,
+			"pins": [
+				{
+					"id": "E77136E646C5DBF1662C8492634FFB60",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Visible"
+				}
+			]
+		},
+		{
+			"title": "Get Player Character",
+			"guid": "DA479EA44EB9A5FBD6EB848BE7789952",
+			"nx": 0.14530000000000001,
+			"ny": 0.045400000000000003,
+			"nw": 0.037000000000000005,
+			"nh": 0.0112,
+			"pure": true,
+			"pins": [
+				{
+					"id": "B22B5B43460E4D7EFB6FE381091EC2B1",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "2872792840B8184C369D10917EF8CDB1",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Set BP_Player",
+			"guid": "7E2C63534FE8BFBE232CFF8A61B64F41",
+			"nx": 0.22660000000000002,
+			"ny": 0.086699999999999999,
+			"nw": 0.022800000000000001,
+			"nh": 0.0132
+		},
+		{
+			"title": "Cast To BP_TurtleCharacter",
+			"guid": "115A1A744B50A457E099D09AA671A358",
+			"nx": 0.17780000000000001,
+			"ny": 0.083900000000000002,
+			"nw": 0.037499999999999999,
+			"nh": 0.021299999999999999
+		},
+		{
+			"title": "Get BP_Player",
+			"guid": "BF92A8874938EAF3F789889CACF9E894",
+			"nx": 0.21730000000000002,
+			"ny": 0.94810000000000005,
+			"nw": 0.019200000000000002,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get ControlsConfigWidget",
+			"guid": "829FE28449EAE876513568B28ADEC83A",
+			"nx": 0.2452,
+			"ny": 0.94810000000000005,
+			"nw": 0.039100000000000003,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Get BackButton",
+			"guid": "FDF4BE9A4391FEECC4D581B9EBC0280D",
+			"nx": 0.315,
+			"ny": 0.94810000000000005,
+			"nw": 0.030700000000000002,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Set Keyboard Focus",
+			"guid": "8A45669F4C812EFBEA348A899D3E5B28",
+			"nx": 0.50090000000000001,
+			"ny": 0.89850000000000008,
+			"nw": 0.0263,
+			"nh": 0.018600000000000002
+		},
+		{
+			"title": "Delay",
+			"guid": "10F6003C4098D522C78777B950D4D2A7",
+			"nx": 0.44520000000000004,
+			"ny": 0.90129999999999999,
+			"nw": 0.033500000000000002,
+			"nh": 0.0167,
+			"pins": [
+				{
+					"id": "1C33C0FF43A403F380E065BD3F482320",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "4FE1ECB9458A5796FC7C7FBA4C68D86F",
+					"n": "Duration",
+					"t": "real",
+					"dv": "0.2"
+				},
+				{
+					"id": "D3629CDA402AE34F2EE42FBBF16F28A9",
+					"n": "LatentInfo",
+					"t": "struct",
+					"dv": "(Linkage=-1,UUID=-1,ExecutionFunction=\"\",CallbackTarget=None)"
+				}
+			]
+		},
+		{
+			"title": "Get Player Controller",
+			"guid": "8FCE02304B45AD45BF62519D68181252",
+			"nx": 0.32430000000000003,
+			"ny": 0.871,
+			"nw": 0.037000000000000005,
+			"nh": 0.0112,
+			"pure": true,
+			"pins": [
+				{
+					"id": "96D18DE64F6E247B0616769F8800B828",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "A8757C7147D2EA18E05F2E91DDF4F774",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Set Input Mode UI Only",
+			"guid": "FB2D6FC1476073CB14E3DDA4C27BCFEA",
+			"nx": 0.3498,
+			"ny": 0.82700000000000007,
+			"nw": 0.042100000000000005,
+			"nh": 0.036799999999999999,
+			"pins": [
+				{
+					"id": "54FD843E436948D077257593045945B5",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"id": "39FD69314281774BA12566AAE4ED93DE",
+					"n": "InWidgetToFocus",
+					"t": "object",
+					"dv": "None"
+				},
+				{
+					"id": "9D57236D4BE6ADF5D39EBC9516A8E84F",
+					"n": "InMouseLockMode",
+					"t": "byte",
+					"dv": "DoNotLock"
+				},
+				{
+					"id": "A4106D0D48F4261E7BEAC9877943E8E7",
+					"n": "bFlushInput",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Set Game Paused",
+			"guid": "CA296F1C472FA232398082B4CD430ADB",
+			"nx": 0.19410000000000002,
+			"ny": 0.44170000000000004,
+			"nw": 0.033700000000000001,
+			"nh": 0.016500000000000001,
+			"pins": [
+				{
+					"id": "65E964E14E1CB32025CFD19A60DAD218",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "338A29934C282EC7198AD0B270F0384C",
+					"n": "bPaused",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Set Game Paused",
+			"guid": "FC1484454A0DB3E98086E89C34EF50FA",
+			"nx": 0.094100000000000003,
+			"ny": 0.60130000000000006,
+			"nw": 0.033700000000000001,
+			"nh": 0.016500000000000001,
+			"pins": [
+				{
+					"id": "65E964E14E1CB32025CFD19A60DAD218",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "338A29934C282EC7198AD0B270F0384C",
+					"n": "bPaused",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Set Game Paused",
+			"guid": "87573DCD46F91BE69D6C69944635B8C8",
+			"nx": 0.098799999999999999,
+			"ny": 0.70860000000000001,
+			"nw": 0.033700000000000001,
+			"nh": 0.016500000000000001,
+			"pins": [
+				{
+					"id": "65E964E14E1CB32025CFD19A60DAD218",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "338A29934C282EC7198AD0B270F0384C",
+					"n": "bPaused",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Set Input Mode Game And UI",
+			"guid": "9C5902064C64C163A676B19943A79A3C",
+			"nx": 0.36150000000000004,
+			"ny": 0.90129999999999999,
+			"nw": 0.042100000000000005,
+			"nh": 0.045100000000000001,
+			"pins": [
+				{
+					"id": "D3109A1A44F6FFB911BF2098324C631B",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"id": "E2CB08BF4F6D8A811877DAAC4FE715A1",
+					"n": "InWidgetToFocus",
+					"t": "object",
+					"dv": "None"
+				},
+				{
+					"id": "10A7C8C9476FCCC792C56C9113E17E01",
+					"n": "InMouseLockMode",
+					"t": "byte",
+					"dv": "DoNotLock"
+				},
+				{
+					"id": "E987FDE64EBE7EF023CDFA9678075A83",
+					"n": "bHideCursorDuringCapture",
+					"t": "bool",
+					"dv": "true"
+				},
+				{
+					"id": "F232F4D14ED1AD2F556FBEA1C1D4D43E",
+					"n": "bFlushInput",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Get ContinueButton",
+			"guid": "A564B133473861FD0FC5AD94B9C7583F",
+			"nx": 0.2336,
+			"ny": 0.1197,
+			"nw": 0.021100000000000001,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Set Keyboard Focus",
+			"guid": "BCEBA77749933A469EF273B93D8613B7",
+			"nx": 0.27080000000000004,
+			"ny": 0.081200000000000008,
+			"nw": 0.0263,
+			"nh": 0.018600000000000002
+		},
+		{
+			"title": "Event Tick",
+			"guid": "6DDFA9A14858A59C774A788042760F88",
+			"nx": 0.14300000000000002,
+			"ny": 0.1555,
+			"nw": 0.018200000000000001,
+			"nh": 0.021500000000000002
+		},
+		{
+			"title": "Focus Button",
+			"guid": "FA0D1D7F468CDD07310D7184F7159824",
+			"nx": 0.222,
+			"ny": 0.1527,
+			"nw": 0.029500000000000002,
+			"nh": 0.019400000000000001
+		},
+		{
+			"title": "Get Player Controller",
+			"guid": "A47B7E4F41393B616924138D77522108",
+			"nx": 0.78220000000000001,
+			"ny": 0.68110000000000004,
+			"nw": 0.037000000000000005,
+			"nh": 0.0112,
+			"pure": true,
+			"pins": [
+				{
+					"id": "16E96ED147BE90D246D432AC19436828",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"id": "91C292D444630551D7675B83FF40CCB2",
+					"n": "PlayerIndex",
+					"t": "int",
+					"dv": "0"
+				}
+			]
+		},
+		{
+			"title": "Set bShowMouseCursor",
+			"guid": "B17F067A4690A4EC5C6EDAA4ACCAC86D",
+			"nx": 0.81940000000000002,
+			"ny": 0.71410000000000007,
+			"nw": 0.0344,
+			"nh": 0.019100000000000002,
+			"pins": [
+				{
+					"id": "8413E3AF4FAF69263F9436921DE7658D",
+					"n": "bShowMouseCursor",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Set Visibility",
+			"guid": "8B6C30684D18705055355F9EF30CE7C3",
+			"nx": 0.74730000000000008,
+			"ny": 0.70860000000000001,
+			"nw": 0.042100000000000005,
+			"nh": 0.029400000000000003,
+			"pins": [
+				{
+					"id": "63C5955E45243AD9FE1F779CB7B98827",
+					"n": "InVisibility",
+					"t": "byte",
+					"dv": "Collapsed"
+				}
+			]
+		},
+		{
+			"title": "Set Input Mode Game Only",
+			"guid": "E2AA2C3649DEE153B4F109B8D5BA6DFC",
+			"nx": 0.87060000000000004,
+			"ny": 0.71140000000000003,
+			"nw": 0.031800000000000002,
+			"nh": 0.021700000000000001,
+			"pins": [
+				{
+					"id": "EE933BAA43677A5DD98BCBB76B27FA32",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"id": "1860AE2D415861F92BE97DB58BAFACFC",
+					"n": "bFlushInput",
+					"t": "bool",
+					"dv": "false"
+				}
+			]
+		},
+		{
+			"title": "Get PauseMenuFocusTimer",
+			"guid": "E94630934829E76DD63E6F95B81895B7",
+			"nx": 0.90080000000000005,
+			"ny": 0.69210000000000005,
+			"nw": 0.027900000000000001,
+			"nh": 0.0065000000000000006,
+			"pure": true
+		},
+		{
+			"title": "Clear and Invalidate Timer by Handle",
+			"guid": "1308B27941821BE3E8CFF0A5E2773299",
+			"nx": 0.92170000000000007,
+			"ny": 0.71140000000000003,
+			"nw": 0.040000000000000001,
+			"nh": 0.015800000000000002,
+			"pins": [
+				{
+					"id": "8F65C1E84C9F81307183F68744FC939A",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				}
+			]
+		}
+	],
+	"connections": [
+		{
+			"fg": "4F4E7E45415E27E6E8ADB2A02A49E582",
+			"fpid": "5EAF265143A6F4EB04DFE8973E5BEB47",
+			"fp": "then",
+			"tg": "115A1A744B50A457E099D09AA671A358",
+			"tpid": "19F397B94EB10EE629CC609B18520F70",
+			"tp": "execute"
+		},
+		{
+			"fg": "18E0B95F46B6F54A37CFA486EFA4808E",
+			"fpid": "627029AB45710A545C0B37959E7DF7AF",
+			"fp": "then",
+			"tg": "CA296F1C472FA232398082B4CD430ADB",
+			"tpid": "7231423F4FB7155D7519ECA9723FD8A8",
+			"tp": "execute"
+		},
+		{
+			"fg": "6A798E1A4F190229014356832D653286",
+			"fpid": "BEA370184F6025393EA4EA9F9A8C0474",
+			"fp": "then",
+			"tg": "CA296F1C472FA232398082B4CD430ADB",
+			"tpid": "7231423F4FB7155D7519ECA9723FD8A8",
+			"tp": "execute"
+		},
+		{
+			"fg": "8A698315437E8FAE6825ACAB3A8D3793",
+			"fpid": "DE42E5314B8C234551199E8BAC1B77DD",
+			"fp": "ReturnValue",
+			"tg": "E0F4358F4FC587BB88C4898AD3712B4B",
+			"tpid": "55327C4344A0CD89646E1CBE8063EEBE",
+			"tp": "self"
+		},
+		{
+			"fg": "8A698315437E8FAE6825ACAB3A8D3793",
+			"fpid": "DE42E5314B8C234551199E8BAC1B77DD",
+			"fp": "ReturnValue",
+			"tg": "3B58FF0548AF140CE161158C391109B8",
+			"tpid": "A2F7FAC64742E400A90DF3A915C26CA1",
+			"tp": "PlayerController"
+		},
+		{
+			"fg": "E0F4358F4FC587BB88C4898AD3712B4B",
+			"fpid": "F90D7D694876A445194333ACB421DB75",
+			"fp": "then",
+			"tg": "3B58FF0548AF140CE161158C391109B8",
+			"tpid": "E9DD9D5F4CDFFE40B45B6897ECA2131F",
+			"tp": "execute"
+		},
+		{
+			"fg": "C66F400B472937AA6391A081E1466B74",
+			"fpid": "9BFBCFD74AB43D402BE61A98EFBDF2A6",
+			"fp": "then",
+			"tg": "E0F4358F4FC587BB88C4898AD3712B4B",
+			"tpid": "7F45EFCA4C12FCEB62A7C9954D4D8056",
+			"tp": "execute"
+		},
+		{
+			"fg": "3B58FF0548AF140CE161158C391109B8",
+			"fpid": "9503563047A39C6BD7CAFDABA619DBF6",
+			"fp": "then",
+			"tg": "31FCD4F542BDEBFDF8B51D854845BBB7",
+			"tpid": "B393E2AB46725BF7940B5FB4115DE61B",
+			"tp": "execute"
+		},
+		{
+			"fg": "05A6EEF840911B6BE532D2AC18C31761",
+			"fpid": "480FA4724DF9892D04746695DB961D38",
+			"fp": "then",
+			"tg": "123CC1E44D76FF7D5D72FAA7A61ED74A",
+			"tpid": "B393E2AB46725BF7940B5FB4115DE61B",
+			"tp": "execute"
+		},
+		{
+			"fg": "472CEF754F15982BE976DA8D3F548D0D",
+			"fpid": "B09D690C4811029F85878AA3CF6C50A1",
+			"fp": "then",
+			"tg": "123CC1E44D76FF7D5D72FAA7A61ED74A",
+			"tpid": "B393E2AB46725BF7940B5FB4115DE61B",
+			"tp": "execute"
+		},
+		{
+			"fg": "AFDFD7784C923D1A9FCDE9933E588EA6",
+			"fpid": "DF8C19C54DD9EE6781C61085BBE6E504",
+			"fp": "then",
+			"tg": "FC1484454A0DB3E98086E89C34EF50FA",
+			"tpid": "7231423F4FB7155D7519ECA9723FD8A8",
+			"tp": "execute"
+		},
+		{
+			"fg": "0552CF1A44824A6C650620AD29A1D9DC",
+			"fpid": "2105E65345A3C82E037BD3AE77B443A0",
+			"fp": "then",
+			"tg": "FC1484454A0DB3E98086E89C34EF50FA",
+			"tpid": "7231423F4FB7155D7519ECA9723FD8A8",
+			"tp": "execute"
+		},
+		{
+			"fg": "D029E1F44CE3C298609505A4A3356D06",
+			"fpid": "AF73C64C424A76858F6541B1DD7A339E",
+			"fp": "then",
+			"tg": "F99224FD4B0C35046B7AB6959873D842",
+			"tpid": "BE81EC2A426718C9F937E9B47E0530A9",
+			"tp": "execute"
+		},
+		{
+			"fg": "D029E1F44CE3C298609505A4A3356D06",
+			"fpid": "988FEEBD458AFE3BDF8999910B83BABE",
+			"fp": "ReturnValue",
+			"tg": "F99224FD4B0C35046B7AB6959873D842",
+			"tpid": "8938ADC443CB3EDF5C80C98A66E9D596",
+			"tp": "Condition"
+		},
+		{
+			"fg": "F99224FD4B0C35046B7AB6959873D842",
+			"fpid": "63C3175A401A9F58356F87B9B5382753",
+			"fp": "then",
+			"tg": "F9AAE028411BEB05098F69BA5892090D",
+			"tpid": "32130D2B4A155E80C3F38B86A9855A6E",
+			"tp": "execute"
+		},
+		{
+			"fg": "F9AAE028411BEB05098F69BA5892090D",
+			"fpid": "35C712CA425C90A9A5EB28AE751B587F",
+			"fp": "then",
+			"tg": "3274AB79439B99A53318C39FB34B2B3F",
+			"tpid": "BA6C37EC46697FF5524ED8AC7A99CDA2",
+			"tp": "execute"
+		},
+		{
+			"fg": "F9AAE028411BEB05098F69BA5892090D",
+			"fpid": "CD4B172B44C57B31EE22649EB7DBBC32",
+			"fp": "ReturnValue",
+			"tg": "3274AB79439B99A53318C39FB34B2B3F",
+			"tpid": "14AF31F046EF869E29FDB5A0AF460886",
+			"tp": "Object"
+		},
+		{
+			"fg": "3274AB79439B99A53318C39FB34B2B3F",
+			"fpid": "2051C1464DA96BBFFC766F963259BF36",
+			"fp": "then",
+			"tg": "D75D842E40C4791F4D6156B16D20942C",
+			"tpid": "DFD81A1B47917290D59C848B55C359FF",
+			"tp": "execute"
+		},
+		{
+			"fg": "3274AB79439B99A53318C39FB34B2B3F",
+			"fpid": "7EEEEC4E4CEF40EB1048F590EEDCC8FC",
+			"fp": "AsSave the Return",
+			"tg": "E6D044E04A3393CCB4B63397EF0CA2F7",
+			"tpid": "09A597CC4F4091805047B59978D56000",
+			"tp": "self"
+		},
+		{
+			"fg": "3274AB79439B99A53318C39FB34B2B3F",
+			"fpid": "7EEEEC4E4CEF40EB1048F590EEDCC8FC",
+			"fp": "AsSave the Return",
+			"tg": "28EA65554DCD789FD3375B93A895258A",
+			"tpid": "1C50FD49452674A7A0ACD08C0B5CEDDE",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "3274AB79439B99A53318C39FB34B2B3F",
+			"fpid": "7EEEEC4E4CEF40EB1048F590EEDCC8FC",
+			"fp": "AsSave the Return",
+			"tg": "592143BF4EA3BFC7D92DCE94B0C3B309",
+			"tpid": "CB1A33A74816D61F309E7C921E0FB815",
+			"tp": "self"
+		},
+		{
+			"fg": "3274AB79439B99A53318C39FB34B2B3F",
+			"fpid": "7EEEEC4E4CEF40EB1048F590EEDCC8FC",
+			"fp": "AsSave the Return",
+			"tg": "371088D64A9563EB61D288BD19F6A90E",
+			"tpid": "F499F7A5485801209BAE7D87B66F4C27",
+			"tp": "self"
+		},
+		{
+			"fg": "3274AB79439B99A53318C39FB34B2B3F",
+			"fpid": "7EEEEC4E4CEF40EB1048F590EEDCC8FC",
+			"fp": "AsSave the Return",
+			"tg": "20E019DF4681EE3B91B3F19D54814600",
+			"tpid": "DB75A5814983F85118EBEB8FB29DDA3A",
+			"tp": "self"
+		},
+		{
+			"fg": "8B0ADC79403820DFD55CAD828C058CD3",
+			"fpid": "DE3FCA73408F59EAA134A697E1D8AF60",
+			"fp": "ReturnValue",
+			"tg": "D75D842E40C4791F4D6156B16D20942C",
+			"tpid": "249191064D2B2AEB954BAF8E4D4CCB39",
+			"tp": "Object"
+		},
+		{
+			"fg": "D75D842E40C4791F4D6156B16D20942C",
+			"fpid": "1879C1C847428A96560046A52975FBBB",
+			"fp": "then",
+			"tg": "E4B3058D49A8F772D2F2AE820C3CC591",
+			"tpid": "760B93E54F021861A03C56A8CB88BAFC",
+			"tp": "execute"
+		},
+		{
+			"fg": "D75D842E40C4791F4D6156B16D20942C",
+			"fpid": "7C29E55847BA18632BA3488D59EB92DC",
+			"fp": "AsGame Instance the Return",
+			"tg": "E4B3058D49A8F772D2F2AE820C3CC591",
+			"tpid": "CBA9B22B4B018DFF25282FBD7B47F49C",
+			"tp": "self"
+		},
+		{
+			"fg": "D75D842E40C4791F4D6156B16D20942C",
+			"fpid": "7C29E55847BA18632BA3488D59EB92DC",
+			"fp": "AsGame Instance the Return",
+			"tg": "9093E5BE4BB5F25F51F871B6EA64CE04",
+			"tpid": "4FA66CCC452C5451D213349BB3A88451",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "D75D842E40C4791F4D6156B16D20942C",
+			"fpid": "7C29E55847BA18632BA3488D59EB92DC",
+			"fp": "AsGame Instance the Return",
+			"tg": "4B445410449AFF75DF2E1883837E22F5",
+			"tpid": "934DA9744A95626DF6FDDAB6A91640EA",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "E4B3058D49A8F772D2F2AE820C3CC591",
+			"fpid": "85C436EC42022AF7A4E01682BF77F7EE",
+			"fp": "then",
+			"tg": "B398325E4DA2FFE888E93B853D5A64C0",
+			"tpid": "5F9663D74729BEC00C0302970B925A50",
+			"tp": "execute"
+		},
+		{
+			"fg": "E6D044E04A3393CCB4B63397EF0CA2F7",
+			"fpid": "F209B4C143B987BE61DE198D646FA7A1",
+			"fp": "PlayerStats",
+			"tg": "E4B3058D49A8F772D2F2AE820C3CC591",
+			"tpid": "FAD1C71741B784B7FBB1039A69C5E2DB",
+			"tp": "PlayerStats"
+		},
+		{
+			"fg": "84778CB943CE2537CF38D28A4C831FB4",
+			"fpid": "990820C7402C9324E8B5549BE64B49B1",
+			"fp": "CurrentMapName",
+			"tg": "8782E88F4D436636CACC338B4711B42A",
+			"tpid": "294074BF4A09E27693E21FBA7B459512",
+			"tp": "InString"
+		},
+		{
+			"fg": "8782E88F4D436636CACC338B4711B42A",
+			"fpid": "170151474C9F8424CB3BB3B4498A35E8",
+			"fp": "ReturnValue",
+			"tg": "6476E7DF4E438256C4B9C8AACA72FEB9",
+			"tpid": "C17618E44BFED0B07751F2A983AFE276",
+			"tp": "LevelName"
+		},
+		{
+			"fg": "28EA65554DCD789FD3375B93A895258A",
+			"fpid": "B6D0E8504C8DED8E5BDCF79D49894144",
+			"fp": "OutputPin",
+			"tg": "84778CB943CE2537CF38D28A4C831FB4",
+			"tpid": "234891C343FEB64C58280AB7B2E0B5AD",
+			"tp": "self"
+		},
+		{
+			"fg": "F9B974DF4A7D807E949D068C6306E7F8",
+			"fpid": "A8098C594D91EB8ED9958DBAC69DF779",
+			"fp": "then",
+			"tg": "1139778741C0A3A82AE450899D2AD681",
+			"tpid": "F75BDE4248D01CF6E66E0893F5B747F1",
+			"tp": "execute"
+		},
+		{
+			"fg": "9093E5BE4BB5F25F51F871B6EA64CE04",
+			"fpid": "EE8998384ED8A16E037B558473E7DC5B",
+			"fp": "OutputPin",
+			"tg": "F9B974DF4A7D807E949D068C6306E7F8",
+			"tpid": "5A72A98C4C38F23FBD4036A3104C4EDC",
+			"tp": "self"
+		},
+		{
+			"fg": "9093E5BE4BB5F25F51F871B6EA64CE04",
+			"fpid": "EE8998384ED8A16E037B558473E7DC5B",
+			"fp": "OutputPin",
+			"tg": "B398325E4DA2FFE888E93B853D5A64C0",
+			"tpid": "BE1F972547999F84F03D4EA20B18004B",
+			"tp": "self"
+		},
+		{
+			"fg": "592143BF4EA3BFC7D92DCE94B0C3B309",
+			"fpid": "90010853477FB4CABC5C1A97A489E2BC",
+			"fp": "PlayerTransform",
+			"tg": "6B6A868942C0B556B7A1C7B40AC5155B",
+			"tpid": "4EBF9E3A4426CB8D000210B4795FD60F",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "D056C3394BEF6FA221BC90A5FDCE9F3E",
+			"fpid": "5323389841BEC9D2FC9F91B114339A76",
+			"fp": "then",
+			"tg": "3D44F2B84324B2F4D18F39924BDCEA2D",
+			"tpid": "EAF85A3C4C87AC57D5C2038ED497324F",
+			"tp": "execute"
+		},
+		{
+			"fg": "3D44F2B84324B2F4D18F39924BDCEA2D",
+			"fpid": "CBB4702548345DA79F8D018FA70FD0C1",
+			"fp": "then",
+			"tg": "5A26000E4D22C39A218DCC8631C78A1C",
+			"tpid": "B393E2AB46725BF7940B5FB4115DE61B",
+			"tp": "execute"
+		},
+		{
+			"fg": "C95A7C2D42A2C4344CB8579449689066",
+			"fpid": "027482F44B6AD564DC0407B0B94640AF",
+			"fp": "ReturnValue",
+			"tg": "D056C3394BEF6FA221BC90A5FDCE9F3E",
+			"tpid": "B970E9AF409774E5C73928AE592080E4",
+			"tp": "self"
+		},
+		{
+			"fg": "C95A7C2D42A2C4344CB8579449689066",
+			"fpid": "027482F44B6AD564DC0407B0B94640AF",
+			"fp": "ReturnValue",
+			"tg": "51352A40413E6E13B46591814FD2D475",
+			"tpid": "ACCBECEB4F6FDBB9747B6C818C3E40E8",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "51352A40413E6E13B46591814FD2D475",
+			"fpid": "AF553D184B7DCF072EA4289ECD04540B",
+			"fp": "OutputPin",
+			"tg": "3D44F2B84324B2F4D18F39924BDCEA2D",
+			"tpid": "1273518546720FB5841BB7B435D2C564",
+			"tp": "PlayerController"
+		},
+		{
+			"fg": "92E3B3E04CB445936790AAA30AC09BF7",
+			"fpid": "B7F6D0154C3E2DF66F1278A76ECECF21",
+			"fp": "then",
+			"tg": "87573DCD46F91BE69D6C69944635B8C8",
+			"tpid": "7231423F4FB7155D7519ECA9723FD8A8",
+			"tp": "execute"
+		},
+		{
+			"fg": "5DACEEF8402854CDE28844AD6A2F4E77",
+			"fpid": "9D1740DE438FF37E1DA1B4A47BA4FE7E",
+			"fp": "then",
+			"tg": "87573DCD46F91BE69D6C69944635B8C8",
+			"tpid": "7231423F4FB7155D7519ECA9723FD8A8",
+			"tp": "execute"
+		},
+		{
+			"fg": "9B8B9D8E4B7A04E1A64627A9BEC8138E",
+			"fpid": "A38BAFFB425F0C7A3824E191B162CD4B",
+			"fp": "then",
+			"tg": "CDA8CDE841464FE2B9E5E78EB8D75C7A",
+			"tpid": "60A2E0BA47A8A00DD19011BADC8353F2",
+			"tp": "execute"
+		},
+		{
+			"fg": "9B8B9D8E4B7A04E1A64627A9BEC8138E",
+			"fpid": "362AAE8E42F22AE6A40A6F9785C8A655",
+			"fp": "ReturnValue",
+			"tg": "CDA8CDE841464FE2B9E5E78EB8D75C7A",
+			"tpid": "B78EAE05462B152EF22A969B12F46A27",
+			"tp": "self"
+		},
+		{
+			"fg": "9B8B9D8E4B7A04E1A64627A9BEC8138E",
+			"fpid": "362AAE8E42F22AE6A40A6F9785C8A655",
+			"fp": "ReturnValue",
+			"tg": "9F379B4441EB49929A6850AB69245478",
+			"tpid": "1768855C4C71C14C420204A99182287B",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "9B8B9D8E4B7A04E1A64627A9BEC8138E",
+			"fpid": "362AAE8E42F22AE6A40A6F9785C8A655",
+			"fp": "ReturnValue",
+			"tg": "30C0C0034CB8FCEFB25BE3898EE1AE9D",
+			"tpid": "E65D9D494EEF96EBF2EF4387A9F56518",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "9B8B9D8E4B7A04E1A64627A9BEC8138E",
+			"fpid": "362AAE8E42F22AE6A40A6F9785C8A655",
+			"fp": "ReturnValue",
+			"tg": "EA5AEFE54DA08C458200D6988E37FF4B",
+			"tpid": "6BD294D4488D43756DB6FF9F9C65373E",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "CDA8CDE841464FE2B9E5E78EB8D75C7A",
+			"fpid": "5801FC294FA59C9FE30A3DBAED9904A3",
+			"fp": "then",
+			"tg": "3408432C40BB0907C4C9D7B7EFBE131D",
+			"tpid": "17E176754D9CAC62C1DA4AA4B89155EE",
+			"tp": "execute"
+		},
+		{
+			"fg": "3EF0501542FA3E50F812F983AA208FA2",
+			"fpid": "875A020D420ECCA9EA26049CD12338A7",
+			"fp": "BP_Player",
+			"tg": "9A4077CA458DC99A379349BE2E37A8C5",
+			"tpid": "01EF4DF84E91AEA57C5411B5C4D3E321",
+			"tp": "self"
+		},
+		{
+			"fg": "3EF0501542FA3E50F812F983AA208FA2",
+			"fpid": "875A020D420ECCA9EA26049CD12338A7",
+			"fp": "BP_Player",
+			"tg": "2A5A66D74FE8C0E978F7AEA3641834A9",
+			"tpid": "A7DFA5C2429D50E41408E0BFBB600ED4",
+			"tp": "self"
+		},
+		{
+			"fg": "3EF0501542FA3E50F812F983AA208FA2",
+			"fpid": "875A020D420ECCA9EA26049CD12338A7",
+			"fp": "BP_Player",
+			"tg": "C3E4DC574BAB9E20DB6C34978E0ADB4B",
+			"tpid": "9C1CF5AA4D912957D0275498DC1598F2",
+			"tp": "self"
+		},
+		{
+			"fg": "9A4077CA458DC99A379349BE2E37A8C5",
+			"fpid": "51470AC449DD290D8D251EBB5FB2CF84",
+			"fp": "PlayerStats",
+			"tg": "CDA8CDE841464FE2B9E5E78EB8D75C7A",
+			"tpid": "5BA68C444F7A8E56C17C0686FE9EF288",
+			"tp": "PlayerStats"
+		},
+		{
+			"fg": "846876BB47EE5AA73358C0BF950AF7E2",
+			"fpid": "C78E75154EF8B484EBEADA84B79359F4",
+			"fp": "then",
+			"tg": "F55797A14F3C366908D2C1BEB0427EA6",
+			"tpid": "87C1ABE547BE2EACC5435280A74A3488",
+			"tp": "execute"
+		},
+		{
+			"fg": "9F379B4441EB49929A6850AB69245478",
+			"fpid": "95FF85A84171EC323A162AA8A7D72E2E",
+			"fp": "OutputPin",
+			"tg": "FEAC207D4DD09E8D09243F85B67DED09",
+			"tpid": "E02B0EFF4292C41E2244AF93853F750E",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "9F379B4441EB49929A6850AB69245478",
+			"fpid": "95FF85A84171EC323A162AA8A7D72E2E",
+			"fp": "OutputPin",
+			"tg": "3408432C40BB0907C4C9D7B7EFBE131D",
+			"tpid": "6FB3DA6643CFD6B0FE4B25A610ADD90E",
+			"tp": "self"
+		},
+		{
+			"fg": "61F716EC44307237199AE98EE552F3CB",
+			"fpid": "CE39F45A40FB9B768E44729DDAC2DED9",
+			"fp": "then",
+			"tg": "846876BB47EE5AA73358C0BF950AF7E2",
+			"tpid": "41370CB14A362045C7CB1EB874D1E707",
+			"tp": "execute"
+		},
+		{
+			"fg": "61F716EC44307237199AE98EE552F3CB",
+			"fpid": "4DE573654364F73C05AC46AD43A485E2",
+			"fp": "ReturnValue",
+			"tg": "846876BB47EE5AA73358C0BF950AF7E2",
+			"tpid": "BF05DE0249D593F49C36E1802E140D6A",
+			"tp": "CurrentMapName"
+		},
+		{
+			"fg": "FEAC207D4DD09E8D09243F85B67DED09",
+			"fpid": "572547E04F58C32E71654D853E3584D4",
+			"fp": "OutputPin",
+			"tg": "846876BB47EE5AA73358C0BF950AF7E2",
+			"tpid": "5381C22541F63DBF1CF802915365C9E2",
+			"tp": "self"
+		},
+		{
+			"fg": "F55797A14F3C366908D2C1BEB0427EA6",
+			"fpid": "F4E8F46041024A21892F80848EA5AEF5",
+			"fp": "then",
+			"tg": "1F67EAB24C610387F89B19961BD3BEA1",
+			"tpid": "CF98545B49814928127996A9987A6721",
+			"tp": "execute"
+		},
+		{
+			"fg": "30C0C0034CB8FCEFB25BE3898EE1AE9D",
+			"fpid": "72DED82C4C34E88F6CB97F978BFB9CD4",
+			"fp": "OutputPin",
+			"tg": "F55797A14F3C366908D2C1BEB0427EA6",
+			"tpid": "7FD47EC343C16535564CEE857A2C4548",
+			"tp": "self"
+		},
+		{
+			"fg": "2A5A66D74FE8C0E978F7AEA3641834A9",
+			"fpid": "1DC2E27C4532C43B75B5B2B65338B21B",
+			"fp": "ReturnValue",
+			"tg": "F55797A14F3C366908D2C1BEB0427EA6",
+			"tpid": "14DBBD0548DB4E83C231158FA90C511C",
+			"tp": "PlayerTransform"
+		},
+		{
+			"fg": "1F67EAB24C610387F89B19961BD3BEA1",
+			"fpid": "10EF47B74BAE737FA67B649DF6699163",
+			"fp": "then",
+			"tg": "8B6C30684D18705055355F9EF30CE7C3",
+			"tpid": "BD77A9F448B05FF0E76FF8BE5D95EB67",
+			"tp": "execute"
+		},
+		{
+			"fg": "345F60FA4E502300A60710816D5C7A78",
+			"fpid": "79B1ABD54D85ECEE4C0EC4A45E8B5F15",
+			"fp": "OutputPin",
+			"tg": "1F67EAB24C610387F89B19961BD3BEA1",
+			"tpid": "C397E29246D2ECD6B1F707BDA8F08256",
+			"tp": "SaveGameObject"
+		},
+		{
+			"fg": "EA5AEFE54DA08C458200D6988E37FF4B",
+			"fpid": "D9F9103940EB128E482DB78F19CEBA81",
+			"fp": "OutputPin",
+			"tg": "345F60FA4E502300A60710816D5C7A78",
+			"tpid": "187723174AB79B908A2081932B217F82",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "C3E4DC574BAB9E20DB6C34978E0ADB4B",
+			"fpid": "99C5D046455381058720BAAEA1E9FFFF",
+			"fp": "FoxDialogueIndex",
+			"tg": "3408432C40BB0907C4C9D7B7EFBE131D",
+			"tpid": "B8D2C3C8411EADD03C5D6E965831759A",
+			"tp": "FoxDialogueIndex"
+		},
+		{
+			"fg": "3408432C40BB0907C4C9D7B7EFBE131D",
+			"fpid": "802F6E0248180C362F57D3B93FF2B1EF",
+			"fp": "then",
+			"tg": "61F716EC44307237199AE98EE552F3CB",
+			"tpid": "BC76FD8646F168E2B4EEDEBF90F56E2B",
+			"tp": "execute"
+		},
+		{
+			"fg": "371088D64A9563EB61D288BD19F6A90E",
+			"fpid": "4CD7FD4642405CC8F5BFD4AD171DB9AA",
+			"fp": "FoxDialogueIndex",
+			"tg": "1B011A2542010174537F7DBAF0E9A26F",
+			"tpid": "D990FEE241D4A2C143845BAC040198A6",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "1139778741C0A3A82AE450899D2AD681",
+			"fpid": "7C5F84A74B2BF699CFEF0CACF06C1628",
+			"fp": "then",
+			"tg": "D056C3394BEF6FA221BC90A5FDCE9F3E",
+			"tpid": "6615936049272BD1AC8FF691792104AD",
+			"tp": "execute"
+		},
+		{
+			"fg": "1B011A2542010174537F7DBAF0E9A26F",
+			"fpid": "A891123D43A123B2F298BB978FEFC738",
+			"fp": "OutputPin",
+			"tg": "1139778741C0A3A82AE450899D2AD681",
+			"tpid": "8A5727CD4C544E2DA3CB6D88AFF72467",
+			"tp": "FoxDialogueIndex"
+		},
+		{
+			"fg": "6B6A868942C0B556B7A1C7B40AC5155B",
+			"fpid": "4DF38BE04F55C53476DDD49B9333516D",
+			"fp": "OutputPin",
+			"tg": "F9B974DF4A7D807E949D068C6306E7F8",
+			"tpid": "B4B5963649D2B79EED4A2D9BE2ADA1D7",
+			"tp": "PlayerTransform"
+		},
+		{
+			"fg": "4B445410449AFF75DF2E1883837E22F5",
+			"fpid": "53C8D22844625A7319FF2799BA429F98",
+			"fp": "OutputPin",
+			"tg": "1139778741C0A3A82AE450899D2AD681",
+			"tpid": "3DD88D6E431852E25542A9A6D2934746",
+			"tp": "self"
+		},
+		{
+			"fg": "46D08CEE4B1E30D710C57B9F5631FDA6",
+			"fpid": "ABB377094D8CD38245E4B3A6B07E9F58",
+			"fp": "then",
+			"tg": "366E01AC4C7E8925544D2887F22D62FA",
+			"tpid": "0E32796343B66DDA52892B92DE417AE1",
+			"tp": "execute"
+		},
+		{
+			"fg": "46D08CEE4B1E30D710C57B9F5631FDA6",
+			"fpid": "1B00F0E746A56C9C1B8A07A734286871",
+			"fp": "ReturnValue",
+			"tg": "366E01AC4C7E8925544D2887F22D62FA",
+			"tpid": "B5A85AE84D2854FF1CD60DA5CDEB8DDB",
+			"tp": "PauseMenuFocusTimer"
+		},
+		{
+			"fg": "DD68FC964DE7D1B1FEBB2EACC1EF00EE",
+			"fpid": "B5A12ED6425087350BD98087BFE98992",
+			"fp": "then",
+			"tg": "280B98F54BE895A876BD9BA6A7B8FA18",
+			"tpid": "E6854587417370EE0DD522849322D9CB",
+			"tp": "Exec"
+		},
+		{
+			"fg": "C3AABF204FED99A5EF884589A1048832",
+			"fpid": "065740BD4122086B20FEBB83FBF2CAE7",
+			"fp": "ContinueButton",
+			"tg": "85F467544DA3D73EE97CF1A1F3D08A1A",
+			"tpid": "E1FC2CC248557F2AB90A80955AFE2EB2",
+			"tp": "[0]"
+		},
+		{
+			"fg": "D2F07A394F6C633B352BE5A9285E3E8F",
+			"fpid": "A358074B42EE869D1CB751AAAFF2A798",
+			"fp": "LoadButton",
+			"tg": "85F467544DA3D73EE97CF1A1F3D08A1A",
+			"tpid": "C4D3C8334DFDCFAA94AB11B2604E5955",
+			"tp": "[3]"
+		},
+		{
+			"fg": "7E019EF94F5C96B1B0CD24AAF8851DBC",
+			"fpid": "5B19CF044324021F03CD7B8129BC66F8",
+			"fp": "QuitButton",
+			"tg": "85F467544DA3D73EE97CF1A1F3D08A1A",
+			"tpid": "30AB5D204EC481EA429903B7A3EB869D",
+			"tp": "[4]"
+		},
+		{
+			"fg": "AA6C4F36410AA9D7D0F47393D041754C",
+			"fpid": "33CAC6FF4A4F985EE8572E8D044B4AD6",
+			"fp": "SaveButton",
+			"tg": "85F467544DA3D73EE97CF1A1F3D08A1A",
+			"tpid": "FA42B8954CDE0F87ACBC68A7FB7F0610",
+			"tp": "[2]"
+		},
+		{
+			"fg": "85F467544DA3D73EE97CF1A1F3D08A1A",
+			"fpid": "790AF2B341DD8E02CABF69A9B9F41949",
+			"fp": "Array",
+			"tg": "280B98F54BE895A876BD9BA6A7B8FA18",
+			"tpid": "E10446444D69F2598F1DFAA761896C9F",
+			"tp": "Array"
+		},
+		{
+			"fg": "280B98F54BE895A876BD9BA6A7B8FA18",
+			"fpid": "B4C1410B4E11E40E7C05759C3FA3904B",
+			"fp": "LoopBody",
+			"tg": "C799570D48F8E6150A26BD8B895C4738",
+			"tpid": "4562DA02425D908DB0014492B4077E4B",
+			"tp": "execute"
+		},
+		{
+			"fg": "280B98F54BE895A876BD9BA6A7B8FA18",
+			"fpid": "A30CC9CB4B726E6AF9CAF58B6B1EB12B",
+			"fp": "Array Element",
+			"tg": "977D414147D100A02353D886FE5FD91F",
+			"tpid": "263B7BAA42449D96C95D82B146A0094D",
+			"tp": "self"
+		},
+		{
+			"fg": "280B98F54BE895A876BD9BA6A7B8FA18",
+			"fpid": "A30CC9CB4B726E6AF9CAF58B6B1EB12B",
+			"fp": "Array Element",
+			"tg": "D8049EBB4E2C961FD55EA1B19B93187B",
+			"tpid": "0444F91A4197117A78136DA477D3D5AA",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "280B98F54BE895A876BD9BA6A7B8FA18",
+			"fpid": "A30CC9CB4B726E6AF9CAF58B6B1EB12B",
+			"fp": "Array Element",
+			"tg": "373C49C24AE329CD7F77E39531324223",
+			"tpid": "CF616CA24484220881B444BE22FAACD6",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "977D414147D100A02353D886FE5FD91F",
+			"fpid": "51A14E9C45A9BF25037348A50C8CB8A1",
+			"fp": "ReturnValue",
+			"tg": "C799570D48F8E6150A26BD8B895C4738",
+			"tpid": "65FDCE7E4025866C3F40CFAED7D69A66",
+			"tp": "Condition"
+		},
+		{
+			"fg": "C799570D48F8E6150A26BD8B895C4738",
+			"fpid": "FC3D93E04300D409FFE442BBE4F51121",
+			"fp": "then",
+			"tg": "AE82EA42410767C2B502FCB2DBA7031F",
+			"tpid": "F0052B1F4D7ABF3B3F86A3A47EB7234F",
+			"tp": "execute"
+		},
+		{
+			"fg": "C799570D48F8E6150A26BD8B895C4738",
+			"fpid": "4383561D4EA01B0A1E7CE18572AC5389",
+			"fp": "else",
+			"tg": "15B9C0E745FA3E6803E2258428BE187A",
+			"tpid": "F0052B1F4D7ABF3B3F86A3A47EB7234F",
+			"tp": "execute"
+		},
+		{
+			"fg": "D8049EBB4E2C961FD55EA1B19B93187B",
+			"fpid": "D9512051441ED97F1209B9A67BB9C652",
+			"fp": "OutputPin",
+			"tg": "AE82EA42410767C2B502FCB2DBA7031F",
+			"tpid": "5C8F80934D6274F241C71DA7A881903B",
+			"tp": "self"
+		},
+		{
+			"fg": "373C49C24AE329CD7F77E39531324223",
+			"fpid": "83FFB3CE44D19BA9E59333AFBB2AB9C4",
+			"fp": "OutputPin",
+			"tg": "15B9C0E745FA3E6803E2258428BE187A",
+			"tpid": "5C8F80934D6274F241C71DA7A881903B",
+			"tp": "self"
+		},
+		{
+			"fg": "02D515B04D69A12C8938F88886E3A174",
+			"fpid": "87F69CC74F52FE8D06A6278AC6BF3238",
+			"fp": "PauseMenuFocusTimer",
+			"tg": "31FCD4F542BDEBFDF8B51D854845BBB7",
+			"tpid": "B10D0EA641CBE793156489A42E078EF4",
+			"tp": "Handle"
+		},
+		{
+			"fg": "C5ED6158406C335A1F9EE0ABFF81A570",
+			"fpid": "87F69CC74F52FE8D06A6278AC6BF3238",
+			"fp": "PauseMenuFocusTimer",
+			"tg": "123CC1E44D76FF7D5D72FAA7A61ED74A",
+			"tpid": "B10D0EA641CBE793156489A42E078EF4",
+			"tp": "Handle"
+		},
+		{
+			"fg": "123CC1E44D76FF7D5D72FAA7A61ED74A",
+			"fpid": "966B4AB3478B556C90832B8E2E6354B4",
+			"fp": "then",
+			"tg": "5DCB850B4561536E45E100B2871F8A88",
+			"tpid": "AD00C3B4461BD678A9A00FA144BCA57D",
+			"tp": "execute"
+		},
+		{
+			"fg": "84FCF7E94493802ECFEDB2AB47221752",
+			"fpid": "87F69CC74F52FE8D06A6278AC6BF3238",
+			"fp": "PauseMenuFocusTimer",
+			"tg": "5A26000E4D22C39A218DCC8631C78A1C",
+			"tpid": "B10D0EA641CBE793156489A42E078EF4",
+			"tp": "Handle"
+		},
+		{
+			"fg": "5A26000E4D22C39A218DCC8631C78A1C",
+			"fpid": "966B4AB3478B556C90832B8E2E6354B4",
+			"fp": "then",
+			"tg": "6476E7DF4E438256C4B9C8AACA72FEB9",
+			"tpid": "FE4941EE4B12BB05B0ED3AA93144CD6C",
+			"tp": "execute"
+		},
+		{
+			"fg": "20E019DF4681EE3B91B3F19D54814600",
+			"fpid": "8756362E41792DF0BF7AFBA898FB9257",
+			"fp": "IsIntroductionOver?",
+			"tg": "5766E0094706A92356E67A9860482096",
+			"tpid": "74F1830C4582E1407C88DF8A05755005",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "5766E0094706A92356E67A9860482096",
+			"fpid": "A36D421541D8E1B606AA8698C41F2E37",
+			"fp": "OutputPin",
+			"tg": "B398325E4DA2FFE888E93B853D5A64C0",
+			"tpid": "79008B074B74C036EF10D397A47D681C",
+			"tp": "IsIntroOver?"
+		},
+		{
+			"fg": "B398325E4DA2FFE888E93B853D5A64C0",
+			"fpid": "8291BD1A449A752B0DF1519D547A77D2",
+			"fp": "then",
+			"tg": "F9B974DF4A7D807E949D068C6306E7F8",
+			"tpid": "AC8C0C0C4DB03CF731D734B7B3DA900A",
+			"tp": "execute"
+		},
+		{
+			"fg": "D4FB46C046D32638C8CF6A87355B5337",
+			"fpid": "E1AF9315426B87A4E10050B984BDB482",
+			"fp": "then",
+			"tg": "9C661B514E050DB8EE05868C42C7DEDD",
+			"tpid": "9C1B82CA4619BFF6358A9A9D05C5F4D6",
+			"tp": "execute"
+		},
+		{
+			"fg": "743B21DC434430B111B7C998AA881454",
+			"fpid": "3CB24F7F4E6B8E0E614B9286E232A3C4",
+			"fp": "then",
+			"tg": "9C661B514E050DB8EE05868C42C7DEDD",
+			"tpid": "9C1B82CA4619BFF6358A9A9D05C5F4D6",
+			"tp": "execute"
+		},
+		{
+			"fg": "9C661B514E050DB8EE05868C42C7DEDD",
+			"fpid": "E92629CF43596675E54BEA99672D25CA",
+			"fp": "then",
+			"tg": "ED8D60C8499609EAA100A6B85B5DA21E",
+			"tpid": "E5829DB9455EF8449EF2938C1FC694C1",
+			"tp": "execute"
+		},
+		{
+			"fg": "7CC0F688475AB920D61555973253C69D",
+			"fpid": "B7096B484A4F52AABD2D9AA7253E5A77",
+			"fp": "ControlsConfigButton",
+			"tg": "85F467544DA3D73EE97CF1A1F3D08A1A",
+			"tpid": "70742A104238D6DBC50F17909AE90EAB",
+			"tp": "[1]"
+		},
+		{
+			"fg": "ED8D60C8499609EAA100A6B85B5DA21E",
+			"fpid": "1EAB6601472143E5446A8E8F78845360",
+			"fp": "then",
+			"tg": "9C5902064C64C163A676B19943A79A3C",
+			"tpid": "A223BA0246E84DEEF18FEB9478D34DCB",
+			"tp": "execute"
+		},
+		{
+			"fg": "DA479EA44EB9A5FBD6EB848BE7789952",
+			"fpid": "156355B04D18E9354BECD5931D791F0D",
+			"fp": "ReturnValue",
+			"tg": "115A1A744B50A457E099D09AA671A358",
+			"tpid": "CE0FF6774DDBBD0698761E85B6AF140B",
+			"tp": "Object"
+		},
+		{
+			"fg": "7E2C63534FE8BFBE232CFF8A61B64F41",
+			"fpid": "55DB3DF4408AC5DF57F3F0BB9FC3C043",
+			"fp": "then",
+			"tg": "BCEBA77749933A469EF273B93D8613B7",
+			"tpid": "5F80F5B247FD2ED12D01FBB631028AFA",
+			"tp": "execute"
+		},
+		{
+			"fg": "115A1A744B50A457E099D09AA671A358",
+			"fpid": "8A44E7CC4FF872B402FE699E2B088A23",
+			"fp": "then",
+			"tg": "7E2C63534FE8BFBE232CFF8A61B64F41",
+			"tpid": "D8FE6F2F44658B1AF6E834B32809C8D8",
+			"tp": "execute"
+		},
+		{
+			"fg": "115A1A744B50A457E099D09AA671A358",
+			"fpid": "0BD5715948737EAFED23F88D834E2116",
+			"fp": "AsBP Turtle Character",
+			"tg": "7E2C63534FE8BFBE232CFF8A61B64F41",
+			"tpid": "FA8F806C4E40E4A06ACBF8A05AF3349D",
+			"tp": "BP_Player"
+		},
+		{
+			"fg": "BF92A8874938EAF3F789889CACF9E894",
+			"fpid": "0A3A11834114F9787DA58DB749A4A235",
+			"fp": "BP_Player",
+			"tg": "829FE28449EAE876513568B28ADEC83A",
+			"tpid": "7AAC146440C65652DCC063BC650FE330",
+			"tp": "self"
+		},
+		{
+			"fg": "829FE28449EAE876513568B28ADEC83A",
+			"fpid": "EDC618CE4F525650B9421F93AD766728",
+			"fp": "ControlsConfigWidget",
+			"tg": "ED8D60C8499609EAA100A6B85B5DA21E",
+			"tpid": "0F7F92FD4B4D31E11D3CEFA072A75921",
+			"tp": "self"
+		},
+		{
+			"fg": "829FE28449EAE876513568B28ADEC83A",
+			"fpid": "EDC618CE4F525650B9421F93AD766728",
+			"fp": "ControlsConfigWidget",
+			"tg": "FDF4BE9A4391FEECC4D581B9EBC0280D",
+			"tpid": "E810BB6743FDB53087C0A1B7BED5DB50",
+			"tp": "self"
+		},
+		{
+			"fg": "829FE28449EAE876513568B28ADEC83A",
+			"fpid": "EDC618CE4F525650B9421F93AD766728",
+			"fp": "ControlsConfigWidget",
+			"tg": "FB2D6FC1476073CB14E3DDA4C27BCFEA",
+			"tpid": "39FD69314281774BA12566AAE4ED93DE",
+			"tp": "InWidgetToFocus"
+		},
+		{
+			"fg": "FDF4BE9A4391FEECC4D581B9EBC0280D",
+			"fpid": "7328F49F44D899FEECCF7CB0CF613D16",
+			"fp": "BackButton",
+			"tg": "8A45669F4C812EFBEA348A899D3E5B28",
+			"tpid": "9CDA55A74DBC427DD3071DB4E550FB3E",
+			"tp": "self"
+		},
+		{
+			"fg": "FDF4BE9A4391FEECC4D581B9EBC0280D",
+			"fpid": "7328F49F44D899FEECCF7CB0CF613D16",
+			"fp": "BackButton",
+			"tg": "9C5902064C64C163A676B19943A79A3C",
+			"tpid": "E2CB08BF4F6D8A811877DAAC4FE715A1",
+			"tp": "InWidgetToFocus"
+		},
+		{
+			"fg": "10F6003C4098D522C78777B950D4D2A7",
+			"fpid": "21E78F4E494B0DADBF292CBFF655F7E7",
+			"fp": "then",
+			"tg": "8A45669F4C812EFBEA348A899D3E5B28",
+			"tpid": "2E2F147348193B021CF09FAC475DDF98",
+			"tp": "execute"
+		},
+		{
+			"fg": "8FCE02304B45AD45BF62519D68181252",
+			"fpid": "C36423D2478761AD756BC5B514D014E4",
+			"fp": "ReturnValue",
+			"tg": "FB2D6FC1476073CB14E3DDA4C27BCFEA",
+			"tpid": "131701BA4E0844B5A5F5F390A84D3C3F",
+			"tp": "PlayerController"
+		},
+		{
+			"fg": "8FCE02304B45AD45BF62519D68181252",
+			"fpid": "C36423D2478761AD756BC5B514D014E4",
+			"fp": "ReturnValue",
+			"tg": "9C5902064C64C163A676B19943A79A3C",
+			"tpid": "40D0DD3449CB81B73323768FCAB1AACD",
+			"tp": "PlayerController"
+		},
+		{
+			"fg": "CA296F1C472FA232398082B4CD430ADB",
+			"fpid": "65198C1C4B2ADAE36DB4DB85404A74CF",
+			"fp": "then",
+			"tg": "C66F400B472937AA6391A081E1466B74",
+			"tpid": "BD77A9F448B05FF0E76FF8BE5D95EB67",
+			"tp": "execute"
+		},
+		{
+			"fg": "FC1484454A0DB3E98086E89C34EF50FA",
+			"fpid": "65198C1C4B2ADAE36DB4DB85404A74CF",
+			"fp": "then",
+			"tg": "D029E1F44CE3C298609505A4A3356D06",
+			"tpid": "E496FEFC45D1F1EA9D83BA82D60591B8",
+			"tp": "execute"
+		},
+		{
+			"fg": "87573DCD46F91BE69D6C69944635B8C8",
+			"fpid": "65198C1C4B2ADAE36DB4DB85404A74CF",
+			"fp": "then",
+			"tg": "9B8B9D8E4B7A04E1A64627A9BEC8138E",
+			"tpid": "2F8BD3CD4A2EBE4667DD74B4C80356A7",
+			"tp": "execute"
+		},
+		{
+			"fg": "9C5902064C64C163A676B19943A79A3C",
+			"fpid": "22ABFEFE48A3289754646180B9CAD217",
+			"fp": "then",
+			"tg": "10F6003C4098D522C78777B950D4D2A7",
+			"tpid": "E2AA708B4A193A53B60EFD9DF5E3EA73",
+			"tp": "execute"
+		},
+		{
+			"fg": "A564B133473861FD0FC5AD94B9C7583F",
+			"fpid": "099B902743E99B896458F49587A98C07",
+			"fp": "ContinueButton",
+			"tg": "BCEBA77749933A469EF273B93D8613B7",
+			"tpid": "AEE9B0094F337C04E37C9A97A1335311",
+			"tp": "self"
+		},
+		{
+			"fg": "6DDFA9A14858A59C774A788042760F88",
+			"fpid": "7FE55695401F3CC3EF3E668EE0648722",
+			"fp": "then",
+			"tg": "FA0D1D7F468CDD07310D7184F7159824",
+			"tpid": "C49C9FA3429A222CC9AEE9A62B9078B8",
+			"tp": "execute"
+		},
+		{
+			"fg": "A47B7E4F41393B616924138D77522108",
+			"fpid": "DE42E5314B8C234551199E8BAC1B77DD",
+			"fp": "ReturnValue",
+			"tg": "B17F067A4690A4EC5C6EDAA4ACCAC86D",
+			"tpid": "55327C4344A0CD89646E1CBE8063EEBE",
+			"tp": "self"
+		},
+		{
+			"fg": "A47B7E4F41393B616924138D77522108",
+			"fpid": "DE42E5314B8C234551199E8BAC1B77DD",
+			"fp": "ReturnValue",
+			"tg": "E2AA2C3649DEE153B4F109B8D5BA6DFC",
+			"tpid": "A2F7FAC64742E400A90DF3A915C26CA1",
+			"tp": "PlayerController"
+		},
+		{
+			"fg": "B17F067A4690A4EC5C6EDAA4ACCAC86D",
+			"fpid": "F90D7D694876A445194333ACB421DB75",
+			"fp": "then",
+			"tg": "E2AA2C3649DEE153B4F109B8D5BA6DFC",
+			"tpid": "E9DD9D5F4CDFFE40B45B6897ECA2131F",
+			"tp": "execute"
+		},
+		{
+			"fg": "8B6C30684D18705055355F9EF30CE7C3",
+			"fpid": "9BFBCFD74AB43D402BE61A98EFBDF2A6",
+			"fp": "then",
+			"tg": "B17F067A4690A4EC5C6EDAA4ACCAC86D",
+			"tpid": "7F45EFCA4C12FCEB62A7C9954D4D8056",
+			"tp": "execute"
+		},
+		{
+			"fg": "E2AA2C3649DEE153B4F109B8D5BA6DFC",
+			"fpid": "9503563047A39C6BD7CAFDABA619DBF6",
+			"fp": "then",
+			"tg": "1308B27941821BE3E8CFF0A5E2773299",
+			"tpid": "B393E2AB46725BF7940B5FB4115DE61B",
+			"tp": "execute"
+		},
+		{
+			"fg": "E94630934829E76DD63E6F95B81895B7",
+			"fpid": "87F69CC74F52FE8D06A6278AC6BF3238",
+			"fp": "PauseMenuFocusTimer",
+			"tg": "1308B27941821BE3E8CFF0A5E2773299",
+			"tpid": "B10D0EA641CBE793156489A42E078EF4",
+			"tp": "Handle"
+		}
+	],
+	"variables": [
+		{
+			"name": "BP_Player",
+			"type": "BP Turtle Character",
+			"exposed": true
+		},
+		{
+			"name": "PauseMenuFocusTimer",
+			"type": "Timer Handle",
+			"exposed": true
+		},
+		{
+			"name": "IsPauseMenuFocusEnabled?",
+			"type": "Boolean",
+			"exposed": true
+		}
+	],
+	"components": [],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}
