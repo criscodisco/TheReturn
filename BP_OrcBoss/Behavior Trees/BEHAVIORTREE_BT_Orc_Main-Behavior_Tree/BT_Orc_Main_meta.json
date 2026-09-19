@@ -1,0 +1,247 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Behavior Tree",
+	"assetName": "BT_Orc_Main",
+	"capturedAt": "2026-09-18T21:00:31",
+	"totalNodes": 14,
+	"graphWidth": 3298,
+	"graphHeight": 1548,
+	"graphOriginX": -1880,
+	"graphOriginY": -328,
+	"nodeTypes":
+	{
+		"ROOT": 1,
+		"Run Behavior": 4,
+		"Selector": 2,
+		"Sequence": 3,
+		"Roam": 1,
+		"Chase": 1,
+		"Play Animation": 1,
+		"PlaySound": 1
+	},
+	"nodes": [
+		{
+			"title": "ROOT",
+			"guid": "D2A908E645A645633B77728193738F13",
+			"nx": 0.57000000000000006,
+			"ny": 0.21190000000000001,
+			"nw": 0.031200000000000002,
+			"nh": 0.045900000000000003
+		},
+		{
+			"title": "Run Behavior",
+			"guid": "EBC23C4E4BB51D40A8FD2D8CFCC7329D",
+			"nx": 0.30320000000000003,
+			"ny": 0.60470000000000002,
+			"nw": 0.051200000000000002,
+			"nh": 0.045900000000000003
+		},
+		{
+			"title": "Selector",
+			"guid": "F221D20242779A3B4E0FC1800B346346",
+			"nx": 0.57000000000000006,
+			"ny": 0.31520000000000004,
+			"nw": 0.038200000000000005,
+			"nh": 0.053600000000000002
+		},
+		{
+			"title": "Run Behavior",
+			"guid": "E397B92E4DE7F88B1BFAE39CE64EF6C9",
+			"nx": 0.65739999999999998,
+			"ny": 0.68730000000000002,
+			"nw": 0.051200000000000002,
+			"nh": 0.045900000000000003
+		},
+		{
+			"title": "Run Behavior",
+			"guid": "7802FB6D45E605AE2E3F268D5D7EB67A",
+			"nx": 0.82720000000000005,
+			"ny": 0.75970000000000004,
+			"nw": 0.051200000000000002,
+			"nh": 0.045900000000000003
+		},
+		{
+			"title": "Sequence",
+			"guid": "32CB43224B527777EF0C12B6964D9CCF",
+			"nx": 0.62830000000000008,
+			"ny": 0.48060000000000003,
+			"nw": 0.1158,
+			"nh": 0.1434
+		},
+		{
+			"title": "Roam",
+			"guid": "B8CF6AA042ABB48F8277139A25C95028",
+			"nx": 0.31780000000000003,
+			"ny": 0.4496,
+			"nw": 0.1158,
+			"nh": 0.113
+		},
+		{
+			"title": "Sequence",
+			"guid": "C64ECC794E47006749C532BE13DFF5C2",
+			"nx": 0.79810000000000003,
+			"ny": 0.50130000000000008,
+			"nw": 0.1158,
+			"nh": 0.13370000000000001
+		},
+		{
+			"title": "Chase",
+			"guid": "C3F688664FAD8159C5C6A0AB6EDDC796",
+			"nx": 0.47790000000000005,
+			"ny": 0.45990000000000003,
+			"nw": 0.1158,
+			"nh": 0.113
+		},
+		{
+			"title": "Run Behavior",
+			"guid": "0F8D47564CE70B9DB56FC88252E0F346",
+			"nx": 0.47300000000000003,
+			"ny": 0.62530000000000008,
+			"nw": 0.055800000000000002,
+			"nh": 0.045900000000000003
+		},
+		{
+			"title": "Selector",
+			"guid": "5D84BB83450D3E135B9C83AFDC4943B5",
+			"nx": 0.80290000000000006,
+			"ny": 0.39790000000000003,
+			"nw": 0.038200000000000005,
+			"nh": 0.053600000000000002
+		},
+		{
+			"title": "Sequence",
+			"guid": "108314A449A68F2A2A38BB958F77B31F",
+			"nx": 0.16740000000000002,
+			"ny": 0.3669,
+			"nw": 0.053999999999999999,
+			"nh": 0.093700000000000006
+		},
+		{
+			"title": "Play Animation",
+			"guid": "641CA4AF4BBE24E50C1F6EA9AEE46C1F",
+			"nx": 0.17710000000000001,
+			"ny": 0.58400000000000007,
+			"nw": 0.080399999999999999,
+			"nh": 0.045900000000000003
+		},
+		{
+			"title": "PlaySound",
+			"guid": "EE030129498A34C4110AAE9A1E18171B",
+			"nx": 0.099500000000000005,
+			"ny": 0.58400000000000007,
+			"nw": 0.061900000000000004,
+			"nh": 0.045900000000000003
+		}
+	],
+	"connections": [
+		{
+			"fg": "D2A908E645A645633B77728193738F13",
+			"fpid": "B77C8A4F41DAF31DCA4B4D9F5BEBA50D",
+			"fp": "In",
+			"tg": "F221D20242779A3B4E0FC1800B346346",
+			"tpid": "5E91A669485F4383485D0EBF886E9889",
+			"tp": "In"
+		},
+		{
+			"fg": "F221D20242779A3B4E0FC1800B346346",
+			"fpid": "6D52A94C46A31D8F342C7AAD9973D9F0",
+			"fp": "Out",
+			"tg": "B8CF6AA042ABB48F8277139A25C95028",
+			"tpid": "9D07B11D4114B0832CA1A68DA7667DC2",
+			"tp": "In"
+		},
+		{
+			"fg": "F221D20242779A3B4E0FC1800B346346",
+			"fpid": "6D52A94C46A31D8F342C7AAD9973D9F0",
+			"fp": "Out",
+			"tg": "C3F688664FAD8159C5C6A0AB6EDDC796",
+			"tpid": "E52ACD7946DBD350B0DB92BAB96C77B6",
+			"tp": "In"
+		},
+		{
+			"fg": "F221D20242779A3B4E0FC1800B346346",
+			"fpid": "6D52A94C46A31D8F342C7AAD9973D9F0",
+			"fp": "Out",
+			"tg": "32CB43224B527777EF0C12B6964D9CCF",
+			"tpid": "9D07B11D4114B0832CA1A68DA7667DC2",
+			"tp": "In"
+		},
+		{
+			"fg": "F221D20242779A3B4E0FC1800B346346",
+			"fpid": "6D52A94C46A31D8F342C7AAD9973D9F0",
+			"fp": "Out",
+			"tg": "5D84BB83450D3E135B9C83AFDC4943B5",
+			"tpid": "37A46F6D4DCF5C637A7C2BB6859C3EE6",
+			"tp": "In"
+		},
+		{
+			"fg": "32CB43224B527777EF0C12B6964D9CCF",
+			"fpid": "986A4F9442C4C649C095BDA0E8B7A36D",
+			"fp": "Out",
+			"tg": "E397B92E4DE7F88B1BFAE39CE64EF6C9",
+			"tpid": "2A503736468F03E8928EA4BE612D0B36",
+			"tp": "In"
+		},
+		{
+			"fg": "B8CF6AA042ABB48F8277139A25C95028",
+			"fpid": "986A4F9442C4C649C095BDA0E8B7A36D",
+			"fp": "Out",
+			"tg": "EBC23C4E4BB51D40A8FD2D8CFCC7329D",
+			"tpid": "7720E4A64E9F6FFB1E51A289935979F6",
+			"tp": "In"
+		},
+		{
+			"fg": "C64ECC794E47006749C532BE13DFF5C2",
+			"fpid": "986A4F9442C4C649C095BDA0E8B7A36D",
+			"fp": "Out",
+			"tg": "7802FB6D45E605AE2E3F268D5D7EB67A",
+			"tpid": "9F6344034DBE81D8BCD00498B1576F41",
+			"tp": "In"
+		},
+		{
+			"fg": "C3F688664FAD8159C5C6A0AB6EDDC796",
+			"fpid": "6A46A81D4D0CE46882B36794F9B3059D",
+			"fp": "Out",
+			"tg": "0F8D47564CE70B9DB56FC88252E0F346",
+			"tpid": "2A41E66E4EC03E03707A2F9E4B23B722",
+			"tp": "In"
+		},
+		{
+			"fg": "5D84BB83450D3E135B9C83AFDC4943B5",
+			"fpid": "5D79484340C9ED723F28E1A5951E98CF",
+			"fp": "Out",
+			"tg": "C64ECC794E47006749C532BE13DFF5C2",
+			"tpid": "9D07B11D4114B0832CA1A68DA7667DC2",
+			"tp": "In"
+		},
+		{
+			"fg": "108314A449A68F2A2A38BB958F77B31F",
+			"fpid": "A04CF73541CE40BE31D8D4BE597C6A8E",
+			"fp": "Out",
+			"tg": "EE030129498A34C4110AAE9A1E18171B",
+			"tpid": "A7B0BDD2455078923AE24394F9436B19",
+			"tp": "In"
+		},
+		{
+			"fg": "108314A449A68F2A2A38BB958F77B31F",
+			"fpid": "A04CF73541CE40BE31D8D4BE597C6A8E",
+			"fp": "Out",
+			"tg": "641CA4AF4BBE24E50C1F6EA9AEE46C1F",
+			"tpid": "4C78334243FB5A23322FA281906CE1E5",
+			"tp": "In"
+		}
+	],
+	"variables": [],
+	"components": [],
+	"comments": [
+		{
+			"title": "Root Behavior Tree",
+			"x": 264,
+			"y": 264,
+			"w": 2770,
+			"h": 1020
+		}
+	],
+	"warnings": [],
+	"stickyNotes": []
+}

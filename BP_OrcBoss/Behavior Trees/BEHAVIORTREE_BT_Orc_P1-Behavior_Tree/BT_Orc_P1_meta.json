@@ -1,0 +1,83 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Behavior Tree",
+	"assetName": "BT_Orc_P1",
+	"capturedAt": "2026-09-18T21:01:44",
+	"totalNodes": 4,
+	"graphWidth": 830,
+	"graphHeight": 1271,
+	"graphOriginX": -264,
+	"graphOriginY": -264,
+	"nodeTypes":
+	{
+		"ROOT": 1,
+		"Selector": 1,
+		"Roam Sequence": 1,
+		"Wait": 1
+	},
+	"nodes": [
+		{
+			"title": "ROOT",
+			"guid": "0B25E1F04BFD328A73860DB8C2F35B0A",
+			"nx": 0.31809999999999999,
+			"ny": 0.20770000000000002,
+			"nw": 0.1241,
+			"nh": 0.055900000000000005
+		},
+		{
+			"title": "Selector",
+			"guid": "4B4CAE004F62DCF802FB76AEDCD8A15F",
+			"nx": 0.35660000000000003,
+			"ny": 0.35880000000000001,
+			"nw": 0.15180000000000002,
+			"nh": 0.065299999999999997
+		},
+		{
+			"title": "Roam Sequence",
+			"guid": "C20C155245C7BAA673CB209102A47929",
+			"nx": 0.31809999999999999,
+			"ny": 0.50980000000000003,
+			"nw": 0.3639,
+			"nh": 0.1023
+		},
+		{
+			"title": "Wait",
+			"guid": "1184BDF84CA77D6EB37068B39025B153",
+			"nx": 0.37590000000000001,
+			"ny": 0.73640000000000005,
+			"nw": 0.112,
+			"nh": 0.055900000000000005
+		}
+	],
+	"connections": [
+		{
+			"fg": "0B25E1F04BFD328A73860DB8C2F35B0A",
+			"fpid": "597B74D247CA5E04A6F19DA01A4CA68D",
+			"fp": "In",
+			"tg": "4B4CAE004F62DCF802FB76AEDCD8A15F",
+			"tpid": "B29E2AE74078B83DE044D1A2FB63DC57",
+			"tp": "In"
+		},
+		{
+			"fg": "4B4CAE004F62DCF802FB76AEDCD8A15F",
+			"fpid": "4EE945934D937AC24477A29AE2C97598",
+			"fp": "Out",
+			"tg": "C20C155245C7BAA673CB209102A47929",
+			"tpid": "086C28D74DC84CF8AC7973A277329A02",
+			"tp": "In"
+		},
+		{
+			"fg": "C20C155245C7BAA673CB209102A47929",
+			"fpid": "8A7EB9E547D2914D6CE794A9CB7F40D0",
+			"fp": "Out",
+			"tg": "1184BDF84CA77D6EB37068B39025B153",
+			"tpid": "779764714E5971141085A8AF75D53055",
+			"tp": "In"
+		}
+	],
+	"variables": [],
+	"components": [],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}

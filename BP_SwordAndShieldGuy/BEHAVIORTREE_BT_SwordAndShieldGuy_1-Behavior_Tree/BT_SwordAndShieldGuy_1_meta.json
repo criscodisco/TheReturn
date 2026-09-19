@@ -1,0 +1,183 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Behavior Tree",
+	"assetName": "BT_SwordAndShieldGuy_1",
+	"capturedAt": "2026-09-18T20:48:54",
+	"totalNodes": 10,
+	"graphWidth": 2047,
+	"graphHeight": 1239,
+	"graphOriginX": -920,
+	"graphOriginY": -264,
+	"nodeTypes":
+	{
+		"ROOT": 1,
+		"Selector": 1,
+		"Move To": 1,
+		"Sequence": 2,
+		"Wait": 2,
+		"BTTask_ChooseAttack_SwordShieldGuy": 1,
+		"BTTask_SlowPacePatrol": 1,
+		"Rotate to face BB entry": 1
+	},
+	"nodes": [
+		{
+			"title": "ROOT",
+			"guid": "0B25E1F04BFD328A73860DB8C2F35B0A",
+			"nx": 0.44940000000000002,
+			"ny": 0.21310000000000001,
+			"nw": 0.084000000000000005,
+			"nh": 0.057300000000000004
+		},
+		{
+			"title": "Selector",
+			"guid": "4B4CAE004F62DCF802FB76AEDCD8A15F",
+			"nx": 0.44940000000000002,
+			"ny": 0.3422,
+			"nw": 0.061600000000000002,
+			"nh": 0.067000000000000004
+		},
+		{
+			"title": "Move To",
+			"guid": "43C726904AA53AE2DAC68F969F454F21",
+			"nx": 0.38690000000000002,
+			"ny": 0.62630000000000008,
+			"nw": 0.069400000000000003,
+			"nh": 0.057300000000000004
+		},
+		{
+			"title": "Sequence",
+			"guid": "ACCA99DA4FB905CD5B3ABABD41C2F37B",
+			"nx": 0.47290000000000004,
+			"ny": 0.49720000000000003,
+			"nw": 0.14750000000000002,
+			"nh": 0.11700000000000001
+		},
+		{
+			"title": "Wait",
+			"guid": "FB8D03A64C0B69679806F6975E8C51EC",
+			"nx": 0.69169999999999998,
+			"ny": 0.69090000000000007,
+			"nw": 0.045400000000000003,
+			"nh": 0.057300000000000004
+		},
+		{
+			"title": "BTTask_ChooseAttack_SwordShieldGuy",
+			"guid": "25D114B849AEDDA7A0AC549D7F2C0D87",
+			"nx": 0.47290000000000004,
+			"ny": 0.72960000000000003,
+			"nw": 0.19390000000000002,
+			"nh": 0.057300000000000004
+		},
+		{
+			"title": "BTTask_SlowPacePatrol",
+			"guid": "FDC271474661D11E536600A4243294AC",
+			"nx": 0.129,
+			"ny": 0.63919999999999999,
+			"nw": 0.1275,
+			"nh": 0.057300000000000004
+		},
+		{
+			"title": "Sequence",
+			"guid": "3C83995247766112E92DDEB8B7CC477A",
+			"nx": 0.2697,
+			"ny": 0.41970000000000002,
+			"nw": 0.14750000000000002,
+			"nh": 0.11700000000000001
+		},
+		{
+			"title": "Wait",
+			"guid": "ADD219D744585EFB04BE828286D4618F",
+			"nx": 0.30870000000000003,
+			"ny": 0.65210000000000001,
+			"nw": 0.045400000000000003,
+			"nh": 0.057300000000000004
+		},
+		{
+			"title": "Rotate to face BB entry",
+			"guid": "94074D0B4F33FFA972830CA287EDF8F2",
+			"nx": 0.74650000000000005,
+			"ny": 0.61340000000000006,
+			"nw": 0.1246,
+			"nh": 0.057300000000000004
+		}
+	],
+	"connections": [
+		{
+			"fg": "0B25E1F04BFD328A73860DB8C2F35B0A",
+			"fpid": "597B74D247CA5E04A6F19DA01A4CA68D",
+			"fp": "In",
+			"tg": "4B4CAE004F62DCF802FB76AEDCD8A15F",
+			"tpid": "B29E2AE74078B83DE044D1A2FB63DC57",
+			"tp": "In"
+		},
+		{
+			"fg": "4B4CAE004F62DCF802FB76AEDCD8A15F",
+			"fpid": "4EE945934D937AC24477A29AE2C97598",
+			"fp": "Out",
+			"tg": "3C83995247766112E92DDEB8B7CC477A",
+			"tpid": "2C99AE9A4C20DBF6DAEB1FA87458673C",
+			"tp": "In"
+		},
+		{
+			"fg": "4B4CAE004F62DCF802FB76AEDCD8A15F",
+			"fpid": "4EE945934D937AC24477A29AE2C97598",
+			"fp": "Out",
+			"tg": "ACCA99DA4FB905CD5B3ABABD41C2F37B",
+			"tpid": "BB9603444ACC877DC49FF3964BD08D53",
+			"tp": "In"
+		},
+		{
+			"fg": "ACCA99DA4FB905CD5B3ABABD41C2F37B",
+			"fpid": "5CE6FAA94D4B8876F526FD94C726038B",
+			"fp": "Out",
+			"tg": "43C726904AA53AE2DAC68F969F454F21",
+			"tpid": "5D04F29940229CCD7BA09FBB693C648B",
+			"tp": "In"
+		},
+		{
+			"fg": "ACCA99DA4FB905CD5B3ABABD41C2F37B",
+			"fpid": "5CE6FAA94D4B8876F526FD94C726038B",
+			"fp": "Out",
+			"tg": "25D114B849AEDDA7A0AC549D7F2C0D87",
+			"tpid": "51F8A4DB4E01C408BC4EC9A168FEF973",
+			"tp": "In"
+		},
+		{
+			"fg": "ACCA99DA4FB905CD5B3ABABD41C2F37B",
+			"fpid": "5CE6FAA94D4B8876F526FD94C726038B",
+			"fp": "Out",
+			"tg": "FB8D03A64C0B69679806F6975E8C51EC",
+			"tpid": "315ADF8B4196C232DFF58EB9D7F6C959",
+			"tp": "In"
+		},
+		{
+			"fg": "ACCA99DA4FB905CD5B3ABABD41C2F37B",
+			"fpid": "5CE6FAA94D4B8876F526FD94C726038B",
+			"fp": "Out",
+			"tg": "94074D0B4F33FFA972830CA287EDF8F2",
+			"tpid": "3F347CB2485D1B5C75D42BB4713151CB",
+			"tp": "In"
+		},
+		{
+			"fg": "3C83995247766112E92DDEB8B7CC477A",
+			"fpid": "D3D25DCD42D155F406988BB41ABE200A",
+			"fp": "Out",
+			"tg": "FDC271474661D11E536600A4243294AC",
+			"tpid": "A09063E4479578F363009ABCD4C4673B",
+			"tp": "In"
+		},
+		{
+			"fg": "3C83995247766112E92DDEB8B7CC477A",
+			"fpid": "D3D25DCD42D155F406988BB41ABE200A",
+			"fp": "Out",
+			"tg": "ADD219D744585EFB04BE828286D4618F",
+			"tpid": "B5B8048549AF31B76EFFE1921CB9DD73",
+			"tp": "In"
+		}
+	],
+	"variables": [],
+	"components": [],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}

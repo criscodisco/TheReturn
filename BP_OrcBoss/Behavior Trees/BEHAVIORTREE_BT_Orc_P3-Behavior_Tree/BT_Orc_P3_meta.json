@@ -1,0 +1,134 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Behavior Tree",
+	"assetName": "BT_Orc_P3",
+	"capturedAt": "2026-09-18T21:02:04",
+	"totalNodes": 7,
+	"graphWidth": 1565,
+	"graphHeight": 1431,
+	"graphOriginX": -872,
+	"graphOriginY": -264,
+	"nodeTypes":
+	{
+		"ROOT": 1,
+		"Selector": 1,
+		"Move To": 1,
+		"BTTask_ChooseAttack": 1,
+		"Wait": 1,
+		"Sequence": 1,
+		"Rotate to face BB entry": 1
+	},
+	"nodes": [
+		{
+			"title": "ROOT",
+			"guid": "265357E446CC6B99F228DF82C63C2FDE",
+			"nx": 0.55720000000000003,
+			"ny": 0.1845,
+			"nw": 0.065799999999999997,
+			"nh": 0.049600000000000005
+		},
+		{
+			"title": "Selector",
+			"guid": "C37ABFFB4C6BE4F2C86B46A6F8162020",
+			"nx": 0.55720000000000003,
+			"ny": 0.31870000000000004,
+			"nw": 0.080500000000000002,
+			"nh": 0.058000000000000003
+		},
+		{
+			"title": "Move To",
+			"guid": "7C3EFDDB4C768CC3BA6B2D9A1108108F",
+			"nx": 0.16870000000000002,
+			"ny": 0.75470000000000004,
+			"nw": 0.090700000000000003,
+			"nh": 0.049600000000000005
+		},
+		{
+			"title": "BTTask_ChooseAttack",
+			"guid": "BD87B7974B2C379D9ABAEDAC99B3AA9B",
+			"nx": 0.55720000000000003,
+			"ny": 0.76590000000000003,
+			"nw": 0.15720000000000001,
+			"nh": 0.049600000000000005
+		},
+		{
+			"title": "Wait",
+			"guid": "462F3E19486377C4767A7C94031029A4",
+			"nx": 0.77190000000000003,
+			"ny": 0.76590000000000003,
+			"nw": 0.059400000000000001,
+			"nh": 0.049600000000000005
+		},
+		{
+			"title": "Sequence",
+			"guid": "CC41D21749FF60FC765EAF926C38EE7E",
+			"nx": 0.51629999999999998,
+			"ny": 0.46400000000000002,
+			"nw": 0.088800000000000004,
+			"nh": 0.058000000000000003
+		},
+		{
+			"title": "Rotate to face BB entry",
+			"guid": "40F9BD7B4E9D641EBD736BAE82383737",
+			"nx": 0.32200000000000001,
+			"ny": 0.75470000000000004,
+			"nw": 0.16290000000000002,
+			"nh": 0.049600000000000005
+		}
+	],
+	"connections": [
+		{
+			"fg": "265357E446CC6B99F228DF82C63C2FDE",
+			"fpid": "C089E42543B5649A1AD61EB7A6530BCB",
+			"fp": "In",
+			"tg": "C37ABFFB4C6BE4F2C86B46A6F8162020",
+			"tpid": "B29E2AE74078B83DE044D1A2FB63DC57",
+			"tp": "In"
+		},
+		{
+			"fg": "C37ABFFB4C6BE4F2C86B46A6F8162020",
+			"fpid": "4EE945934D937AC24477A29AE2C97598",
+			"fp": "Out",
+			"tg": "CC41D21749FF60FC765EAF926C38EE7E",
+			"tpid": "0157C6C24B0863B4010B90A9E2D7CAF7",
+			"tp": "In"
+		},
+		{
+			"fg": "CC41D21749FF60FC765EAF926C38EE7E",
+			"fpid": "A0B629CC49C838AB81BA7AA9E81A5741",
+			"fp": "Out",
+			"tg": "7C3EFDDB4C768CC3BA6B2D9A1108108F",
+			"tpid": "5D04F29940229CCD7BA09FBB693C648B",
+			"tp": "In"
+		},
+		{
+			"fg": "CC41D21749FF60FC765EAF926C38EE7E",
+			"fpid": "A0B629CC49C838AB81BA7AA9E81A5741",
+			"fp": "Out",
+			"tg": "40F9BD7B4E9D641EBD736BAE82383737",
+			"tpid": "1E68AA1946B40913821F3C8912ED16BF",
+			"tp": "In"
+		},
+		{
+			"fg": "CC41D21749FF60FC765EAF926C38EE7E",
+			"fpid": "A0B629CC49C838AB81BA7AA9E81A5741",
+			"fp": "Out",
+			"tg": "BD87B7974B2C379D9ABAEDAC99B3AA9B",
+			"tpid": "FA3D2B2F436348A8D1CD6D9700206CCC",
+			"tp": "In"
+		},
+		{
+			"fg": "CC41D21749FF60FC765EAF926C38EE7E",
+			"fpid": "A0B629CC49C838AB81BA7AA9E81A5741",
+			"fp": "Out",
+			"tg": "462F3E19486377C4767A7C94031029A4",
+			"tpid": "315ADF8B4196C232DFF58EB9D7F6C959",
+			"tp": "In"
+		}
+	],
+	"variables": [],
+	"components": [],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}

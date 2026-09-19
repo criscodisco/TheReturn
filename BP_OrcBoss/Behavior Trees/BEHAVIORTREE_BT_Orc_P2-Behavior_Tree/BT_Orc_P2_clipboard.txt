@@ -1,0 +1,146 @@
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite Name="BehaviorTreeGraphNode_Composite_1" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Composite_1'"
+   Begin Object Class=/Script/AIModule.BTComposite_Selector Name="BTComposite_Selector_0" ExportPath="/Script/AIModule.BTComposite_Selector'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Composite_1.BTComposite_Selector_0'"
+   End Object
+   Begin Object Name="BTComposite_Selector_0" ExportPath="/Script/AIModule.BTComposite_Selector'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Composite_1.BTComposite_Selector_0'"
+      Children(0)=(ChildComposite="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_2.BTComposite_Sequence_1'",Decorators=("/Script/AIModule.BTDecorator_TimeLimit'BTDecorator_TimeLimit_0'"))
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2'"
+   End Object
+   ClassData=(ClassName="BTComposite_Selector")
+   NodeInstance="/Script/AIModule.BTComposite_Selector'BTComposite_Selector_0'"
+   NodePosY=176
+   NodeGuid=AE61D2964EBCC23281F10793786F8247
+   CustomProperties Pin (PinId=B29E2AE74078B83DE044D1A2FB63DC57,PinName="In",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Root_0 6BC4403540FAD4E259C7A482E6F89CC4,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+   CustomProperties Pin (PinId=4EE945934D937AC24477A29AE2C97598,PinName="Out",Direction="EGPD_Output",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_2 029C971848CA7186447277A155D79180,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite Name="BehaviorTreeGraphNode_Composite_2" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Composite_2'"
+   Begin Object Class=/Script/AIModule.BTComposite_Sequence Name="BTComposite_Sequence_1" ExportPath="/Script/AIModule.BTComposite_Sequence'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Composite_2.BTComposite_Sequence_1'"
+   End Object
+   Begin Object Name="BTComposite_Sequence_1" ExportPath="/Script/AIModule.BTComposite_Sequence'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Composite_2.BTComposite_Sequence_1'"
+      Children(0)=(ChildTask="/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_SpawnKrakens.BTTask_SpawnKrakens_C'BehaviorTreeGraphNode_Task_2.BTTask_SpawnKrakens_C_0'")
+      Children(1)=(ChildComposite="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_0.BTComposite_Sequence_0'",Decorators=("/Script/AIModule.BTDecorator_Loop'BTDecorator_Loop_3'"))
+      Children(2)=(ChildTask="/Script/AIModule.BTTask_Wait'BehaviorTreeGraphNode_Task_20.BTTask_Wait_9'")
+      Children(3)=(ChildTask="/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_EndPhase_1_True.BTTask_EndPhase_1_True_C'BehaviorTreeGraphNode_Task_9.BTTask_EndPhase_1_True_C_1'")
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2'"
+      ParentNode="/Script/AIModule.BTComposite_Selector'BehaviorTreeGraphNode_Composite_1.BTComposite_Selector_0'"
+   End Object
+   Decorators(0)="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Decorator'BehaviorTreeGraphNode_Decorator_40'"
+   ClassData=(ClassName="BTComposite_Sequence")
+   NodeInstance="/Script/AIModule.BTComposite_Sequence'BTComposite_Sequence_1'"
+   SubNodes(0)="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Decorator'BehaviorTreeGraphNode_Decorator_40'"
+   NodePosX=-48
+   NodePosY=416
+   NodeGuid=CA71C60A47380FA162F079BD25EE8E0A
+   CustomProperties Pin (PinId=029C971848CA7186447277A155D79180,PinName="In",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_1 4EE945934D937AC24477A29AE2C97598,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+   CustomProperties Pin (PinId=C3121A7C446B8C278652CBA2244FB4FF,PinName="Out",Direction="EGPD_Output",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Task_2 F065BF23463B9D0E7C417DB488CD233C,BehaviorTreeGraphNode_Composite_0 6E602ECD40F19C321B198F962E26FB4D,BehaviorTreeGraphNode_Task_20 A91E1ABC485A8C49967358AA8BEB257E,BehaviorTreeGraphNode_Task_9 819AF15D403E9FC532B58B90AF110294,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_5" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_5'"
+   Begin Object Class=/Script/AIModule.BTTask_PlayAnimation Name="BTTask_PlayAnimation_0" ExportPath="/Script/AIModule.BTTask_PlayAnimation'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_5.BTTask_PlayAnimation_0'"
+   End Object
+   Begin Object Name="BTTask_PlayAnimation_0" ExportPath="/Script/AIModule.BTTask_PlayAnimation'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_5.BTTask_PlayAnimation_0'"
+      AnimationToPlay="/Script/Engine.AnimSequence'/Game/Enemies/Orc_Hummer/Animations/Anim_Orc_Hummer_Jump.Anim_Orc_Hummer_Jump'"
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_0.BTComposite_Sequence_0'"
+   End Object
+   ClassData=(ClassName="BTTask_PlayAnimation")
+   NodeInstance="/Script/AIModule.BTTask_PlayAnimation'BTTask_PlayAnimation_0'"
+   CopySubNodeIndex=1
+   NodePosX=144
+   NodePosY=912
+   NodeGuid=CEDEEDF947F08BC2B3A009A32B416493
+   CustomProperties Pin (PinId=FF4895F543FC89042B64AC9A1C9CE637,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_0 24628CA7418A10D9207D8CB73DAB6BC3,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_2" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_2'"
+   Begin Object Class=/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_SpawnKrakens.BTTask_SpawnKrakens_C Name="BTTask_SpawnKrakens_C_0" ExportPath="/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_SpawnKrakens.BTTask_SpawnKrakens_C'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_2.BTTask_SpawnKrakens_C_0'"
+   End Object
+   Begin Object Name="BTTask_SpawnKrakens_C_0" ExportPath="/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_SpawnKrakens.BTTask_SpawnKrakens_C'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_2.BTTask_SpawnKrakens_C_0'"
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_2.BTComposite_Sequence_1'"
+   End Object
+   ClassData=(AssetName="BTTask_SpawnKrakens",GeneratedClassPackage="/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_SpawnKrakens",ClassName="BTTask_SpawnKrakens_C")
+   NodeInstance="/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_SpawnKrakens.BTTask_SpawnKrakens_C'BTTask_SpawnKrakens_C_0'"
+   CopySubNodeIndex=2
+   NodePosX=-896
+   NodePosY=784
+   NodeGuid=DFBC067D42D03CBAB79A99862BCEF2D7
+   CustomProperties Pin (PinId=F065BF23463B9D0E7C417DB488CD233C,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_2 C3121A7C446B8C278652CBA2244FB4FF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_20" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_20'"
+   Begin Object Class=/Script/AIModule.BTTask_Wait Name="BTTask_Wait_9" ExportPath="/Script/AIModule.BTTask_Wait'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_20.BTTask_Wait_9'"
+   End Object
+   Begin Object Name="BTTask_Wait_9" ExportPath="/Script/AIModule.BTTask_Wait'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_20.BTTask_Wait_9'"
+      WaitTime=0.200000
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_2.BTComposite_Sequence_1'"
+   End Object
+   ClassData=(ClassName="BTTask_Wait")
+   NodeInstance="/Script/AIModule.BTTask_Wait'BTTask_Wait_9'"
+   CopySubNodeIndex=3
+   NodePosX=448
+   NodePosY=816
+   NodeGuid=F464754440E3BEF794D79CAFE570F63C
+   CustomProperties Pin (PinId=A91E1ABC485A8C49967358AA8BEB257E,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_2 C3121A7C446B8C278652CBA2244FB4FF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_9" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_9'"
+   Begin Object Class=/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_EndPhase_1_True.BTTask_EndPhase_1_True_C Name="BTTask_EndPhase_1_True_C_1" ExportPath="/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_EndPhase_1_True.BTTask_EndPhase_1_True_C'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_9.BTTask_EndPhase_1_True_C_1'"
+   End Object
+   Begin Object Name="BTTask_EndPhase_1_True_C_1" ExportPath="/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_EndPhase_1_True.BTTask_EndPhase_1_True_C'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_9.BTTask_EndPhase_1_True_C_1'"
+      Phase1Complete?=(SelectedKeyName="Phase_1_Complete?")
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_2.BTComposite_Sequence_1'"
+   End Object
+   ClassData=(AssetName="BTTask_EndPhase_1_True",GeneratedClassPackage="/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_EndPhase_1_True",ClassName="BTTask_EndPhase_1_True_C")
+   NodeInstance="/Game/Enemies/Orc_Hummer/Blueprints/AI_Tasks/BTTask_EndPhase_1_True.BTTask_EndPhase_1_True_C'BTTask_EndPhase_1_True_C_1'"
+   NodePosX=720
+   NodePosY=816
+   NodeGuid=F7CB67F94749E4A354069C9E48D38676
+   CustomProperties Pin (PinId=819AF15D403E9FC532B58B90AF110294,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_2 C3121A7C446B8C278652CBA2244FB4FF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_4" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_4'"
+   Begin Object Class=/Script/AIModule.BTTask_PlaySound Name="BTTask_PlaySound_0" ExportPath="/Script/AIModule.BTTask_PlaySound'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_4.BTTask_PlaySound_0'"
+   End Object
+   Begin Object Name="BTTask_PlaySound_0" ExportPath="/Script/AIModule.BTTask_PlaySound'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_4.BTTask_PlaySound_0'"
+      SoundToPlay="/Script/Engine.SoundCue'/Game/Free_Sounds_Pack/cue/Rock_Large_Debris_1-3_Cue.Rock_Large_Debris_1-3_Cue'"
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_0.BTComposite_Sequence_0'"
+   End Object
+   ClassData=(ClassName="BTTask_PlaySound")
+   NodeInstance="/Script/AIModule.BTTask_PlaySound'BTTask_PlaySound_0'"
+   NodePosX=-208
+   NodePosY=928
+   NodeGuid=F3C6651E44CFBCACCB563C9D869F8E60
+   CustomProperties Pin (PinId=DF167BAD476E26AB8D954CBD760A3DAA,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_0 24628CA7418A10D9207D8CB73DAB6BC3,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_0" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_0'"
+   Begin Object Class=/Script/AIModule.BTTask_PlaySound Name="BTTask_PlaySound_1" ExportPath="/Script/AIModule.BTTask_PlaySound'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_0.BTTask_PlaySound_1'"
+   End Object
+   Begin Object Name="BTTask_PlaySound_1" ExportPath="/Script/AIModule.BTTask_PlaySound'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Task_0.BTTask_PlaySound_1'"
+      SoundToPlay="/Script/Engine.SoundCue'/Game/Free_Sounds_Pack/cue/Rock_Impact_11_Cue.Rock_Impact_11_Cue'"
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_0.BTComposite_Sequence_0'"
+   End Object
+   ClassData=(ClassName="BTTask_PlaySound")
+   NodeInstance="/Script/AIModule.BTTask_PlaySound'BTTask_PlaySound_1'"
+   NodePosX=-544
+   NodePosY=896
+   NodeGuid=4C3E6C8840F0A80948B6A9A31AE350A5
+   CustomProperties Pin (PinId=2CC9D2C24C98EEF7AC704790C8DBD765,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_0 24628CA7418A10D9207D8CB73DAB6BC3,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite Name="BehaviorTreeGraphNode_Composite_0" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Composite_0'"
+   Begin Object Class=/Script/AIModule.BTComposite_Sequence Name="BTComposite_Sequence_0" ExportPath="/Script/AIModule.BTComposite_Sequence'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Composite_0.BTComposite_Sequence_0'"
+   End Object
+   Begin Object Name="BTComposite_Sequence_0" ExportPath="/Script/AIModule.BTComposite_Sequence'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2:Behavior Tree.BehaviorTreeGraphNode_Composite_0.BTComposite_Sequence_0'"
+      Children(0)=(ChildTask="/Script/AIModule.BTTask_PlaySound'BehaviorTreeGraphNode_Task_0.BTTask_PlaySound_1'")
+      Children(1)=(ChildTask="/Script/AIModule.BTTask_PlaySound'BehaviorTreeGraphNode_Task_4.BTTask_PlaySound_0'")
+      Children(2)=(ChildTask="/Script/AIModule.BTTask_PlayAnimation'BehaviorTreeGraphNode_Task_5.BTTask_PlayAnimation_0'")
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/Orc_Hummer/Blueprints/BT_Orc_P2.BT_Orc_P2'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_2.BTComposite_Sequence_1'"
+   End Object
+   Decorators(0)="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Decorator'BehaviorTreeGraphNode_Decorator_1'"
+   ClassData=(ClassName="BTComposite_Sequence")
+   NodeInstance="/Script/AIModule.BTComposite_Sequence'BTComposite_Sequence_0'"
+   SubNodes(0)="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Decorator'BehaviorTreeGraphNode_Decorator_1'"
+   NodePosY=704
+   NodeGuid=A7994C9543511AB109C7B2AC44150144
+   CustomProperties Pin (PinId=6E602ECD40F19C321B198F962E26FB4D,PinName="In",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_2 C3121A7C446B8C278652CBA2244FB4FF,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+   CustomProperties Pin (PinId=24628CA7418A10D9207D8CB73DAB6BC3,PinName="Out",Direction="EGPD_Output",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Task_0 2CC9D2C24C98EEF7AC704790C8DBD765,BehaviorTreeGraphNode_Task_4 DF167BAD476E26AB8D954CBD760A3DAA,BehaviorTreeGraphNode_Task_5 FF4895F543FC89042B64AC9A1C9CE637,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object

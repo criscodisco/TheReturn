@@ -1,0 +1,183 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Behavior Tree",
+	"assetName": "BT_Orc_P2",
+	"capturedAt": "2026-09-18T21:01:57",
+	"totalNodes": 10,
+	"graphWidth": 2421,
+	"graphHeight": 1527,
+	"graphOriginX": -1160,
+	"graphOriginY": -264,
+	"nodeTypes":
+	{
+		"ROOT": 1,
+		"Selector": 1,
+		"Sequence": 2,
+		"Play Animation": 1,
+		"BTTask_SpawnKrakens": 1,
+		"Wait": 1,
+		"BTTask_EndPhase_1_True": 1,
+		"PlaySound": 2
+	},
+	"nodes": [
+		{
+			"title": "ROOT",
+			"guid": "0870F58B4F0035AF9B596A97D6B3611A",
+			"nx": 0.47910000000000003,
+			"ny": 0.1729,
+			"nw": 0.042500000000000003,
+			"nh": 0.0465
+		},
+		{
+			"title": "Selector",
+			"guid": "AE61D2964EBCC23281F10793786F8247",
+			"nx": 0.47910000000000003,
+			"ny": 0.28810000000000002,
+			"nw": 0.052000000000000005,
+			"nh": 0.054400000000000004
+		},
+		{
+			"title": "Sequence",
+			"guid": "CA71C60A47380FA162F079BD25EE8E0A",
+			"nx": 0.45930000000000004,
+			"ny": 0.44530000000000003,
+			"nw": 0.07350000000000001,
+			"nh": 0.095000000000000001
+		},
+		{
+			"title": "Play Animation",
+			"guid": "CEDEEDF947F08BC2B3A009A32B416493",
+			"nx": 0.53860000000000008,
+			"ny": 0.77010000000000001,
+			"nw": 0.109,
+			"nh": 0.0465
+		},
+		{
+			"title": "BTTask_SpawnKrakens",
+			"guid": "DFBC067D42D03CBAB79A99862BCEF2D7",
+			"nx": 0.109,
+			"ny": 0.68630000000000002,
+			"nw": 0.10450000000000001,
+			"nh": 0.0465
+		},
+		{
+			"title": "Wait",
+			"guid": "F464754440E3BEF794D79CAFE570F63C",
+			"nx": 0.66420000000000001,
+			"ny": 0.70730000000000004,
+			"nw": 0.038400000000000004,
+			"nh": 0.0465
+		},
+		{
+			"title": "BTTask_EndPhase_1_True",
+			"guid": "F7CB67F94749E4A354069C9E48D38676",
+			"nx": 0.77650000000000008,
+			"ny": 0.70730000000000004,
+			"nw": 0.1144,
+			"nh": 0.066100000000000006
+		},
+		{
+			"title": "PlaySound",
+			"guid": "F3C6651E44CFBCACCB563C9D869F8E60",
+			"nx": 0.39319999999999999,
+			"ny": 0.78060000000000007,
+			"nw": 0.10700000000000001,
+			"nh": 0.0465
+		},
+		{
+			"title": "PlaySound",
+			"guid": "4C3E6C8840F0A80948B6A9A31AE350A5",
+			"nx": 0.25440000000000002,
+			"ny": 0.75970000000000004,
+			"nw": 0.089200000000000002,
+			"nh": 0.0465
+		},
+		{
+			"title": "Sequence",
+			"guid": "A7994C9543511AB109C7B2AC44150144",
+			"nx": 0.47910000000000003,
+			"ny": 0.63390000000000002,
+			"nw": 0.0574,
+			"nh": 0.085100000000000009
+		}
+	],
+	"connections": [
+		{
+			"fg": "0870F58B4F0035AF9B596A97D6B3611A",
+			"fpid": "6BC4403540FAD4E259C7A482E6F89CC4",
+			"fp": "In",
+			"tg": "AE61D2964EBCC23281F10793786F8247",
+			"tpid": "B29E2AE74078B83DE044D1A2FB63DC57",
+			"tp": "In"
+		},
+		{
+			"fg": "AE61D2964EBCC23281F10793786F8247",
+			"fpid": "4EE945934D937AC24477A29AE2C97598",
+			"fp": "Out",
+			"tg": "CA71C60A47380FA162F079BD25EE8E0A",
+			"tpid": "029C971848CA7186447277A155D79180",
+			"tp": "In"
+		},
+		{
+			"fg": "CA71C60A47380FA162F079BD25EE8E0A",
+			"fpid": "C3121A7C446B8C278652CBA2244FB4FF",
+			"fp": "Out",
+			"tg": "DFBC067D42D03CBAB79A99862BCEF2D7",
+			"tpid": "F065BF23463B9D0E7C417DB488CD233C",
+			"tp": "In"
+		},
+		{
+			"fg": "CA71C60A47380FA162F079BD25EE8E0A",
+			"fpid": "C3121A7C446B8C278652CBA2244FB4FF",
+			"fp": "Out",
+			"tg": "A7994C9543511AB109C7B2AC44150144",
+			"tpid": "6E602ECD40F19C321B198F962E26FB4D",
+			"tp": "In"
+		},
+		{
+			"fg": "CA71C60A47380FA162F079BD25EE8E0A",
+			"fpid": "C3121A7C446B8C278652CBA2244FB4FF",
+			"fp": "Out",
+			"tg": "F464754440E3BEF794D79CAFE570F63C",
+			"tpid": "A91E1ABC485A8C49967358AA8BEB257E",
+			"tp": "In"
+		},
+		{
+			"fg": "CA71C60A47380FA162F079BD25EE8E0A",
+			"fpid": "C3121A7C446B8C278652CBA2244FB4FF",
+			"fp": "Out",
+			"tg": "F7CB67F94749E4A354069C9E48D38676",
+			"tpid": "819AF15D403E9FC532B58B90AF110294",
+			"tp": "In"
+		},
+		{
+			"fg": "A7994C9543511AB109C7B2AC44150144",
+			"fpid": "24628CA7418A10D9207D8CB73DAB6BC3",
+			"fp": "Out",
+			"tg": "4C3E6C8840F0A80948B6A9A31AE350A5",
+			"tpid": "2CC9D2C24C98EEF7AC704790C8DBD765",
+			"tp": "In"
+		},
+		{
+			"fg": "A7994C9543511AB109C7B2AC44150144",
+			"fpid": "24628CA7418A10D9207D8CB73DAB6BC3",
+			"fp": "Out",
+			"tg": "F3C6651E44CFBCACCB563C9D869F8E60",
+			"tpid": "DF167BAD476E26AB8D954CBD760A3DAA",
+			"tp": "In"
+		},
+		{
+			"fg": "A7994C9543511AB109C7B2AC44150144",
+			"fpid": "24628CA7418A10D9207D8CB73DAB6BC3",
+			"fp": "Out",
+			"tg": "CEDEEDF947F08BC2B3A009A32B416493",
+			"tpid": "FF4895F543FC89042B64AC9A1C9CE637",
+			"tp": "In"
+		}
+	],
+	"variables": [],
+	"components": [],
+	"comments": [],
+	"warnings": [],
+	"stickyNotes": []
+}

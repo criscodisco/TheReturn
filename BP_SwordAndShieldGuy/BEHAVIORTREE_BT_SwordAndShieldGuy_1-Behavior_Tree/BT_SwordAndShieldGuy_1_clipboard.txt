@@ -1,0 +1,165 @@
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite Name="BehaviorTreeGraphNode_Composite_1" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Composite_1'"
+   Begin Object Class=/Script/AIModule.BTComposite_Selector Name="BTComposite_Selector_0" ExportPath="/Script/AIModule.BTComposite_Selector'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Composite_1.BTComposite_Selector_0'"
+   End Object
+   Begin Object Name="BTComposite_Selector_0" ExportPath="/Script/AIModule.BTComposite_Selector'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Composite_1.BTComposite_Selector_0'"
+      Children(0)=(ChildComposite="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_9.BTComposite_Sequence_7'",Decorators=("/Script/AIModule.BTDecorator_Blackboard'BTDecorator_Blackboard_2'"))
+      Children(1)=(ChildComposite="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_7.BTComposite_Sequence_2'",Decorators=("/Script/AIModule.BTDecorator_Blackboard'BTDecorator_Blackboard_3'"))
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1'"
+   End Object
+   ClassData=(ClassName="BTComposite_Selector")
+   NodeInstance="/Script/AIModule.BTComposite_Selector'BTComposite_Selector_0'"
+   NodePosY=160
+   NodeGuid=4B4CAE004F62DCF802FB76AEDCD8A15F
+   CustomProperties Pin (PinId=B29E2AE74078B83DE044D1A2FB63DC57,PinName="In",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Root_0 597B74D247CA5E04A6F19DA01A4CA68D,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+   CustomProperties Pin (PinId=4EE945934D937AC24477A29AE2C97598,PinName="Out",Direction="EGPD_Output",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_9 2C99AE9A4C20DBF6DAEB1FA87458673C,BehaviorTreeGraphNode_Composite_7 BB9603444ACC877DC49FF3964BD08D53,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_12" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_12'"
+   Begin Object Class=/Script/AIModule.BTTask_MoveTo Name="BTTask_MoveTo_1" ExportPath="/Script/AIModule.BTTask_MoveTo'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_12.BTTask_MoveTo_1'"
+      Begin Object Class=/Script/AIModule.BlackboardKeyType_Object Name="BlackboardKey_Object_0" Archetype="/Script/AIModule.BlackboardKeyType_Object'/Script/AIModule.Default__BTTask_MoveTo:BlackboardKey_Object_0'" ExportPath="/Script/AIModule.BlackboardKeyType_Object'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_12.BTTask_MoveTo_1.BlackboardKey_Object_0'"
+      End Object
+      Begin Object Class=/Script/AIModule.BlackboardKeyType_Vector Name="BlackboardKey_Vector" Archetype="/Script/AIModule.BlackboardKeyType_Vector'/Script/AIModule.Default__BTTask_MoveTo:BlackboardKey_Vector'" ExportPath="/Script/AIModule.BlackboardKeyType_Vector'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_12.BTTask_MoveTo_1.BlackboardKey_Vector'"
+      End Object
+   End Object
+   Begin Object Name="BTTask_MoveTo_1" ExportPath="/Script/AIModule.BTTask_MoveTo'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_12.BTTask_MoveTo_1'"
+      Begin Object Name="BlackboardKey_Object_0" ExportPath="/Script/AIModule.BlackboardKeyType_Object'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_12.BTTask_MoveTo_1.BlackboardKey_Object_0'"
+      End Object
+      Begin Object Name="BlackboardKey_Vector" ExportPath="/Script/AIModule.BlackboardKeyType_Vector'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_12.BTTask_MoveTo_1.BlackboardKey_Vector'"
+      End Object
+      AcceptableRadius=120.000000
+      bStopOnOverlapNeedsUpdate=False
+      BlackboardKey=(SelectedKeyName="TargetActor")
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_7.BTComposite_Sequence_2'"
+   End Object
+   ClassData=(ClassName="BTTask_MoveTo")
+   NodeInstance="/Script/AIModule.BTTask_MoveTo'BTTask_MoveTo_1'"
+   NodePosX=-128
+   NodePosY=512
+   NodeGuid=43C726904AA53AE2DAC68F969F454F21
+   CustomProperties Pin (PinId=5D04F29940229CCD7BA09FBB693C648B,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_7 5CE6FAA94D4B8876F526FD94C726038B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite Name="BehaviorTreeGraphNode_Composite_7" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Composite_7'"
+   Begin Object Class=/Script/AIModule.BTComposite_Sequence Name="BTComposite_Sequence_2" ExportPath="/Script/AIModule.BTComposite_Sequence'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Composite_7.BTComposite_Sequence_2'"
+   End Object
+   Begin Object Name="BTComposite_Sequence_2" ExportPath="/Script/AIModule.BTComposite_Sequence'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Composite_7.BTComposite_Sequence_2'"
+      Children(0)=(ChildTask="/Script/AIModule.BTTask_MoveTo'BehaviorTreeGraphNode_Task_12.BTTask_MoveTo_1'")
+      Children(1)=(ChildTask="/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_ChooseAttack_SwordShieldGuy.BTTask_ChooseAttack_SwordShieldGuy_C'BehaviorTreeGraphNode_Task_2.BTTask_ChooseAttack_SwordShieldGuy_C_0'")
+      Children(2)=(ChildTask="/Script/AIModule.BTTask_Wait'BehaviorTreeGraphNode_Task_1.BTTask_Wait_0'")
+      Children(3)=(ChildTask="/Script/AIModule.BTTask_RotateToFaceBBEntry'BehaviorTreeGraphNode_Task_14.BTTask_RotateToFaceBBEntry_0'")
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1'"
+      ParentNode="/Script/AIModule.BTComposite_Selector'BehaviorTreeGraphNode_Composite_1.BTComposite_Selector_0'"
+   End Object
+   Decorators(0)="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Decorator'BehaviorTreeGraphNode_Decorator_115'"
+   ClassData=(ClassName="BTComposite_Sequence")
+   NodeInstance="/Script/AIModule.BTComposite_Sequence'BTComposite_Sequence_2'"
+   SubNodes(0)="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Decorator'BehaviorTreeGraphNode_Decorator_115'"
+   NodePosX=48
+   NodePosY=352
+   NodeGuid=ACCA99DA4FB905CD5B3ABABD41C2F37B
+   CustomProperties Pin (PinId=BB9603444ACC877DC49FF3964BD08D53,PinName="In",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_1 4EE945934D937AC24477A29AE2C97598,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+   CustomProperties Pin (PinId=5CE6FAA94D4B8876F526FD94C726038B,PinName="Out",Direction="EGPD_Output",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Task_12 5D04F29940229CCD7BA09FBB693C648B,BehaviorTreeGraphNode_Task_2 51F8A4DB4E01C408BC4EC9A168FEF973,BehaviorTreeGraphNode_Task_1 315ADF8B4196C232DFF58EB9D7F6C959,BehaviorTreeGraphNode_Task_14 3F347CB2485D1B5C75D42BB4713151CB,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_1" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_1'"
+   Begin Object Class=/Script/AIModule.BTTask_Wait Name="BTTask_Wait_0" ExportPath="/Script/AIModule.BTTask_Wait'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_1.BTTask_Wait_0'"
+   End Object
+   Begin Object Name="BTTask_Wait_0" ExportPath="/Script/AIModule.BTTask_Wait'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_1.BTTask_Wait_0'"
+      WaitTime=0.250000
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_7.BTComposite_Sequence_2'"
+   End Object
+   ClassData=(ClassName="BTTask_Wait")
+   NodeInstance="/Script/AIModule.BTTask_Wait'BTTask_Wait_0'"
+   NodePosX=496
+   NodePosY=592
+   NodeGuid=FB8D03A64C0B69679806F6975E8C51EC
+   CustomProperties Pin (PinId=315ADF8B4196C232DFF58EB9D7F6C959,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_7 5CE6FAA94D4B8876F526FD94C726038B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_2" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_2'"
+   Begin Object Class=/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_ChooseAttack_SwordShieldGuy.BTTask_ChooseAttack_SwordShieldGuy_C Name="BTTask_ChooseAttack_SwordShieldGuy_C_0" ExportPath="/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_ChooseAttack_SwordShieldGuy.BTTask_ChooseAttack_SwordShieldGuy_C'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_2.BTTask_ChooseAttack_SwordShieldGuy_C_0'"
+   End Object
+   Begin Object Name="BTTask_ChooseAttack_SwordShieldGuy_C_0" ExportPath="/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_ChooseAttack_SwordShieldGuy.BTTask_ChooseAttack_SwordShieldGuy_C'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_2.BTTask_ChooseAttack_SwordShieldGuy_C_0'"
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_7.BTComposite_Sequence_2'"
+   End Object
+   ClassData=(AssetName="BTTask_ChooseAttack_SwordShieldGuy",GeneratedClassPackage="/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_ChooseAttack_SwordShieldGuy",ClassName="BTTask_ChooseAttack_SwordShieldGuy_C")
+   NodeInstance="/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_ChooseAttack_SwordShieldGuy.BTTask_ChooseAttack_SwordShieldGuy_C'BTTask_ChooseAttack_SwordShieldGuy_C_0'"
+   NodePosX=48
+   NodePosY=640
+   NodeGuid=25D114B849AEDDA7A0AC549D7F2C0D87
+   CustomProperties Pin (PinId=51F8A4DB4E01C408BC4EC9A168FEF973,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_7 5CE6FAA94D4B8876F526FD94C726038B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_0" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_0'"
+   Begin Object Class=/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_SlowPacePatrol.BTTask_SlowPacePatrol_C Name="BTTask_SlowPacePatrol_C_0" ExportPath="/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_SlowPacePatrol.BTTask_SlowPacePatrol_C'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_0.BTTask_SlowPacePatrol_C_0'"
+   End Object
+   Begin Object Name="BTTask_SlowPacePatrol_C_0" ExportPath="/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_SlowPacePatrol.BTTask_SlowPacePatrol_C'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_0.BTTask_SlowPacePatrol_C_0'"
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_9.BTComposite_Sequence_7'"
+   End Object
+   ClassData=(AssetName="BTTask_SlowPacePatrol",GeneratedClassPackage="/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_SlowPacePatrol",ClassName="BTTask_SlowPacePatrol_C")
+   NodeInstance="/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_SlowPacePatrol.BTTask_SlowPacePatrol_C'BTTask_SlowPacePatrol_C_0'"
+   NodePosX=-656
+   NodePosY=528
+   NodeGuid=FDC271474661D11E536600A4243294AC
+   CustomProperties Pin (PinId=A09063E4479578F363009ABCD4C4673B,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_9 D3D25DCD42D155F406988BB41ABE200A,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite Name="BehaviorTreeGraphNode_Composite_9" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Composite'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Composite_9'"
+   Begin Object Class=/Script/AIModule.BTComposite_Sequence Name="BTComposite_Sequence_7" ExportPath="/Script/AIModule.BTComposite_Sequence'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Composite_9.BTComposite_Sequence_7'"
+   End Object
+   Begin Object Name="BTComposite_Sequence_7" ExportPath="/Script/AIModule.BTComposite_Sequence'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Composite_9.BTComposite_Sequence_7'"
+      Children(0)=(ChildTask="/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/Tasks/BTTask_SlowPacePatrol.BTTask_SlowPacePatrol_C'BehaviorTreeGraphNode_Task_0.BTTask_SlowPacePatrol_C_0'")
+      Children(1)=(ChildTask="/Script/AIModule.BTTask_Wait'BehaviorTreeGraphNode_Task_4.BTTask_Wait_1'")
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1'"
+      ParentNode="/Script/AIModule.BTComposite_Selector'BehaviorTreeGraphNode_Composite_1.BTComposite_Selector_0'"
+   End Object
+   Decorators(0)="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Decorator'BehaviorTreeGraphNode_Decorator_60'"
+   ClassData=(ClassName="BTComposite_Sequence")
+   NodeInstance="/Script/AIModule.BTComposite_Sequence'BTComposite_Sequence_7'"
+   SubNodes(0)="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Decorator'BehaviorTreeGraphNode_Decorator_60'"
+   NodePosX=-368
+   NodePosY=256
+   NodeGuid=3C83995247766112E92DDEB8B7CC477A
+   CustomProperties Pin (PinId=2C99AE9A4C20DBF6DAEB1FA87458673C,PinName="In",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_1 4EE945934D937AC24477A29AE2C97598,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+   CustomProperties Pin (PinId=D3D25DCD42D155F406988BB41ABE200A,PinName="Out",Direction="EGPD_Output",PinType.PinCategory="MultipleNodes",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Task_0 A09063E4479578F363009ABCD4C4673B,BehaviorTreeGraphNode_Task_4 B5B8048549AF31B76EFFE1921CB9DD73,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_4" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_4'"
+   Begin Object Class=/Script/AIModule.BTTask_Wait Name="BTTask_Wait_1" ExportPath="/Script/AIModule.BTTask_Wait'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_4.BTTask_Wait_1'"
+   End Object
+   Begin Object Name="BTTask_Wait_1" ExportPath="/Script/AIModule.BTTask_Wait'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_4.BTTask_Wait_1'"
+      WaitTime=4.000000
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_9.BTComposite_Sequence_7'"
+   End Object
+   ClassData=(ClassName="BTTask_Wait")
+   NodeInstance="/Script/AIModule.BTTask_Wait'BTTask_Wait_1'"
+   NodePosX=-288
+   NodePosY=544
+   NodeGuid=ADD219D744585EFB04BE828286D4618F
+   CustomProperties Pin (PinId=B5B8048549AF31B76EFFE1921CB9DD73,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_9 D3D25DCD42D155F406988BB41ABE200A,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
+Begin Object Class=/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_14" ExportPath="/Script/BehaviorTreeEditor.BehaviorTreeGraphNode_Task'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_14'"
+   Begin Object Class=/Script/AIModule.BTTask_RotateToFaceBBEntry Name="BTTask_RotateToFaceBBEntry_0" ExportPath="/Script/AIModule.BTTask_RotateToFaceBBEntry'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_14.BTTask_RotateToFaceBBEntry_0'"
+      Begin Object Class=/Script/AIModule.BlackboardKeyType_Object Name="BlackboardKey_Object_0" Archetype="/Script/AIModule.BlackboardKeyType_Object'/Script/AIModule.Default__BTTask_RotateToFaceBBEntry:BlackboardKey_Object_0'" ExportPath="/Script/AIModule.BlackboardKeyType_Object'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_14.BTTask_RotateToFaceBBEntry_0.BlackboardKey_Object_0'"
+      End Object
+      Begin Object Class=/Script/AIModule.BlackboardKeyType_Vector Name="BlackboardKey_Vector" Archetype="/Script/AIModule.BlackboardKeyType_Vector'/Script/AIModule.Default__BTTask_RotateToFaceBBEntry:BlackboardKey_Vector'" ExportPath="/Script/AIModule.BlackboardKeyType_Vector'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_14.BTTask_RotateToFaceBBEntry_0.BlackboardKey_Vector'"
+      End Object
+      Begin Object Class=/Script/AIModule.BlackboardKeyType_Rotator Name="BlackboardKey_Rotator" Archetype="/Script/AIModule.BlackboardKeyType_Rotator'/Script/AIModule.Default__BTTask_RotateToFaceBBEntry:BlackboardKey_Rotator'" ExportPath="/Script/AIModule.BlackboardKeyType_Rotator'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_14.BTTask_RotateToFaceBBEntry_0.BlackboardKey_Rotator'"
+      End Object
+   End Object
+   Begin Object Name="BTTask_RotateToFaceBBEntry_0" ExportPath="/Script/AIModule.BTTask_RotateToFaceBBEntry'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_14.BTTask_RotateToFaceBBEntry_0'"
+      Begin Object Name="BlackboardKey_Object_0" ExportPath="/Script/AIModule.BlackboardKeyType_Object'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_14.BTTask_RotateToFaceBBEntry_0.BlackboardKey_Object_0'"
+      End Object
+      Begin Object Name="BlackboardKey_Vector" ExportPath="/Script/AIModule.BlackboardKeyType_Vector'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_14.BTTask_RotateToFaceBBEntry_0.BlackboardKey_Vector'"
+      End Object
+      Begin Object Name="BlackboardKey_Rotator" ExportPath="/Script/AIModule.BlackboardKeyType_Rotator'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1:Behavior Tree.BehaviorTreeGraphNode_Task_14.BTTask_RotateToFaceBBEntry_0.BlackboardKey_Rotator'"
+      End Object
+      BlackboardKey=(SelectedKeyName="TargetActor")
+      TreeAsset="/Script/AIModule.BehaviorTree'/Game/Enemies/KoreanTraditionalMartialArts/Blueprints/SwordAndShieldGuy_1/BT_SwordAndShieldGuy_1.BT_SwordAndShieldGuy_1'"
+      ParentNode="/Script/AIModule.BTComposite_Sequence'BehaviorTreeGraphNode_Composite_7.BTComposite_Sequence_2'"
+   End Object
+   ClassData=(ClassName="BTTask_RotateToFaceBBEntry")
+   NodeInstance="/Script/AIModule.BTTask_RotateToFaceBBEntry'BTTask_RotateToFaceBBEntry_0'"
+   NodePosX=608
+   NodePosY=496
+   NodeGuid=94074D0B4F33FFA972830CA287EDF8F2
+   CustomProperties Pin (PinId=3F347CB2485D1B5C75D42BB4713151CB,PinName="In",PinType.PinCategory="SingleComposite",PinType.PinSubCategory="",PinType.PinSubCategoryObject=None,PinType.PinSubCategoryMemberReference=(),PinType.PinValueType=(),PinType.ContainerType=None,PinType.bIsReference=False,PinType.bIsConst=False,PinType.bIsWeakPointer=False,PinType.bIsUObjectWrapper=False,PinType.bSerializeAsSinglePrecisionFloat=False,LinkedTo=(BehaviorTreeGraphNode_Composite_7 5CE6FAA94D4B8876F526FD94C726038B,),PersistentGuid=00000000000000000000000000000000,bHidden=False,bNotConnectable=False,bDefaultValueIsReadOnly=False,bDefaultValueIsIgnored=False,bAdvancedView=False,bOrphanedPin=False,)
+End Object
