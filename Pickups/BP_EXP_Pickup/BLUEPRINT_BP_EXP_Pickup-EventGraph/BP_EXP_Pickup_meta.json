@@ -1,0 +1,208 @@
+{
+	"schemaVersion": 5,
+	"graphName": "Event Graph",
+	"assetName": "BP_EXP_Pickup",
+	"capturedAt": "2026-09-18T19:58:57",
+	"totalNodes": 7,
+	"graphWidth": 2223,
+	"graphHeight": 989,
+	"graphOriginX": -328,
+	"graphOriginY": -184,
+	"nodeTypes":
+	{
+		"On Component Begin Overlap": 1,
+		"Does Object Implement Interface": 1,
+		"Branch": 1,
+		"Gained EXP": 1,
+		"Reroute Node": 1,
+		"Get XPGiven": 1,
+		"Destroy Actor": 1
+	},
+	"nodes": [
+		{
+			"title": "On Component Begin Overlap",
+			"guid": "C960879342A762C9997FD3ACB29828C2",
+			"nx": 0.14750000000000002,
+			"ny": 0.44490000000000002,
+			"nw": 0.14080000000000001,
+			"nh": 0.2477
+		},
+		{
+			"title": "Does Object Implement Interface",
+			"guid": "694B7CA44A4B4F1EE9721CB9A36EEA4D",
+			"nx": 0.32750000000000001,
+			"ny": 0.57430000000000003,
+			"nw": 0.12510000000000002,
+			"nh": 0.1153,
+			"pure": true,
+			"pins": [
+				{
+					"id": "0C0D90D641022567C46E8486AA09F288",
+					"n": "self",
+					"t": "object",
+					"do": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"id": "A061ECB44D0082A2B3787F84DC5103AB",
+					"n": "Interface",
+					"t": "class",
+					"do": "/Game/Interfaces/BPI_EXP.BPI_EXP_C"
+				}
+			]
+		},
+		{
+			"title": "Branch",
+			"guid": "0325AB01452D7F687AF8809B3647B593",
+			"nx": 0.47860000000000003,
+			"ny": 0.44490000000000002,
+			"nw": 0.081000000000000003,
+			"nh": 0.095000000000000001,
+			"pins": [
+				{
+					"id": "AF319CAD4DC3426CC19ABDA39FA3FBDC",
+					"n": "Condition",
+					"t": "bool",
+					"dv": "true"
+				}
+			]
+		},
+		{
+			"title": "Gained EXP",
+			"guid": "3B98337541684F2EC730FABD6BF591D5",
+			"nx": 0.65860000000000007,
+			"ny": 0.42870000000000003,
+			"nw": 0.072900000000000006,
+			"nh": 0.13950000000000001,
+			"pins": [
+				{
+					"id": "42F73EB14425D9CD42AF3FB3ACBE8D15",
+					"n": "GainedEXP",
+					"t": "real",
+					"dv": "0.0"
+				}
+			]
+		},
+		{
+			"title": "Reroute Node",
+			"guid": "2C263A16455949537D1E24A23495AADF",
+			"nx": 0.47860000000000003,
+			"ny": 0.33160000000000001,
+			"nw": 0.0189,
+			"nh": 0.024300000000000002,
+			"pure": true
+		},
+		{
+			"title": "Get XPGiven",
+			"guid": "13589D5C46A64452A1D99B8352B145A2",
+			"nx": 0.56500000000000006,
+			"ny": 0.57430000000000003,
+			"nw": 0.059400000000000001,
+			"nh": 0.038400000000000004,
+			"pure": true
+		},
+		{
+			"title": "Destroy Actor",
+			"guid": "0BC317D244AD900FC78273ADA8A63EA8",
+			"nx": 0.78810000000000002,
+			"ny": 0.42870000000000003,
+			"nw": 0.077100000000000002,
+			"nh": 0.1143
+		}
+	],
+	"connections": [
+		{
+			"fg": "C960879342A762C9997FD3ACB29828C2",
+			"fpid": "ECC2529143CC300527E076B96EBE1151",
+			"fp": "then",
+			"tg": "0325AB01452D7F687AF8809B3647B593",
+			"tpid": "3FEF7A1244295C9C357A778C1EA8ECAD",
+			"tp": "execute"
+		},
+		{
+			"fg": "C960879342A762C9997FD3ACB29828C2",
+			"fpid": "148294834C4FEDEA9F0E17BFEAFB8B09",
+			"fp": "OtherActor",
+			"tg": "694B7CA44A4B4F1EE9721CB9A36EEA4D",
+			"tpid": "728CE2C5407FF4BFF93513BC921143B0",
+			"tp": "TestObject"
+		},
+		{
+			"fg": "C960879342A762C9997FD3ACB29828C2",
+			"fpid": "148294834C4FEDEA9F0E17BFEAFB8B09",
+			"fp": "OtherActor",
+			"tg": "2C263A16455949537D1E24A23495AADF",
+			"tpid": "A833596D411B689B7707A0AAC7353967",
+			"tp": "InputPin"
+		},
+		{
+			"fg": "694B7CA44A4B4F1EE9721CB9A36EEA4D",
+			"fpid": "2BA5B7A340267C6F441707B34AB57363",
+			"fp": "ReturnValue",
+			"tg": "0325AB01452D7F687AF8809B3647B593",
+			"tpid": "AF319CAD4DC3426CC19ABDA39FA3FBDC",
+			"tp": "Condition"
+		},
+		{
+			"fg": "0325AB01452D7F687AF8809B3647B593",
+			"fpid": "8C63DC824390F03B9355D585DB8DFB32",
+			"fp": "then",
+			"tg": "3B98337541684F2EC730FABD6BF591D5",
+			"tpid": "DE98D7D44C02F548EE776DA51A9AFA80",
+			"tp": "execute"
+		},
+		{
+			"fg": "3B98337541684F2EC730FABD6BF591D5",
+			"fpid": "0A4174C14CE38AA1CC021288261CB565",
+			"fp": "then",
+			"tg": "0BC317D244AD900FC78273ADA8A63EA8",
+			"tpid": "262D3F18449D3B59CC7FB2820CC86759",
+			"tp": "execute"
+		},
+		{
+			"fg": "2C263A16455949537D1E24A23495AADF",
+			"fpid": "D15797544931EFE1EDC22DB745E09A7D",
+			"fp": "OutputPin",
+			"tg": "3B98337541684F2EC730FABD6BF591D5",
+			"tpid": "39F057C6472B69371E1094887C3FB644",
+			"tp": "self"
+		},
+		{
+			"fg": "13589D5C46A64452A1D99B8352B145A2",
+			"fpid": "E200F1EA4083B31B631C4EA75939FAF4",
+			"fp": "XPGiven",
+			"tg": "3B98337541684F2EC730FABD6BF591D5",
+			"tpid": "42F73EB14425D9CD42AF3FB3ACBE8D15",
+			"tp": "GainedEXP"
+		}
+	],
+	"variables": [
+		{
+			"name": "XPGiven",
+			"type": "Float",
+			"exposed": true
+		}
+	],
+	"components": [
+		{
+			"name": "DefaultSceneRoot",
+			"class": "SceneComponent",
+			"parent": "None"
+		},
+		{
+			"name": "StaticMesh",
+			"class": "StaticMeshComponent",
+			"parent": "None"
+		}
+	],
+	"comments": [
+		{
+			"title": "Gain EXP On Overlap With Pickup Item",
+			"x": 264,
+			"y": 264,
+			"w": 1695,
+			"h": 461
+		}
+	],
+	"warnings": [],
+	"stickyNotes": []
+}
